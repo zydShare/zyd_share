@@ -1,0 +1,267 @@
+一、解决IOS/安卓页面兼容性
+
+1.<input class="cardTypeName" type="text" disabled="true" placeholder="请选择油卡类型">
+
+  问题：input加了disabled属性，页面字体变浅灰色
+
+  解决：css:input[disabled]{
+        	background: #fff;
+        	opacity: 1;//重点
+                color:#666;
+              }
+
+2.问题：input边框、boxshadow边框等出现阴影
+  
+  解决：css:-webkit-appearance:none; 
+
+3.问题：input边框文字不能垂直居中
+ 
+  解决：css：不能设置line-height 给input上下设置相同pandding，将其居中。
+ 
+4.<div class="agree-flag flex-hl-vc" onclick="agreement.action()">
+
+	<img class="agree-img" src="img/ic_noselect.png" />
+
+        <span class="confirm-tips">我已认真阅读并接受以上协议</span>
+ </div>
+
+  问题：触发onclick="agreement.action()"事件时，盒子出现背景块状阴影
+
+  解决：css：-webkit-tap-highlight-color: rgba(0,0,0,0);
+
+       eg: .div-input .agree-flag{-webkit-tap-highlight-color: rgba(0,0,0,0); margin-left: .75rem;}
+
+5.<input type="number" data-phone="" placeholder="请输入油卡卡号" readonly="readonly"/> 将input设置成不可输入、只读
+
+ 问题：ios端页面出现光标
+
+ 解决：input标签内加 readonly="readonly" onfocus="this.blur();"
+
+ 延伸：disabled = "disabled" 也可以禁止input输入
+
+      disabled 属性规定应该禁用的 <input> 元素,被禁用的 input 元素是无法使用和无法点击的。提示：表单中被禁用的 <input> 元素不会被提交。
+
+6.移动端解决fixed和input获取焦点软键盘弹出影响定位的问题：
+  
+  （1） 解决初始化文档高度，让文档高度等于窗体高度，并fixed需要定位的区域在最下方
+       
+        (function bottonm(){  
+
+            if($(document).height()<$(window).height()){  
+
+                $('.bottom_fix').css({'position':'fixed','bottom':'0px'});
+  
+                $(document).height($(window).height()+'px');  
+            }  
+
+        })();  
+
+  （2）(安卓）解决输入框input获取焦点得时，虚拟键盘会把fixed元素顶上去 /*此解决方案还存在问题，待进一步优化*/
+
+       $('#phone').bind('focus',function(){  
+
+            $('.bottom_fix').css('position','static');
+  
+            //或者$('#viewport').height($(window).height()+'px'); 
+ 
+        }).bind('blur',function(){  
+
+            $('.bottom_fix').css({'position':'fixed','bottom':'0'}); 
+ 
+            //或者$('#viewport').height('auto');  
+        }); 
+ 
+        ****************************优*********化********版********************（2017/06/01）
+
+        var winHeight = $(window).height();
+	$(window).resize(function() {
+	var thisHeight = $(this).height();
+	if(winHeight - thisHeight > 50) {
+
+	    //窗口发生改变(大),故此时键盘弹出
+	    //当软键盘弹出，在这里面操作
+
+	     $('.btnNxtCon').css({'display': 'none'});
+	     $(".popup-text").css("top", "2.5rem");
+
+	} else {
+
+	    //窗口发生改变(小),故此时键盘收起
+	    //当软 键盘收起，在此处操作
+
+	    $('.btnNxtCon').css({'display': 'block'});
+	    $(".popup-text").css("top", "6rem");
+	}
+        });
+
+
+**************************************************************************************************************************************************************************************************************************************************************************************
+
+二、其他问题总结
+
+1. 问题：click点击事件在众多判断条件下可能会失效（例如连续点击多次金额，会出现多次下单操作，生成多次订单）
+    
+         $(".details").click(function(){ .......});
+   
+  解决：$(".details").off("click").on("click",function() {.......});
+  
+  延伸：区别：$(document).on("click", "$(document).on("click", "elementID",function(){})",function(){.....})
+
+              $（"elementID").click(function(){.......})
+
+2. 输入框取整  NumberObject.toFixed(num)
+
+   eg. var num = new Number(13.37); document.write (num.toFixed(1))  //输出13.4
+
+3. var juge = "50";  parseFloat(juge);//将字符串强制转换成数字类型
+   
+  
+4. 输入框最多只能输入19位数字：oninput="if(value.length>19)value=value.slice(0,19)"
+
+  <input class="up" type="number" oninput="if(value.length>19)value=value.slice(0,19)" id="in_cardNum" placeholder="请输入油卡号" />
+
+5. 输入框限制（只能输入数字）：
+
+（1）判断是否是数字 isNaN(Num)； input type="tel" （此标签）
+
+（2）//输入框直接调用限制函数
+    <input type="text" oninput="if(value.length>19)value=value.slice(0,19)" id="in_cardNum" onclick="shuru2(this);" onkeyup="shuru2(this);" placeholder="请输入油卡号" />
+
+                /*限制只有中文和字母*/
+		function shuru1(this) {
+		   a.value = a.value.replace(/[^\a-\z\A-\Z\u4E00-\u9FA5]/g,'')
+		}
+
+		/*限制只有数字*/
+		function shuru2(a) {
+		   a.value = a.value.replace(/\D/g,'')
+		}
+		
+		/*限制只有数字字母*/
+		function shuru3(a) {
+		   a.value = a.value.replace(/[^\a-\z\A-\Z0-9]/g,'')
+		}
+		
+		/*限制只有中文、英文、数字、空格*/
+		function shuru4(a) {
+		   a.value = a.value.replace(/[^\a-\z\A-\Z0-9\u4E00-\u9FA5\ ]/g,'')
+		}
+		
+		/*限制只有中文*/
+		function shuru5(a) {
+		   a.value = a.value.replace(/[^\u4E00-\u9FA5]/g,'')
+		}
+
+（3） //输入框直接加入以限制
+      onkeyup="this.value=this.value.replace(/\D/g,'')" 
+      onafterpaste="this.value=this.value.replace(/\D/g,'')" 
+      onkeyup="if(event.keyCode==13)event.keyCode=9"
+      onKeyPress="if ((event.keyCode<48 || event.keyCode>57 ))
+      event.returnValue=false"
+      
+      oninput='if(value.length>2)value=value.slice(0,2)' 
+      onkeyup="if(this.value.length==1){this.value=this.value.replace(/[^1-9]/g,'')}else{this.value=this.value.replace(/[^[0-9]*[1-9][0-9]      *$]/g,'')}" 
+      onafterpaste="if(this.value.length==1){this.value=this.value.replace(/[^1-9]/g,'')}else{this.value=this.value.replace(/[^[0-9]*[1-9]        [0-9]*$]/g,'')}" 
+      onkeydown="if(event.keyCode==13)event.keyCode=9"
+      onKeyPress="if ((event.keyCode<48 || event.keyCode>57)) event.returnValue=false"
+
+
+eg. 手机号码输入限制: <input class="up" type="tel" maxlength="11" id="in_phoneNum" oninput="if(value.length>11)value=value.slice(0,11)" onkeyup="this.value=this.value.replace(/\D/g,'')" onafterpaste="this.value=this.value.replace(/\D/g,'')" onkeyup="if(event.keyCode==13)event.keyCode=9" onKeyPress="if ((event.keyCode<48 || event.keyCode>57 )) event.returnValue=false"placeholder="请输入持卡人手机号" />
+
+
+eg.身份证号码输入限制：<input class="inputInfo cyr_num" id="cyr_num1" type="text" oninput="if(value.length>18)value=value.slice(0,18)" onkeyup="value=value.replace(/[^/0-9xX]/g,'') "onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^/0-9xX]/g,''))" onKeyPress="if ((event.keyCode<48 || (event.keyCode>57&&event.keyCode<87) || (event.keyCode>88&&event.keyCode<119)||event.keyCode>120)) event.returnValue=false" placeholder="请输入出游人身份证号" /> 
+
+4.点击事件内最好不要使用a标签，因为点击时容易页面刷新，使之跳转不成功；要么使跳转为死链接<a href ="javascript:voild();"></a>。
+
+5.切割字符串实现换行 split()
+
+  //eg. 使用说明换行
+  var con_txt = json.列表[i].使用说明;										
+  var strs = new Array();										
+  strs = con_txt.split("；");										
+  var htmlAdd = '';										
+  for(var i = 0; i < strs.length; i++) {											
+      htmlAdd += "<li>" + strs[i] + "</li>";										
+  }										
+  $(".yhq_txt").html(htmlAdd);
+
+6.懒加载（滑动加载更多数据）
+
+  var ys,ys2;
+  getData(0);
+
+  $(window).scroll(function () {
+				
+    var scrollTop = $(this).scrollTop();//滚动条距离顶部的距离
+
+    var scrollHeight = $(document).height();//获取整个页面的高度
+			
+    var windowHeight = $(this).height();//获取当前可视域高度
+
+    if (scrollTop + windowHeight == scrollHeight) {
+				
+       getData(ys2);//接收函数中ys2
+				
+    }
+
+  });
+
+ function getData(ys) {
+	var data = {};
+	data.onlyID = onlyID;
+	data.搜索 = $('#userinfo').val();
+	data.页数 = ys;
+	data = JSON.stringify(data);
+	console.log(data);
+	$.ajax({
+	   url: "/ajax.post?func=CZ_YK_dgxq1",
+	   type: "POST",
+	   data: 'data=' + data,
+	   success: function(p) {
+	   if(p.状态 == '成功') {
+		console.log(p);
+		if(p.条数 == 0) {
+			t = 3;
+			toast("无数据");
+		}
+		$.each(p.代购列表, function(i) {
+			....
+		});
+
+		ys2 = p.页数;
+		return ys2;//返回ys2
+
+	    } else {
+	       console.log(p);
+	    }
+          }
+
+	});
+
+ }
+
+延伸：scrollTop()==0           // 获取顶端
+
+      scrollTop()>=$(document).height()-$(window).height()  // 获取底端
+
+      $(document).scrollTop()  // 获取垂直滚动的距离  即当前滚动的地方的窗口顶端到整个页面顶端的距离
+
+      $(document).scrollLeft() // 获取水平滚动条的距离
+
+      $(document).height()     // 获取整个页面的高度
+ 
+      $(window).height()       // 获取当前也就是你浏览器所能看到的页面的那部分的高度 
+
+     
+      window.screen.availWidth  // 返回当前屏幕宽度(空白空间)
+ 
+      window.screen.availHeight // 返回当前屏幕高度(空白空间) 
+
+      window.screen.width       // 返回当前屏幕宽度(分辨率值) 
+
+      window.screen.height      // 返回当前屏幕高度(分辨率值) 
+
+      window.document.body.offsetHeight; // 返回当前网页高度 
+
+      window.document.body.offsetWidth; // 返回当前网页宽度
+  
