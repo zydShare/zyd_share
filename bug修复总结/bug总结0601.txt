@@ -1,49 +1,49 @@
-Ò»¡¢½â¾öIOS/°²×¿Ò³Ãæ¼æÈİĞÔ
+ä¸€ã€è§£å†³IOS/å®‰å“é¡µé¢å…¼å®¹æ€§
+(2017 06 03)
+1.<input class="cardTypeName" type="text" disabled="true" placeholder="è¯·é€‰æ‹©æ²¹å¡ç±»å‹">
 
-1.<input class="cardTypeName" type="text" disabled="true" placeholder="ÇëÑ¡ÔñÓÍ¿¨ÀàĞÍ">
+  é—®é¢˜ï¼šinputåŠ äº†disabledå±æ€§ï¼Œé¡µé¢å­—ä½“å˜æµ…ç°è‰²
 
-  ÎÊÌâ£ºinput¼ÓÁËdisabledÊôĞÔ£¬Ò³Ãæ×ÖÌå±äÇ³»ÒÉ«
-
-  ½â¾ö£ºcss:input[disabled]{
+  è§£å†³ï¼šcss:input[disabled]{
         	background: #fff;
-        	opacity: 1;//ÖØµã
+        	opacity: 1;//é‡ç‚¹
                 color:#666;
               }
 
-2.ÎÊÌâ£ºinput±ß¿ò¡¢boxshadow±ß¿òµÈ³öÏÖÒõÓ°
+2.é—®é¢˜ï¼šinputè¾¹æ¡†ã€boxshadowè¾¹æ¡†ç­‰å‡ºç°é˜´å½±
   
-  ½â¾ö£ºcss:-webkit-appearance:none; 
+  è§£å†³ï¼šcss:-webkit-appearance:none; 
 
-3.ÎÊÌâ£ºinput±ß¿òÎÄ×Ö²»ÄÜ´¹Ö±¾ÓÖĞ
+3.é—®é¢˜ï¼šinputè¾¹æ¡†æ–‡å­—ä¸èƒ½å‚ç›´å±…ä¸­
  
-  ½â¾ö£ºcss£º²»ÄÜÉèÖÃline-height ¸øinputÉÏÏÂÉèÖÃÏàÍ¬pandding£¬½«Æä¾ÓÖĞ¡£
+  è§£å†³ï¼šcssï¼šä¸èƒ½è®¾ç½®line-height ç»™inputä¸Šä¸‹è®¾ç½®ç›¸åŒpanddingï¼Œå°†å…¶å±…ä¸­ã€‚
  
 4.<div class="agree-flag flex-hl-vc" onclick="agreement.action()">
 
 	<img class="agree-img" src="img/ic_noselect.png" />
 
-        <span class="confirm-tips">ÎÒÒÑÈÏÕæÔÄ¶Á²¢½ÓÊÜÒÔÉÏĞ­Òé</span>
+        <span class="confirm-tips">æˆ‘å·²è®¤çœŸé˜…è¯»å¹¶æ¥å—ä»¥ä¸Šåè®®</span>
  </div>
 
-  ÎÊÌâ£º´¥·¢onclick="agreement.action()"ÊÂ¼şÊ±£¬ºĞ×Ó³öÏÖ±³¾°¿é×´ÒõÓ°
+  é—®é¢˜ï¼šè§¦å‘onclick="agreement.action()"äº‹ä»¶æ—¶ï¼Œç›’å­å‡ºç°èƒŒæ™¯å—çŠ¶é˜´å½±
 
-  ½â¾ö£ºcss£º-webkit-tap-highlight-color: rgba(0,0,0,0);
+  è§£å†³ï¼šcssï¼š-webkit-tap-highlight-color: rgba(0,0,0,0);
 
        eg: .div-input .agree-flag{-webkit-tap-highlight-color: rgba(0,0,0,0); margin-left: .75rem;}
 
-5.<input type="number" data-phone="" placeholder="ÇëÊäÈëÓÍ¿¨¿¨ºÅ" readonly="readonly"/> ½«inputÉèÖÃ³É²»¿ÉÊäÈë¡¢Ö»¶Á
+5.<input type="number" data-phone="" placeholder="è¯·è¾“å…¥æ²¹å¡å¡å·" readonly="readonly"/> å°†inputè®¾ç½®æˆä¸å¯è¾“å…¥ã€åªè¯»
 
- ÎÊÌâ£ºios¶ËÒ³Ãæ³öÏÖ¹â±ê
+ é—®é¢˜ï¼šiosç«¯é¡µé¢å‡ºç°å…‰æ ‡
 
- ½â¾ö£ºinput±êÇ©ÄÚ¼Ó readonly="readonly" onfocus="this.blur();"
+ è§£å†³ï¼šinputæ ‡ç­¾å†…åŠ  readonly="readonly" onfocus="this.blur();"
 
- ÑÓÉì£ºdisabled = "disabled" Ò²¿ÉÒÔ½ûÖ¹inputÊäÈë
+ å»¶ä¼¸ï¼šdisabled = "disabled" ä¹Ÿå¯ä»¥ç¦æ­¢inputè¾“å…¥
 
-      disabled ÊôĞÔ¹æ¶¨Ó¦¸Ã½ûÓÃµÄ <input> ÔªËØ,±»½ûÓÃµÄ input ÔªËØÊÇÎŞ·¨Ê¹ÓÃºÍÎŞ·¨µã»÷µÄ¡£ÌáÊ¾£º±íµ¥ÖĞ±»½ûÓÃµÄ <input> ÔªËØ²»»á±»Ìá½»¡£
+      disabled å±æ€§è§„å®šåº”è¯¥ç¦ç”¨çš„ <input> å…ƒç´ ,è¢«ç¦ç”¨çš„ input å…ƒç´ æ˜¯æ— æ³•ä½¿ç”¨å’Œæ— æ³•ç‚¹å‡»çš„ã€‚æç¤ºï¼šè¡¨å•ä¸­è¢«ç¦ç”¨çš„ <input> å…ƒç´ ä¸ä¼šè¢«æäº¤ã€‚
 
-6.ÒÆ¶¯¶Ë½â¾öfixedºÍinput»ñÈ¡½¹µãÈí¼üÅÌµ¯³öÓ°Ïì¶¨Î»µÄÎÊÌâ£º
+6.ç§»åŠ¨ç«¯è§£å†³fixedå’Œinputè·å–ç„¦ç‚¹è½¯é”®ç›˜å¼¹å‡ºå½±å“å®šä½çš„é—®é¢˜ï¼š
   
-  £¨1£© ½â¾ö³õÊ¼»¯ÎÄµµ¸ß¶È£¬ÈÃÎÄµµ¸ß¶ÈµÈÓÚ´°Ìå¸ß¶È£¬²¢fixedĞèÒª¶¨Î»µÄÇøÓòÔÚ×îÏÂ·½
+  ï¼ˆ1ï¼‰ è§£å†³åˆå§‹åŒ–æ–‡æ¡£é«˜åº¦ï¼Œè®©æ–‡æ¡£é«˜åº¦ç­‰äºçª—ä½“é«˜åº¦ï¼Œå¹¶fixedéœ€è¦å®šä½çš„åŒºåŸŸåœ¨æœ€ä¸‹æ–¹
        
         (function bottonm(){  
 
@@ -56,38 +56,38 @@
 
         })();  
 
-  £¨2£©(°²×¿£©½â¾öÊäÈë¿òinput»ñÈ¡½¹µãµÃÊ±£¬ĞéÄâ¼üÅÌ»á°ÑfixedÔªËØ¶¥ÉÏÈ¥ /*´Ë½â¾ö·½°¸»¹´æÔÚÎÊÌâ£¬´ı½øÒ»²½ÓÅ»¯*/
+  ï¼ˆ2ï¼‰(å®‰å“ï¼‰è§£å†³è¾“å…¥æ¡†inputè·å–ç„¦ç‚¹å¾—æ—¶ï¼Œè™šæ‹Ÿé”®ç›˜ä¼šæŠŠfixedå…ƒç´ é¡¶ä¸Šå» /*æ­¤è§£å†³æ–¹æ¡ˆè¿˜å­˜åœ¨é—®é¢˜ï¼Œå¾…è¿›ä¸€æ­¥ä¼˜åŒ–*/
 
        $('#phone').bind('focus',function(){  
 
             $('.bottom_fix').css('position','static');
   
-            //»òÕß$('#viewport').height($(window).height()+'px'); 
+            //æˆ–è€…$('#viewport').height($(window).height()+'px'); 
  
         }).bind('blur',function(){  
 
             $('.bottom_fix').css({'position':'fixed','bottom':'0'}); 
  
-            //»òÕß$('#viewport').height('auto');  
+            //æˆ–è€…$('#viewport').height('auto');  
         }); 
  
-        ****************************ÓÅ*********»¯********°æ********************£¨2017/06/01£©
+        ****************************ä¼˜*********åŒ–********ç‰ˆ********************ï¼ˆ2017/06/01ï¼‰
 
         var winHeight = $(window).height();
 	$(window).resize(function() {
 	var thisHeight = $(this).height();
 	if(winHeight - thisHeight > 50) {
 
-	    //´°¿Ú·¢Éú¸Ä±ä(´ó),¹Ê´ËÊ±¼üÅÌµ¯³ö
-	    //µ±Èí¼üÅÌµ¯³ö£¬ÔÚÕâÀïÃæ²Ù×÷
+	    //çª—å£å‘ç”Ÿæ”¹å˜(å¤§),æ•…æ­¤æ—¶é”®ç›˜å¼¹å‡º
+	    //å½“è½¯é”®ç›˜å¼¹å‡ºï¼Œåœ¨è¿™é‡Œé¢æ“ä½œ
 
 	     $('.btnNxtCon').css({'display': 'none'});
 	     $(".popup-text").css("top", "2.5rem");
 
 	} else {
 
-	    //´°¿Ú·¢Éú¸Ä±ä(Ğ¡),¹Ê´ËÊ±¼üÅÌÊÕÆğ
-	    //µ±Èí ¼üÅÌÊÕÆğ£¬ÔÚ´Ë´¦²Ù×÷
+	    //çª—å£å‘ç”Ÿæ”¹å˜(å°),æ•…æ­¤æ—¶é”®ç›˜æ”¶èµ·
+	    //å½“è½¯ é”®ç›˜æ”¶èµ·ï¼Œåœ¨æ­¤å¤„æ“ä½œ
 
 	    $('.btnNxtCon').css({'display': 'block'});
 	    $(".popup-text").css("top", "6rem");
@@ -97,62 +97,62 @@
 
 **************************************************************************************************************************************************************************************************************************************************************************************
 
-¶ş¡¢ÆäËûÎÊÌâ×Ü½á
+äºŒã€å…¶ä»–é—®é¢˜æ€»ç»“
 
-1. ÎÊÌâ£ºclickµã»÷ÊÂ¼şÔÚÖÚ¶àÅĞ¶ÏÌõ¼şÏÂ¿ÉÄÜ»áÊ§Ğ§£¨ÀıÈçÁ¬Ğøµã»÷¶à´Î½ğ¶î£¬»á³öÏÖ¶à´ÎÏÂµ¥²Ù×÷£¬Éú³É¶à´Î¶©µ¥£©
+1. é—®é¢˜ï¼šclickç‚¹å‡»äº‹ä»¶åœ¨ä¼—å¤šåˆ¤æ–­æ¡ä»¶ä¸‹å¯èƒ½ä¼šå¤±æ•ˆï¼ˆä¾‹å¦‚è¿ç»­ç‚¹å‡»å¤šæ¬¡é‡‘é¢ï¼Œä¼šå‡ºç°å¤šæ¬¡ä¸‹å•æ“ä½œï¼Œç”Ÿæˆå¤šæ¬¡è®¢å•ï¼‰
     
          $(".details").click(function(){ .......});
    
-  ½â¾ö£º$(".details").off("click").on("click",function() {.......});
+  è§£å†³ï¼š$(".details").off("click").on("click",function() {.......});
   
-  ÑÓÉì£ºÇø±ğ£º$(document).on("click", "$(document).on("click", "elementID",function(){})",function(){.....})
+  å»¶ä¼¸ï¼šåŒºåˆ«ï¼š$(document).on("click", "$(document).on("click", "elementID",function(){})",function(){.....})
 
-              $£¨"elementID").click(function(){.......})
+              $ï¼ˆ"elementID").click(function(){.......})
 
-2. ÊäÈë¿òÈ¡Õû  NumberObject.toFixed(num)
+2. è¾“å…¥æ¡†å–æ•´  NumberObject.toFixed(num)
 
-   eg. var num = new Number(13.37); document.write (num.toFixed(1))  //Êä³ö13.4
+   eg. var num = new Number(13.37); document.write (num.toFixed(1))  //è¾“å‡º13.4
 
-3. var juge = "50";  parseFloat(juge);//½«×Ö·û´®Ç¿ÖÆ×ª»»³ÉÊı×ÖÀàĞÍ
+3. var juge = "50";  parseFloat(juge);//å°†å­—ç¬¦ä¸²å¼ºåˆ¶è½¬æ¢æˆæ•°å­—ç±»å‹
    
   
-4. ÊäÈë¿ò×î¶àÖ»ÄÜÊäÈë19Î»Êı×Ö£ºoninput="if(value.length>19)value=value.slice(0,19)"
+4. è¾“å…¥æ¡†æœ€å¤šåªèƒ½è¾“å…¥19ä½æ•°å­—ï¼šoninput="if(value.length>19)value=value.slice(0,19)"
 
-  <input class="up" type="number" oninput="if(value.length>19)value=value.slice(0,19)" id="in_cardNum" placeholder="ÇëÊäÈëÓÍ¿¨ºÅ" />
+  <input class="up" type="number" oninput="if(value.length>19)value=value.slice(0,19)" id="in_cardNum" placeholder="è¯·è¾“å…¥æ²¹å¡å·" />
 
-5. ÊäÈë¿òÏŞÖÆ£¨Ö»ÄÜÊäÈëÊı×Ö£©£º
+5. è¾“å…¥æ¡†é™åˆ¶ï¼ˆåªèƒ½è¾“å…¥æ•°å­—ï¼‰ï¼š
 
-£¨1£©ÅĞ¶ÏÊÇ·ñÊÇÊı×Ö isNaN(Num)£» input type="tel" £¨´Ë±êÇ©£©
+ï¼ˆ1ï¼‰åˆ¤æ–­æ˜¯å¦æ˜¯æ•°å­— isNaN(Num)ï¼› input type="tel" ï¼ˆæ­¤æ ‡ç­¾ï¼‰
 
-£¨2£©//ÊäÈë¿òÖ±½Óµ÷ÓÃÏŞÖÆº¯Êı
-    <input type="text" oninput="if(value.length>19)value=value.slice(0,19)" id="in_cardNum" onclick="shuru2(this);" onkeyup="shuru2(this);" placeholder="ÇëÊäÈëÓÍ¿¨ºÅ" />
+ï¼ˆ2ï¼‰//è¾“å…¥æ¡†ç›´æ¥è°ƒç”¨é™åˆ¶å‡½æ•°
+    <input type="text" oninput="if(value.length>19)value=value.slice(0,19)" id="in_cardNum" onclick="shuru2(this);" onkeyup="shuru2(this);" placeholder="è¯·è¾“å…¥æ²¹å¡å·" />
 
-                /*ÏŞÖÆÖ»ÓĞÖĞÎÄºÍ×ÖÄ¸*/
+                /*é™åˆ¶åªæœ‰ä¸­æ–‡å’Œå­—æ¯*/
 		function shuru1(this) {
 		   a.value = a.value.replace(/[^\a-\z\A-\Z\u4E00-\u9FA5]/g,'')
 		}
 
-		/*ÏŞÖÆÖ»ÓĞÊı×Ö*/
+		/*é™åˆ¶åªæœ‰æ•°å­—*/
 		function shuru2(a) {
 		   a.value = a.value.replace(/\D/g,'')
 		}
 		
-		/*ÏŞÖÆÖ»ÓĞÊı×Ö×ÖÄ¸*/
+		/*é™åˆ¶åªæœ‰æ•°å­—å­—æ¯*/
 		function shuru3(a) {
 		   a.value = a.value.replace(/[^\a-\z\A-\Z0-9]/g,'')
 		}
 		
-		/*ÏŞÖÆÖ»ÓĞÖĞÎÄ¡¢Ó¢ÎÄ¡¢Êı×Ö¡¢¿Õ¸ñ*/
+		/*é™åˆ¶åªæœ‰ä¸­æ–‡ã€è‹±æ–‡ã€æ•°å­—ã€ç©ºæ ¼*/
 		function shuru4(a) {
 		   a.value = a.value.replace(/[^\a-\z\A-\Z0-9\u4E00-\u9FA5\ ]/g,'')
 		}
 		
-		/*ÏŞÖÆÖ»ÓĞÖĞÎÄ*/
+		/*é™åˆ¶åªæœ‰ä¸­æ–‡*/
 		function shuru5(a) {
 		   a.value = a.value.replace(/[^\u4E00-\u9FA5]/g,'')
 		}
 
-£¨3£© //ÊäÈë¿òÖ±½Ó¼ÓÈëÒÔÏŞÖÆ
+ï¼ˆ3ï¼‰ //è¾“å…¥æ¡†ç›´æ¥åŠ å…¥ä»¥é™åˆ¶
       onkeyup="this.value=this.value.replace(/\D/g,'')" 
       onafterpaste="this.value=this.value.replace(/\D/g,'')" 
       onkeyup="if(event.keyCode==13)event.keyCode=9"
@@ -166,41 +166,41 @@
       onKeyPress="if ((event.keyCode<48 || event.keyCode>57)) event.returnValue=false"
 
 
-eg. ÊÖ»úºÅÂëÊäÈëÏŞÖÆ: <input class="up" type="tel" maxlength="11" id="in_phoneNum" oninput="if(value.length>11)value=value.slice(0,11)" onkeyup="this.value=this.value.replace(/\D/g,'')" onafterpaste="this.value=this.value.replace(/\D/g,'')" onkeyup="if(event.keyCode==13)event.keyCode=9" onKeyPress="if ((event.keyCode<48 || event.keyCode>57 )) event.returnValue=false"placeholder="ÇëÊäÈë³Ö¿¨ÈËÊÖ»úºÅ" />
+eg. æ‰‹æœºå·ç è¾“å…¥é™åˆ¶: <input class="up" type="tel" maxlength="11" id="in_phoneNum" oninput="if(value.length>11)value=value.slice(0,11)" onkeyup="this.value=this.value.replace(/\D/g,'')" onafterpaste="this.value=this.value.replace(/\D/g,'')" onkeyup="if(event.keyCode==13)event.keyCode=9" onKeyPress="if ((event.keyCode<48 || event.keyCode>57 )) event.returnValue=false"placeholder="è¯·è¾“å…¥æŒå¡äººæ‰‹æœºå·" />
 
 
-eg.Éí·İÖ¤ºÅÂëÊäÈëÏŞÖÆ£º<input class="inputInfo cyr_num" id="cyr_num1" type="text" oninput="if(value.length>18)value=value.slice(0,18)" onkeyup="value=value.replace(/[^/0-9xX]/g,'') "onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^/0-9xX]/g,''))" onKeyPress="if ((event.keyCode<48 || (event.keyCode>57&&event.keyCode<87) || (event.keyCode>88&&event.keyCode<119)||event.keyCode>120)) event.returnValue=false" placeholder="ÇëÊäÈë³öÓÎÈËÉí·İÖ¤ºÅ" /> 
+eg.èº«ä»½è¯å·ç è¾“å…¥é™åˆ¶ï¼š<input class="inputInfo cyr_num" id="cyr_num1" type="text" oninput="if(value.length>18)value=value.slice(0,18)" onkeyup="value=value.replace(/[^/0-9xX]/g,'') "onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^/0-9xX]/g,''))" onKeyPress="if ((event.keyCode<48 || (event.keyCode>57&&event.keyCode<87) || (event.keyCode>88&&event.keyCode<119)||event.keyCode>120)) event.returnValue=false" placeholder="è¯·è¾“å…¥å‡ºæ¸¸äººèº«ä»½è¯å·" /> 
 
-4.µã»÷ÊÂ¼şÄÚ×îºÃ²»ÒªÊ¹ÓÃa±êÇ©£¬ÒòÎªµã»÷Ê±ÈİÒ×Ò³ÃæË¢ĞÂ£¬Ê¹Ö®Ìø×ª²»³É¹¦£»ÒªÃ´Ê¹Ìø×ªÎªËÀÁ´½Ó<a href ="javascript:voild();"></a>¡£
+4.ç‚¹å‡»äº‹ä»¶å†…æœ€å¥½ä¸è¦ä½¿ç”¨aæ ‡ç­¾ï¼Œå› ä¸ºç‚¹å‡»æ—¶å®¹æ˜“é¡µé¢åˆ·æ–°ï¼Œä½¿ä¹‹è·³è½¬ä¸æˆåŠŸï¼›è¦ä¹ˆä½¿è·³è½¬ä¸ºæ­»é“¾æ¥<a href ="javascript:voild();"></a>ã€‚
 
-5.ÇĞ¸î×Ö·û´®ÊµÏÖ»»ĞĞ split()
+5.åˆ‡å‰²å­—ç¬¦ä¸²å®ç°æ¢è¡Œ split()
 
-  //eg. Ê¹ÓÃËµÃ÷»»ĞĞ
-  var con_txt = json.ÁĞ±í[i].Ê¹ÓÃËµÃ÷;										
+  //eg. ä½¿ç”¨è¯´æ˜æ¢è¡Œ
+  var con_txt = json.åˆ—è¡¨[i].ä½¿ç”¨è¯´æ˜;										
   var strs = new Array();										
-  strs = con_txt.split("£»");										
+  strs = con_txt.split("ï¼›");										
   var htmlAdd = '';										
   for(var i = 0; i < strs.length; i++) {											
       htmlAdd += "<li>" + strs[i] + "</li>";										
   }										
   $(".yhq_txt").html(htmlAdd);
 
-6.ÀÁ¼ÓÔØ£¨»¬¶¯¼ÓÔØ¸ü¶àÊı¾İ£©
+6.æ‡’åŠ è½½ï¼ˆæ»‘åŠ¨åŠ è½½æ›´å¤šæ•°æ®ï¼‰
 
   var ys,ys2;
   getData(0);
 
   $(window).scroll(function () {
 				
-    var scrollTop = $(this).scrollTop();//¹ö¶¯Ìõ¾àÀë¶¥²¿µÄ¾àÀë
+    var scrollTop = $(this).scrollTop();//æ»šåŠ¨æ¡è·ç¦»é¡¶éƒ¨çš„è·ç¦»
 
-    var scrollHeight = $(document).height();//»ñÈ¡Õû¸öÒ³ÃæµÄ¸ß¶È
+    var scrollHeight = $(document).height();//è·å–æ•´ä¸ªé¡µé¢çš„é«˜åº¦
 			
-    var windowHeight = $(this).height();//»ñÈ¡µ±Ç°¿ÉÊÓÓò¸ß¶È
+    var windowHeight = $(this).height();//è·å–å½“å‰å¯è§†åŸŸé«˜åº¦
 
     if (scrollTop + windowHeight == scrollHeight) {
 				
-       getData(ys2);//½ÓÊÕº¯ÊıÖĞys2
+       getData(ys2);//æ¥æ”¶å‡½æ•°ä¸­ys2
 				
     }
 
@@ -209,8 +209,8 @@ eg.Éí·İÖ¤ºÅÂëÊäÈëÏŞÖÆ£º<input class="inputInfo cyr_num" id="cyr_num1" type="text
  function getData(ys) {
 	var data = {};
 	data.onlyID = onlyID;
-	data.ËÑË÷ = $('#userinfo').val();
-	data.Ò³Êı = ys;
+	data.æœç´¢ = $('#userinfo').val();
+	data.é¡µæ•° = ys;
 	data = JSON.stringify(data);
 	console.log(data);
 	$.ajax({
@@ -218,18 +218,18 @@ eg.Éí·İÖ¤ºÅÂëÊäÈëÏŞÖÆ£º<input class="inputInfo cyr_num" id="cyr_num1" type="text
 	   type: "POST",
 	   data: 'data=' + data,
 	   success: function(p) {
-	   if(p.×´Ì¬ == '³É¹¦') {
+	   if(p.çŠ¶æ€ == 'æˆåŠŸ') {
 		console.log(p);
-		if(p.ÌõÊı == 0) {
+		if(p.æ¡æ•° == 0) {
 			t = 3;
-			toast("ÎŞÊı¾İ");
+			toast("æ— æ•°æ®");
 		}
-		$.each(p.´ú¹ºÁĞ±í, function(i) {
+		$.each(p.ä»£è´­åˆ—è¡¨, function(i) {
 			....
 		});
 
-		ys2 = p.Ò³Êı;
-		return ys2;//·µ»Øys2
+		ys2 = p.é¡µæ•°;
+		return ys2;//è¿”å›ys2
 
 	    } else {
 	       console.log(p);
@@ -240,28 +240,28 @@ eg.Éí·İÖ¤ºÅÂëÊäÈëÏŞÖÆ£º<input class="inputInfo cyr_num" id="cyr_num1" type="text
 
  }
 
-ÑÓÉì£ºscrollTop()==0           // »ñÈ¡¶¥¶Ë
+å»¶ä¼¸ï¼šscrollTop()==0           // è·å–é¡¶ç«¯
 
-      scrollTop()>=$(document).height()-$(window).height()  // »ñÈ¡µ×¶Ë
+      scrollTop()>=$(document).height()-$(window).height()  // è·å–åº•ç«¯
 
-      $(document).scrollTop()  // »ñÈ¡´¹Ö±¹ö¶¯µÄ¾àÀë  ¼´µ±Ç°¹ö¶¯µÄµØ·½µÄ´°¿Ú¶¥¶Ëµ½Õû¸öÒ³Ãæ¶¥¶ËµÄ¾àÀë
+      $(document).scrollTop()  // è·å–å‚ç›´æ»šåŠ¨çš„è·ç¦»  å³å½“å‰æ»šåŠ¨çš„åœ°æ–¹çš„çª—å£é¡¶ç«¯åˆ°æ•´ä¸ªé¡µé¢é¡¶ç«¯çš„è·ç¦»
 
-      $(document).scrollLeft() // »ñÈ¡Ë®Æ½¹ö¶¯ÌõµÄ¾àÀë
+      $(document).scrollLeft() // è·å–æ°´å¹³æ»šåŠ¨æ¡çš„è·ç¦»
 
-      $(document).height()     // »ñÈ¡Õû¸öÒ³ÃæµÄ¸ß¶È
+      $(document).height()     // è·å–æ•´ä¸ªé¡µé¢çš„é«˜åº¦
  
-      $(window).height()       // »ñÈ¡µ±Ç°Ò²¾ÍÊÇÄãä¯ÀÀÆ÷ËùÄÜ¿´µ½µÄÒ³ÃæµÄÄÇ²¿·ÖµÄ¸ß¶È 
+      $(window).height()       // è·å–å½“å‰ä¹Ÿå°±æ˜¯ä½ æµè§ˆå™¨æ‰€èƒ½çœ‹åˆ°çš„é¡µé¢çš„é‚£éƒ¨åˆ†çš„é«˜åº¦ 
 
      
-      window.screen.availWidth  // ·µ»Øµ±Ç°ÆÁÄ»¿í¶È(¿Õ°×¿Õ¼ä)
+      window.screen.availWidth  // è¿”å›å½“å‰å±å¹•å®½åº¦(ç©ºç™½ç©ºé—´)
  
-      window.screen.availHeight // ·µ»Øµ±Ç°ÆÁÄ»¸ß¶È(¿Õ°×¿Õ¼ä) 
+      window.screen.availHeight // è¿”å›å½“å‰å±å¹•é«˜åº¦(ç©ºç™½ç©ºé—´) 
 
-      window.screen.width       // ·µ»Øµ±Ç°ÆÁÄ»¿í¶È(·Ö±æÂÊÖµ) 
+      window.screen.width       // è¿”å›å½“å‰å±å¹•å®½åº¦(åˆ†è¾¨ç‡å€¼) 
 
-      window.screen.height      // ·µ»Øµ±Ç°ÆÁÄ»¸ß¶È(·Ö±æÂÊÖµ) 
+      window.screen.height      // è¿”å›å½“å‰å±å¹•é«˜åº¦(åˆ†è¾¨ç‡å€¼) 
 
-      window.document.body.offsetHeight; // ·µ»Øµ±Ç°ÍøÒ³¸ß¶È 
+      window.document.body.offsetHeight; // è¿”å›å½“å‰ç½‘é¡µé«˜åº¦ 
 
-      window.document.body.offsetWidth; // ·µ»Øµ±Ç°ÍøÒ³¿í¶È
+      window.document.body.offsetWidth; // è¿”å›å½“å‰ç½‘é¡µå®½åº¦
   
