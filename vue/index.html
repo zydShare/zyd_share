@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+	</head>
+
+	<body>
+
+		<div id="app" v-once>
+			{{ number + 1 }}
+			
+			{{ ok ? 'YES' : 'NO' }}
+			
+			{{ message.split('') }}
+		</div>
+
+		<div id="app-2">
+			<span v-bind:title="message">
+		    鼠标悬停几秒钟查看此处动态绑定的提示信息！
+		  </span>
+		</div>
+
+		<div id="app-3">
+			<p v-if="seen">现在你看到我了</p>
+			<a v-on:click="doSomething">oh shit!</a>
+			
+		</div>
+
+		<div id="app-4">
+			<ol>
+				<li v-for="todo in todos">
+					{{ todo.text }}
+				</li>
+			</ol>
+		</div>
+		
+
+
+		<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+		<script type="text/javascript" src="js/vue.js"></script>
+		<script>
+			var app = new Vue({
+				el: '#app',
+				data: {
+					number: 666,
+					ok:0,
+					message: "吖吖 啦啦 查查"
+				}
+			})
+
+			var app2 = new Vue({
+				el: '#app-2',
+				data: {
+					message: '页面加载于 ' + new Date()
+				}
+			})
+
+			var app3 = new Vue({
+				el: '#app-3',
+				data: {
+					seen: false
+				},
+				methods: {
+					doSomething() {
+//						this.title = 'Hello1111 !';
+//						return this.title;
+						console.log("hello");
+						alert("lll");
+					}
+				}
+			})
+
+			var app4 = new Vue({
+				el: '#app-4',
+				data: {
+					todos: [
+						{ text: '学习 JavaScript' },
+						{ text: '学习 Vue' },
+						{ text: '整个牛项目' }
+					]
+				}
+			})
+		</script>
+	</body>
+
+</html>
