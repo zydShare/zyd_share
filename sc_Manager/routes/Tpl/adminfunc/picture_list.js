@@ -22,6 +22,9 @@ module.exports.run = function(f, pg, mo) {
 		if(f.data.录入时间 != null && f.data.录入时间 != ''){
 			wh += "and 录入时间 >= '"+f.data.录入时间+"'";
 		}
+		if((f.data.最大时间 != null && f.data.最大时间 != '')||(f.data.最小时间 != null && f.data.最小时间 != '') ){
+			wh += "and 录入时间 >= '"+f.data.最小时间+"' and 录入时间<='"+f.data.最大时间+"'";
+		}
 	}
 	p.sql = "select id,账号,卡号,姓名,积分,余额,说明,状态,类别,录入人,录入时间  ,备注,反馈 from 三_账户表  where "+ where;
 	f = share.lists(p, f, pg);

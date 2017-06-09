@@ -19,6 +19,9 @@ module.exports.run = function(f, pg, mo) {
 		if(f.data.录入时间 != null && f.data.录入时间 != ''){
 			wh += "and 录入时间 >= '"+f.data.录入时间+"'";
 		}
+		if((f.data.最大时间 != null && f.data.最大时间 != '')||(f.data.最小时间 != null && f.data.最小时间 != '') ){
+			wh += "and 录入时间 >= '"+f.data.最小时间+"' and 录入时间<='"+f.data.最大时间+"'";
+		}
 	}
 	p.sql = "select id,唯一id,储存账户,账号,真实名,状态,类别,录入人,录入时间,备注  from 全_会员表  where"+wh;
 	f = share.lists(p, f, pg);

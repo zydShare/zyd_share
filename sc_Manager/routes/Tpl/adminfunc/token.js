@@ -34,6 +34,9 @@ module.exports.run = function(f, pg, mo) {
 		if(f.data.录入时间 != null && f.data.录入时间 != ''){
 			where += "and 录入时间 >= '"+f.data.录入时间+" 00:00:00'";
 		}
+		if((f.data.最大时间 != null && f.data.最大时间 != '')||(f.data.最小时间 != null && f.data.最小时间 != '') ){
+			wh += "and 录入时间 >= '"+f.data.最小时间+"' and 录入时间<='"+f.data.最大时间+"'";
+		}
 		
 	}
 	//默认查询所有的数据

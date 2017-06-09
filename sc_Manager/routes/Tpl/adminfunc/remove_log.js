@@ -41,6 +41,9 @@ module.exports.run = function(f, pg, mo) {
 		if(f.data.备注 != null && f.data.备注 != ''){
 			where += "and 录入人 = '"+f.data.备注+"'";
 		}
+		if((f.data.最大时间 != null && f.data.最大时间 != '')||(f.data.最小时间 != null && f.data.最小时间 != '') ){
+			wh += "and 录入时间 >= '"+f.data.最小时间+"' and 录入时间<='"+f.data.最大时间+"'";
+		}
 		
 	}
 	p.sql = "select 环游购唯一id,账号,姓名,环游购账号,迁移时间,迁移类别,状态,类别,录入人,录入时间,备注,id from 三_迁移日志表  where "+ where;

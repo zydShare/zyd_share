@@ -23,6 +23,9 @@ module.exports.run = function(f, pg, mo) {
 		if(f.data.录入时间 != null && f.data.录入时间 != ''){
 			where += "and 录入时间 >= '"+f.data.录入时间+" 00:00:00'";
 		}
+		if((f.data.最大时间 != null && f.data.最大时间 != '')||(f.data.最小时间 != null && f.data.最小时间 != '') ){
+			wh += "and 录入时间 >= '"+f.data.最小时间+"' and 录入时间<='"+f.data.最大时间+"'";
+		}
 		
 	}
 	p.sql = "select id,卡号,账号,时间,ip,类别,状态,内容,录入人,录入时间,备注  from 三_日志_钱表  where "+ where;
