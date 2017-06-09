@@ -7,6 +7,9 @@ module.exports.run = function(f, pg, mo) {
 	var p = {};
 	var where = " 1=1 ";
 	if(f.data != null) {
+		if(f.data.状态 != null && f.data.状态 != '') {
+			where += " and 状态 = '" + f.data.状态 + "'";
+		}
 		if(f.data.账号 != null && f.data.账号 != '') {
 			wh += " and 账号 = '" + f.data.账号 + "'";
 		}

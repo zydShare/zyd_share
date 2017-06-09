@@ -19,3 +19,14 @@
 ---2017-6-9 15:27:58【ReferenceError: where is not defined
     at Object.module.exports.run (F:\apiserver-191升级包5.5\apiserver-191升级包\routes\Tpl\adminfunc\account.js:23:76)
     at F:\apiserver-191升级包5.5\apiserver-191升级包\routes\app_routes_main.js:53:20】
+---2017-6-9 16:29:20【Error: listen EADDRINUSE :::8080
+    at Object.exports._errnoException (util.js:1018:11)
+    at exports._exceptionWithHostPort (util.js:1041:20)
+    at Server._listen2 (net.js:1262:14)
+    at listen (net.js:1298:10)
+    at Server.listen (net.js:1394:5)
+    at Object.<anonymous> (D:\item\zyd_share\sc_Manager\apimain.js:92:8)
+    at Module._compile (module.js:570:32)
+    at Object.Module._extensions..js (module.js:579:10)
+    at Module.load (module.js:487:32)
+    at tryModuleLoad (module.js:446:12)】
