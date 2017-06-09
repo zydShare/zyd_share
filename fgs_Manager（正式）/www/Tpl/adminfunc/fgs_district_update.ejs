@@ -1,0 +1,39 @@
+<% include ../admin/add_top.ejs %>
+<tr id="_t_id">
+	<th width="150">id</th>
+	<td>
+		<input type="text" ReadOnly="true" class="textinput" id="id" name="id" value="<% if(r.id){%><%=r.id%><% }else{ %><% }%>" style="width:200px" /></td>
+</tr>
+<tr id="_t_区">
+	<th>区</th>
+	<td><input type="text" class="textinput" id="区" name="区" value="<% if(r.区){%><%=r.区%><% }else{ %><% }%>" style="width:200px" /></td>
+</tr>
+<tr id="_t_名称">
+	<th>名称</th>
+	<td><input type="text" class="textinput" id="名称" name="名称" value="<% if(r.名称){%><%=r.名称%><% }else{ %><% }%>" style="width:200px" /></td>
+</tr>
+<tr id="_t_市id">
+	<th>市id</th>
+	<td><input type="text" class="textinput requireinput " id="市id" name="市id" value="<% if(r.市id){%><%=r.市id%><% }else{ %><% }%>" style="width:200px" /></td>
+</tr>
+<tr id="_t_状态">
+	<th>状态</th>
+	<td><input type="text" class="textinput " id="状态" name="状态" value="<% if(r.状态){%><%=r.状态%><% }else{ %><% }%>" style="width:200px" /></td>
+</tr>
+<tr id="_t_类别">
+	<th>类别</th>
+	<td><input type="text" class="textinput" id="类别" name="类别" value="<% if(r.类别){%><%=r.类别%><% }else{ %><% }%>" style="width:200px" /></td>
+</tr>
+<tr id="_t_录入人">
+	<th>录入人</th>
+	<td><input type="text" ReadOnly="true" class="textinput" id="录入人" name="录入人" value="<% if(r.录入人){%><%=r.录入人%><% }else{ %><%=session.user_name%><% }%>" style="width:200px" /></td>
+</tr>
+<tr id="_t_录入时间">
+	<th>录入时间</th>
+	<td><input type="text" ReadOnly="true" class="textinput  " id="录入时间" name="录入时间" value="<% if(r.录入时间){%><%=r.录入时间%><% }else{ %><%=date%><% }%>" style="width:200px" /></td>
+</tr>
+<tr id="_t_备注">
+	<th>备注</th>
+	<td><input type="text" class="textinput  " id="备注" name="备注" value="<% if(r.备注){%><%=r.备注%><% }else{ %><% }%>" style="width:200px" /></td>
+</tr>
+<% include ../admin/add_bottom.ejs %>

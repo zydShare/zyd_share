@@ -1,0 +1,288 @@
+---2017-6-2 10:36:20【错误语句:insert into 分_分公司账户表 (账号,卡号,姓名,积分,余额,回流账户,分红账户,分公司名称,分公司编号,所占股数,说明,状态,类别,录入人,录入时间,反馈,备注) values ('1','1','帅气的老毛','1','','','','','','1','不要再删数据啦','分公司分红','不正常','roger','2017-06-02 10:35:38','不要再删数据啦','不要再删数据啦')错误信息:error: 无效的数字类型输入语法: ""
+    at Connection.parseE (E:\Klaus_items\fgs_Management\fgs_Manager\node_modules\_pg@4.5.6@pg\lib\connection.js:539:11)
+    at Connection.parseMessage (E:\Klaus_items\fgs_Management\fgs_Manager\node_modules\_pg@4.5.6@pg\lib\connection.js:366:17)
+    at Socket.<anonymous> (E:\Klaus_items\fgs_Management\fgs_Manager\node_modules\_pg@4.5.6@pg\lib\connection.js:105:22)
+    at emitOne (events.js:77:13)
+    at Socket.emit (events.js:169:7)
+    at readableAddChunk (_stream_readable.js:153:18)
+    at Socket.Readable.push (_stream_readable.js:111:10)
+    at TCP.onread (net.js:531:20)】
+---2017-6-2 10:37:7【错误语句:insert into 分_分公司账户表 (账号,卡号,姓名,积分,余额,回流账户,分红账户,分公司名称,分公司编号,所占股数,说明,状态,类别,录入人,录入时间,反馈,备注) values ('1','1','帅气的老毛','1','1','1','1','1','1','1','不要再删数据啦','分公司分红','不正常','roger','2017-06-02 10:35:38','不要再删数据啦','不要再删数据啦')错误信息:error: 重复键违反唯一约束"分_分公司账户表_pkey"
+    at Connection.parseE (E:\Klaus_items\fgs_Management\fgs_Manager\node_modules\_pg@4.5.6@pg\lib\connection.js:539:11)
+    at Connection.parseMessage (E:\Klaus_items\fgs_Management\fgs_Manager\node_modules\_pg@4.5.6@pg\lib\connection.js:366:17)
+    at Socket.<anonymous> (E:\Klaus_items\fgs_Management\fgs_Manager\node_modules\_pg@4.5.6@pg\lib\connection.js:105:22)
+    at emitOne (events.js:77:13)
+    at Socket.emit (events.js:169:7)
+    at readableAddChunk (_stream_readable.js:153:18)
+    at Socket.Readable.push (_stream_readable.js:111:10)
+    at TCP.onread (net.js:531:20)】
+---2017-6-2 10:38:14【错误语句:insert into 分_分公司账户表 (账号,卡号,姓名,积分,余额,回流账户,分红账户,分公司名称,分公司编号,所占股数,说明,状态,类别,录入人,录入时间,反馈,备注) values ('11','11','111','11','1','1','1','1','1','1','1','1','1','roger','2017-06-02 10:37:57','1','1')错误信息:error: 重复键违反唯一约束"分_分公司账户表_pkey"
+    at Connection.parseE (E:\Klaus_items\fgs_Management\fgs_Manager\node_modules\_pg@4.5.6@pg\lib\connection.js:539:11)
+    at Connection.parseMessage (E:\Klaus_items\fgs_Management\fgs_Manager\node_modules\_pg@4.5.6@pg\lib\connection.js:366:17)
+    at Socket.<anonymous> (E:\Klaus_items\fgs_Management\fgs_Manager\node_modules\_pg@4.5.6@pg\lib\connection.js:105:22)
+    at emitOne (events.js:77:13)
+    at Socket.emit (events.js:169:7)
+    at readableAddChunk (_stream_readable.js:153:18)
+    at Socket.Readable.push (_stream_readable.js:111:10)
+    at TCP.onread (net.js:531:20)】
+---2017-6-2 10:50:22【错误语句:insert into 分_分公司账户表 (账号,卡号,姓名,积分,余额,回流账户,分红账户,分公司名称,分公司编号,所占股数,说明,状态,类别,录入人,录入时间,反馈,备注) values ('1314','1314520','klaus','100.0000','100.0000','100.0000','100.0000','klaus','1111','100.0000','111','111','111','roger','2017-06-02 10:49:45','11','111')错误信息:error: 重复键违反唯一约束"分_分公司账户表_pkey"
+    at Connection.parseE (E:\Klaus_items\fgs_Management\fgs_Manager\node_modules\_pg@4.5.6@pg\lib\connection.js:539:11)
+    at Connection.parseMessage (E:\Klaus_items\fgs_Management\fgs_Manager\node_modules\_pg@4.5.6@pg\lib\connection.js:366:17)
+    at Socket.<anonymous> (E:\Klaus_items\fgs_Management\fgs_Manager\node_modules\_pg@4.5.6@pg\lib\connection.js:105:22)
+    at emitOne (events.js:77:13)
+    at Socket.emit (events.js:169:7)
+    at readableAddChunk (_stream_readable.js:153:18)
+    at Socket.Readable.push (_stream_readable.js:111:10)
+    at TCP.onread (net.js:531:20)】
+---2017-6-2 11:13:29【错误语句:insert into 分_分公司账户表 (账号,卡号,姓名,积分,余额,回流账户,分红账户,分公司名称,分公司编号,所占股数,说明,状态,类别,录入人,录入时间,反馈,备注) values ('11','111','111','111','','','','','','11','111','1','1','roger','2017-06-02 11:13:18','','')错误信息:error: 无效的数字类型输入语法: ""
+    at Connection.parseE (E:\Klaus_items\fgs_Management\fgs_Manager\node_modules\_pg@4.5.6@pg\lib\connection.js:539:11)
+    at Connection.parseMessage (E:\Klaus_items\fgs_Management\fgs_Manager\node_modules\_pg@4.5.6@pg\lib\connection.js:366:17)
+    at Socket.<anonymous> (E:\Klaus_items\fgs_Management\fgs_Manager\node_modules\_pg@4.5.6@pg\lib\connection.js:105:22)
+    at emitOne (events.js:77:13)
+    at Socket.emit (events.js:169:7)
+    at readableAddChunk (_stream_readable.js:153:18)
+    at Socket.Readable.push (_stream_readable.js:111:10)
+    at TCP.onread (net.js:531:20)】
+---2017-6-2 11:13:43【错误语句:insert into 分_分公司账户表 (账号,卡号,姓名,积分,余额,回流账户,分红账户,分公司名称,分公司编号,所占股数,说明,状态,类别,录入人,录入时间,反馈,备注) values ('11','111','111','111','1','1','1','1','1','11','111','1','1','roger','2017-06-02 11:13:18','1','1')错误信息:error: 重复键违反唯一约束"分_分公司账户表_pkey"
+    at Connection.parseE (E:\Klaus_items\fgs_Management\fgs_Manager\node_modules\_pg@4.5.6@pg\lib\connection.js:539:11)
+    at Connection.parseMessage (E:\Klaus_items\fgs_Management\fgs_Manager\node_modules\_pg@4.5.6@pg\lib\connection.js:366:17)
+    at Socket.<anonymous> (E:\Klaus_items\fgs_Management\fgs_Manager\node_modules\_pg@4.5.6@pg\lib\connection.js:105:22)
+    at emitOne (events.js:77:13)
+    at Socket.emit (events.js:169:7)
+    at readableAddChunk (_stream_readable.js:153:18)
+    at Socket.Readable.push (_stream_readable.js:111:10)
+    at TCP.onread (net.js:531:20)】
+---2017-6-2 11:14:36【错误语句:insert into 分_分公司账户表 (账号,卡号,姓名,积分,余额,回流账户,分红账户,分公司名称,分公司编号,所占股数,说明,状态,类别,录入人,录入时间,反馈,备注) values ('11','111','111','111','1','1','1','1','1','11','111','1','1','roger','2017-06-02 11:13:18','1','1')错误信息:error: 重复键违反唯一约束"分_分公司账户表_pkey"
+    at Connection.parseE (E:\Klaus_items\fgs_Management\fgs_Manager\node_modules\_pg@4.5.6@pg\lib\connection.js:539:11)
+    at Connection.parseMessage (E:\Klaus_items\fgs_Management\fgs_Manager\node_modules\_pg@4.5.6@pg\lib\connection.js:366:17)
+    at Socket.<anonymous> (E:\Klaus_items\fgs_Management\fgs_Manager\node_modules\_pg@4.5.6@pg\lib\connection.js:105:22)
+    at emitOne (events.js:77:13)
+    at Socket.emit (events.js:169:7)
+    at readableAddChunk (_stream_readable.js:153:18)
+    at Socket.Readable.push (_stream_readable.js:111:10)
+    at TCP.onread (net.js:531:20)】
+---2017-6-2 11:14:37【错误语句:insert into 分_分公司账户表 (账号,卡号,姓名,积分,余额,回流账户,分红账户,分公司名称,分公司编号,所占股数,说明,状态,类别,录入人,录入时间,反馈,备注) values ('11','111','111','111','1','1','1','1','1','11','111','1','1','roger','2017-06-02 11:13:18','1','1')错误信息:error: 重复键违反唯一约束"分_分公司账户表_pkey"
+    at Connection.parseE (E:\Klaus_items\fgs_Management\fgs_Manager\node_modules\_pg@4.5.6@pg\lib\connection.js:539:11)
+    at Connection.parseMessage (E:\Klaus_items\fgs_Management\fgs_Manager\node_modules\_pg@4.5.6@pg\lib\connection.js:366:17)
+    at Socket.<anonymous> (E:\Klaus_items\fgs_Management\fgs_Manager\node_modules\_pg@4.5.6@pg\lib\connection.js:105:22)
+    at emitOne (events.js:77:13)
+    at Socket.emit (events.js:169:7)
+    at readableAddChunk (_stream_readable.js:153:18)
+    at Socket.Readable.push (_stream_readable.js:111:10)
+    at TCP.onread (net.js:531:20)】
+---2017-6-2 11:14:47【错误语句:insert into 分_分公司账户表 (账号,卡号,姓名,积分,余额,回流账户,分红账户,分公司名称,分公司编号,所占股数,说明,状态,类别,录入人,录入时间,反馈,备注) values ('1111111111','1111111111111111','111111111111111','111111111111111','1','1','1','1','1','11','111','1','1','roger','2017-06-02 11:13:18','1','1')错误信息:error: 重复键违反唯一约束"分_分公司账户表_pkey"
+    at Connection.parseE (E:\Klaus_items\fgs_Management\fgs_Manager\node_modules\_pg@4.5.6@pg\lib\connection.js:539:11)
+    at Connection.parseMessage (E:\Klaus_items\fgs_Management\fgs_Manager\node_modules\_pg@4.5.6@pg\lib\connection.js:366:17)
+    at Socket.<anonymous> (E:\Klaus_items\fgs_Management\fgs_Manager\node_modules\_pg@4.5.6@pg\lib\connection.js:105:22)
+    at emitOne (events.js:77:13)
+    at Socket.emit (events.js:169:7)
+    at readableAddChunk (_stream_readable.js:153:18)
+    at Socket.Readable.push (_stream_readable.js:111:10)
+    at TCP.onread (net.js:531:20)】
+---2017-6-2 11:14:56【错误语句:insert into 分_分公司账户表 (账号,卡号,姓名,积分,余额,回流账户,分红账户,分公司名称,分公司编号,所占股数,说明,状态,类别,录入人,录入时间,反馈,备注) values ('1111111111','1111111111111111','111111111111111','111111111111111','1','1','1','111111111111111','111111111111111111111111111','1111111111111111','11111111111111111111111','111','1','roger','2017-06-02 11:13:18','1','1')错误信息:error: 重复键违反唯一约束"分_分公司账户表_pkey"
+    at Connection.parseE (E:\Klaus_items\fgs_Management\fgs_Manager\node_modules\_pg@4.5.6@pg\lib\connection.js:539:11)
+    at Connection.parseMessage (E:\Klaus_items\fgs_Management\fgs_Manager\node_modules\_pg@4.5.6@pg\lib\connection.js:366:17)
+    at Socket.<anonymous> (E:\Klaus_items\fgs_Management\fgs_Manager\node_modules\_pg@4.5.6@pg\lib\connection.js:105:22)
+    at emitOne (events.js:77:13)
+    at Socket.emit (events.js:169:7)
+    at readableAddChunk (_stream_readable.js:153:18)
+    at Socket.Readable.push (_stream_readable.js:111:10)
+    at TCP.onread (net.js:531:20)】
+---2017-6-2 11:15:1【错误语句:insert into 分_分公司账户表 (账号,卡号,姓名,积分,余额,回流账户,分红账户,分公司名称,分公司编号,所占股数,说明,状态,类别,录入人,录入时间,反馈,备注) values ('1111111111','1111111111111111','111111111111111','111111111111111','111111111','111111111111111','1','111111111111111','111111111111111111111111111','1111111111111111','11111111111111111111111','111','1','roger','2017-06-02 11:13:18','1','1')错误信息:error: 重复键违反唯一约束"分_分公司账户表_pkey"
+    at Connection.parseE (E:\Klaus_items\fgs_Management\fgs_Manager\node_modules\_pg@4.5.6@pg\lib\connection.js:539:11)
+    at Connection.parseMessage (E:\Klaus_items\fgs_Management\fgs_Manager\node_modules\_pg@4.5.6@pg\lib\connection.js:366:17)
+    at Socket.<anonymous> (E:\Klaus_items\fgs_Management\fgs_Manager\node_modules\_pg@4.5.6@pg\lib\connection.js:105:22)
+    at emitOne (events.js:77:13)
+    at Socket.emit (events.js:169:7)
+    at readableAddChunk (_stream_readable.js:153:18)
+    at Socket.Readable.push (_stream_readable.js:111:10)
+    at TCP.onread (net.js:531:20)】
+---2017-6-2 11:44:58【错误语句:insert into 分_分公司表 (账号,姓名,名称,地址,排序,股数,层1分公司名称,层1分公司id,层2分公司名称,层2分公司id,层3分公司名称,层3分公司id,编号,定时时间,省,市,区,分公司密码,总账户,分红账户,回流账户,分公司设置id,状态,类别,录入人,录入时间,备注) values ('1212131','undefined','1424214','','','','','','','','','','','','','','','','','','','','24214124','24214','roger','2017-06-02 11:44:46','')错误信息:error: 无效的数字类型输入语法: ""
+    at Connection.parseE (E:\Klaus_items\fgs_Management\fgs_Manager\node_modules\_pg@4.5.6@pg\lib\connection.js:539:11)
+    at Connection.parseMessage (E:\Klaus_items\fgs_Management\fgs_Manager\node_modules\_pg@4.5.6@pg\lib\connection.js:366:17)
+    at Socket.<anonymous> (E:\Klaus_items\fgs_Management\fgs_Manager\node_modules\_pg@4.5.6@pg\lib\connection.js:105:22)
+    at emitOne (events.js:77:13)
+    at Socket.emit (events.js:169:7)
+    at readableAddChunk (_stream_readable.js:153:18)
+    at Socket.Readable.push (_stream_readable.js:111:10)
+    at TCP.onread (net.js:531:20)】
+---2017-6-2 11:48:24【错误语句:insert into 分_分公司表 (账号,姓名,名称,地址,排序,股数,层1分公司名称,层1分公司id,层2分公司名称,层2分公司id,层3分公司名称,层3分公司id,编号,定时时间,省,市,区,分公司密码,总账户,分红账户,回流账户,分公司设置id,状态,类别,录入人,录入时间,备注) values ('1111111111111','1111111111','11111111111','','','','','','','','','','','','','','','','','','','','1111111111','11111111','roger','2017-06-02 11:48:11','')错误信息:error: 无效的数字类型输入语法: ""
+    at Connection.parseE (E:\Klaus_items\fgs_Management\fgs_Manager\node_modules\_pg@4.5.6@pg\lib\connection.js:539:11)
+    at Connection.parseMessage (E:\Klaus_items\fgs_Management\fgs_Manager\node_modules\_pg@4.5.6@pg\lib\connection.js:366:17)
+    at Socket.<anonymous> (E:\Klaus_items\fgs_Management\fgs_Manager\node_modules\_pg@4.5.6@pg\lib\connection.js:105:22)
+    at emitOne (events.js:77:13)
+    at Socket.emit (events.js:169:7)
+    at readableAddChunk (_stream_readable.js:153:18)
+    at Socket.Readable.push (_stream_readable.js:111:10)
+    at TCP.onread (net.js:531:20)】
+---2017-6-2 11:59:48【错误语句:insert into 分_分公司账户表 (账号,卡号,姓名,积分,余额,回流账户,分红账户,分公司名称,分公司编号,所占股数,说明,状态,类别,录入人,录入时间,反馈,备注) values ('1111111111111','111','11111','11111','1','1','1','1','11111','1','1','1','1','roger','2017-06-02 11:59:31','1','1')错误信息:error: 重复键违反唯一约束"分_分公司账户表_pkey"
+    at Connection.parseE (E:\Klaus_items\fgs_Management\fgs_Manager\node_modules\_pg@4.5.6@pg\lib\connection.js:539:11)
+    at Connection.parseMessage (E:\Klaus_items\fgs_Management\fgs_Manager\node_modules\_pg@4.5.6@pg\lib\connection.js:366:17)
+    at Socket.<anonymous> (E:\Klaus_items\fgs_Management\fgs_Manager\node_modules\_pg@4.5.6@pg\lib\connection.js:105:22)
+    at emitOne (events.js:77:13)
+    at Socket.emit (events.js:169:7)
+    at readableAddChunk (_stream_readable.js:153:18)
+    at Socket.Readable.push (_stream_readable.js:111:10)
+    at TCP.onread (net.js:531:20)】
+---2017-6-2 12:1:3【错误语句:insert into 分_分公司账户表 (账号,卡号,姓名,积分,余额,回流账户,分红账户,分公司名称,分公司编号,所占股数,说明,状态,类别,录入人,录入时间,反馈,备注) values ('1111111111111','11122','11111','11111','1','1','1','1','11111232','1','1','1','1','roger','2017-06-02 11:59:31','1','1')错误信息:error: 重复键违反唯一约束"分_分公司账户表_pkey"
+    at Connection.parseE (E:\Klaus_items\fgs_Management\fgs_Manager\node_modules\_pg@4.5.6@pg\lib\connection.js:539:11)
+    at Connection.parseMessage (E:\Klaus_items\fgs_Management\fgs_Manager\node_modules\_pg@4.5.6@pg\lib\connection.js:366:17)
+    at Socket.<anonymous> (E:\Klaus_items\fgs_Management\fgs_Manager\node_modules\_pg@4.5.6@pg\lib\connection.js:105:22)
+    at emitOne (events.js:77:13)
+    at Socket.emit (events.js:169:7)
+    at readableAddChunk (_stream_readable.js:153:18)
+    at Socket.Readable.push (_stream_readable.js:111:10)
+    at TCP.onread (net.js:531:20)】
+---2017-6-2 12:2:55【错误语句:update 分_分公司账户表 set 账号='123213', 卡号='12321321', 姓名='3213', 积分='12321', 余额='', 回流账户='', 分红账户='', 分公司名称='', 分公司编号='', 所占股数='1', 说明='123', 状态='123', 类别='123', 录入人='roger', 录入时间='2017-06-02 12:02:39', 反馈='', 备注='' where id = 122错误信息:error: 无效的数字类型输入语法: ""
+    at Connection.parseE (E:\Klaus_items\fgs_Management\fgs_Manager\node_modules\_pg@4.5.6@pg\lib\connection.js:539:11)
+    at Connection.parseMessage (E:\Klaus_items\fgs_Management\fgs_Manager\node_modules\_pg@4.5.6@pg\lib\connection.js:366:17)
+    at Socket.<anonymous> (E:\Klaus_items\fgs_Management\fgs_Manager\node_modules\_pg@4.5.6@pg\lib\connection.js:105:22)
+    at emitOne (events.js:77:13)
+    at Socket.emit (events.js:169:7)
+    at readableAddChunk (_stream_readable.js:153:18)
+    at Socket.Readable.push (_stream_readable.js:111:10)
+    at TCP.onread (net.js:531:20)】
+---2017-6-2 12:45:18【错误语句:insert into 分_分公司账户表 (账号,卡号,姓名,积分,余额,回流账户,分红账户,分公司名称,分公司编号,所占股数,说明,状态,类别,录入人,录入时间,反馈,备注) values ('111','1','1','0','0','0','0','','','1','1','1','1','roger','2017-06-02 12:45:08','','')错误信息:error: 重复键违反唯一约束"分_分公司账户表_pkey"
+    at Connection.parseE (E:\Klaus_items\fgs_Management\fgs_Manager\node_modules\_pg@4.5.6@pg\lib\connection.js:539:11)
+    at Connection.parseMessage (E:\Klaus_items\fgs_Management\fgs_Manager\node_modules\_pg@4.5.6@pg\lib\connection.js:366:17)
+    at Socket.<anonymous> (E:\Klaus_items\fgs_Management\fgs_Manager\node_modules\_pg@4.5.6@pg\lib\connection.js:105:22)
+    at emitOne (events.js:77:13)
+    at Socket.emit (events.js:169:7)
+    at readableAddChunk (_stream_readable.js:153:18)
+    at Socket.Readable.push (_stream_readable.js:111:10)
+    at TCP.onread (net.js:531:20)】
+---2017-6-2 12:46:10【错误语句:update 分_分公司账户表 set 账号='11', 卡号='11', 姓名='1', 积分='1', 余额='', 回流账户='', 分红账户='', 分公司名称='', 分公司编号='', 所占股数='1', 说明='1', 状态='1', 类别='1', 录入人='roger', 录入时间='2017-06-02 12:45:57', 反馈='', 备注='' where id = 1212错误信息:error: 无效的数字类型输入语法: ""
+    at Connection.parseE (E:\Klaus_items\fgs_Management\fgs_Manager\node_modules\_pg@4.5.6@pg\lib\connection.js:539:11)
+    at Connection.parseMessage (E:\Klaus_items\fgs_Management\fgs_Manager\node_modules\_pg@4.5.6@pg\lib\connection.js:366:17)
+    at Socket.<anonymous> (E:\Klaus_items\fgs_Management\fgs_Manager\node_modules\_pg@4.5.6@pg\lib\connection.js:105:22)
+    at emitOne (events.js:77:13)
+    at Socket.emit (events.js:169:7)
+    at readableAddChunk (_stream_readable.js:153:18)
+    at Socket.Readable.push (_stream_readable.js:111:10)
+    at TCP.onread (net.js:531:20)】
+---2017-6-2 12:48:55【错误语句:update 分_分公司账户表 set 账号='11', 卡号='11', 姓名='1', 积分='1', 余额='', 回流账户='', 分红账户='', 分公司名称='', 分公司编号='1', 所占股数='1', 说明='1', 状态='1', 类别='1', 录入人='roger', 录入时间='2017-06-02 12:45:57', 反馈='', 备注='' where id = 1212错误信息:error: 无效的数字类型输入语法: ""
+    at Connection.parseE (E:\Klaus_items\fgs_Management\fgs_Manager\node_modules\_pg@4.5.6@pg\lib\connection.js:539:11)
+    at Connection.parseMessage (E:\Klaus_items\fgs_Management\fgs_Manager\node_modules\_pg@4.5.6@pg\lib\connection.js:366:17)
+    at Socket.<anonymous> (E:\Klaus_items\fgs_Management\fgs_Manager\node_modules\_pg@4.5.6@pg\lib\connection.js:105:22)
+    at emitOne (events.js:77:13)
+    at Socket.emit (events.js:169:7)
+    at readableAddChunk (_stream_readable.js:153:18)
+    at Socket.Readable.push (_stream_readable.js:111:10)
+    at TCP.onread (net.js:531:20)】
+---2017-6-2 12:50:21【错误语句:insert into 分_分公司账户表 (账号,卡号,姓名,积分,余额,回流账户,分红账户,分公司名称,分公司编号,所占股数,说明,状态,类别,录入人,录入时间,反馈,备注) values ('1314','1','1','0','0','0','0','','','100.0000','1','1','1','roger','2017-06-02 12:50:09','','')错误信息:error: 重复键违反唯一约束"分_分公司账户表_pkey"
+    at Connection.parseE (E:\Klaus_items\fgs_Management\fgs_Manager\node_modules\_pg@4.5.6@pg\lib\connection.js:539:11)
+    at Connection.parseMessage (E:\Klaus_items\fgs_Management\fgs_Manager\node_modules\_pg@4.5.6@pg\lib\connection.js:366:17)
+    at Socket.<anonymous> (E:\Klaus_items\fgs_Management\fgs_Manager\node_modules\_pg@4.5.6@pg\lib\connection.js:105:22)
+    at emitOne (events.js:77:13)
+    at Socket.emit (events.js:169:7)
+    at readableAddChunk (_stream_readable.js:153:18)
+    at Socket.Readable.push (_stream_readable.js:111:10)
+    at TCP.onread (net.js:531:20)】
+---2017-6-2 12:50:32【错误语句:insert into 分_分公司账户表 (账号,卡号,姓名,积分,余额,回流账户,分红账户,分公司名称,分公司编号,所占股数,说明,状态,类别,录入人,录入时间,反馈,备注) values ('1314','1','1','1','100.0000','100.0000','100.0000','','','100.0000','1','1','1','roger','2017-06-02 12:50:09','','')错误信息:error: 重复键违反唯一约束"分_分公司账户表_pkey"
+    at Connection.parseE (E:\Klaus_items\fgs_Management\fgs_Manager\node_modules\_pg@4.5.6@pg\lib\connection.js:539:11)
+    at Connection.parseMessage (E:\Klaus_items\fgs_Management\fgs_Manager\node_modules\_pg@4.5.6@pg\lib\connection.js:366:17)
+    at Socket.<anonymous> (E:\Klaus_items\fgs_Management\fgs_Manager\node_modules\_pg@4.5.6@pg\lib\connection.js:105:22)
+    at emitOne (events.js:77:13)
+    at Socket.emit (events.js:169:7)
+    at readableAddChunk (_stream_readable.js:153:18)
+    at Socket.Readable.push (_stream_readable.js:111:10)
+    at TCP.onread (net.js:531:20)】
+---2017-6-2 13:35:34【错误语句:insert into 分_分公司表 (账号,姓名,名称,地址,排序,股数,层1分公司名称,层1分公司id,层2分公司名称,层2分公司id,层3分公司名称,层3分公司id,编号,定时时间,省,市,区,分公司密码,总账户,分红账户,回流账户,分公司设置id,状态,类别,录入人,录入时间,备注) values ('','1','1','1','','','','','','','','','','','','','','','','','','','','1','1','roger','2017-06-02 13:35:25','')错误信息:error: INSERT 的表达式多于指定的字段数
+    at Connection.parseE (E:\Klaus_items\fgs_Management\fgs_Manager\node_modules\_pg@4.5.6@pg\lib\connection.js:539:11)
+    at Connection.parseMessage (E:\Klaus_items\fgs_Management\fgs_Manager\node_modules\_pg@4.5.6@pg\lib\connection.js:366:17)
+    at Socket.<anonymous> (E:\Klaus_items\fgs_Management\fgs_Manager\node_modules\_pg@4.5.6@pg\lib\connection.js:105:22)
+    at emitOne (events.js:77:13)
+    at Socket.emit (events.js:169:7)
+    at readableAddChunk (_stream_readable.js:153:18)
+    at Socket.Readable.push (_stream_readable.js:111:10)
+    at TCP.onread (net.js:531:20)】
+---2017-6-2 13:50:33【错误语句:insert into 分_分公司账户表 (账号,卡号,姓名,积分,余额,回流账户,分红账户,分公司名称,分公司编号,所占股数,说明,状态,类别,录入人,录入时间,反馈,备注) values ('1314666','1314520','帅气的马哥','0','0','0','0','','','100.0000','1111111111111','不赠送','显示','roger','2017-06-02 13:50:05','','')错误信息:error: 重复键违反唯一约束"分_分公司账户表_pkey"
+    at Connection.parseE (E:\Klaus_items\fgs_Management\fgs_Manager\node_modules\_pg@4.5.6@pg\lib\connection.js:539:11)
+    at Connection.parseMessage (E:\Klaus_items\fgs_Management\fgs_Manager\node_modules\_pg@4.5.6@pg\lib\connection.js:366:17)
+    at Socket.<anonymous> (E:\Klaus_items\fgs_Management\fgs_Manager\node_modules\_pg@4.5.6@pg\lib\connection.js:105:22)
+    at emitOne (events.js:77:13)
+    at Socket.emit (events.js:169:7)
+    at readableAddChunk (_stream_readable.js:153:18)
+    at Socket.Readable.push (_stream_readable.js:111:10)
+    at TCP.onread (net.js:531:20)】
+---2017-6-2 13:55:16【错误语句:insert into 分_分公司表 (账号,姓名,名称,地址,排序,股数,层1分公司名称,层1分公司id,层2分公司名称,层2分公司id,层3分公司名称,层3分公司id,编号,定时时间,省,市,区,分公司密码,总账户,分红账户,回流账户,分公司设置id,状态,类别,录入人,录入时间,备注) values ('','32434','4353','54656','646','46','6','656','46','546','6456','456','564','564','45','645','654','54654','6546','6456','1','464','56456','111111','1111','roger','2017-06-02 13:54:47','111111')错误信息:error: INSERT 的表达式多于指定的字段数
+    at Connection.parseE (E:\Klaus_items\fgs_Management\fgs_Manager\node_modules\_pg@4.5.6@pg\lib\connection.js:539:11)
+    at Connection.parseMessage (E:\Klaus_items\fgs_Management\fgs_Manager\node_modules\_pg@4.5.6@pg\lib\connection.js:366:17)
+    at Socket.<anonymous> (E:\Klaus_items\fgs_Management\fgs_Manager\node_modules\_pg@4.5.6@pg\lib\connection.js:105:22)
+    at emitOne (events.js:77:13)
+    at Socket.emit (events.js:169:7)
+    at readableAddChunk (_stream_readable.js:153:18)
+    at Socket.Readable.push (_stream_readable.js:111:10)
+    at TCP.onread (net.js:531:20)】
+---2017-6-2 14:6:59【错误语句:insert into 分_分公司账户表 (账号,卡号,姓名,积分,余额,回流账户,分红账户,分公司名称,分公司编号,所占股数,说明,状态,类别,录入人,录入时间,反馈,备注) values ('1010','1010','陈帅','9','9','9','9','','','9','','9','9','roger','2017-06-02 14:06:30','','')错误信息:error: 重复键违反唯一约束"分_分公司账户表_pkey"
+    at Connection.parseE (E:\Klaus_items\fgs_Management\fgs_Manager\node_modules\_pg@4.5.6@pg\lib\connection.js:539:11)
+    at Connection.parseMessage (E:\Klaus_items\fgs_Management\fgs_Manager\node_modules\_pg@4.5.6@pg\lib\connection.js:366:17)
+    at Socket.<anonymous> (E:\Klaus_items\fgs_Management\fgs_Manager\node_modules\_pg@4.5.6@pg\lib\connection.js:105:22)
+    at emitOne (events.js:77:13)
+    at Socket.emit (events.js:169:7)
+    at readableAddChunk (_stream_readable.js:153:18)
+    at Socket.Readable.push (_stream_readable.js:111:10)
+    at TCP.onread (net.js:531:20)】
+---2017-6-2 14:7:7【错误语句:insert into 分_分公司账户表 (账号,卡号,姓名,积分,余额,回流账户,分红账户,分公司名称,分公司编号,所占股数,说明,状态,类别,录入人,录入时间,反馈,备注) values ('1010','1010','陈帅','9','9','9','9','','','9','','9','9','roger','2017-06-02 14:06:30','','')错误信息:error: 重复键违反唯一约束"分_分公司账户表_pkey"
+    at Connection.parseE (E:\Klaus_items\fgs_Management\fgs_Manager\node_modules\_pg@4.5.6@pg\lib\connection.js:539:11)
+    at Connection.parseMessage (E:\Klaus_items\fgs_Management\fgs_Manager\node_modules\_pg@4.5.6@pg\lib\connection.js:366:17)
+    at Socket.<anonymous> (E:\Klaus_items\fgs_Management\fgs_Manager\node_modules\_pg@4.5.6@pg\lib\connection.js:105:22)
+    at emitOne (events.js:77:13)
+    at Socket.emit (events.js:169:7)
+    at readableAddChunk (_stream_readable.js:153:18)
+    at Socket.Readable.push (_stream_readable.js:111:10)
+    at TCP.onread (net.js:531:20)】
+---2017-6-2 14:7:8【错误语句:insert into 分_分公司账户表 (账号,卡号,姓名,积分,余额,回流账户,分红账户,分公司名称,分公司编号,所占股数,说明,状态,类别,录入人,录入时间,反馈,备注) values ('1010','1010','陈帅','9','9','9','9','','','9','','9','9','roger','2017-06-02 14:06:30','','')错误信息:error: 重复键违反唯一约束"分_分公司账户表_pkey"
+    at Connection.parseE (E:\Klaus_items\fgs_Management\fgs_Manager\node_modules\_pg@4.5.6@pg\lib\connection.js:539:11)
+    at Connection.parseMessage (E:\Klaus_items\fgs_Management\fgs_Manager\node_modules\_pg@4.5.6@pg\lib\connection.js:366:17)
+    at Socket.<anonymous> (E:\Klaus_items\fgs_Management\fgs_Manager\node_modules\_pg@4.5.6@pg\lib\connection.js:105:22)
+    at emitOne (events.js:77:13)
+    at Socket.emit (events.js:169:7)
+    at readableAddChunk (_stream_readable.js:153:18)
+    at Socket.Readable.push (_stream_readable.js:111:10)
+    at TCP.onread (net.js:531:20)】
+---2017-6-2 14:7:10【错误语句:insert into 分_分公司账户表 (账号,卡号,姓名,积分,余额,回流账户,分红账户,分公司名称,分公司编号,所占股数,说明,状态,类别,录入人,录入时间,反馈,备注) values ('1010','1010','陈帅','9','9','9','9','','','9','','9','9','roger','2017-06-02 14:06:30','','')错误信息:error: 重复键违反唯一约束"分_分公司账户表_pkey"
+    at Connection.parseE (E:\Klaus_items\fgs_Management\fgs_Manager\node_modules\_pg@4.5.6@pg\lib\connection.js:539:11)
+    at Connection.parseMessage (E:\Klaus_items\fgs_Management\fgs_Manager\node_modules\_pg@4.5.6@pg\lib\connection.js:366:17)
+    at Socket.<anonymous> (E:\Klaus_items\fgs_Management\fgs_Manager\node_modules\_pg@4.5.6@pg\lib\connection.js:105:22)
+    at emitOne (events.js:77:13)
+    at Socket.emit (events.js:169:7)
+    at readableAddChunk (_stream_readable.js:153:18)
+    at Socket.Readable.push (_stream_readable.js:111:10)
+    at TCP.onread (net.js:531:20)】
+---2017-6-2 14:7:12【错误语句:insert into 分_分公司账户表 (账号,卡号,姓名,积分,余额,回流账户,分红账户,分公司名称,分公司编号,所占股数,说明,状态,类别,录入人,录入时间,反馈,备注) values ('1010','1010','陈帅','9','9','9','9','','','9','','9','9','roger','2017-06-02 14:06:30','','')错误信息:error: 重复键违反唯一约束"分_分公司账户表_pkey"
+    at Connection.parseE (E:\Klaus_items\fgs_Management\fgs_Manager\node_modules\_pg@4.5.6@pg\lib\connection.js:539:11)
+    at Connection.parseMessage (E:\Klaus_items\fgs_Management\fgs_Manager\node_modules\_pg@4.5.6@pg\lib\connection.js:366:17)
+    at Socket.<anonymous> (E:\Klaus_items\fgs_Management\fgs_Manager\node_modules\_pg@4.5.6@pg\lib\connection.js:105:22)
+    at emitOne (events.js:77:13)
+    at Socket.emit (events.js:169:7)
+    at readableAddChunk (_stream_readable.js:153:18)
+    at Socket.Readable.push (_stream_readable.js:111:10)
+    at TCP.onread (net.js:531:20)】
+---2017-6-2 14:7:13【错误语句:insert into 分_分公司账户表 (账号,卡号,姓名,积分,余额,回流账户,分红账户,分公司名称,分公司编号,所占股数,说明,状态,类别,录入人,录入时间,反馈,备注) values ('1010','1010','陈帅','9','9','9','9','','','9','','9','9','roger','2017-06-02 14:06:30','','')错误信息:error: 重复键违反唯一约束"分_分公司账户表_pkey"
+    at Connection.parseE (E:\Klaus_items\fgs_Management\fgs_Manager\node_modules\_pg@4.5.6@pg\lib\connection.js:539:11)
+    at Connection.parseMessage (E:\Klaus_items\fgs_Management\fgs_Manager\node_modules\_pg@4.5.6@pg\lib\connection.js:366:17)
+    at Socket.<anonymous> (E:\Klaus_items\fgs_Management\fgs_Manager\node_modules\_pg@4.5.6@pg\lib\connection.js:105:22)
+    at emitOne (events.js:77:13)
+    at Socket.emit (events.js:169:7)
+    at readableAddChunk (_stream_readable.js:153:18)
+    at Socket.Readable.push (_stream_readable.js:111:10)
+    at TCP.onread (net.js:531:20)】
+---2017-6-2 14:7:15【错误语句:insert into 分_分公司账户表 (账号,卡号,姓名,积分,余额,回流账户,分红账户,分公司名称,分公司编号,所占股数,说明,状态,类别,录入人,录入时间,反馈,备注) values ('1010','1010','陈帅','9','9','9','9','','','9','','9','9','roger','2017-06-02 14:06:30','','')错误信息:error: 重复键违反唯一约束"分_分公司账户表_pkey"
+    at Connection.parseE (E:\Klaus_items\fgs_Management\fgs_Manager\node_modules\_pg@4.5.6@pg\lib\connection.js:539:11)
+    at Connection.parseMessage (E:\Klaus_items\fgs_Management\fgs_Manager\node_modules\_pg@4.5.6@pg\lib\connection.js:366:17)
+    at Socket.<anonymous> (E:\Klaus_items\fgs_Management\fgs_Manager\node_modules\_pg@4.5.6@pg\lib\connection.js:105:22)
+    at emitOne (events.js:77:13)
+    at Socket.emit (events.js:169:7)
+    at readableAddChunk (_stream_readable.js:153:18)
+    at Socket.Readable.push (_stream_readable.js:111:10)
+    at TCP.onread (net.js:531:20)】
+---2017-6-2 16:21:52【错误语句:insert into 分_分公司成员表 (账号,姓名,所占股数,单股金额,分公司名称,状态,类别,录入人,录入时间,个人提取分红,分公司id,备注 ) values ('','帅气的马哥','100.0000','1','1','1','1','roger','2017-06-02 16:21:35','','','')错误信息:error: 无效的数字类型输入语法: ""
+    at Connection.parseE (E:\Klaus_items\fgs_Management\fgs_Manager\node_modules\_pg@4.5.6@pg\lib\connection.js:539:11)
+    at Connection.parseMessage (E:\Klaus_items\fgs_Management\fgs_Manager\node_modules\_pg@4.5.6@pg\lib\connection.js:366:17)
+    at Socket.<anonymous> (E:\Klaus_items\fgs_Management\fgs_Manager\node_modules\_pg@4.5.6@pg\lib\connection.js:105:22)
+    at emitOne (events.js:77:13)
+    at Socket.emit (events.js:169:7)
+    at readableAddChunk (_stream_readable.js:153:18)
+    at Socket.Readable.push (_stream_readable.js:111:10)
+    at TCP.onread (net.js:531:20)】
