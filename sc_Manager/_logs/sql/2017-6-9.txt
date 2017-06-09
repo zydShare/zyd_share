@@ -1,0 +1,63 @@
+---2017-6-9 16:50:53【错误语句:select id,名称,录入时间,状态   from 三_批检表  where  1=1  order by 录入时间 desc limit 10 offset 0错误信息:error: 字段 "状态" 不存在
+    at Connection.parseE (D:\item\zyd_share\sc_Manager\node_modules\pg\lib\connection.js:539:11)
+    at Connection.parseMessage (D:\item\zyd_share\sc_Manager\node_modules\pg\lib\connection.js:366:17)
+    at Socket.<anonymous> (D:\item\zyd_share\sc_Manager\node_modules\pg\lib\connection.js:105:22)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at readableAddChunk (_stream_readable.js:176:18)
+    at Socket.Readable.push (_stream_readable.js:134:10)
+    at TCP.onread (net.js:551:20)】
+---2017-6-9 16:51:2【错误语句:select id,名称,录入时间,状态   from 三_批检表  where  1=1  order by 录入时间 desc limit 10 offset 0错误信息:error: 字段 "状态" 不存在
+    at Connection.parseE (D:\item\zyd_share\sc_Manager\node_modules\pg\lib\connection.js:539:11)
+    at Connection.parseMessage (D:\item\zyd_share\sc_Manager\node_modules\pg\lib\connection.js:366:17)
+    at Socket.<anonymous> (D:\item\zyd_share\sc_Manager\node_modules\pg\lib\connection.js:105:22)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at readableAddChunk (_stream_readable.js:176:18)
+    at Socket.Readable.push (_stream_readable.js:134:10)
+    at TCP.onread (net.js:551:20)】
+---2017-6-9 16:51:5【错误语句:select id,名称,录入时间,状态   from 三_批检表  where  1=1  order by 录入时间 desc limit 10 offset 0错误信息:error: 字段 "状态" 不存在
+    at Connection.parseE (D:\item\zyd_share\sc_Manager\node_modules\pg\lib\connection.js:539:11)
+    at Connection.parseMessage (D:\item\zyd_share\sc_Manager\node_modules\pg\lib\connection.js:366:17)
+    at Socket.<anonymous> (D:\item\zyd_share\sc_Manager\node_modules\pg\lib\connection.js:105:22)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at readableAddChunk (_stream_readable.js:176:18)
+    at Socket.Readable.push (_stream_readable.js:134:10)
+    at TCP.onread (net.js:551:20)】
+---2017-6-9 16:51:6【错误语句:select id,名称,录入时间,状态   from 三_批检表  where  1=1  order by 录入时间 desc limit 10 offset 0错误信息:error: 字段 "状态" 不存在
+    at Connection.parseE (D:\item\zyd_share\sc_Manager\node_modules\pg\lib\connection.js:539:11)
+    at Connection.parseMessage (D:\item\zyd_share\sc_Manager\node_modules\pg\lib\connection.js:366:17)
+    at Socket.<anonymous> (D:\item\zyd_share\sc_Manager\node_modules\pg\lib\connection.js:105:22)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at readableAddChunk (_stream_readable.js:176:18)
+    at Socket.Readable.push (_stream_readable.js:134:10)
+    at TCP.onread (net.js:551:20)】
+---2017-6-9 16:51:6【错误语句:select id,名称,录入时间,状态   from 三_批检表  where  1=1  order by 录入时间 desc limit 10 offset 0错误信息:error: 字段 "状态" 不存在
+    at Connection.parseE (D:\item\zyd_share\sc_Manager\node_modules\pg\lib\connection.js:539:11)
+    at Connection.parseMessage (D:\item\zyd_share\sc_Manager\node_modules\pg\lib\connection.js:366:17)
+    at Socket.<anonymous> (D:\item\zyd_share\sc_Manager\node_modules\pg\lib\connection.js:105:22)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at readableAddChunk (_stream_readable.js:176:18)
+    at Socket.Readable.push (_stream_readable.js:134:10)
+    at TCP.onread (net.js:551:20)】
+---2017-6-9 16:51:7【错误语句:select id,名称,录入时间,状态   from 三_批检表  where  1=1  order by 录入时间 desc limit 10 offset 0错误信息:error: 字段 "状态" 不存在
+    at Connection.parseE (D:\item\zyd_share\sc_Manager\node_modules\pg\lib\connection.js:539:11)
+    at Connection.parseMessage (D:\item\zyd_share\sc_Manager\node_modules\pg\lib\connection.js:366:17)
+    at Socket.<anonymous> (D:\item\zyd_share\sc_Manager\node_modules\pg\lib\connection.js:105:22)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at readableAddChunk (_stream_readable.js:176:18)
+    at Socket.Readable.push (_stream_readable.js:134:10)
+    at TCP.onread (net.js:551:20)】
+---2017-6-9 16:52:18【错误语句:select id,名称,录入时间,状态   from 三_批检表  where  1=1  order by 录入时间 desc limit 10 offset 0错误信息:error: 字段 "状态" 不存在
+    at Connection.parseE (D:\item\zyd_share\sc_Manager\node_modules\pg\lib\connection.js:539:11)
+    at Connection.parseMessage (D:\item\zyd_share\sc_Manager\node_modules\pg\lib\connection.js:366:17)
+    at Socket.<anonymous> (D:\item\zyd_share\sc_Manager\node_modules\pg\lib\connection.js:105:22)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at readableAddChunk (_stream_readable.js:176:18)
+    at Socket.Readable.push (_stream_readable.js:134:10)
+    at TCP.onread (net.js:551:20)】
