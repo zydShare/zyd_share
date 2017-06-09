@@ -1,0 +1,170 @@
+---2017-5-25 16:48:43【TypeError: undefined is not a function
+    at eval (eval at <anonymous> (F:\apiserver-191升级包5.5\apiserver-191升级包\routes\Tpl\adminfunc\deleteJiam.js:12:28), <anonymous>:1:5)
+    at Object.module.exports.run (F:\apiserver-191升级包5.5\apiserver-191升级包\routes\Tpl\adminfunc\deleteJiam.js:12:2)
+    at F:\apiserver-191升级包5.5\apiserver-191升级包\routes\app_routes_main.js:53:20
+--> in Database#all('select id,权限 from 管_权限表 where id = \'3\'', [Function])
+    at done (F:\apiserver-191升级包5.5\apiserver-191升级包\func\sqlite.js:64:16)
+    at Object.sqlite.query (F:\apiserver-191升级包5.5\apiserver-191升级包\func\sqlite.js:36:5)
+    at Object.exports.index (F:\apiserver-191升级包5.5\apiserver-191升级包\routes\admin_control.js:43:21)
+    at Object.module.exports.run (F:\apiserver-191升级包5.5\apiserver-191升级包\routes\Tpl\adminfunc\deleteJiam.js:10:14)
+    at F:\apiserver-191升级包5.5\apiserver-191升级包\routes\app_routes_main.js:53:20】
+---2017-5-25 16:49:42【ReferenceError: 删除 is not defined
+    at eval (eval at <anonymous> (F:\apiserver-191升级包5.5\apiserver-191升级包\routes\Tpl\adminfunc\deleteJiam.js:12:28), <anonymous>:1:5)
+    at Object.module.exports.run (F:\apiserver-191升级包5.5\apiserver-191升级包\routes\Tpl\adminfunc\deleteJiam.js:12:2)
+    at F:\apiserver-191升级包5.5\apiserver-191升级包\routes\app_routes_main.js:53:20
+--> in Database#all('select id,权限 from 管_权限表 where id = \'3\'', [Function])
+    at done (F:\apiserver-191升级包5.5\apiserver-191升级包\func\sqlite.js:64:16)
+    at Object.sqlite.query (F:\apiserver-191升级包5.5\apiserver-191升级包\func\sqlite.js:36:5)
+    at Object.exports.index (F:\apiserver-191升级包5.5\apiserver-191升级包\routes\admin_control.js:43:21)
+    at Object.module.exports.run (F:\apiserver-191升级包5.5\apiserver-191升级包\routes\Tpl\adminfunc\deleteJiam.js:10:14)
+    at F:\apiserver-191升级包5.5\apiserver-191升级包\routes\app_routes_main.js:53:20】
+---2017-5-25 16:50:47【ReferenceError: 删除 is not defined
+    at eval (eval at <anonymous> (F:\apiserver-191升级包5.5\apiserver-191升级包\routes\Tpl\adminfunc\deleteJiam.js:12:28), <anonymous>:1:5)
+    at Object.module.exports.run (F:\apiserver-191升级包5.5\apiserver-191升级包\routes\Tpl\adminfunc\deleteJiam.js:12:2)
+    at F:\apiserver-191升级包5.5\apiserver-191升级包\routes\app_routes_main.js:53:20
+--> in Database#all('select id,权限 from 管_权限表 where id = \'3\'', [Function])
+    at done (F:\apiserver-191升级包5.5\apiserver-191升级包\func\sqlite.js:64:16)
+    at Object.sqlite.query (F:\apiserver-191升级包5.5\apiserver-191升级包\func\sqlite.js:36:5)
+    at Object.exports.index (F:\apiserver-191升级包5.5\apiserver-191升级包\routes\admin_control.js:43:21)
+    at Object.module.exports.run (F:\apiserver-191升级包5.5\apiserver-191升级包\routes\Tpl\adminfunc\deleteJiam.js:10:14)
+    at F:\apiserver-191升级包5.5\apiserver-191升级包\routes\app_routes_main.js:53:20】
+---2017-5-25 16:50:47【ReferenceError: 删除 is not defined
+    at eval (eval at <anonymous> (F:\apiserver-191升级包5.5\apiserver-191升级包\routes\Tpl\adminfunc\deleteJiam.js:12:28), <anonymous>:1:5)
+    at Object.module.exports.run (F:\apiserver-191升级包5.5\apiserver-191升级包\routes\Tpl\adminfunc\deleteJiam.js:12:2)
+    at F:\apiserver-191升级包5.5\apiserver-191升级包\routes\app_routes_main.js:53:20
+--> in Database#all('select id,权限 from 管_权限表 where id = \'3\'', [Function])
+    at done (F:\apiserver-191升级包5.5\apiserver-191升级包\func\sqlite.js:64:16)
+    at Object.sqlite.query (F:\apiserver-191升级包5.5\apiserver-191升级包\func\sqlite.js:36:5)
+    at Object.exports.index (F:\apiserver-191升级包5.5\apiserver-191升级包\routes\admin_control.js:43:21)
+    at Object.module.exports.run (F:\apiserver-191升级包5.5\apiserver-191升级包\routes\Tpl\adminfunc\deleteJiam.js:10:14)
+    at F:\apiserver-191升级包5.5\apiserver-191升级包\routes\app_routes_main.js:53:20】
+---2017-5-25 16:50:47【Error: SQLITE_MISUSE: Database handle is closed
+    at Error (native)】
+---2017-5-25 16:54:5【TypeError: Cannot read property '0' of undefined
+    at Object.module.exports.update (F:\apiserver-191升级包5.5\apiserver-191升级包\routes\Tpl\admin\share.js:14:32)
+    at Object.module.exports.run (F:\apiserver-191升级包5.5\apiserver-191升级包\routes\Tpl\adminfunc\account_classes_update.js:15:12)
+    at F:\apiserver-191升级包5.5\apiserver-191升级包\routes\app_routes_main.js:53:20】
+---2017-5-25 16:54:31【TypeError: Cannot read property '0' of undefined
+    at Object.module.exports.update (F:\apiserver-191升级包5.5\apiserver-191升级包\routes\Tpl\admin\share.js:14:32)
+    at Object.module.exports.run (F:\apiserver-191升级包5.5\apiserver-191升级包\routes\Tpl\adminfunc\account_classes_update.js:15:12)
+    at F:\apiserver-191升级包5.5\apiserver-191升级包\routes\app_routes_main.js:53:20】
+---2017-5-25 16:56:52【TypeError: Cannot read property '0' of undefined
+    at Object.module.exports.update (F:\apiserver-191升级包5.5\apiserver-191升级包\routes\Tpl\admin\share.js:14:32)
+    at Object.module.exports.run (F:\apiserver-191升级包5.5\apiserver-191升级包\routes\Tpl\adminfunc\account_classes_update.js:15:12)
+    at F:\apiserver-191升级包5.5\apiserver-191升级包\routes\app_routes_main.js:53:20】
+---2017-5-25 17:0:48【TypeError: Cannot read property '0' of undefined
+    at Object.module.exports.update (F:\apiserver-191升级包5.5\apiserver-191升级包\routes\Tpl\admin\share.js:14:32)
+    at Object.module.exports.run (F:\apiserver-191升级包5.5\apiserver-191升级包\routes\Tpl\adminfunc\account_classes_update.js:15:12)
+    at Object.module.exports.run (F:\apiserver-191升级包5.5\apiserver-191升级包\routes\Tpl\adminfunc\account_classes_insert.js:9:27)
+    at F:\apiserver-191升级包5.5\apiserver-191升级包\routes\app_routes_main.js:53:20】
+---2017-5-25 17:0:52【TypeError: Cannot read property '0' of undefined
+    at Object.module.exports.update (F:\apiserver-191升级包5.5\apiserver-191升级包\routes\Tpl\admin\share.js:14:32)
+    at Object.module.exports.run (F:\apiserver-191升级包5.5\apiserver-191升级包\routes\Tpl\adminfunc\account_classes_update.js:15:12)
+    at F:\apiserver-191升级包5.5\apiserver-191升级包\routes\app_routes_main.js:53:20】
+---2017-5-25 17:2:28【TypeError: Cannot read property '0' of undefined
+    at Object.module.exports.update (F:\apiserver-191升级包5.5\apiserver-191升级包\routes\Tpl\admin\share.js:14:32)
+    at Object.module.exports.run (F:\apiserver-191升级包5.5\apiserver-191升级包\routes\Tpl\adminfunc\account_classes_update.js:15:12)
+    at F:\apiserver-191升级包5.5\apiserver-191升级包\routes\app_routes_main.js:53:20】
+---2017-5-25 17:2:32【TypeError: Cannot read property '0' of undefined
+    at Object.module.exports.update (F:\apiserver-191升级包5.5\apiserver-191升级包\routes\Tpl\admin\share.js:14:32)
+    at Object.module.exports.run (F:\apiserver-191升级包5.5\apiserver-191升级包\routes\Tpl\adminfunc\account_classes_update.js:15:12)
+    at Object.module.exports.run (F:\apiserver-191升级包5.5\apiserver-191升级包\routes\Tpl\adminfunc\account_classes_insert.js:9:27)
+    at F:\apiserver-191升级包5.5\apiserver-191升级包\routes\app_routes_main.js:53:20】
+---2017-5-25 17:6:21【TypeError: Cannot read property '0' of undefined
+    at Object.module.exports.update (F:\apiserver-191升级包5.5\apiserver-191升级包\routes\Tpl\admin\share.js:14:32)
+    at Object.module.exports.run (F:\apiserver-191升级包5.5\apiserver-191升级包\routes\Tpl\adminfunc\account_classes_update.js:15:12)
+    at F:\apiserver-191升级包5.5\apiserver-191升级包\routes\app_routes_main.js:53:20】
+---2017-5-25 17:21:6【error: 由于管理员命令中断联接
+    at Connection.parseE (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:539:11)
+    at Connection.parseMessage (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:366:17)
+    at Socket.<anonymous> (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:105:22)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at readableAddChunk (_stream_readable.js:176:18)
+    at Socket.Readable.push (_stream_readable.js:134:10)
+    at TCP.onread (net.js:551:20)】
+---2017-5-25 17:21:6【error: 由于管理员命令中断联接
+    at Connection.parseE (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:539:11)
+    at Connection.parseMessage (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:366:17)
+    at Socket.<anonymous> (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:105:22)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at readableAddChunk (_stream_readable.js:176:18)
+    at Socket.Readable.push (_stream_readable.js:134:10)
+    at TCP.onread (net.js:551:20)】
+---2017-5-25 17:21:6【error: 由于管理员命令中断联接
+    at Connection.parseE (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:539:11)
+    at Connection.parseMessage (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:366:17)
+    at Socket.<anonymous> (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:105:22)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at readableAddChunk (_stream_readable.js:176:18)
+    at Socket.Readable.push (_stream_readable.js:134:10)
+    at TCP.onread (net.js:551:20)】
+---2017-5-25 17:21:6【error: 由于管理员命令中断联接
+    at Connection.parseE (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:539:11)
+    at Connection.parseMessage (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:366:17)
+    at Socket.<anonymous> (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:105:22)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at readableAddChunk (_stream_readable.js:176:18)
+    at Socket.Readable.push (_stream_readable.js:134:10)
+    at TCP.onread (net.js:551:20)】
+---2017-5-25 17:21:6【error: 由于管理员命令中断联接
+    at Connection.parseE (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:539:11)
+    at Connection.parseMessage (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:366:17)
+    at Socket.<anonymous> (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:105:22)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at readableAddChunk (_stream_readable.js:176:18)
+    at Socket.Readable.push (_stream_readable.js:134:10)
+    at TCP.onread (net.js:551:20)】
+---2017-5-25 17:21:6【error: 由于管理员命令中断联接
+    at Connection.parseE (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:539:11)
+    at Connection.parseMessage (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:366:17)
+    at Socket.<anonymous> (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:105:22)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at readableAddChunk (_stream_readable.js:176:18)
+    at Socket.Readable.push (_stream_readable.js:134:10)
+    at TCP.onread (net.js:551:20)】
+---2017-5-25 17:21:6【error: 由于管理员命令中断联接
+    at Connection.parseE (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:539:11)
+    at Connection.parseMessage (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:366:17)
+    at Socket.<anonymous> (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:105:22)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at readableAddChunk (_stream_readable.js:176:18)
+    at Socket.Readable.push (_stream_readable.js:134:10)
+    at TCP.onread (net.js:551:20)】
+---2017-5-25 17:21:6【error: 由于管理员命令中断联接
+    at Connection.parseE (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:539:11)
+    at Connection.parseMessage (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:366:17)
+    at Socket.<anonymous> (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:105:22)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at readableAddChunk (_stream_readable.js:176:18)
+    at Socket.Readable.push (_stream_readable.js:134:10)
+    at TCP.onread (net.js:551:20)】
+---2017-5-25 17:21:6【error: 由于管理员命令中断联接
+    at Connection.parseE (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:539:11)
+    at Connection.parseMessage (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:366:17)
+    at Socket.<anonymous> (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:105:22)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at readableAddChunk (_stream_readable.js:176:18)
+    at Socket.Readable.push (_stream_readable.js:134:10)
+    at TCP.onread (net.js:551:20)】
+---2017-5-25 17:21:6【error: 由于管理员命令中断联接
+    at Connection.parseE (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:539:11)
+    at Connection.parseMessage (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:366:17)
+    at Socket.<anonymous> (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:105:22)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at readableAddChunk (_stream_readable.js:176:18)
+    at Socket.Readable.push (_stream_readable.js:134:10)
+    at TCP.onread (net.js:551:20)】
+---2017-5-25 19:58:39【TypeError: Cannot read property '0' of undefined
+    at Object.module.exports.lists (F:\apiserver-191升级包5.5\apiserver-191升级包\routes\Tpl\admin\share.js:76:41)
+    at Object.module.exports.run (F:\apiserver-191升级包5.5\apiserver-191升级包\routes\Tpl\adminfunc\bank_paid.js:56:12)
+    at F:\apiserver-191升级包5.5\apiserver-191升级包\routes\app_routes_main.js:53:20】

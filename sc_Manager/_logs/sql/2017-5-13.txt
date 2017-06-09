@@ -1,0 +1,27 @@
+---2017-5-13 17:12:15【错误语句:select count('1') count from  平_银行代付结算表  where  1=1 错误信息:error: relation "平_银行代付结算表" does not exist
+    at Connection.parseE (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:539:11)
+    at Connection.parseMessage (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:366:17)
+    at Socket.<anonymous> (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:105:22)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at readableAddChunk (_stream_readable.js:176:18)
+    at Socket.Readable.push (_stream_readable.js:134:10)
+    at TCP.onread (net.js:551:20)】
+---2017-5-13 17:12:17【错误语句:select count('1') count from  平_银行代付结算表  where  1=1 错误信息:error: relation "平_银行代付结算表" does not exist
+    at Connection.parseE (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:539:11)
+    at Connection.parseMessage (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:366:17)
+    at Socket.<anonymous> (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:105:22)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at readableAddChunk (_stream_readable.js:176:18)
+    at Socket.Readable.push (_stream_readable.js:134:10)
+    at TCP.onread (net.js:551:20)】
+---2017-5-13 17:12:19【错误语句:select count('1') count from  平_银行代付结算表  where  1=1 错误信息:error: relation "平_银行代付结算表" does not exist
+    at Connection.parseE (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:539:11)
+    at Connection.parseMessage (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:366:17)
+    at Socket.<anonymous> (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:105:22)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at readableAddChunk (_stream_readable.js:176:18)
+    at Socket.Readable.push (_stream_readable.js:134:10)
+    at TCP.onread (net.js:551:20)】

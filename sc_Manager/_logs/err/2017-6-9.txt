@@ -1,0 +1,21 @@
+---2017-6-9 15:27:43【ReferenceError: where is not defined
+    at Object.module.exports.run (F:\apiserver-191升级包5.5\apiserver-191升级包\routes\Tpl\adminfunc\account.js:23:76)
+    at F:\apiserver-191升级包5.5\apiserver-191升级包\routes\app_routes_main.js:53:20
+--> in Database#all('select id,权限 from 管_权限表 where id = \'3\'', [Function])
+    at done (F:\apiserver-191升级包5.5\apiserver-191升级包\func\sqlite.js:64:16)
+    at Object.sqlite.query (F:\apiserver-191升级包5.5\apiserver-191升级包\func\sqlite.js:36:5)
+    at Object.exports.index (F:\apiserver-191升级包5.5\apiserver-191升级包\routes\admin_control.js:43:21)
+    at Object.module.exports.run (F:\apiserver-191升级包5.5\apiserver-191升级包\routes\Tpl\adminfunc\account.js:5:14)
+    at F:\apiserver-191升级包5.5\apiserver-191升级包\routes\app_routes_main.js:53:20】
+---2017-6-9 15:27:45【ReferenceError: where is not defined
+    at Object.module.exports.run (F:\apiserver-191升级包5.5\apiserver-191升级包\routes\Tpl\adminfunc\account.js:23:76)
+    at F:\apiserver-191升级包5.5\apiserver-191升级包\routes\app_routes_main.js:53:20
+--> in Database#all('select id,权限 from 管_权限表 where id = \'3\'', [Function])
+    at done (F:\apiserver-191升级包5.5\apiserver-191升级包\func\sqlite.js:64:16)
+    at Object.sqlite.query (F:\apiserver-191升级包5.5\apiserver-191升级包\func\sqlite.js:36:5)
+    at Object.exports.index (F:\apiserver-191升级包5.5\apiserver-191升级包\routes\admin_control.js:43:21)
+    at Object.module.exports.run (F:\apiserver-191升级包5.5\apiserver-191升级包\routes\Tpl\adminfunc\account.js:5:14)
+    at F:\apiserver-191升级包5.5\apiserver-191升级包\routes\app_routes_main.js:53:20】
+---2017-6-9 15:27:58【ReferenceError: where is not defined
+    at Object.module.exports.run (F:\apiserver-191升级包5.5\apiserver-191升级包\routes\Tpl\adminfunc\account.js:23:76)
+    at F:\apiserver-191升级包5.5\apiserver-191升级包\routes\app_routes_main.js:53:20】

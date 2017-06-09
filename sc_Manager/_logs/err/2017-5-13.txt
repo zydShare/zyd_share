@@ -1,0 +1,12 @@
+---2017-5-13 17:12:15【TypeError: Cannot read property '0' of undefined
+    at Object.module.exports.lists (F:\apiserver-191升级包5.5\apiserver-191升级包\routes\Tpl\admin\share.js:76:41)
+    at Object.module.exports.run (F:\apiserver-191升级包5.5\apiserver-191升级包\routes\Tpl\adminfunc\bank_paid.js:56:12)
+    at F:\apiserver-191升级包5.5\apiserver-191升级包\routes\app_routes_main.js:53:20】
+---2017-5-13 17:12:17【TypeError: Cannot read property '0' of undefined
+    at Object.module.exports.lists (F:\apiserver-191升级包5.5\apiserver-191升级包\routes\Tpl\admin\share.js:76:41)
+    at Object.module.exports.run (F:\apiserver-191升级包5.5\apiserver-191升级包\routes\Tpl\adminfunc\bank_paid.js:56:12)
+    at F:\apiserver-191升级包5.5\apiserver-191升级包\routes\app_routes_main.js:53:20】
+---2017-5-13 17:12:19【TypeError: Cannot read property '0' of undefined
+    at Object.module.exports.lists (F:\apiserver-191升级包5.5\apiserver-191升级包\routes\Tpl\admin\share.js:76:41)
+    at Object.module.exports.run (F:\apiserver-191升级包5.5\apiserver-191升级包\routes\Tpl\adminfunc\bank_paid.js:56:12)
+    at F:\apiserver-191升级包5.5\apiserver-191升级包\routes\app_routes_main.js:53:20】

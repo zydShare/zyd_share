@@ -1,0 +1,477 @@
+---2017-5-12 11:5:56【错误语句:select count('1') count from  平_批量提现表  where  1=1 错误信息:error: relation "平_批量提现表" does not exist
+    at Connection.parseE (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:539:11)
+    at Connection.parseMessage (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:366:17)
+    at Socket.<anonymous> (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:105:22)
+    at emitOne (events.js:77:13)
+    at Socket.emit (events.js:169:7)
+    at readableAddChunk (_stream_readable.js:153:18)
+    at Socket.Readable.push (_stream_readable.js:111:10)
+    at TCP.onread (net.js:531:20)】
+---2017-5-12 11:5:59【错误语句:select count('1') count from  平_红利兑换表  where  1=1 错误信息:error: relation "平_红利兑换表" does not exist
+    at Connection.parseE (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:539:11)
+    at Connection.parseMessage (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:366:17)
+    at Socket.<anonymous> (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:105:22)
+    at emitOne (events.js:77:13)
+    at Socket.emit (events.js:169:7)
+    at readableAddChunk (_stream_readable.js:153:18)
+    at Socket.Readable.push (_stream_readable.js:111:10)
+    at TCP.onread (net.js:531:20)】
+---2017-5-12 11:8:3【错误语句:select count('1') count from  平_批量提现表  where  1=1 错误信息:error: relation "平_批量提现表" does not exist
+    at Connection.parseE (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:539:11)
+    at Connection.parseMessage (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:366:17)
+    at Socket.<anonymous> (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:105:22)
+    at emitOne (events.js:77:13)
+    at Socket.emit (events.js:169:7)
+    at readableAddChunk (_stream_readable.js:153:18)
+    at Socket.Readable.push (_stream_readable.js:111:10)
+    at TCP.onread (net.js:531:20)】
+---2017-5-12 11:8:3【错误语句:select count('1') count from  平_红利兑换表  where  1=1 错误信息:error: relation "平_红利兑换表" does not exist
+    at Connection.parseE (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:539:11)
+    at Connection.parseMessage (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:366:17)
+    at Socket.<anonymous> (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:105:22)
+    at emitOne (events.js:77:13)
+    at Socket.emit (events.js:169:7)
+    at readableAddChunk (_stream_readable.js:153:18)
+    at Socket.Readable.push (_stream_readable.js:111:10)
+    at TCP.onread (net.js:531:20)】
+---2017-5-12 14:28:11【错误语句:select count('1') count from  平_红利兑换表  where  1=1 错误信息:error: relation "平_红利兑换表" does not exist
+    at Connection.parseE (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:539:11)
+    at Connection.parseMessage (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:366:17)
+    at Socket.<anonymous> (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:105:22)
+    at emitOne (events.js:77:13)
+    at Socket.emit (events.js:169:7)
+    at readableAddChunk (_stream_readable.js:153:18)
+    at Socket.Readable.push (_stream_readable.js:111:10)
+    at TCP.onread (net.js:531:20)】
+---2017-5-12 14:28:50【错误语句:select count('1') count from  平_红利兑换表  where  1=1 错误信息:error: relation "平_红利兑换表" does not exist
+    at Connection.parseE (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:539:11)
+    at Connection.parseMessage (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:366:17)
+    at Socket.<anonymous> (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:105:22)
+    at emitOne (events.js:77:13)
+    at Socket.emit (events.js:169:7)
+    at readableAddChunk (_stream_readable.js:153:18)
+    at Socket.Readable.push (_stream_readable.js:111:10)
+    at TCP.onread (net.js:531:20)】
+---2017-5-12 14:29:12【错误语句:select count('1') count from  平_红利兑换表  where  1=1 错误信息:error: relation "平_红利兑换表" does not exist
+    at Connection.parseE (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:539:11)
+    at Connection.parseMessage (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:366:17)
+    at Socket.<anonymous> (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:105:22)
+    at emitOne (events.js:77:13)
+    at Socket.emit (events.js:169:7)
+    at readableAddChunk (_stream_readable.js:153:18)
+    at Socket.Readable.push (_stream_readable.js:111:10)
+    at TCP.onread (net.js:531:20)】
+---2017-5-12 14:29:12【错误语句:select count('1') count from  平_红利兑换表  where  1=1 错误信息:error: relation "平_红利兑换表" does not exist
+    at Connection.parseE (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:539:11)
+    at Connection.parseMessage (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:366:17)
+    at Socket.<anonymous> (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:105:22)
+    at emitOne (events.js:77:13)
+    at Socket.emit (events.js:169:7)
+    at readableAddChunk (_stream_readable.js:153:18)
+    at Socket.Readable.push (_stream_readable.js:111:10)
+    at TCP.onread (net.js:531:20)】
+---2017-5-12 14:29:55【错误语句:select count('1') count from  平_红利兑换表  where  1=1 错误信息:error: relation "平_红利兑换表" does not exist
+    at Connection.parseE (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:539:11)
+    at Connection.parseMessage (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:366:17)
+    at Socket.<anonymous> (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:105:22)
+    at emitOne (events.js:77:13)
+    at Socket.emit (events.js:169:7)
+    at readableAddChunk (_stream_readable.js:153:18)
+    at Socket.Readable.push (_stream_readable.js:111:10)
+    at TCP.onread (net.js:531:20)】
+---2017-5-12 14:30:2【错误语句:select count('1') count from  平_红利兑换表  where  1=1 错误信息:error: relation "平_红利兑换表" does not exist
+    at Connection.parseE (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:539:11)
+    at Connection.parseMessage (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:366:17)
+    at Socket.<anonymous> (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:105:22)
+    at emitOne (events.js:77:13)
+    at Socket.emit (events.js:169:7)
+    at readableAddChunk (_stream_readable.js:153:18)
+    at Socket.Readable.push (_stream_readable.js:111:10)
+    at TCP.onread (net.js:531:20)】
+---2017-5-12 14:30:27【错误语句:select count('1') count from  平_红利兑换表  where  1=1 错误信息:error: relation "平_红利兑换表" does not exist
+    at Connection.parseE (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:539:11)
+    at Connection.parseMessage (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:366:17)
+    at Socket.<anonymous> (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:105:22)
+    at emitOne (events.js:77:13)
+    at Socket.emit (events.js:169:7)
+    at readableAddChunk (_stream_readable.js:153:18)
+    at Socket.Readable.push (_stream_readable.js:111:10)
+    at TCP.onread (net.js:531:20)】
+---2017-5-12 14:32:2【错误语句:select count('1') count from  平_红利兑换表  where  1=1 错误信息:error: relation "平_红利兑换表" does not exist
+    at Connection.parseE (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:539:11)
+    at Connection.parseMessage (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:366:17)
+    at Socket.<anonymous> (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:105:22)
+    at emitOne (events.js:77:13)
+    at Socket.emit (events.js:169:7)
+    at readableAddChunk (_stream_readable.js:153:18)
+    at Socket.Readable.push (_stream_readable.js:111:10)
+    at TCP.onread (net.js:531:20)】
+---2017-5-12 14:32:2【错误语句:select count('1') count from  平_红利兑换表  where  1=1 错误信息:error: relation "平_红利兑换表" does not exist
+    at Connection.parseE (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:539:11)
+    at Connection.parseMessage (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:366:17)
+    at Socket.<anonymous> (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:105:22)
+    at emitOne (events.js:77:13)
+    at Socket.emit (events.js:169:7)
+    at readableAddChunk (_stream_readable.js:153:18)
+    at Socket.Readable.push (_stream_readable.js:111:10)
+    at TCP.onread (net.js:531:20)】
+---2017-5-12 14:32:28【错误语句:select count('1') count from  平_红利兑换表  where  1=1 错误信息:error: relation "平_红利兑换表" does not exist
+    at Connection.parseE (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:539:11)
+    at Connection.parseMessage (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:366:17)
+    at Socket.<anonymous> (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:105:22)
+    at emitOne (events.js:77:13)
+    at Socket.emit (events.js:169:7)
+    at readableAddChunk (_stream_readable.js:153:18)
+    at Socket.Readable.push (_stream_readable.js:111:10)
+    at TCP.onread (net.js:531:20)】
+---2017-5-12 14:32:33【错误语句:select count('1') count from  平_批量提现表  where  1=1 错误信息:error: relation "平_批量提现表" does not exist
+    at Connection.parseE (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:539:11)
+    at Connection.parseMessage (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:366:17)
+    at Socket.<anonymous> (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:105:22)
+    at emitOne (events.js:77:13)
+    at Socket.emit (events.js:169:7)
+    at readableAddChunk (_stream_readable.js:153:18)
+    at Socket.Readable.push (_stream_readable.js:111:10)
+    at TCP.onread (net.js:531:20)】
+---2017-5-12 14:33:29【错误语句:select count('1') count from  平_批量提现表  where  1=1 错误信息:error: relation "平_批量提现表" does not exist
+    at Connection.parseE (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:539:11)
+    at Connection.parseMessage (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:366:17)
+    at Socket.<anonymous> (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:105:22)
+    at emitOne (events.js:77:13)
+    at Socket.emit (events.js:169:7)
+    at readableAddChunk (_stream_readable.js:153:18)
+    at Socket.Readable.push (_stream_readable.js:111:10)
+    at TCP.onread (net.js:531:20)】
+---2017-5-12 14:33:29【错误语句:select count('1') count from  平_红利兑换表  where  1=1 错误信息:error: relation "平_红利兑换表" does not exist
+    at Connection.parseE (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:539:11)
+    at Connection.parseMessage (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:366:17)
+    at Socket.<anonymous> (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:105:22)
+    at emitOne (events.js:77:13)
+    at Socket.emit (events.js:169:7)
+    at readableAddChunk (_stream_readable.js:153:18)
+    at Socket.Readable.push (_stream_readable.js:111:10)
+    at TCP.onread (net.js:531:20)】
+---2017-5-12 14:33:46【错误语句:select count('1') count from  平_红利兑换表  where  1=1 错误信息:error: relation "平_红利兑换表" does not exist
+    at Connection.parseE (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:539:11)
+    at Connection.parseMessage (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:366:17)
+    at Socket.<anonymous> (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:105:22)
+    at emitOne (events.js:77:13)
+    at Socket.emit (events.js:169:7)
+    at readableAddChunk (_stream_readable.js:153:18)
+    at Socket.Readable.push (_stream_readable.js:111:10)
+    at TCP.onread (net.js:531:20)】
+---2017-5-12 14:35:46【错误语句:select count('1') count from  平_红利兑换表  where  1=1 错误信息:error: relation "平_红利兑换表" does not exist
+    at Connection.parseE (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:539:11)
+    at Connection.parseMessage (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:366:17)
+    at Socket.<anonymous> (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:105:22)
+    at emitOne (events.js:77:13)
+    at Socket.emit (events.js:169:7)
+    at readableAddChunk (_stream_readable.js:153:18)
+    at Socket.Readable.push (_stream_readable.js:111:10)
+    at TCP.onread (net.js:531:20)】
+---2017-5-12 14:36:45【错误语句:select count('1') count from  平_红利兑换表  where  1=1 错误信息:error: relation "平_红利兑换表" does not exist
+    at Connection.parseE (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:539:11)
+    at Connection.parseMessage (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:366:17)
+    at Socket.<anonymous> (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:105:22)
+    at emitOne (events.js:77:13)
+    at Socket.emit (events.js:169:7)
+    at readableAddChunk (_stream_readable.js:153:18)
+    at Socket.Readable.push (_stream_readable.js:111:10)
+    at TCP.onread (net.js:531:20)】
+---2017-5-12 14:38:2【错误语句:select count('1') count from  平_红利兑换表  where  1=1 错误信息:error: relation "平_红利兑换表" does not exist
+    at Connection.parseE (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:539:11)
+    at Connection.parseMessage (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:366:17)
+    at Socket.<anonymous> (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:105:22)
+    at emitOne (events.js:77:13)
+    at Socket.emit (events.js:169:7)
+    at readableAddChunk (_stream_readable.js:153:18)
+    at Socket.Readable.push (_stream_readable.js:111:10)
+    at TCP.onread (net.js:531:20)】
+---2017-5-12 14:38:9【错误语句:select count('1') count from  平_红利兑换表  where  1=1 错误信息:error: relation "平_红利兑换表" does not exist
+    at Connection.parseE (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:539:11)
+    at Connection.parseMessage (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:366:17)
+    at Socket.<anonymous> (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:105:22)
+    at emitOne (events.js:77:13)
+    at Socket.emit (events.js:169:7)
+    at readableAddChunk (_stream_readable.js:153:18)
+    at Socket.Readable.push (_stream_readable.js:111:10)
+    at TCP.onread (net.js:531:20)】
+---2017-5-12 14:39:39【错误语句:select count('1') count from  平_红利兑换表  where  1=1 错误信息:error: relation "平_红利兑换表" does not exist
+    at Connection.parseE (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:539:11)
+    at Connection.parseMessage (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:366:17)
+    at Socket.<anonymous> (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:105:22)
+    at emitOne (events.js:77:13)
+    at Socket.emit (events.js:169:7)
+    at readableAddChunk (_stream_readable.js:153:18)
+    at Socket.Readable.push (_stream_readable.js:111:10)
+    at TCP.onread (net.js:531:20)】
+---2017-5-12 14:39:44【错误语句:select count('1') count from  平_红利兑换表  where  1=1 错误信息:error: relation "平_红利兑换表" does not exist
+    at Connection.parseE (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:539:11)
+    at Connection.parseMessage (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:366:17)
+    at Socket.<anonymous> (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:105:22)
+    at emitOne (events.js:77:13)
+    at Socket.emit (events.js:169:7)
+    at readableAddChunk (_stream_readable.js:153:18)
+    at Socket.Readable.push (_stream_readable.js:111:10)
+    at TCP.onread (net.js:531:20)】
+---2017-5-12 14:41:20【错误语句:select count('1') count from  平_红利兑换表  where  1=1 错误信息:error: relation "平_红利兑换表" does not exist
+    at Connection.parseE (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:539:11)
+    at Connection.parseMessage (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:366:17)
+    at Socket.<anonymous> (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:105:22)
+    at emitOne (events.js:77:13)
+    at Socket.emit (events.js:169:7)
+    at readableAddChunk (_stream_readable.js:153:18)
+    at Socket.Readable.push (_stream_readable.js:111:10)
+    at TCP.onread (net.js:531:20)】
+---2017-5-12 14:42:32【错误语句:select count('1') count from  平_红利兑换表  where  1=1 错误信息:error: relation "平_红利兑换表" does not exist
+    at Connection.parseE (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:539:11)
+    at Connection.parseMessage (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:366:17)
+    at Socket.<anonymous> (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:105:22)
+    at emitOne (events.js:77:13)
+    at Socket.emit (events.js:169:7)
+    at readableAddChunk (_stream_readable.js:153:18)
+    at Socket.Readable.push (_stream_readable.js:111:10)
+    at TCP.onread (net.js:531:20)】
+---2017-5-12 14:42:38【错误语句:select count('1') count from  平_批量提现表  where  1=1 错误信息:error: relation "平_批量提现表" does not exist
+    at Connection.parseE (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:539:11)
+    at Connection.parseMessage (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:366:17)
+    at Socket.<anonymous> (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:105:22)
+    at emitOne (events.js:77:13)
+    at Socket.emit (events.js:169:7)
+    at readableAddChunk (_stream_readable.js:153:18)
+    at Socket.Readable.push (_stream_readable.js:111:10)
+    at TCP.onread (net.js:531:20)】
+---2017-5-12 14:42:41【错误语句:select count('1') count from  平_银行代付结算表  where  1=1 错误信息:error: relation "平_银行代付结算表" does not exist
+    at Connection.parseE (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:539:11)
+    at Connection.parseMessage (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:366:17)
+    at Socket.<anonymous> (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:105:22)
+    at emitOne (events.js:77:13)
+    at Socket.emit (events.js:169:7)
+    at readableAddChunk (_stream_readable.js:153:18)
+    at Socket.Readable.push (_stream_readable.js:111:10)
+    at TCP.onread (net.js:531:20)】
+---2017-5-12 14:45:44【错误语句:select count('1') count from  平_红利兑换表  where  1=1 错误信息:error: relation "平_红利兑换表" does not exist
+    at Connection.parseE (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:539:11)
+    at Connection.parseMessage (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:366:17)
+    at Socket.<anonymous> (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:105:22)
+    at emitOne (events.js:77:13)
+    at Socket.emit (events.js:169:7)
+    at readableAddChunk (_stream_readable.js:153:18)
+    at Socket.Readable.push (_stream_readable.js:111:10)
+    at TCP.onread (net.js:531:20)】
+---2017-5-12 14:46:6【错误语句:select count('1') count from  平_红利兑换表  where  1=1 错误信息:error: relation "平_红利兑换表" does not exist
+    at Connection.parseE (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:539:11)
+    at Connection.parseMessage (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:366:17)
+    at Socket.<anonymous> (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:105:22)
+    at emitOne (events.js:77:13)
+    at Socket.emit (events.js:169:7)
+    at readableAddChunk (_stream_readable.js:153:18)
+    at Socket.Readable.push (_stream_readable.js:111:10)
+    at TCP.onread (net.js:531:20)】
+---2017-5-12 14:46:10【错误语句:select count('1') count from  平_红利兑换表  where  1=1 错误信息:error: relation "平_红利兑换表" does not exist
+    at Connection.parseE (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:539:11)
+    at Connection.parseMessage (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:366:17)
+    at Socket.<anonymous> (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:105:22)
+    at emitOne (events.js:77:13)
+    at Socket.emit (events.js:169:7)
+    at readableAddChunk (_stream_readable.js:153:18)
+    at Socket.Readable.push (_stream_readable.js:111:10)
+    at TCP.onread (net.js:531:20)】
+---2017-5-12 14:48:10【错误语句:select count('1') count from  平_红利兑换表  where  1=1 错误信息:error: relation "平_红利兑换表" does not exist
+    at Connection.parseE (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:539:11)
+    at Connection.parseMessage (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:366:17)
+    at Socket.<anonymous> (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:105:22)
+    at emitOne (events.js:77:13)
+    at Socket.emit (events.js:169:7)
+    at readableAddChunk (_stream_readable.js:153:18)
+    at Socket.Readable.push (_stream_readable.js:111:10)
+    at TCP.onread (net.js:531:20)】
+---2017-5-12 14:50:58【错误语句:select count('1') count from  平_批量提现表  where  1=1 错误信息:error: relation "平_批量提现表" does not exist
+    at Connection.parseE (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:539:11)
+    at Connection.parseMessage (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:366:17)
+    at Socket.<anonymous> (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:105:22)
+    at emitOne (events.js:77:13)
+    at Socket.emit (events.js:169:7)
+    at readableAddChunk (_stream_readable.js:153:18)
+    at Socket.Readable.push (_stream_readable.js:111:10)
+    at TCP.onread (net.js:531:20)】
+---2017-5-12 14:52:58【错误语句:select count('1') count from  平_批量提现表  where  1=1 错误信息:error: relation "平_批量提现表" does not exist
+    at Connection.parseE (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:539:11)
+    at Connection.parseMessage (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:366:17)
+    at Socket.<anonymous> (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:105:22)
+    at emitOne (events.js:77:13)
+    at Socket.emit (events.js:169:7)
+    at readableAddChunk (_stream_readable.js:153:18)
+    at Socket.Readable.push (_stream_readable.js:111:10)
+    at TCP.onread (net.js:531:20)】
+---2017-5-12 14:54:58【错误语句:select count('1') count from  平_批量提现表  where  1=1 错误信息:error: relation "平_批量提现表" does not exist
+    at Connection.parseE (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:539:11)
+    at Connection.parseMessage (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:366:17)
+    at Socket.<anonymous> (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:105:22)
+    at emitOne (events.js:77:13)
+    at Socket.emit (events.js:169:7)
+    at readableAddChunk (_stream_readable.js:153:18)
+    at Socket.Readable.push (_stream_readable.js:111:10)
+    at TCP.onread (net.js:531:20)】
+---2017-5-12 14:57:6【错误语句:select count('1') count from  平_图片清单表  where  1=1 错误信息:error: relation "平_图片清单表" does not exist
+    at Connection.parseE (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:539:11)
+    at Connection.parseMessage (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:366:17)
+    at Socket.<anonymous> (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:105:22)
+    at emitOne (events.js:77:13)
+    at Socket.emit (events.js:169:7)
+    at readableAddChunk (_stream_readable.js:153:18)
+    at Socket.Readable.push (_stream_readable.js:111:10)
+    at TCP.onread (net.js:531:20)】
+---2017-5-12 14:59:6【错误语句:select count('1') count from  平_图片清单表  where  1=1 错误信息:error: relation "平_图片清单表" does not exist
+    at Connection.parseE (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:539:11)
+    at Connection.parseMessage (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:366:17)
+    at Socket.<anonymous> (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:105:22)
+    at emitOne (events.js:77:13)
+    at Socket.emit (events.js:169:7)
+    at readableAddChunk (_stream_readable.js:153:18)
+    at Socket.Readable.push (_stream_readable.js:111:10)
+    at TCP.onread (net.js:531:20)】
+---2017-5-12 15:38:5【错误语句:delete from 平_银行卡名称表 where id= '1'错误信息:error: relation "平_银行卡名称表" does not exist
+    at Connection.parseE (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:539:11)
+    at Connection.parseMessage (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:366:17)
+    at Socket.<anonymous> (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:105:22)
+    at emitOne (events.js:77:13)
+    at Socket.emit (events.js:169:7)
+    at readableAddChunk (_stream_readable.js:153:18)
+    at Socket.Readable.push (_stream_readable.js:111:10)
+    at TCP.onread (net.js:531:20)】
+---2017-5-12 15:39:8【错误语句:delete from 平_银行卡名称表 where id= '1'错误信息:error: relation "平_银行卡名称表" does not exist
+    at Connection.parseE (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:539:11)
+    at Connection.parseMessage (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:366:17)
+    at Socket.<anonymous> (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:105:22)
+    at emitOne (events.js:77:13)
+    at Socket.emit (events.js:169:7)
+    at readableAddChunk (_stream_readable.js:153:18)
+    at Socket.Readable.push (_stream_readable.js:111:10)
+    at TCP.onread (net.js:531:20)】
+---2017-5-12 15:39:17【错误语句:delete from 平_银行卡名称表 where id= '1'错误信息:error: relation "平_银行卡名称表" does not exist
+    at Connection.parseE (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:539:11)
+    at Connection.parseMessage (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:366:17)
+    at Socket.<anonymous> (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:105:22)
+    at emitOne (events.js:77:13)
+    at Socket.emit (events.js:169:7)
+    at readableAddChunk (_stream_readable.js:153:18)
+    at Socket.Readable.push (_stream_readable.js:111:10)
+    at TCP.onread (net.js:531:20)】
+---2017-5-12 15:39:22【错误语句:delete from 平_银行卡名称表 where id= '1'错误信息:error: relation "平_银行卡名称表" does not exist
+    at Connection.parseE (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:539:11)
+    at Connection.parseMessage (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:366:17)
+    at Socket.<anonymous> (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:105:22)
+    at emitOne (events.js:77:13)
+    at Socket.emit (events.js:169:7)
+    at readableAddChunk (_stream_readable.js:153:18)
+    at Socket.Readable.push (_stream_readable.js:111:10)
+    at TCP.onread (net.js:531:20)】
+---2017-5-12 15:43:58【错误语句:delete from 平_银行卡名称表 where id= '1'错误信息:error: relation "平_银行卡名称表" does not exist
+    at Connection.parseE (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:539:11)
+    at Connection.parseMessage (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:366:17)
+    at Socket.<anonymous> (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:105:22)
+    at emitOne (events.js:77:13)
+    at Socket.emit (events.js:169:7)
+    at readableAddChunk (_stream_readable.js:153:18)
+    at Socket.Readable.push (_stream_readable.js:111:10)
+    at TCP.onread (net.js:531:20)】
+---2017-5-12 15:44:8【错误语句:delete from 平_银行卡名称表 where id= '1'错误信息:error: relation "平_银行卡名称表" does not exist
+    at Connection.parseE (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:539:11)
+    at Connection.parseMessage (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:366:17)
+    at Socket.<anonymous> (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:105:22)
+    at emitOne (events.js:77:13)
+    at Socket.emit (events.js:169:7)
+    at readableAddChunk (_stream_readable.js:153:18)
+    at Socket.Readable.push (_stream_readable.js:111:10)
+    at TCP.onread (net.js:531:20)】
+---2017-5-12 15:50:5【错误语句:delete from 平_银行卡名称表 where id= '1'错误信息:error: relation "平_银行卡名称表" does not exist
+    at Connection.parseE (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:539:11)
+    at Connection.parseMessage (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:366:17)
+    at Socket.<anonymous> (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:105:22)
+    at emitOne (events.js:77:13)
+    at Socket.emit (events.js:169:7)
+    at readableAddChunk (_stream_readable.js:153:18)
+    at Socket.Readable.push (_stream_readable.js:111:10)
+    at TCP.onread (net.js:531:20)】
+---2017-5-12 15:56:36【错误语句:delete from 平_银行卡名称表 where id= '1'错误信息:error: relation "平_银行卡名称表" does not exist
+    at Connection.parseE (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:539:11)
+    at Connection.parseMessage (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:366:17)
+    at Socket.<anonymous> (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:105:22)
+    at emitOne (events.js:77:13)
+    at Socket.emit (events.js:169:7)
+    at readableAddChunk (_stream_readable.js:153:18)
+    at Socket.Readable.push (_stream_readable.js:111:10)
+    at TCP.onread (net.js:531:20)】
+---2017-5-12 16:2:53【错误语句:delete from 平_银行卡名称表 where id= '1'错误信息:error: relation "平_银行卡名称表" does not exist
+    at Connection.parseE (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:539:11)
+    at Connection.parseMessage (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:366:17)
+    at Socket.<anonymous> (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:105:22)
+    at emitOne (events.js:77:13)
+    at Socket.emit (events.js:169:7)
+    at readableAddChunk (_stream_readable.js:153:18)
+    at Socket.Readable.push (_stream_readable.js:111:10)
+    at TCP.onread (net.js:531:20)】
+---2017-5-12 16:2:58【错误语句:delete from 平_银行卡名称表 where id= '1'错误信息:error: relation "平_银行卡名称表" does not exist
+    at Connection.parseE (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:539:11)
+    at Connection.parseMessage (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:366:17)
+    at Socket.<anonymous> (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:105:22)
+    at emitOne (events.js:77:13)
+    at Socket.emit (events.js:169:7)
+    at readableAddChunk (_stream_readable.js:153:18)
+    at Socket.Readable.push (_stream_readable.js:111:10)
+    at TCP.onread (net.js:531:20)】
+---2017-5-12 16:7:14【错误语句:delete from 平_银行卡名称表 where id= '1'错误信息:error: relation "平_银行卡名称表" does not exist
+    at Connection.parseE (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:539:11)
+    at Connection.parseMessage (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:366:17)
+    at Socket.<anonymous> (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:105:22)
+    at emitOne (events.js:77:13)
+    at Socket.emit (events.js:169:7)
+    at readableAddChunk (_stream_readable.js:153:18)
+    at Socket.Readable.push (_stream_readable.js:111:10)
+    at TCP.onread (net.js:531:20)】
+---2017-5-12 16:7:22【错误语句:delete from 平_银行卡名称表 where id= '1'错误信息:error: relation "平_银行卡名称表" does not exist
+    at Connection.parseE (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:539:11)
+    at Connection.parseMessage (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:366:17)
+    at Socket.<anonymous> (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:105:22)
+    at emitOne (events.js:77:13)
+    at Socket.emit (events.js:169:7)
+    at readableAddChunk (_stream_readable.js:153:18)
+    at Socket.Readable.push (_stream_readable.js:111:10)
+    at TCP.onread (net.js:531:20)】
+---2017-5-12 16:8:10【错误语句:insert into 三_黑名单表 (账号,姓名, 类别, 状态,录入人,录入时间 ,说明,备注) values('15874709296','周文丽','显示','正常','67','2017-05-12 16:08:10','','')错误信息:error: duplicate key value violates unique constraint "三_黑名单表_pkey"
+    at Connection.parseE (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:539:11)
+    at Connection.parseMessage (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:366:17)
+    at Socket.<anonymous> (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:105:22)
+    at emitOne (events.js:77:13)
+    at Socket.emit (events.js:169:7)
+    at readableAddChunk (_stream_readable.js:153:18)
+    at Socket.Readable.push (_stream_readable.js:111:10)
+    at TCP.onread (net.js:531:20)】
+---2017-5-12 16:21:4【错误语句:delete from 平_银行卡名称表 where id= '3'错误信息:error: relation "平_银行卡名称表" does not exist
+    at Connection.parseE (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:539:11)
+    at Connection.parseMessage (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:366:17)
+    at Socket.<anonymous> (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:105:22)
+    at emitOne (events.js:77:13)
+    at Socket.emit (events.js:169:7)
+    at readableAddChunk (_stream_readable.js:153:18)
+    at Socket.Readable.push (_stream_readable.js:111:10)
+    at TCP.onread (net.js:531:20)】
+---2017-5-12 16:23:2【错误语句:delete from 平_银行卡名称表 where id= '3'错误信息:error: relation "平_银行卡名称表" does not exist
+    at Connection.parseE (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:539:11)
+    at Connection.parseMessage (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:366:17)
+    at Socket.<anonymous> (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:105:22)
+    at emitOne (events.js:77:13)
+    at Socket.emit (events.js:169:7)
+    at readableAddChunk (_stream_readable.js:153:18)
+    at Socket.Readable.push (_stream_readable.js:111:10)
+    at TCP.onread (net.js:531:20)】
+---2017-5-12 16:23:43【错误语句:delete from 平_黑名单表  where id= '3'错误信息:error: relation "平_黑名单表" does not exist
+    at Connection.parseE (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:539:11)
+    at Connection.parseMessage (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:366:17)
+    at Socket.<anonymous> (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:105:22)
+    at emitOne (events.js:77:13)
+    at Socket.emit (events.js:169:7)
+    at readableAddChunk (_stream_readable.js:153:18)
+    at Socket.Readable.push (_stream_readable.js:111:10)
+    at TCP.onread (net.js:531:20)】

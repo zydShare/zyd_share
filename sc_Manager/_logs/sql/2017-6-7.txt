@@ -1,0 +1,90 @@
+---2017-6-7 9:47:12【错误语句:select id,账号,姓名,中油卡号,证件号   from 三_批检表  where  1=1  order by 录入时间 desc limit 10 offset 0错误信息:error: 字段 "账号" 不存在
+    at Connection.parseE (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\_pg@4.5.6@pg\lib\connection.js:539:11)
+    at Connection.parseMessage (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\_pg@4.5.6@pg\lib\connection.js:366:17)
+    at Socket.<anonymous> (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\_pg@4.5.6@pg\lib\connection.js:105:22)
+    at emitOne (events.js:77:13)
+    at Socket.emit (events.js:169:7)
+    at readableAddChunk (_stream_readable.js:153:18)
+    at Socket.Readable.push (_stream_readable.js:111:10)
+    at TCP.onread (net.js:531:20)】
+---2017-6-7 9:47:14【错误语句:select id,账号,姓名,中油卡号,证件号   from 三_批检表  where  1=1  order by 录入时间 desc limit 10 offset 0错误信息:error: 字段 "账号" 不存在
+    at Connection.parseE (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\_pg@4.5.6@pg\lib\connection.js:539:11)
+    at Connection.parseMessage (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\_pg@4.5.6@pg\lib\connection.js:366:17)
+    at Socket.<anonymous> (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\_pg@4.5.6@pg\lib\connection.js:105:22)
+    at emitOne (events.js:77:13)
+    at Socket.emit (events.js:169:7)
+    at readableAddChunk (_stream_readable.js:153:18)
+    at Socket.Readable.push (_stream_readable.js:111:10)
+    at TCP.onread (net.js:531:20)】
+---2017-6-7 9:51:50【错误语句:select id,账号,姓名,中油卡号,证件号,录入时间   from 三_批检表  where  1=1  order by 录入时间 desc limit 10 offset 0错误信息:error: 字段 "账号" 不存在
+    at Connection.parseE (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\_pg@4.5.6@pg\lib\connection.js:539:11)
+    at Connection.parseMessage (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\_pg@4.5.6@pg\lib\connection.js:366:17)
+    at Socket.<anonymous> (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\_pg@4.5.6@pg\lib\connection.js:105:22)
+    at emitOne (events.js:77:13)
+    at Socket.emit (events.js:169:7)
+    at readableAddChunk (_stream_readable.js:153:18)
+    at Socket.Readable.push (_stream_readable.js:111:10)
+    at TCP.onread (net.js:531:20)】
+---2017-6-7 10:1:44【错误语句:select id,账号,姓名,中油卡号,证件号,录入时间   from 三_批检表  where  1=1  order by 录入时间 desc limit 10 offset 0错误信息:error: 字段 "账号" 不存在
+    at Connection.parseE (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\_pg@4.5.6@pg\lib\connection.js:539:11)
+    at Connection.parseMessage (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\_pg@4.5.6@pg\lib\connection.js:366:17)
+    at Socket.<anonymous> (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\_pg@4.5.6@pg\lib\connection.js:105:22)
+    at emitOne (events.js:77:13)
+    at Socket.emit (events.js:169:7)
+    at readableAddChunk (_stream_readable.js:153:18)
+    at Socket.Readable.push (_stream_readable.js:111:10)
+    at TCP.onread (net.js:531:20)】
+---2017-6-7 10:1:45【错误语句:select id,账号,姓名,中油卡号,证件号,录入时间   from 三_批检表  where  1=1  order by 录入时间 desc limit 10 offset 0错误信息:error: 字段 "账号" 不存在
+    at Connection.parseE (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\_pg@4.5.6@pg\lib\connection.js:539:11)
+    at Connection.parseMessage (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\_pg@4.5.6@pg\lib\connection.js:366:17)
+    at Socket.<anonymous> (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\_pg@4.5.6@pg\lib\connection.js:105:22)
+    at emitOne (events.js:77:13)
+    at Socket.emit (events.js:169:7)
+    at readableAddChunk (_stream_readable.js:153:18)
+    at Socket.Readable.push (_stream_readable.js:111:10)
+    at TCP.onread (net.js:531:20)】
+---2017-6-7 10:4:23【错误语句:select count('1') count from  三_中油卡表  where  1=1 错误信息:error: 关系 "三_中油卡表" 不存在
+    at Connection.parseE (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\_pg@4.5.6@pg\lib\connection.js:539:11)
+    at Connection.parseMessage (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\_pg@4.5.6@pg\lib\connection.js:366:17)
+    at Socket.<anonymous> (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\_pg@4.5.6@pg\lib\connection.js:105:22)
+    at emitOne (events.js:77:13)
+    at Socket.emit (events.js:169:7)
+    at readableAddChunk (_stream_readable.js:153:18)
+    at Socket.Readable.push (_stream_readable.js:111:10)
+    at TCP.onread (net.js:531:20)】
+---2017-6-7 10:26:30【错误语句:insert into 全_会员表 (唯一id,储存账户,账号,真实名,状态,类别,录入人,录入时间) values ('1234', '我的娃的','13537885244','谢大惠','正常','商城消费套餐','67', '2017-06-07 10:26:30')错误信息:error: 无效的数字类型输入语法: "我的娃的"
+    at Connection.parseE (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\_pg@4.5.6@pg\lib\connection.js:539:11)
+    at Connection.parseMessage (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\_pg@4.5.6@pg\lib\connection.js:366:17)
+    at Socket.<anonymous> (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\_pg@4.5.6@pg\lib\connection.js:105:22)
+    at emitOne (events.js:77:13)
+    at Socket.emit (events.js:169:7)
+    at readableAddChunk (_stream_readable.js:153:18)
+    at Socket.Readable.push (_stream_readable.js:111:10)
+    at TCP.onread (net.js:531:20)】
+---2017-6-7 10:27:9【错误语句:insert into 全_会员表 (唯一id,储存账户,账号,真实名,状态,类别,录入人,录入时间) values ('1234', '我的娃的','13620992705','谢小惠','正常','商城消费套餐','67', '2017-06-07 10:27:09')错误信息:error: 无效的数字类型输入语法: "我的娃的"
+    at Connection.parseE (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\_pg@4.5.6@pg\lib\connection.js:539:11)
+    at Connection.parseMessage (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\_pg@4.5.6@pg\lib\connection.js:366:17)
+    at Socket.<anonymous> (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\_pg@4.5.6@pg\lib\connection.js:105:22)
+    at emitOne (events.js:77:13)
+    at Socket.emit (events.js:169:7)
+    at readableAddChunk (_stream_readable.js:153:18)
+    at Socket.Readable.push (_stream_readable.js:111:10)
+    at TCP.onread (net.js:531:20)】
+---2017-6-7 10:27:15【错误语句:insert into 全_会员表 (唯一id,储存账户,账号,真实名,状态,类别,录入人,录入时间) values ('1234', '我的娃的','13620992705','谢小惠','正常','商城消费套餐','67', '2017-06-07 10:27:15')错误信息:error: 无效的数字类型输入语法: "我的娃的"
+    at Connection.parseE (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\_pg@4.5.6@pg\lib\connection.js:539:11)
+    at Connection.parseMessage (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\_pg@4.5.6@pg\lib\connection.js:366:17)
+    at Socket.<anonymous> (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\_pg@4.5.6@pg\lib\connection.js:105:22)
+    at emitOne (events.js:77:13)
+    at Socket.emit (events.js:169:7)
+    at readableAddChunk (_stream_readable.js:153:18)
+    at Socket.Readable.push (_stream_readable.js:111:10)
+    at TCP.onread (net.js:531:20)】
+---2017-6-7 10:27:54【错误语句:insert into 全_会员表 (唯一id,储存账户,账号,真实名,状态,类别,录入人,录入时间) values ('1234', '中油卡','13620992705','谢小惠','正常','商城消费套餐','67', '2017-06-07 10:27:54')错误信息:error: 无效的数字类型输入语法: "中油卡"
+    at Connection.parseE (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\_pg@4.5.6@pg\lib\connection.js:539:11)
+    at Connection.parseMessage (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\_pg@4.5.6@pg\lib\connection.js:366:17)
+    at Socket.<anonymous> (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\_pg@4.5.6@pg\lib\connection.js:105:22)
+    at emitOne (events.js:77:13)
+    at Socket.emit (events.js:169:7)
+    at readableAddChunk (_stream_readable.js:153:18)
+    at Socket.Readable.push (_stream_readable.js:111:10)
+    at TCP.onread (net.js:531:20)】

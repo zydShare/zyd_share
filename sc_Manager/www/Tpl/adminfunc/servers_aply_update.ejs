@@ -1,0 +1,30 @@
+<% include ../admin/add_top.ejs %>
+<link type="text/css" rel="stylesheet" href="../../public/date/calendar.css">
+			<script type="text/javascript" src="../../public/date/calendar.js"></script>
+			<script type="text/javascript" src="../../public/date/calendar-zh.js"></script>
+			<script type="text/javascript" src="../../public/date/datelib/newdate.js"></script>
+			<script src="../../public/admin/js/aliyun-oss-sdk-4.4.4.min.js" type="text/javascript"></script>
+			<link type="text/css" href="../../public/date/datelib/jquery-ui-1.8.17.custom.css" rel="stylesheet" />
+			<link type="text/css" href="../../public/date/datelib/jquery-ui-timepicker-addon.css" rel="stylesheet" />
+			<script type="text/javascript" src="../../public/date/datelib/jquery-ui-1.8.17.custom.min.js"></script>
+			<script type="text/javascript" src="../../public/date/datelib/jquery-ui-timepicker-addon.js"></script>
+			<script type="text/javascript" src="../../public/date/datelib/jquery-ui-timepicker-zh-CN.js"></script>
+			<script type="text/javascript">
+				$(function() { $(".ui_timepicker").datetimepicker({ showSecond: true, timeFormat: "hh:mm:ss", stepHour: 1, stepMinute: 1, stepSecond: 1 }) })
+			</script>
+<tr id="_t_id">
+	<th width="150">id</th>
+	<td>
+		<input type="text" ReadOnly="true" class="textinput" id="id" name="id" value="<% if(r.id){%><%=r.id%><% }else{ %><% }%>" style="width:200px" /></td>
+</tr>
+<tr id="_t_上次返还时间">
+	<th>上次返还时间</th>
+
+	<td><input type="text" class="textinput requireinput ui_timepicker" id="上次返还时间" name="上次返还时间"  value="<% if(r.上次返还时间){%><%=r.上次返还时间%><% }else{ %><% }%>" style="width:200px" onclick="return showCalendar('上次返还时间','y-mm-dd');/></td>
+</tr>
+
+
+
+
+
+<% include ../admin/add_bottom.ejs %>

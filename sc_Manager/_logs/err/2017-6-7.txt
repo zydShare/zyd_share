@@ -1,0 +1,4 @@
+---2017-6-7 10:4:23【TypeError: Cannot read property '0' of undefined
+    at Object.module.exports.lists (F:\apiserver-191升级包5.5\apiserver-191升级包\routes\Tpl\admin\share.js:76:41)
+    at Object.module.exports.run (F:\apiserver-191升级包5.5\apiserver-191升级包\routes\Tpl\adminfunc\zyk.js:33:12)
+    at F:\apiserver-191升级包5.5\apiserver-191升级包\routes\app_routes_main.js:53:20】

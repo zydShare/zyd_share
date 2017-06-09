@@ -1,0 +1,198 @@
+---2017-5-25 16:54:5【错误语句:select * from 平_账户类别表	where id = '148378121129457302'错误信息:error: 关系 "平_账户类别表" 不存在
+    at Connection.parseE (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:539:11)
+    at Connection.parseMessage (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:366:17)
+    at Socket.<anonymous> (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:105:22)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at readableAddChunk (_stream_readable.js:176:18)
+    at Socket.Readable.push (_stream_readable.js:134:10)
+    at TCP.onread (net.js:551:20)】
+---2017-5-25 16:54:31【错误语句:select * from 平_账户类别表	where id = '148378121129457302'错误信息:error: 关系 "平_账户类别表" 不存在
+    at Connection.parseE (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:539:11)
+    at Connection.parseMessage (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:366:17)
+    at Socket.<anonymous> (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:105:22)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at readableAddChunk (_stream_readable.js:176:18)
+    at Socket.Readable.push (_stream_readable.js:134:10)
+    at TCP.onread (net.js:551:20)】
+---2017-5-25 16:56:52【错误语句:select * from 平_账户类别表	where id = '148378121129457302'错误信息:error: 关系 "平_账户类别表" 不存在
+    at Connection.parseE (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:539:11)
+    at Connection.parseMessage (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:366:17)
+    at Socket.<anonymous> (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:105:22)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at readableAddChunk (_stream_readable.js:176:18)
+    at Socket.Readable.push (_stream_readable.js:134:10)
+    at TCP.onread (net.js:551:20)】
+---2017-5-25 17:0:48【错误语句:select * from 平_账户类别表	where id = '148378121129457302'错误信息:error: 关系 "平_账户类别表" 不存在
+    at Connection.parseE (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:539:11)
+    at Connection.parseMessage (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:366:17)
+    at Socket.<anonymous> (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:105:22)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at readableAddChunk (_stream_readable.js:176:18)
+    at Socket.Readable.push (_stream_readable.js:134:10)
+    at TCP.onread (net.js:551:20)】
+---2017-5-25 17:0:52【错误语句:select * from 平_账户类别表	where id = '148378121129457302'错误信息:error: 关系 "平_账户类别表" 不存在
+    at Connection.parseE (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:539:11)
+    at Connection.parseMessage (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:366:17)
+    at Socket.<anonymous> (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:105:22)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at readableAddChunk (_stream_readable.js:176:18)
+    at Socket.Readable.push (_stream_readable.js:134:10)
+    at TCP.onread (net.js:551:20)】
+---2017-5-25 17:2:28【错误语句:select * from 平_账户类别表	where id = '148378121129457302'错误信息:error: 关系 "平_账户类别表" 不存在
+    at Connection.parseE (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:539:11)
+    at Connection.parseMessage (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:366:17)
+    at Socket.<anonymous> (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:105:22)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at readableAddChunk (_stream_readable.js:176:18)
+    at Socket.Readable.push (_stream_readable.js:134:10)
+    at TCP.onread (net.js:551:20)】
+---2017-5-25 17:2:32【错误语句:select * from 平_账户类别表	where id = '148378121129457302'错误信息:error: 关系 "平_账户类别表" 不存在
+    at Connection.parseE (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:539:11)
+    at Connection.parseMessage (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:366:17)
+    at Socket.<anonymous> (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:105:22)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at readableAddChunk (_stream_readable.js:176:18)
+    at Socket.Readable.push (_stream_readable.js:134:10)
+    at TCP.onread (net.js:551:20)】
+---2017-5-25 17:6:21【错误语句:select * from 平_账户类别表	where id = '148378121129457302'错误信息:error: 关系 "平_账户类别表" 不存在
+    at Connection.parseE (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:539:11)
+    at Connection.parseMessage (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:366:17)
+    at Socket.<anonymous> (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:105:22)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at readableAddChunk (_stream_readable.js:176:18)
+    at Socket.Readable.push (_stream_readable.js:134:10)
+    at TCP.onread (net.js:551:20)】
+---2017-5-25 18:6:48【错误语句:insert into 全_加盟设置表 (名称,显示名称,加盟费,提成,提成百分比,提成最低数,开始级别,结束级别,权限,类别,状态,排序,录入人,录入时间,备注,层1提成,层2提成,层3提成,俱乐部层1提成,俱乐部层2提成,俱乐部层3提成,网络部提成,赠送积分,日返积分,财务部提成,说明,分公司层1提成,分公司层2提成,分公司层3提成,七大提成,全球提成,审计中心提成,监管中心提成,客服中心提成) values ('周文丽', '周文丽修改的套餐','9999999','100','50','1','1','3','0','测试套餐','显示','25','67', '2017-05-25 18:06:48', '看看','1','1','1', '2', '2', '2', '3', 'undefined', '3', '4', '看看看', '1', '1', '1', '1', '1', '1', '1', '1')错误信息:error: 无效的数字类型输入语法: "undefined"
+    at Connection.parseE (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:539:11)
+    at Connection.parseMessage (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:366:17)
+    at Socket.<anonymous> (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:105:22)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at readableAddChunk (_stream_readable.js:176:18)
+    at Socket.Readable.push (_stream_readable.js:134:10)
+    at TCP.onread (net.js:551:20)】
+---2017-5-25 18:6:55【错误语句:insert into 全_加盟设置表 (名称,显示名称,加盟费,提成,提成百分比,提成最低数,开始级别,结束级别,权限,类别,状态,排序,录入人,录入时间,备注,层1提成,层2提成,层3提成,俱乐部层1提成,俱乐部层2提成,俱乐部层3提成,网络部提成,赠送积分,日返积分,财务部提成,说明,分公司层1提成,分公司层2提成,分公司层3提成,七大提成,全球提成,审计中心提成,监管中心提成,客服中心提成) values ('周文丽', '周文丽修改的套餐','9999999','100','50','1','1','3','0','测试套餐','显示','25','67', '2017-05-25 18:06:55', '看看','1','1','1', '2', '2', '2', '3', 'undefined', '3', '4', '看看看', '1', '1', '1', '1', '1', '1', '1', '1')错误信息:error: 无效的数字类型输入语法: "undefined"
+    at Connection.parseE (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:539:11)
+    at Connection.parseMessage (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:366:17)
+    at Socket.<anonymous> (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:105:22)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at readableAddChunk (_stream_readable.js:176:18)
+    at Socket.Readable.push (_stream_readable.js:134:10)
+    at TCP.onread (net.js:551:20)】
+---2017-5-25 18:7:7【错误语句:insert into 全_加盟设置表 (名称,显示名称,加盟费,提成,提成百分比,提成最低数,开始级别,结束级别,权限,类别,状态,排序,录入人,录入时间,备注,层1提成,层2提成,层3提成,俱乐部层1提成,俱乐部层2提成,俱乐部层3提成,网络部提成,赠送积分,日返积分,财务部提成,说明,分公司层1提成,分公司层2提成,分公司层3提成,七大提成,全球提成,审计中心提成,监管中心提成,客服中心提成) values ('周文丽', '周文丽修改的套餐','9999999','100','50','1','1','3','0','测试套餐','显示','25','67', '2017-05-25 18:07:07', '看看','1','1','1', '2', '2', '2', '3', 'undefined', '3', '4', '看看看', '1', '1', '1', '1', '1', '1', '1', '1')错误信息:error: 无效的数字类型输入语法: "undefined"
+    at Connection.parseE (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:539:11)
+    at Connection.parseMessage (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:366:17)
+    at Socket.<anonymous> (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:105:22)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at readableAddChunk (_stream_readable.js:176:18)
+    at Socket.Readable.push (_stream_readable.js:134:10)
+    at TCP.onread (net.js:551:20)】
+---2017-5-25 18:7:10【错误语句:insert into 全_加盟设置表 (名称,显示名称,加盟费,提成,提成百分比,提成最低数,开始级别,结束级别,权限,类别,状态,排序,录入人,录入时间,备注,层1提成,层2提成,层3提成,俱乐部层1提成,俱乐部层2提成,俱乐部层3提成,网络部提成,赠送积分,日返积分,财务部提成,说明,分公司层1提成,分公司层2提成,分公司层3提成,七大提成,全球提成,审计中心提成,监管中心提成,客服中心提成) values ('周文丽', '周文丽修改的套餐','9999999','100','50','1','1','3','0','测试套餐','显示','25','67', '2017-05-25 18:07:10', '看看','1','1','1', '2', '2', '2', '3', 'undefined', '3', '4', '看看看', '1', '1', '1', '1', '1', '1', '1', '1')错误信息:error: 无效的数字类型输入语法: "undefined"
+    at Connection.parseE (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:539:11)
+    at Connection.parseMessage (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:366:17)
+    at Socket.<anonymous> (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:105:22)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at readableAddChunk (_stream_readable.js:176:18)
+    at Socket.Readable.push (_stream_readable.js:134:10)
+    at TCP.onread (net.js:551:20)】
+---2017-5-25 18:7:25【错误语句:insert into 全_加盟设置表 (名称,显示名称,加盟费,提成,提成百分比,提成最低数,开始级别,结束级别,权限,类别,状态,排序,录入人,录入时间,备注,层1提成,层2提成,层3提成,俱乐部层1提成,俱乐部层2提成,俱乐部层3提成,网络部提成,赠送积分,日返积分,财务部提成,说明,分公司层1提成,分公司层2提成,分公司层3提成,七大提成,全球提成,审计中心提成,监管中心提成,客服中心提成) values ('周文丽', '周文丽修改的套餐','9999999','100','50','1','1','3','0','测试套餐','显示','25','67', '2017-05-25 18:07:25', '看看','1','1','1', '2', '2', '2', '3', 'undefined', '3', '4', '看看看', '1', '1', '1', '1', '1', '1', '1', '1')错误信息:error: 无效的数字类型输入语法: "undefined"
+    at Connection.parseE (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:539:11)
+    at Connection.parseMessage (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:366:17)
+    at Socket.<anonymous> (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:105:22)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at readableAddChunk (_stream_readable.js:176:18)
+    at Socket.Readable.push (_stream_readable.js:134:10)
+    at TCP.onread (net.js:551:20)】
+---2017-5-25 18:8:3【错误语句:insert into 全_加盟设置表 (名称,显示名称,加盟费,提成,提成百分比,提成最低数,开始级别,结束级别,权限,类别,状态,排序,录入人,录入时间,备注,层1提成,层2提成,层3提成,俱乐部层1提成,俱乐部层2提成,俱乐部层3提成,网络部提成,赠送积分,日返积分,财务部提成,说明,分公司层1提成,分公司层2提成,分公司层3提成,七大提成,全球提成,审计中心提成,监管中心提成,客服中心提成) values ('周文丽', '周文丽修改的套餐','9999999','100','50','1','1','3','0','测试套餐','显示','25','67', '2017-05-25 18:08:03', '看看','1','1','1', '2', '2', '2', '3', 'undefined', '3', '4', '看看看', '1', '1', '1', '1', '1', '1', '1', '1')错误信息:error: 无效的数字类型输入语法: "undefined"
+    at Connection.parseE (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:539:11)
+    at Connection.parseMessage (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:366:17)
+    at Socket.<anonymous> (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:105:22)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at readableAddChunk (_stream_readable.js:176:18)
+    at Socket.Readable.push (_stream_readable.js:134:10)
+    at TCP.onread (net.js:551:20)】
+---2017-5-25 18:31:17【错误语句:insert into 全_加盟设置表 (名称,显示名称,加盟费,提成,提成百分比,提成最低数,开始级别,结束级别,权限,类别,状态,排序,录入人,录入时间,备注,层1提成,层2提成,层3提成,俱乐部层1提成,俱乐部层2提成,俱乐部层3提成,网络部提成,赠送积分,日返积分,财务部提成,说明,分公司层1提成,分公司层2提成,分公司层3提成,七大提成,全球提成,审计中心提成,监管中心提成,客服中心提成) values ('周文丽', '皱纹','7777','2','11','1','1','2','0','测试套餐','显示','10','67', '2017-05-25 18:31:17', '你 ','1','1','1', '1', '1', '1', '1', 'undefined', '1', '1', '噢噢噢噢噢噢', '2', '2', '2', '1', '1', '1', '1', '1')错误信息:error: 无效的数字类型输入语法: "undefined"
+    at Connection.parseE (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:539:11)
+    at Connection.parseMessage (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:366:17)
+    at Socket.<anonymous> (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:105:22)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at readableAddChunk (_stream_readable.js:176:18)
+    at Socket.Readable.push (_stream_readable.js:134:10)
+    at TCP.onread (net.js:551:20)】
+---2017-5-25 18:31:20【错误语句:insert into 全_加盟设置表 (名称,显示名称,加盟费,提成,提成百分比,提成最低数,开始级别,结束级别,权限,类别,状态,排序,录入人,录入时间,备注,层1提成,层2提成,层3提成,俱乐部层1提成,俱乐部层2提成,俱乐部层3提成,网络部提成,赠送积分,日返积分,财务部提成,说明,分公司层1提成,分公司层2提成,分公司层3提成,七大提成,全球提成,审计中心提成,监管中心提成,客服中心提成) values ('周文丽', '皱纹','7777','2','11','1','1','2','0','测试套餐','显示','10','67', '2017-05-25 18:31:20', '你 ','1','1','1', '1', '1', '1', '1', 'undefined', '1', '1', '噢噢噢噢噢噢', '2', '2', '2', '1', '1', '1', '1', '1')错误信息:error: 无效的数字类型输入语法: "undefined"
+    at Connection.parseE (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:539:11)
+    at Connection.parseMessage (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:366:17)
+    at Socket.<anonymous> (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:105:22)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at readableAddChunk (_stream_readable.js:176:18)
+    at Socket.Readable.push (_stream_readable.js:134:10)
+    at TCP.onread (net.js:551:20)】
+---2017-5-25 18:31:26【错误语句:insert into 全_加盟设置表 (名称,显示名称,加盟费,提成,提成百分比,提成最低数,开始级别,结束级别,权限,类别,状态,排序,录入人,录入时间,备注,层1提成,层2提成,层3提成,俱乐部层1提成,俱乐部层2提成,俱乐部层3提成,网络部提成,赠送积分,日返积分,财务部提成,说明,分公司层1提成,分公司层2提成,分公司层3提成,七大提成,全球提成,审计中心提成,监管中心提成,客服中心提成) values ('周文丽', '皱纹','7777','2','11','1','1','2','0','测试套餐','显示','10','67', '2017-05-25 18:31:26', '你 ','1','1','1', '1', '1', '1', '1', 'undefined', '1', '1', '噢噢噢噢噢噢', '2', '2', '2', '1', '1', '1', '1', '1')错误信息:error: 无效的数字类型输入语法: "undefined"
+    at Connection.parseE (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:539:11)
+    at Connection.parseMessage (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:366:17)
+    at Socket.<anonymous> (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:105:22)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at readableAddChunk (_stream_readable.js:176:18)
+    at Socket.Readable.push (_stream_readable.js:134:10)
+    at TCP.onread (net.js:551:20)】
+---2017-5-25 18:35:52【错误语句:insert into 全_加盟设置表 (名称,显示名称,加盟费,提成,提成百分比,提成最低数,开始级别,结束级别,权限,类别,状态,排序,录入人,录入时间,备注,层1提成,层2提成,层3提成,俱乐部层1提成,俱乐部层2提成,俱乐部层3提成,网络部提成,赠送积分,日返积分,财务部提成,说明,分公司层1提成,分公司层2提成,分公司层3提成,七大提成,全球提成,审计中心提成,监管中心提成,客服中心提成) values ('周文丽', '双方的空间是否','555','1','1','1','1','1','1','1','1','1','67', '2017-05-25 18:35:52', '111','1','1','1', '1', '1', '1', '1', 'undefined', '11', '1', '55555', '1', '1', '1', '1', '1', '1', '1', '1')错误信息:error: 无效的数字类型输入语法: "undefined"
+    at Connection.parseE (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:539:11)
+    at Connection.parseMessage (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:366:17)
+    at Socket.<anonymous> (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:105:22)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at readableAddChunk (_stream_readable.js:176:18)
+    at Socket.Readable.push (_stream_readable.js:134:10)
+    at TCP.onread (net.js:551:20)】
+---2017-5-25 18:43:4【错误语句:insert into 全_加盟设置表 (名称,显示名称,加盟费,提成,提成百分比,提成最低数,开始级别,结束级别,权限,类别,状态,排序,录入人,录入时间,备注,层1提成,层2提成,层3提成,俱乐部层1提成,俱乐部层2提成,俱乐部层3提成,网络部提成,赠送积分,日返积分,财务部提成,说明,分公司层1提成,分公司层2提成,分公司层3提成,七大提成,全球提成,审计中心提成,监管中心提成,客服中心提成) values ('大师傅', '嘈杂vzx','1111','1','1','1','0','1','0','测试套餐','显示','13','67', '2017-05-25 18:43:04', '广泛的时光','1','1','1', '1', '1', '11', '1', 'undefined', '1', '1', '分舍得宝调宝', '1', '1', '1', '1', '1', '1', '1', '1')错误信息:error: 无效的数字类型输入语法: "undefined"
+    at Connection.parseE (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:539:11)
+    at Connection.parseMessage (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:366:17)
+    at Socket.<anonymous> (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:105:22)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at readableAddChunk (_stream_readable.js:176:18)
+    at Socket.Readable.push (_stream_readable.js:134:10)
+    at TCP.onread (net.js:551:20)】
+---2017-5-25 18:48:41【错误语句:insert into 全_加盟设置表 (名称,显示名称,加盟费,提成,提成百分比,提成最低数,开始级别,结束级别,权限,类别,状态,排序,录入人,录入时间,备注,层1提成,层2提成,层3提成,俱乐部层1提成,俱乐部层2提成,俱乐部层3提成,网络部提成,赠送积分,日返积分,财务部提成,说明,分公司层1提成,分公司层2提成,分公司层3提成,七大提成,全球提成,审计中心提成,监管中心提成,客服中心提成) values ('多放点v', '水擦拭吃饭','1111','100','1','1','1','2','0','测试套餐','显示','12','67', '2017-05-25 18:48:41', '改变','1','1','1', '1', '1', '1', '1', 'undefined', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1')错误信息:error: 无效的数字类型输入语法: "undefined"
+    at Connection.parseE (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:539:11)
+    at Connection.parseMessage (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:366:17)
+    at Socket.<anonymous> (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:105:22)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at readableAddChunk (_stream_readable.js:176:18)
+    at Socket.Readable.push (_stream_readable.js:134:10)
+    at TCP.onread (net.js:551:20)】
+---2017-5-25 18:52:25【错误语句:update 全_加盟设置表 set 名称='周文丽',, 显示名称='但是vsv', 加盟费='1111.0000', 提成='1.0000', 提成百分比='1.0000', 提成最低数='1.0000', 开始级别='1', 结束级别='2', 权限='0', 类别='测试套餐', 状态='显示', 排序='12', 录入人='67', 录入时间='2017-05-25 18:52:04', 备注='贝多芬病毒', 层1提成='1.0000', 层2提成='1.0000', 层3提成='1.0000', 俱乐部层1提成='1.0000', 俱乐部层2提成='1.0000', 俱乐部层3提成='1.0000', 网络部提成='1.0000', 日返积分='1.0000', 财务部提成='1.0000', 说明='1', 分公司层1提成='1.0000', 分公司层2提成='1.0000', 分公司层3提成='1.0000', 七大提成='1.0000', 全球提成='1.0000', 审计中心提成='1.0000', 监管中心提成='1.0000', 客服中心提成='1.0000' where id = 2错误信息:error: 语法错误 在 "," 或附近的
+    at Connection.parseE (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:539:11)
+    at Connection.parseMessage (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:366:17)
+    at Socket.<anonymous> (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:105:22)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at readableAddChunk (_stream_readable.js:176:18)
+    at Socket.Readable.push (_stream_readable.js:134:10)
+    at TCP.onread (net.js:551:20)】
+---2017-5-25 19:58:39【错误语句:select count('1') count from  平_银行代付结算表  where  1=1 错误信息:error: 关系 "平_银行代付结算表" 不存在
+    at Connection.parseE (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:539:11)
+    at Connection.parseMessage (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:366:17)
+    at Socket.<anonymous> (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:105:22)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at readableAddChunk (_stream_readable.js:176:18)
+    at Socket.Readable.push (_stream_readable.js:134:10)
+    at TCP.onread (net.js:551:20)】

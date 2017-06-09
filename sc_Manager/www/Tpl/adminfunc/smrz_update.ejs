@@ -1,0 +1,139 @@
+<% include ../admin/add_top.ejs %>
+<link type="text/css" rel="stylesheet" href="../../public/date/calendar.css">
+			<script type="text/javascript" src="../../public/date/calendar.js"></script>
+			<script type="text/javascript" src="../../public/date/calendar-zh.js"></script>
+			<script type="text/javascript" src="../../public/date/datelib/newdate.js"></script>
+			<script src="../../public/admin/js/aliyun-oss-sdk-4.4.4.min.js" type="text/javascript"></script>
+			<link type="text/css" href="../../public/date/datelib/jquery-ui-1.8.17.custom.css" rel="stylesheet" />
+			<link type="text/css" href="../../public/date/datelib/jquery-ui-timepicker-addon.css" rel="stylesheet" />
+			<script type="text/javascript" src="../../public/date/datelib/jquery-ui-1.8.17.custom.min.js"></script>
+			<script type="text/javascript" src="../../public/date/datelib/jquery-ui-timepicker-addon.js"></script>
+			<script type="text/javascript" src="../../public/date/datelib/jquery-ui-timepicker-zh-CN.js"></script>
+			<script type="text/javascript">
+				$(function() { $(".ui_timepicker").datetimepicker({ showSecond: true, timeFormat: "hh:mm:ss", stepHour: 1, stepMinute: 1, stepSecond: 1 }) })
+			</script>
+<tr id="_t_id">
+	<th width="150">id</th>
+	<td>
+		<input type="text" ReadOnly="true" class="textinput" id="id" name="id" value="<% if(r.id){%><%=r.id%><% }else{ %><% }%>" style="width:200px" /></td>
+</tr>
+<tr id="_t_套餐id">
+	<th>套餐id</th>
+	<td><input type="text" class="textinput " id="套餐id" name="套餐id" value="<% if(r.套餐id){%><%=r.套餐id%><% }else{ %><% }%>" style="width:200px" /></td>
+</tr>
+<tr id="_t_账号">
+	<th>账号</th>
+	<td><input type="text" class="textinput " id="账号" name="账号" value="<% if(r.账号){%><%=r.账号%><% }else{ %><% }%>" style="width:200px" /></td>
+</tr>
+<tr id="_t_姓名">
+	<th>姓名</th>
+	<td><input type="text" class="textinput " id="姓名" name="姓名" value="<% if(r.姓名){%><%=r.姓名%><% }else{ %><% }%>" style="width:200px" /></td>
+</tr>
+<tr id="_t_卡号">
+	<th>卡号</th>
+	<td><input type="text" class="textinput " id="卡号" name="卡号" value="<% if(r.卡号){%><%=r.卡号%><% }else{ %><% }%>" style="width:200px" /></td>
+</tr>
+<tr id="_t_支付方式">
+	<th>支付方式</th>
+	<td><input type="text" class="textinput " id="支付方式" name="支付方式" value="<% if(r.支付方式){%><%=r.支付方式%><% }else{ %><% }%>" style="width:200px" /></td>
+</tr>
+<tr id="_t_上级">
+	<th>上级</th>
+	<td><input type="text" class="textinput " id="上级" name="上级" value="<% if(r.上级){%><%=r.上级%><% }else{ %><% }%>" style="width:200px" /></td>
+</tr>
+<tr id="_t_上级姓名">
+	<th>上级姓名</th>
+	<td><input type="text" class="textinput " id="上级姓名" name="上级姓名" value="<% if(r.上级姓名){%><%=r.上级姓名%><% }else{ %><% }%>" style="width:200px" /></td>
+</tr>
+<tr id="_t_套餐">
+	<th>套餐</th>
+	<td><input type="text" class="textinput " id="套餐" name="套餐" value="<% if(r.套餐){%><%=r.套餐%><% }else{ %><% }%>" style="width:200px" /></td>
+</tr>
+<tr id="_t_面值">
+	<th>面值</th>
+	<td><input type="text" class="textinput " id="面值" name="面值" value="<% if(r.面值){%><%=r.面值%><% }else{ %><% }%>" style="width:200px" /></td>
+</tr>
+<tr id="_t_赠送">
+	<th>赠送</th>
+	<td><input type="text" class="textinput " id="赠送" name="赠送" value="<% if(r.赠送){%><%=r.赠送%><% }else{ %><% }%>" style="width:200px" /></td>
+</tr>
+
+<tr id="_t_日返积分">
+	<th>日返积分</th>
+	<td><input type="text" class="textinput " id="日返积分" name="日返积分" value="<% if(r.日返积分){%><%=r.日返积分%><% }else{ %><% }%>" style="width:200px" /></td>
+</tr>
+<tr id="_t_总额">
+	<th>总额</th>
+	<td><input type="text" class="textinput " id="总额" name="总额" value="<% if(r.总额){%><%=r.总额%><% }else{ %><% }%>" style="width:200px" /></td>
+</tr>
+<tr id="_t_数量">
+	<th>数量</th>
+	<td><input type="text" class="textinput " id="数量" name="数量" value="<% if(r.数量){%><%=r.数量%><% }else{ %><% }%>" style="width:200px" /></td>
+</tr>
+<tr id="_t_支付订单号">
+	<th>支付订单号</th>
+	<td><input type="text" class="textinput " id="支付订单号" name="支付订单号" value="<% if(r.支付订单号){%><%=r.支付订单号%><% }else{ %><% }%>" style="width:200px" /></td>
+</tr>
+<tr id="_t_俱乐部id">
+	<th>俱乐部id</th>
+	<td><input type="text" class="textinput " id="俱乐部id" name="俱乐部id" value="<% if(r.俱乐部id){%><%=r.俱乐部id%><% }else{ %><% }%>" style="width:200px"  /></td>
+</tr>
+<tr id="_t_俱乐部名称">
+	<th>俱乐部名称</th>
+	<td><input type="text" class="textinput  " id="俱乐部名称" name="俱乐部名称" value="<% if(r.俱乐部名称){%><%=r.俱乐部名称%><% }else{ %><% }%>" style="width:200px" /></td>
+</tr>
+<tr id="_t_类别">
+	<th>类别</th>
+	<td><input type="text" class="textinput requireinput " id="类别" name="类别" value="<% if(r.类别){%><%=r.类别%><% }else{ %><% }%>" style="width:200px" /></td>
+</tr>
+<tr id="_t_状态">
+	<th>状态</th>
+	<td><input type="text" class="textinput " id="状态" name="状态" value="<% if(r.状态){%><%=r.状态%><% }else{ %><% }%>" style="width:200px" /></td>
+</tr>
+
+<tr id="_t_录入人">
+	<th>录入人</th>
+	<td><input type="text" ReadOnly="true" class="textinput" id="录入人" name="录入人" value="<% if(r.录入人){%><%=r.录入人%><% }else{ %><%=session.user_name%><% }%>" style="width:200px" /></td>
+</tr>
+<tr id="_t_录入时间">
+	<th>录入时间</th>
+	<td><input type="text" ReadOnly="true" class="textinput  " id="录入时间" name="录入时间" value="<% if(r.录入时间){%><%=r.录入时间%><% }else{ %><%=date%><% }%>" style="width:200px" /></td>
+</tr>
+
+<tr id="_t_内容">
+	<th>内容</th>
+	<td><input type="text" class="textinput " id="内容" name="内容" value="<% if(r.内容){%><%=r.内容%><% }else{ %><% }%>" style="width:200px" /></td>
+</tr>
+<tr id="_t_备注">
+	<th>备注</th>
+	<td><input type="text" class="textinput " id="备注" name="备注" value="<% if(r.备注){%><%=r.备注%><% }else{ %><% }%>" style="width:200px" /></td>
+</tr>
+<tr id="_t_支付时间">
+	<th>支付时间</th>
+	<td><input type="text" class="textinput requireinput ui_timepicker" id="支付时间" name="支付时间" value="<% if(r.支付时间){%><%=r.支付时间%><% }else{ %><% }%>" style="width:200px" onclick="return showCalendar('支付时间','y-mm-dd'); /></td>
+</tr>
+<tr id="_t_俱乐部申请id">
+	<th>俱乐部申请id</th>
+	<td><input type="text" class="textinput " id="俱乐部申请id" name="俱乐部申请id" value="<% if(r.俱乐部申请id){%><%=r.俱乐部申请id%><% }else{ %><% }%>" style="width:200px" /></td>
+</tr>
+<tr id="_t_社区代理分公司名称">
+	<th>社区代理分公司名称</th>
+	<td><input type="text" class="textinput " id="社区代理分公司名称" name="社区代理分公司名称" value="<% if(r.社区代理分公司名称){%><%=r.社区代理分公司名称%><% }else{ %><% }%>" style="width:200px" /></td>
+</tr>
+<tr id="_t_市代理分公司编号">
+	<th>市代理分公司编号</th>
+	<td><input type="text" class="textinput " id="市代理分公司编号" name="市代理分公司编号" value="<% if(r.市代理分公司编号){%><%=r.市代理分公司编号%><% }else{ %><% }%>" style="width:200px" /></td>
+</tr>
+<tr id="_t_市代理分公司id">
+	<th>市代理分公司id</th>
+	<td><input type="text" class="textinput " id="市代理分公司id" name="市代理分公司id" value="<% if(r.市代理分公司id){%><%=r.市代理分公司id%><% }else{ %><% }%>" style="width:200px" /></td>
+</tr>
+<tr id="_t_社区代理分公司id">
+	<th>社区代理分公司id</th>
+	<td><input type="text" class="textinput " id="社区代理分公司id" name="社区代理分公司id" value="<% if(r.社区代理分公司id){%><%=r.社区代理分公司id%><% }else{ %><% }%>" style="width:200px" /></td>
+</tr>
+<tr id="_t_商户订单号">
+	<th>商户订单号</th>
+	<td><input type="text" class="textinput " id="商户订单号" name="商户订单号" value="<% if(r.商户订单号){%><%=r.商户订单号%><% }else{ %><% }%>" style="width:200px" /></td>
+</tr>
+<% include ../admin/add_bottom.ejs %>

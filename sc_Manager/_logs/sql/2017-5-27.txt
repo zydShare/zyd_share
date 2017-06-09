@@ -1,0 +1,27 @@
+---2017-5-27 11:19:20【错误语句:insert into 三_账户表 (账号,卡号,姓名,积分,余额,说明,状态,类别,录入人,录入时间,备注,反馈) values ('15874709296', 卡号='', 姓名='周文丽', 积分='2222222222', 余额='222222222222', 说明='存储转红利', 状态='前台', 类别='储存', 录入人='67', 录入时间='2017-05-27 11:17:43', 备注='', 反馈='')错误信息:error: 字段 "卡号" 不存在
+    at Connection.parseE (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:539:11)
+    at Connection.parseMessage (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:366:17)
+    at Socket.<anonymous> (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:105:22)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at readableAddChunk (_stream_readable.js:176:18)
+    at Socket.Readable.push (_stream_readable.js:134:10)
+    at TCP.onread (net.js:551:20)】
+---2017-5-27 15:24:29【错误语句:update 全_开卡日志表 set 套餐id='146727428962993302', 账号='18078787878', 姓名='ze', 卡号='643', 支付方式='积分账户 ', 上级='', 上级姓名='周文丽', 套餐='商城消费套餐', 面值='2339', 赠送='10000', 日返积分='2', 总额='2339', 数量='1', 支付订单号='', 俱乐部id='', 俱乐部id='', 俱乐部id='自助购卡', 俱乐部id='已支付', 录入人='系统', 录入时间='2017-05-27 13:46:39', 内容='', 备注='', 支付时间='2017-05-27 13:46:48', 俱乐部申请id='', 社区代理分公司名称='', 市代理分公司名称='undefined', 市代理分公司id='', 社区代理分公司id='', 商户订单号='123000011198000000000643' where id = 643错误信息:error: 对同一列"俱乐部id"进行了多次分配
+    at Connection.parseE (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:539:11)
+    at Connection.parseMessage (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:366:17)
+    at Socket.<anonymous> (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:105:22)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at readableAddChunk (_stream_readable.js:176:18)
+    at Socket.Readable.push (_stream_readable.js:134:10)
+    at TCP.onread (net.js:551:20)】
+---2017-5-27 15:30:18【错误语句:update 全_开卡日志表 set 套餐id='146727428962993302', 账号='18078787878', 姓名='ze', 卡号='643', 支付方式='积分账户 ', 上级='', 上级姓名='', 套餐='商城消费套餐', 面值='2339', 赠送='10000', 日返积分='2', 总额='2339', 数量='1', 支付订单号='', 俱乐部id='', 俱乐部id='', 俱乐部id='自助购卡', 俱乐部id='已支付', 录入人='系统', 录入时间='2017-05-27 13:46:39', 内容='', 备注='哈哈', 支付时间='2017-05-27 13:46:48', 俱乐部申请id='', 社区代理分公司名称='', 市代理分公司名称='undefined', 市代理分公司id='', 社区代理分公司id='', 商户订单号='123000011198000000000643' where id = 643错误信息:error: 对同一列"俱乐部id"进行了多次分配
+    at Connection.parseE (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:539:11)
+    at Connection.parseMessage (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:366:17)
+    at Socket.<anonymous> (F:\apiserver-191升级包5.5\apiserver-191升级包\node_modules\pg\lib\connection.js:105:22)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at readableAddChunk (_stream_readable.js:176:18)
+    at Socket.Readable.push (_stream_readable.js:134:10)
+    at TCP.onread (net.js:551:20)】
