@@ -8,6 +8,9 @@ module.exports.run = function(f, pg, mo) {
 	var where = " 1=1 ";
 
 	if(f.data != null) {
+		if(f.data.状态 != null && f.data.状态 != '') {
+			where += " and 状态 = '" + f.data.状态 + "'";
+		}
 		if(f.data.id != null && f.data.id != '') {
 			where += " and id = '" + f.data.id + "'";
 		}

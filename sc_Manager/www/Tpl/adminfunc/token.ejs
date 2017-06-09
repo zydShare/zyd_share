@@ -12,8 +12,6 @@
 
 
 <div id="select_button">
-
-
 	<% if(_按钮权限.indexOf("token_update")>=0){ %>
 	<a v='["1","/Tpl/adminfunc/token_update.xhtml?a=1","修改奖金日志","token",""]'>修改奖金日志</a>
 <% }%>
@@ -51,6 +49,9 @@
 				})
 			</script>
 			<div style="float:left;">
+				<div style="float:left;">状态：</div>
+				<input type="text" name="状态" value="<%= data.状态%>" />&nbsp;&nbsp;</div>
+			<div style="float:left;">
 				<div style="float:left;">id：</div>
 				<input type="text" name="id" value="<%= data.id%>" />&nbsp;&nbsp;</div>
 			<div style="float:left;">
@@ -68,9 +69,7 @@
 			<div style="float:left;">
 				<div style="float:left;">账号类别：</div>
 				<input type="text" name="账号类别" value="<%= data.账号类别%>" />&nbsp;&nbsp;</div>
-			<div style="float:left;">
-				<div style="float:left;">状态：</div>
-				<input type="text" name="状态" value="<%= data.状态%>" />&nbsp;&nbsp;</div>
+			
 			<div style="float:left;">
 				<div style="float:left;">录入时间：</div>
 				<input style="height: 30px;padding: 4px 2px;height: 14px;line-height: 14px;border: solid 1px #666;" type="text" id="录入时间" name="录入时间" class="ui_timepicker" value="<%= data.录入时间%>" onclick="return showCalendar('录入时间','y-mm-dd');">&nbsp;&nbsp;</div>

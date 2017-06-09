@@ -8,6 +8,9 @@ module.exports.run = function(f, pg, mo) {
 	var where = " 1=1 ";
 	//查询条件还没有
 	if(f.data != null) {
+		if(f.data.状态 != null && f.data.状态 != '') {
+			where += " and 状态 = '" + f.data.状态 + "'";
+		}
 		if(f.data.卡号 != null && f.data.卡号 != ''){
 			where += "and 卡号 = '"+f.data.卡号+"'";
 		}
