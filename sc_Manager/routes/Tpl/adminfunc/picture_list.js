@@ -11,22 +11,22 @@ module.exports.run = function(f, pg, mo) {
 			where += " and 状态 = '" + f.data.状态 + "'";
 		}
 		if(f.data.账号 != null && f.data.账号 != '') {
-			wh += " and 账号 = '" + f.data.账号 + "'";
+			where += " and 账号 = '" + f.data.账号 + "'";
 		}
 		if(f.data.卡号 != null && f.data.卡号 != '') {
-			wh += " and 卡号  = '" + f.data.卡号 + "'";
+			where += " and 卡号  = '" + f.data.卡号 + "'";
 		}
 		if(f.data.录入人 != null && f.data.录入人 != '') {
-			wh += " and 录入人  = '" + f.data.录入人 + "'";
+			where += " and 录入人  = '" + f.data.录入人 + "'";
 		}
 		if(f.data.姓名 != null && f.data.姓名 != '') {
-			wh += " and 姓名  = '" + f.data.姓名 + "'";
+			where += " and 姓名  = '" + f.data.姓名 + "'";
 		}
 		if(f.data.录入时间 != null && f.data.录入时间 != ''){
-			wh += "and 录入时间 >= '"+f.data.录入时间+"'";
+			where += "and 录入时间 >= '"+f.data.录入时间+"'";
 		}
 		if((f.data.最大时间 != null && f.data.最大时间 != '')||(f.data.最小时间 != null && f.data.最小时间 != '') ){
-			wh += "and 录入时间 >= '"+f.data.最小时间+"' and 录入时间<='"+f.data.最大时间+"'";
+			where += "and 录入时间 >= '"+f.data.最小时间+"' and 录入时间<='"+f.data.最大时间+"'";
 		}
 	}
 	p.sql = "select id,账号,卡号,姓名,积分,余额,说明,状态,类别,录入人,录入时间  ,备注,反馈 from 三_账户表  where "+ where;

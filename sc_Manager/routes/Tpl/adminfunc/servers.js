@@ -9,9 +9,6 @@ module.exports.run = function(f, pg, mo) {
 	
 	//查询条件还没有
 	if(f.data != null) {
-		if(f.data.状态 != null && f.data.状态 != '') {
-			where += " and 状态 = '" + f.data.状态 + "'";
-		}
 		if(f.data.名称 != null && f.data.名称 != ''){
 			where += "and 名称 = '"+f.data.名称+"'";
 		}
@@ -19,7 +16,7 @@ module.exports.run = function(f, pg, mo) {
 			where += "and 录入时间 >= '"+f.data.录入时间+" 00:00:00'";
 		}
 		if((f.data.最大时间 != null && f.data.最大时间 != '')||(f.data.最小时间 != null && f.data.最小时间 != '') ){
-			wh += "and 录入时间 >= '"+f.data.最小时间+"' and 录入时间<='"+f.data.最大时间+"'";
+			where += "and 录入时间 >= '"+f.data.最小时间+"' and 录入时间<='"+f.data.最大时间+"'";
 		}
 		
 	}

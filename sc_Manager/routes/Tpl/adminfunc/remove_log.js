@@ -42,7 +42,7 @@ module.exports.run = function(f, pg, mo) {
 			where += "and 录入人 = '"+f.data.备注+"'";
 		}
 		if((f.data.最大时间 != null && f.data.最大时间 != '')||(f.data.最小时间 != null && f.data.最小时间 != '') ){
-			wh += "and 录入时间 >= '"+f.data.最小时间+"' and 录入时间<='"+f.data.最大时间+"'";
+			where += "and 录入时间 >= '"+f.data.最小时间+"' and 录入时间<='"+f.data.最大时间+"'";
 		}
 		
 	}

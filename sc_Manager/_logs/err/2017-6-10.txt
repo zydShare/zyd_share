@@ -1,0 +1,4 @@
+---2017-6-10 14:25:9【TypeError: Cannot read property '0' of undefined
+    at Object.module.exports.lists (D:\item\zyd_share\sc_Manager\routes\Tpl\admin\share.js:76:41)
+    at Object.module.exports.run (D:\item\zyd_share\sc_Manager\routes\Tpl\adminfunc\servers.js:30:12)
+    at D:\item\zyd_share\sc_Manager\routes\app_routes_main.js:53:20】

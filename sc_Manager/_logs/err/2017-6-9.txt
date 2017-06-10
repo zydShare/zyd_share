@@ -30,3 +30,138 @@
     at Object.Module._extensions..js (module.js:579:10)
     at Module.load (module.js:487:32)
     at tryModuleLoad (module.js:446:12)】
+---2017-6-9 17:41:22【ReferenceError: wh is not defined
+    at Object.module.exports.run (D:\item\zyd_share\sc_Manager\routes\Tpl\adminfunc\servers.js:22:4)
+    at D:\item\zyd_share\sc_Manager\routes\app_routes_main.js:53:20
+--> in Database#all('select id,权限 from 管_权限表 where id = \'3\'', [Function])
+    at done (D:\item\zyd_share\sc_Manager\func\sqlite.js:64:16)
+    at Object.sqlite.query (D:\item\zyd_share\sc_Manager\func\sqlite.js:36:5)
+    at Object.exports.index (D:\item\zyd_share\sc_Manager\routes\admin_control.js:43:21)
+    at Object.module.exports.run (D:\item\zyd_share\sc_Manager\routes\Tpl\adminfunc\servers.js:5:14)
+    at D:\item\zyd_share\sc_Manager\routes\app_routes_main.js:53:20】
+---2017-6-9 17:41:30【ReferenceError: wh is not defined
+    at Object.module.exports.run (D:\item\zyd_share\sc_Manager\routes\Tpl\adminfunc\servers.js:22:4)
+    at D:\item\zyd_share\sc_Manager\routes\app_routes_main.js:53:20
+--> in Database#all('select id,权限 from 管_权限表 where id = \'3\'', [Function])
+    at done (D:\item\zyd_share\sc_Manager\func\sqlite.js:64:16)
+    at Object.sqlite.query (D:\item\zyd_share\sc_Manager\func\sqlite.js:36:5)
+    at Object.exports.index (D:\item\zyd_share\sc_Manager\routes\admin_control.js:43:21)
+    at Object.module.exports.run (D:\item\zyd_share\sc_Manager\routes\Tpl\adminfunc\servers.js:5:14)
+    at D:\item\zyd_share\sc_Manager\routes\app_routes_main.js:53:20】
+---2017-6-9 17:41:36【ReferenceError: wh is not defined
+    at Object.module.exports.run (D:\item\zyd_share\sc_Manager\routes\Tpl\adminfunc\servers.js:22:4)
+    at D:\item\zyd_share\sc_Manager\routes\app_routes_main.js:53:20
+--> in Database#all('select id,权限 from 管_权限表 where id = \'3\'', [Function])
+    at done (D:\item\zyd_share\sc_Manager\func\sqlite.js:64:16)
+    at Object.sqlite.query (D:\item\zyd_share\sc_Manager\func\sqlite.js:36:5)
+    at Object.exports.index (D:\item\zyd_share\sc_Manager\routes\admin_control.js:43:21)
+    at Object.module.exports.run (D:\item\zyd_share\sc_Manager\routes\Tpl\adminfunc\servers.js:5:14)
+    at D:\item\zyd_share\sc_Manager\routes\app_routes_main.js:53:20】
+---2017-6-9 17:41:37【ReferenceError: wh is not defined
+    at Object.module.exports.run (D:\item\zyd_share\sc_Manager\routes\Tpl\adminfunc\servers.js:22:4)
+    at D:\item\zyd_share\sc_Manager\routes\app_routes_main.js:53:20
+--> in Database#all('select id,权限 from 管_权限表 where id = \'3\'', [Function])
+    at done (D:\item\zyd_share\sc_Manager\func\sqlite.js:64:16)
+    at Object.sqlite.query (D:\item\zyd_share\sc_Manager\func\sqlite.js:36:5)
+    at Object.exports.index (D:\item\zyd_share\sc_Manager\routes\admin_control.js:43:21)
+    at Object.module.exports.run (D:\item\zyd_share\sc_Manager\routes\Tpl\adminfunc\servers.js:5:14)
+    at D:\item\zyd_share\sc_Manager\routes\app_routes_main.js:53:20】
+---2017-6-9 17:41:37【ReferenceError: wh is not defined
+    at Object.module.exports.run (D:\item\zyd_share\sc_Manager\routes\Tpl\adminfunc\servers.js:22:4)
+    at D:\item\zyd_share\sc_Manager\routes\app_routes_main.js:53:20
+--> in Database#all('select id,权限 from 管_权限表 where id = \'3\'', [Function])
+    at done (D:\item\zyd_share\sc_Manager\func\sqlite.js:64:16)
+    at Object.sqlite.query (D:\item\zyd_share\sc_Manager\func\sqlite.js:36:5)
+    at Object.exports.index (D:\item\zyd_share\sc_Manager\routes\admin_control.js:43:21)
+    at Object.module.exports.run (D:\item\zyd_share\sc_Manager\routes\Tpl\adminfunc\servers.js:5:14)
+    at D:\item\zyd_share\sc_Manager\routes\app_routes_main.js:53:20】
+---2017-6-9 17:42:20【ReferenceError: wh is not defined
+    at Object.module.exports.run (D:\item\zyd_share\sc_Manager\routes\Tpl\adminfunc\servers.js:22:4)
+    at D:\item\zyd_share\sc_Manager\routes\app_routes_main.js:53:20
+--> in Database#all('select id,权限 from 管_权限表 where id = \'3\'', [Function])
+    at done (D:\item\zyd_share\sc_Manager\func\sqlite.js:64:16)
+    at Object.sqlite.query (D:\item\zyd_share\sc_Manager\func\sqlite.js:36:5)
+    at Object.exports.index (D:\item\zyd_share\sc_Manager\routes\admin_control.js:43:21)
+    at Object.module.exports.run (D:\item\zyd_share\sc_Manager\routes\Tpl\adminfunc\servers.js:5:14)
+    at D:\item\zyd_share\sc_Manager\routes\app_routes_main.js:53:20】
+---2017-6-9 17:42:21【ReferenceError: wh is not defined
+    at Object.module.exports.run (D:\item\zyd_share\sc_Manager\routes\Tpl\adminfunc\servers.js:22:4)
+    at D:\item\zyd_share\sc_Manager\routes\app_routes_main.js:53:20
+--> in Database#all('select id,权限 from 管_权限表 where id = \'3\'', [Function])
+    at done (D:\item\zyd_share\sc_Manager\func\sqlite.js:64:16)
+    at Object.sqlite.query (D:\item\zyd_share\sc_Manager\func\sqlite.js:36:5)
+    at Object.exports.index (D:\item\zyd_share\sc_Manager\routes\admin_control.js:43:21)
+    at Object.module.exports.run (D:\item\zyd_share\sc_Manager\routes\Tpl\adminfunc\servers.js:5:14)
+    at D:\item\zyd_share\sc_Manager\routes\app_routes_main.js:53:20】
+---2017-6-9 17:53:53【ReferenceError: wh is not defined
+    at Object.module.exports.run (D:\item\zyd_share\sc_Manager\routes\Tpl\adminfunc\exchange.js:27:4)
+    at D:\item\zyd_share\sc_Manager\routes\app_routes_main.js:53:20
+--> in Database#all('select id,权限 from 管_权限表 where id = \'3\'', [Function])
+    at done (D:\item\zyd_share\sc_Manager\func\sqlite.js:64:16)
+    at Object.sqlite.query (D:\item\zyd_share\sc_Manager\func\sqlite.js:36:5)
+    at Object.exports.index (D:\item\zyd_share\sc_Manager\routes\admin_control.js:43:21)
+    at Object.module.exports.run (D:\item\zyd_share\sc_Manager\routes\Tpl\adminfunc\exchange.js:5:14)
+    at D:\item\zyd_share\sc_Manager\routes\app_routes_main.js:53:20】
+---2017-6-9 17:53:54【ReferenceError: wh is not defined
+    at Object.module.exports.run (D:\item\zyd_share\sc_Manager\routes\Tpl\adminfunc\exchange.js:27:4)
+    at D:\item\zyd_share\sc_Manager\routes\app_routes_main.js:53:20
+--> in Database#all('select id,权限 from 管_权限表 where id = \'3\'', [Function])
+    at done (D:\item\zyd_share\sc_Manager\func\sqlite.js:64:16)
+    at Object.sqlite.query (D:\item\zyd_share\sc_Manager\func\sqlite.js:36:5)
+    at Object.exports.index (D:\item\zyd_share\sc_Manager\routes\admin_control.js:43:21)
+    at Object.module.exports.run (D:\item\zyd_share\sc_Manager\routes\Tpl\adminfunc\exchange.js:5:14)
+    at D:\item\zyd_share\sc_Manager\routes\app_routes_main.js:53:20】
+---2017-6-9 17:55:54【ReferenceError: wh is not defined
+    at Object.module.exports.run (D:\item\zyd_share\sc_Manager\routes\Tpl\adminfunc\exchange.js:27:4)
+    at D:\item\zyd_share\sc_Manager\routes\app_routes_main.js:53:20
+--> in Database#all('select id,权限 from 管_权限表 where id = \'3\'', [Function])
+    at done (D:\item\zyd_share\sc_Manager\func\sqlite.js:64:16)
+    at Object.sqlite.query (D:\item\zyd_share\sc_Manager\func\sqlite.js:36:5)
+    at Object.exports.index (D:\item\zyd_share\sc_Manager\routes\admin_control.js:43:21)
+    at Object.module.exports.run (D:\item\zyd_share\sc_Manager\routes\Tpl\adminfunc\exchange.js:5:14)
+    at D:\item\zyd_share\sc_Manager\routes\app_routes_main.js:53:20】
+---2017-6-9 17:57:54【ReferenceError: wh is not defined
+    at Object.module.exports.run (D:\item\zyd_share\sc_Manager\routes\Tpl\adminfunc\batch_withdrawal.js:29:4)
+    at D:\item\zyd_share\sc_Manager\routes\app_routes_main.js:53:20
+--> in Database#all('select id,权限 from 管_权限表 where id = \'3\'', [Function])
+    at done (D:\item\zyd_share\sc_Manager\func\sqlite.js:64:16)
+    at Object.sqlite.query (D:\item\zyd_share\sc_Manager\func\sqlite.js:36:5)
+    at Object.exports.index (D:\item\zyd_share\sc_Manager\routes\admin_control.js:43:21)
+    at Object.module.exports.run (D:\item\zyd_share\sc_Manager\routes\Tpl\adminfunc\batch_withdrawal.js:5:14)
+    at D:\item\zyd_share\sc_Manager\routes\app_routes_main.js:53:20】
+---2017-6-9 17:57:55【ReferenceError: wh is not defined
+    at Object.module.exports.run (D:\item\zyd_share\sc_Manager\routes\Tpl\adminfunc\batch_withdrawal.js:29:4)
+    at D:\item\zyd_share\sc_Manager\routes\app_routes_main.js:53:20
+--> in Database#all('select id,权限 from 管_权限表 where id = \'3\'', [Function])
+    at done (D:\item\zyd_share\sc_Manager\func\sqlite.js:64:16)
+    at Object.sqlite.query (D:\item\zyd_share\sc_Manager\func\sqlite.js:36:5)
+    at Object.exports.index (D:\item\zyd_share\sc_Manager\routes\admin_control.js:43:21)
+    at Object.module.exports.run (D:\item\zyd_share\sc_Manager\routes\Tpl\adminfunc\batch_withdrawal.js:5:14)
+    at D:\item\zyd_share\sc_Manager\routes\app_routes_main.js:53:20】
+---2017-6-9 17:59:14【ReferenceError: wh is not defined
+    at Object.module.exports.run (D:\item\zyd_share\sc_Manager\routes\Tpl\adminfunc\picture_list.js:29:4)
+    at D:\item\zyd_share\sc_Manager\routes\app_routes_main.js:53:20
+--> in Database#all('select id,权限 from 管_权限表 where id = \'3\'', [Function])
+    at done (D:\item\zyd_share\sc_Manager\func\sqlite.js:64:16)
+    at Object.sqlite.query (D:\item\zyd_share\sc_Manager\func\sqlite.js:36:5)
+    at Object.exports.index (D:\item\zyd_share\sc_Manager\routes\admin_control.js:43:21)
+    at Object.module.exports.run (D:\item\zyd_share\sc_Manager\routes\Tpl\adminfunc\picture_list.js:5:14)
+    at D:\item\zyd_share\sc_Manager\routes\app_routes_main.js:53:20】
+---2017-6-9 18:3:21【ReferenceError: wh is not defined
+    at Object.module.exports.run (D:\item\zyd_share\sc_Manager\routes\Tpl\adminfunc\payment_order.js:30:4)
+    at D:\item\zyd_share\sc_Manager\routes\app_routes_main.js:53:20
+--> in Database#all('select id,权限 from 管_权限表 where id = \'3\'', [Function])
+    at done (D:\item\zyd_share\sc_Manager\func\sqlite.js:64:16)
+    at Object.sqlite.query (D:\item\zyd_share\sc_Manager\func\sqlite.js:36:5)
+    at Object.exports.index (D:\item\zyd_share\sc_Manager\routes\admin_control.js:43:21)
+    at Object.module.exports.run (D:\item\zyd_share\sc_Manager\routes\Tpl\adminfunc\payment_order.js:5:14)
+    at D:\item\zyd_share\sc_Manager\routes\app_routes_main.js:53:20】
+---2017-6-9 18:3:22【ReferenceError: wh is not defined
+    at Object.module.exports.run (D:\item\zyd_share\sc_Manager\routes\Tpl\adminfunc\payment_order.js:30:4)
+    at D:\item\zyd_share\sc_Manager\routes\app_routes_main.js:53:20
+--> in Database#all('select id,权限 from 管_权限表 where id = \'3\'', [Function])
+    at done (D:\item\zyd_share\sc_Manager\func\sqlite.js:64:16)
+    at Object.sqlite.query (D:\item\zyd_share\sc_Manager\func\sqlite.js:36:5)
+    at Object.exports.index (D:\item\zyd_share\sc_Manager\routes\admin_control.js:43:21)
+    at Object.module.exports.run (D:\item\zyd_share\sc_Manager\routes\Tpl\adminfunc\payment_order.js:5:14)
+    at D:\item\zyd_share\sc_Manager\routes\app_routes_main.js:53:20】

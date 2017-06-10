@@ -1,0 +1,9 @@
+---2017-6-10 14:25:9【错误语句:select count('1') count from  三_批检表  where  1=1  and 状态 = '显示'错误信息:error: 字段 "状态" 不存在
+    at Connection.parseE (D:\item\zyd_share\sc_Manager\node_modules\pg\lib\connection.js:539:11)
+    at Connection.parseMessage (D:\item\zyd_share\sc_Manager\node_modules\pg\lib\connection.js:366:17)
+    at Socket.<anonymous> (D:\item\zyd_share\sc_Manager\node_modules\pg\lib\connection.js:105:22)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at readableAddChunk (_stream_readable.js:176:18)
+    at Socket.Readable.push (_stream_readable.js:134:10)
+    at TCP.onread (net.js:551:20)】
