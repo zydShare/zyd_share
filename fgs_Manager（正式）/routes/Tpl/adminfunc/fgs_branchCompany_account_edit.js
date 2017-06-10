@@ -61,6 +61,10 @@ module.exports.form = function(f, pg, mo) {
 		
 	} else if(f.data.id == '') {
 
+//		if(f.data.状态==""||f.data.状态==null){
+//			f.data.状态=0;
+//		}
+		
 		sql = "insert into 分_分公司账户表 (账号,卡号,姓名,积分,余额,回流账户,分红账户,分公司名称,分公司编号,所占股数,说明,状态,类别,录入人,录入时间,反馈,备注) values ('" 
 		+f.data.账号 + "','" 
 		+f.data.卡号 + "','" 

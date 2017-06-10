@@ -27,6 +27,7 @@ var pgdb = require('../../../func/pgdb.js');
 module.exports.form = function(f, pg, mo) {
 	f._json = account.json();
 	var sql_con = '';
+	
 
 	//更改
 	var sql = "insert into 分_分公司成员表 (账号,姓名,所占股数,单股金额,分公司名称,状态,类别,录入人,录入时间,个人提取分红,分公司id,备注 ) values ('" +
