@@ -1,2 +1,0 @@
----2017-5-31 11:5:55【Error: SQLITE_MISUSE: Database handle is closed
-    at Error (native)】
