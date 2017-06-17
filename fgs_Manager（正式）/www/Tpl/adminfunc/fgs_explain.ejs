@@ -9,7 +9,6 @@
 	<p><input type="button" value="添加说明" onclick='jq_bottom("1","/Tpl/adminfunc/fgs_explain_insert.xhtml?a=1","添加说明","fgs_explain","")' class="addData" /></p>
 </div>
 <% }%>
-
 <div id="select_button">
 	<% if(_按钮权限.indexOf("fgs_explain_update")>=0){ %>
 	<a v='["1","/Tpl/adminfunc/fgs_explain_update.xhtml?a=1","修改说明","fgs_explain",""]'>修改说明</a>
@@ -59,7 +58,7 @@
 	<thead>
 		<tr>
 			<th class="first" width="30"><input name="" type="checkbox" onclick="dein()" id="howinput" /></th>
-			<th width="80px">
+			<th width="80px" class="iii">
 				<a onclick="ord('序号')">序号
 					<%=arrow['序号']%>
 				</a>
@@ -115,6 +114,7 @@
 		<td colspan="15" style="color: #333;line-height: 4;font-size: 16px; border-bottom: 0px solid #FFF;"><img style="width: 25px; vertical-align: middle; margin-right: 10px;" src="../../public/admin/images/close.png" />没有查询到符合条件的记录</td>
 		<% }r.forEach(function (name,key){if(class_name == "class=even") class_name = ''; else class_name = "class=even";%>
 		<tr <%=class_name%> >
+
 			<td class="first"><input name="howde[]" type="checkbox" value="<%=name.id%>" class="idinput" /></td>
 			<td>
 				<% var pageNum = Number(arg.page)-1; var sumNum = Number(arg.sumnum); if(sumNum == '' || sumNum == null || !sumNum){sumNum = key+1}else{ sumNum = key + 1 + pageNum*sumNum} %>
@@ -146,5 +146,7 @@
 			</td>
 			<td class="up_de" v="<%=name.id%>"><img src="../../public/admin/images/more1.png" class="up_select" /></td>
 		</tr>
+		
+
 		<% })%>
 		<% include ../admin/look_bottom.ejs %>

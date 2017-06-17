@@ -960,3 +960,11 @@ function shuru5(a) {
 function _reset() {
 	history.go(0)
 }
+
+$(document).ready(function(){
+	var td_width = $("#checkList").children("thead").children().children().length;
+	$("[colspan=15]").attr("colspan",td_width);
+	console.log($("#checkList").find("tbody>td").attr("colspan"));
+})
+
+
