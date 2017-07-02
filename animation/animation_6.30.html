@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			p{position: absolute;top:50%;left:50%;transform: translate(-50%,-50%);}
+			p:hover{
+				color: #1E88E5;
+				animation: demo 1s linear infinite;
+				-webkit-animation: demo 1s linear infinite;
+			}
+			@keyframes demo{
+				from{
+					transform: scale(1) rotate(0);
+				}
+				to{
+					transform: scale(3) rotate(100deg);
+				}
+			}
+			@-webkit-keyframes demo{
+				from{
+					transform: scale(1) rotate(0);
+				}
+				to{
+					transform: scale(3) rotate(100deg);
+				}
+			}
+		</style>
+	</head>
+
+	<body>
+		<p>lalala</p>
+	</body>
+
+</html>
