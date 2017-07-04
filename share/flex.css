@@ -28,10 +28,10 @@
 		.flex-hb-vc { display: box; display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; -webkit-box-align: center; -webkit-align-items: center; -moz-align-items: center; -ms-align-items: center; -o-align-items: center; align-items: center; -webkit-box-pack: space-between; -webkit-justify-content: space-between; -moz-justify-content: space-between; -ms-justify-content: space-between; -o-justify-content: space-between; justify-content: space-between; }	
 		/*flex 水平等间距排列，首尾留白&垂直居中 兼容写法*/
 		.flex-ha-vc { display: box; display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; -webkit-box-align: center; -webkit-align-items: center; -moz-align-items: center; -ms-align-items: center; -o-align-items: center; align-items: center; -webkit-box-pack: space-around; -webkit-justify-content: space-around; -moz-justify-content: space-around; -ms-justify-content: space-around; -o-justify-content: space-around; justify-content: space-around; }
-	
+		.flex-hb-vt { display: box; display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; -webkit-box-align: start; -webkit-align-items: flex-start; -moz-align-items: start; -ms-align-items: start; -o-align-items: start; align-items: flex-start; -webkit-box-pack: space-between; -webkit-justify-content: space-between; -moz-justify-content: space-between; -ms-justify-content: space-between; -o-justify-content: space-between; justify-content: space-between; }
 	/*主轴是垂直*/
 		.flex-hc-vl { display: box; display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; -webkit-box-align: start; -webkit-align-items: flex-start; -moz-align-items: start; -ms-align-items: start; -o-align-items: start; align-items: flex-start; -webkit-box-pack: center; -webkit-justify-content: center; -moz-justify-content: center; -ms-justify-content: center; -o-justify-content: center; justify-content: center; }
-	
+		
 	
 	/* 父元素-横向换行 */
 	.flex-hw {
