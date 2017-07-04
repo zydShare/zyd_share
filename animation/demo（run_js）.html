@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1.0, user-scalable=no" />
+
+		<title></title>
+		<link rel="stylesheet" href="css/common.css" />
+		<link rel="stylesheet" href="css/flat-ui.css" />
+		<script src="js/init.js"></script>
+
+		<style>
+			.run {
+				width: 300px;
+				height: 372px;
+				/*position: relative;*/
+				position: absolute;
+				top:50%;
+				left:50%;
+				transform: translate(-50%,-50%);
+			}
+			
+			.run-pic {
+				position: absolute;
+				width: 300px;
+				height: 372px;
+				display: block;
+
+			}
+			
+			#frame1 {
+				background: url(img/run/run_01.png);
+			}
+			
+			#frame2 {
+				background: url(img/run/run_02.png);
+			}
+			
+			#frame3 {
+				background: url(img/run/run_03.png);
+			}
+			
+			#frame4 {
+				background: url(img/run/run_04.png);
+			}
+			
+			#frame5 {
+				background: url(img/run/run_05.png);
+			}
+			
+			#frame6 {
+				background: url(img/run/run_06.png);
+			}
+			
+			#frame7 {
+				background: url(img/run/run_07.png);
+			}
+			
+			#frame8 {
+				background: url(img/run/run_08.png);
+			}
+			
+			#frame9 {
+				background: url(img/run/run_09.png);
+			}
+			
+			#frame10 {
+				background: url(img/run/run_10.png);
+			}
+			
+			#frame11 {
+				background: url(img/run/run_11.png);
+			}
+			
+			#frame12 {
+				background: url(img/run/run_12.png);
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="run">
+			<div id="frame1" class="run-pic"></div>
+			<div id="frame2" class="run-pic"></div>
+			<div id="frame3" class="run-pic"></div>
+			<div id="frame4" class="run-pic"></div>
+			<div id="frame5" class="run-pic"></div>
+			<div id="frame6" class="run-pic"></div>
+			<div id="frame7" class="run-pic"></div>
+			<div id="frame8" class="run-pic"></div>
+			<div id="frame9" class="run-pic"></div>
+			<div id="frame10" class="run-pic"></div>
+			<div id="frame11" class="run-pic"></div>
+			<div id="frame12" class="run-pic"></div>
+		</div>
+		<script src="js/jquery-3.1.1.min.js"></script>
+		<script>
+			$(document).ready(function() {
+				$('.run-pic').each(function(index) {
+					$(this).hide(0).delay(index * 100).show(0, loop);
+				});
+			});
+
+			function loop() {
+				$(this).delay(100).hide(0).delay(1100).show(0, loop);
+			}
+		</script>
+	</body>
+
+</html>

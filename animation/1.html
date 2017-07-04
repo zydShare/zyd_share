@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link href="css/flat-ui.css" type="text/css" rel="stylesheet" />
+		<style>
+			body {
+				background: #8b8ab3;
+			}
+			
+			.icon {
+				font-size: 0px;
+				/*使span中的文字不显示*/
+				cursor: pointer;
+				/*使鼠标指针显示为手型*/
+				display: block;
+				width: 100px;
+				height: 100px;
+				line-height: 100px;
+				border-radius: 50%;
+				/*使背景形状显示为圆形*/
+				background: #FFF;
+				color: #8b8ab3;
+				text-align: center;
+				/*position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);*/
+			}
+			
+			/*.close::before {
+				content: "\e609";
+				font-family: 'Flat-UI-Icons';
+				speak: none;
+
+				font-size: 48px;
+				display: block;
+			}*/
+			/*.close:hover::before {
+				-webkit-transform: rotate(360deg);
+				transform: rotate(360deg);
+				-webkit-transition: -webkit-transform 1s linear;
+				transition: transform 1s linear;
+			}*/
+			
+			/*.close:hover::before {
+				-webkit-animation: spin 1s linear;
+				animation: spin 1s linear;
+			}*/
+			
+			/*.close:hover::before {
+				-webkit-animation: spin 1s linear infinite;
+				animation: spin 1s linear infinite;
+			}*/
+			
+			/*@-webkit-keyframes spin {
+
+				from {
+					-webkit-transform: rotate(0deg);
+				}
+				to {
+					-webkit-transform: rotate(360deg);
+				}
+			}*/
+			
+			/*@keyframes spin {
+				from {
+					transform: rotate(0deg);
+				}
+				to {
+					transform: rotate(360deg);
+				}
+			}*/
+			
+			.icon {
+				/*font-family: 'Flat-UI-Icons';*/
+				display: inline-block;
+				margin-right: 20px;
+			}
+			
+			.home::before {
+				content: "\e62e";
+				font-family: 'Flat-UI-Icons';
+				speak: none;
+				/*使文本内容不能通过屏幕阅读器等辅助设备读取*/
+				font-size: 48px;
+				display: block;
+			}
+			
+			.search::before {
+				content: "\e630";
+				font-family: 'Flat-UI-Icons';
+				speak: none;
+				/*使文本内容不能通过屏幕阅读器等辅助设备读取*/
+				font-size: 48px;
+				display: block;
+			}
+			
+			.user::before {
+				content: "\e631";
+				font-family: 'Flat-UI-Icons';
+				speak: none;
+				/*使文本内容不能通过屏幕阅读器等辅助设备读取*/
+				font-size: 48px;
+				display: block;
+			}
+			
+			.mail::before {
+				content: "\e632";
+				font-family: 'Flat-UI-Icons';
+				speak: none;
+				/*使文本内容不能通过屏幕阅读器等辅助设备读取*/
+				font-size: 48px;
+				display: block;
+			}
+			
+			.chat::before {
+				content: "\e633";
+				font-family: 'Flat-UI-Icons';
+				speak: none;
+				/*使文本内容不能通过屏幕阅读器等辅助设备读取*/
+				font-size: 48px;
+				display: block;
+			}
+			div{
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+			}
+			div:hover .icon {
+				-webkit-animation: move 1s;
+				animation: move 1s;
+			}
+			
+			@-webkit-keyframes move {
+				from {
+					opacity: 0;
+					-webkit-transform: translateY(100%);
+				}
+				to {
+					opacity: 1;
+					-webkit-transform: translateY(0%);
+				}
+			}
+			
+			@keyframes move {
+				from {
+					opacity: 0;
+					transform: translateY(100%);
+				}
+				to {
+					opacity: 1;
+					transform: translateY(0%);
+				}
+			}
+			
+			div:hover .home {
+				-webkit-animation-delay: 0s;
+				animation-delay: 0s;
+			}
+			
+			div:hover .search {
+				-webkit-animation-delay: .1s;
+				animation-delay: .1s;
+			}
+			
+			div:hover .user {
+				-webkit-animation-delay: .2s;
+				animation-delay: .2s;
+			}
+			
+			div:hover .mail {
+				-webkit-animation-delay: .3s;
+				animation-delay: .3s;
+			}
+			
+			div:hover .chat {
+				-webkit-animation-delay: .4s;
+				animation-delay: .4s;
+			}
+			/*.icon{
+  -webkit-animation:move 1s cubic-bezier(.62,-0.91,.45,1.97);
+  animation:move 1s cubic-bezier(.62,-0.91,.45,1.97);
+}*/
+		</style>
+	</head>
+
+	<body>
+		<!--<span class="close">Close</span>-->
+		<div>
+			<span class="home icon">Home</span>
+			<span class="search icon">Search</span>
+			<span class="user icon">User</span>
+			<span class="mail icon">Mail</span>
+			<span class="chat icon">Chat</span>
+		</div>
+
+	</body>
+
+</html>
