@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>HTML5手机端三级联动城市选择代码</title>
+		<link rel="stylesheet" type="text/css" href="css/demo.css">
+		<link rel="stylesheet" type="text/css" href="css/common.css" />
+
+		<script src="js/init.js"></script>
+		<style>
+			.picker {
+				z-index: 1314!important;
+				transition: none!important;
+				-webkit-transition: none!important;
+			}
+			
+			.picker .picker-panel {
+				position: absolute!important;
+				z-index: 600;
+				width: 6.5rem!important;
+				height: 6.0rem!important;
+				left: 50%!important;
+				top: 50%!important;
+				transform: translate(-50%, -50%)!important;
+				-webkit-transform: translate(-50%, -50%)!important;
+				border-radius: .15rem!important;
+			}
+			
+			.picker .picker-panel .wheel-wrapper .wheel {
+				/*height: 3rem!important;*/
+			}
+			
+			.picker .picker-panel .picker-choose .picker-title {
+				line-height: 2!important;
+				font-size: .4rem!important;
+			}
+			
+			.picker .picker-footer {
+				text-align: center!important;
+				margin-top: .25rem!important;
+				display: flex;
+				display: -webkit-flex;
+				justify-content: center;
+				-webkit-justify-content: center;
+				align-content: center;
+				-webkit-align-content: center;
+			}
+			
+			.picker .picker-footer span {
+				width: 2.5rem!important;
+				height: .8rem!important;
+				line-height: .8rem!important;
+				text-align: center!important;
+				border-radius: .08rem!important;
+				font-size: .35rem!important;
+			}
+			
+			.picker .picker-footer span:first-child {
+				margin-right: .5rem!important;
+				color: #333333!important;
+				border: 2px solid #d8d8d8!important;
+				background-color: #ffffff!important;
+			}
+			
+			.picker .picker-footer span:last-child {
+				/*margin-right: .3rem!important;*/
+				color: #FFFFFF!important;
+				border: 2px solid #268AD1!important;
+				background-color: #2B9CED!important;
+			}
+			
+			@media only screen and (min-width: 300px) and (max-width: 350px) {
+				.picker .picker-panel .wheel-wrapper .wheel {
+					height: 3.2rem!important;
+				}
+				.picker .picker-panel .wheel-wrapper .wheel .wheel-scroll {
+					margin-top: 1.0rem!important;
+					line-height: 1.0rem!important;
+				}
+				.picker .picker-panel .picker-content .mask-bottom {
+					height: 1.2rem!important;
+				}
+				.picker .picker-panel .picker-content .mask-top {
+					height: 1.0rem!important;
+				}
+				.picker .picker-panel .wheel-wrapper .wheel .wheel-scroll .wheel-item {
+					height: .9rem!important;
+					line-height: 1.12rem;
+					font-size: .35rem!important;
+				}
+			}
+			
+			@media only screen and (min-width: 350px) and (max-width: 400px) {
+				.picker .picker-panel .wheel-wrapper .wheel {
+					height: 3.2rem!important;
+				}
+				.picker .picker-panel .wheel-wrapper .wheel .wheel-scroll {
+					margin-top: 1.0rem!important;
+					line-height: 1.0rem!important;
+				}
+				.picker .picker-panel .picker-content .mask-bottom {
+					height: 1.2rem!important;
+				}
+				.picker .picker-panel .picker-content .mask-top {
+					height: 1.0rem!important;
+				}
+				.picker .picker-panel .wheel-wrapper .wheel .wheel-scroll .wheel-item {
+					height: 1rem!important;
+					font-size: .35rem!important;
+				}
+			}
+			
+			@media only screen and (min-width: 400px) {
+				.picker .picker-panel .wheel-wrapper .wheel {
+					height: 3.3rem!important;
+				}
+				.picker .picker-panel .wheel-wrapper .wheel .wheel-scroll {
+					margin-top: 1.2rem!important;
+					line-height: 1.1rem!important;
+				}
+				.picker .picker-panel .picker-content .mask-bottom {
+					height: 1.1rem!important;
+				}
+				.picker .picker-panel .picker-content .mask-top {
+					height: 1.1rem!important;
+				}
+				.picker .picker-panel .wheel-wrapper .wheel .wheel-scroll .wheel-item {
+					height: 1.2rem!important;
+					line-height: 1.0rem!important;
+					font-size: .36rem!important;
+				}
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="container">
+
+			<div class="row main" style="margin-top:30px;">
+				<div class="col-md-12">
+					<div class="row" style="line-height: 36px; text-align: center;font-size:18px;">
+						<a href="#" class="btn btn-info btn-lg active" role="button" id="sel_city">点击选取省市区县</a>
+					</div>
+
+				</div>
+			</div>
+
+		</div>
+		<script src="js/picker.min.js"></script>
+		<script src="js/city.js"></script>
+		<script>
+			var nameEl = document.getElementById('sel_city');
+
+			var first = []; /* 省，直辖市 */
+			var second = []; /* 市 */
+			var third = []; /* 镇 */
+
+			var selectedIndex = [0, 0]; /* 默认选中的地区 */
+
+			var checked = [0, 0]; /* 已选选项 */
+
+			function creatList(obj, list) {
+				obj.forEach(function(item, index, arr) {
+					var temp = new Object();
+					temp.text = item.name;
+					temp.data = item.quhao;
+					temp.value = index;
+					list.push(temp);
+					console.log(temp);
+					//				console.log(temp.text);
+					//				console.log(temp.value);
+					console.log(temp.data);
+				})
+
+			}
+
+			creatList(city, first);
+
+			if(city[selectedIndex[0]].hasOwnProperty('sub')) {
+				creatList(city[selectedIndex[0]].sub, second);
+			} else {
+				second = [{ text: '', value: 0 }];
+			}
+
+			if(city[selectedIndex[0]].sub[selectedIndex[1]].hasOwnProperty('sub')) {
+				creatList(city[selectedIndex[0]].sub[selectedIndex[1]].sub, third);
+			} else {
+				third = [{ text: '', value: 0 }];
+			}
+
+			var picker = new Picker({
+				data: [first, second],
+				selectedIndex: selectedIndex,
+				title: '选择省市'
+			});
+
+			picker.on('picker.select', function(selectedVal, selectedIndex) {
+				var text1 = first[selectedIndex[0]].text;
+				var text2 = second[selectedIndex[1]].text;
+				var text4 = second[selectedIndex[1]].data;
+				var text3 = third[selectedIndex[2]] ? third[selectedIndex[2]].text : '';
+				nameEl.innerText = text1 + ' ' + text2 + ' ' + text4;
+
+			});
+
+			picker.on('picker.change', function(index, selectedIndex) {
+				if(index === 0) {
+					firstChange();
+				} else if(index === 1) {
+					secondChange();
+				}
+
+				function firstChange() {
+					second = [];
+					third = [];
+					checked[0] = selectedIndex;
+					var firstCity = city[selectedIndex];
+					if(firstCity.hasOwnProperty('sub')) {
+						creatList(firstCity.sub, second);
+
+						var secondCity = city[selectedIndex].sub[0]
+						if(secondCity.hasOwnProperty('sub')) {
+							creatList(secondCity.sub, third);
+						} else {
+							third = [{ text: '', value: 0 }];
+							checked[2] = 0;
+						}
+					} else {
+						second = [{ text: '', value: 0 }];
+						third = [{ text: '', value: 0 }];
+						checked[1] = 0;
+						checked[2] = 0;
+					}
+
+					picker.refillColumn(1, second);
+					picker.refillColumn(2, third);
+					picker.scrollColumn(1, 0)
+					picker.scrollColumn(2, 0)
+				}
+
+				function secondChange() {
+					third = [];
+					checked[1] = selectedIndex;
+					var first_index = checked[0];
+					if(city[first_index].sub[selectedIndex].hasOwnProperty('sub')) {
+						var secondCity = city[first_index].sub[selectedIndex];
+						creatList(secondCity.sub, third);
+						picker.refillColumn(2, third);
+						picker.scrollColumn(2, 0)
+					} else {
+						third = [{ text: '', value: 0 }];
+						checked[2] = 0;
+						picker.refillColumn(2, third);
+						picker.scrollColumn(2, 0)
+					}
+				}
+
+			});
+
+			picker.on('picker.valuechange', function(selectedVal, selectedIndex) {
+				console.log(selectedVal);
+				console.log(selectedIndex);
+			});
+
+			nameEl.addEventListener('click', function() {
+				picker.show();
+			});
+		</script>
+	</body>
+
+</html>
