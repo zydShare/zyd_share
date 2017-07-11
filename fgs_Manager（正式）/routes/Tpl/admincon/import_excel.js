@@ -11,14 +11,14 @@ module.exports.run = function(f, pg, mo) {
 	//重定向
 	f = control.index(f);
 	
-	console.log(f.arg.sql)
-	console.log("excel啊啊啊啊啊")
+//	console.log(f.arg.sql)
+//	console.log("excel啊啊啊啊啊")
 	
 	if(f.arg.id == undefined){
 		f.arg.sql = f.arg.sql + " limit 10000";
 	}else{
 		var zs = (f.arg.sql).split("order");
-		console.log(zs[0]);
+//		console.log(zs[0]);
 		f.arg.sql = zs[0] + "and id in (" + f.arg.id + ")" + "order" + zs[1];
 	}
 	

@@ -277,14 +277,14 @@ function export_exl() {
 	how_id = howid();
 	if(id){
 		id_con = "&id="+how_id;
-		console.log(_exc)
+//		console.log(_exc)
 		_exc = _exc.replace(/&#39;/g,"'").replace(/&gt;/g,">").replace(/&lt;/g,"<");
-		console.log(_exc)
+//		console.log(_exc)
 		location.href = '/Tpl/admincon/import_excel.xhtml?sql=' + _exc + id_con;
 	}else{
-		console.log(_exc)		
+//		console.log(_exc)		
 		_exc = _exc.replace(/&#39;/g,"'").replace(/&gt;/g,">").replace(/&lt;/g,"<");
-		console.log(_exc)		
+//		console.log(_exc)		
 		location.href = '/Tpl/admincon/import_excel.xhtml?sql=' + _exc;
 		
 	}
@@ -391,11 +391,11 @@ function jq_bottom(type, html, name, pass, mo) {
 		}
 
 		id_con = "id=" + id + "&how_id=" + how_id;
-		console.log(id_con);			
+//		console.log(id_con);			
 		
 		html_con = "&_b_name=" + name + "&_b_pa=" + pass + "&_b_f=" + mo;
 		
-		console.log(html_con);			
+//		console.log(html_con);			
 		
 		jq_href(html + html_con + "&" + id_con);
 				
@@ -656,16 +656,9 @@ $(document).ready(function() {
 function select_button() {
 	$(".select_button a").click(function() {
 		v = $(this).attr("v");
-		console.log(v)
-		console.log("--------------")
+
 		v = JSON.parse(v);
-		console.log(v)
-		console.log("==============")
-		
-		id = $(this).parent().parent().attr('v');
-		console.log(id)		
-		console.log("++++++++++++++")
-		
+		id = $(this).parent().parent().attr('v');		
 		if(v[0] == 1) {
 			id_con = "id=" + id + "&how_id=";
 			html_con = "&_b_name=" + v[2] + "&_b_pa=" + v[3] + "&_b_f=" + v[4];

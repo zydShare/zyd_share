@@ -6,16 +6,16 @@
 <!--按钮区-->
 <% if(_按钮权限.indexOf("fgs_account_insert")>=0){ %>
 <div class="img-button img-2">
-	<p><input type="button" value="添加分_账户表" onclick='jq_bottom("1","/Tpl/adminfunc/fgs_account_insert.xhtml?a=1","添加分_账户表","fgs_account","")' class="addData" /></p>
+	<p><input type="button" value="添加分公司个人账户" onclick='jq_bottom("1","/Tpl/adminfunc/fgs_account_insert.xhtml?a=1","添加分公司个人账户","fgs_account","")' class="addData" /></p>
 </div>
 <% }%>
 
 <div id="select_button">
 	<% if(_按钮权限.indexOf("fgs_account_update")>=0){ %>
-	<a v='["1","/Tpl/adminfunc/fgs_account_update.xhtml?a=1","修改","fgs_account",""]'>修改分_账户表</a>
+	<a v='["1","/Tpl/adminfunc/fgs_account_update.xhtml?a=1","修改分公司个人账户","fgs_account",""]'>修改分公司个人账户</a>
 	<% }%>
 	<% if(_按钮权限.indexOf("deleteClasses")>=0){ %>
-	<a v='["4","/Tpl/adminfunc/fgs_account_delete.xhtml?a=1","deleteClasses","fgs_account",""]'>删除分_账户表</a>
+	<a v='["4","/Tpl/adminfunc/fgs_account_delete.xhtml?a=1","deleteClasses","fgs_account",""]'>删除分公司个人账户</a>
 	<% }%>
 </div>
 <div id="search">
@@ -44,17 +44,31 @@
 				})
 			</script>
 			<div style="float:left;">
-				<div style="float:left;">账号：</div>
+				<div style="float:left;">卡号：</div>
 				<input type="text" name="卡号" value="<%= data.卡号%>" />&nbsp;&nbsp;</div>
 			<div style="float:left;">
-				<div style="float:left;">卡号：</div>
+				<div style="float:left;">账号：</div>
 				<input type="text" name="账号" value="<%= data.账号%>" />&nbsp;&nbsp;</div>
 			<div style="float:left;">
 				<div style="float:left;">姓名：</div>
-				<input type="text" name="账号" value="<%= data.账号%>" />&nbsp;&nbsp;</div>
+				<input type="text" name="姓名" value="<%= data.姓名%>" />&nbsp;&nbsp;</div>
 			<div style="float:left;">
 				<div style="float:left;">录入时间：</div>
 				<input style="height: 30px;padding: 4px 2px;height: 14px;line-height: 14px;border: solid 1px #666;" type="text" id="录入时间" name="录入时间" class="ui_timepicker" value="<%= data.录入时间%>" onclick="return showCalendar('录入时间','y-mm-dd');">&nbsp;&nbsp;</div>
+			<br/>
+			<div style="float:left;">
+				<div style="float:left;">状态：</div>
+				<input type="text" name="状态" value="<%= data.状态%>" />&nbsp;&nbsp;</div>
+			<div style="float:left;">
+				<div style="float:left;">类别：</div>
+				<input type="text" name="类别" value="<%= data.类别%>" />&nbsp;&nbsp;</div>
+			<div style="float:left;">
+				<div style="float:left;">开始日期：</div>
+				<input style="height: 30px;padding: 4px 2px;height: 14px;line-height: 14px;border: solid 1px #666;" type="text" id="开始日期" name="开始日期" class="ui_timepicker" value="<%= data.开始日期%>" onclick="return showCalendar('开始日期','y-mm-dd');">&nbsp;&nbsp;</div>
+			<div style="float:left;">
+				<div style="float:left;">结束日期：</div>
+				<input style="height: 30px;padding: 4px 2px;height: 14px;line-height: 14px;border: solid 1px #666;" type="text" id="结束日期" name="结束日期" class="ui_timepicker" value="<%= data.结束日期%>" onclick="return showCalendar('结束日期','y-mm-dd');">&nbsp;&nbsp;</div>
+
 		</div>
 	</div>
 </div>
@@ -138,7 +152,6 @@
 					<%=arrow['反馈']%>
 				</a>
 			</th>
-			
 
 		</tr>
 	</thead>
@@ -153,7 +166,7 @@
 				<%= sumNum %>
 			</td>
 			<td class="up_de" v="<%=name.id%>"><img src="../../public/admin/images/more1.png" class="up_select" /></td>
-			
+
 			<td>
 				<%=name.id%>
 			</td>

@@ -47,6 +47,21 @@
 			<div style="float:left;">
 				<div style="float:left;">录入时间：</div>
 				<input style="height: 30px;padding: 4px 2px;height: 14px;line-height: 14px;border: solid 1px #666;" type="text" id="录入时间" name="录入时间" class="ui_timepicker" value="<%= data.录入时间%>" onclick="return showCalendar('录入时间','y-mm-dd');">&nbsp;&nbsp;</div>
+
+			<br/>
+			<div style="float:left;">
+				<div style="float:left;">状态：</div>
+				<input type="text" name="状态" value="<%= data.状态%>" />&nbsp;&nbsp;</div>
+			<div style="float:left;">
+				<div style="float:left;">类别：</div>
+				<input type="text" name="类别" value="<%= data.类别%>" />&nbsp;&nbsp;</div>
+			<div style="float:left;">
+				<div style="float:left;">开始日期：</div>
+				<input style="height: 30px;padding: 4px 2px;height: 14px;line-height: 14px;border: solid 1px #666;" type="text" id="开始日期" name="开始日期" class="ui_timepicker" value="<%= data.开始日期%>" onclick="return showCalendar('开始日期','y-mm-dd');">&nbsp;&nbsp;</div>
+			<div style="float:left;">
+				<div style="float:left;">结束日期：</div>
+				<input style="height: 30px;padding: 4px 2px;height: 14px;line-height: 14px;border: solid 1px #666;" type="text" id="结束日期" name="结束日期" class="ui_timepicker" value="<%= data.结束日期%>" onclick="return showCalendar('结束日期','y-mm-dd');">&nbsp;&nbsp;</div>
+
 		</div>
 	</div>
 </div>
@@ -61,6 +76,9 @@
 				<a onclick="ord('序号')">序号
 					<%=arrow['序号']%>
 				</a>
+			</th>
+			<th width="150px">
+				<a>操作</a>
 			</th>
 			<th width="80px">
 				<a onclick="ord('id')">id
@@ -148,14 +166,10 @@
 					<%=arrow['反馈']%>
 				</a>
 			</th>
-			<th width="100px">
+			<th width="350px">
 				<a onclick="ord('备注')">备注
 					<%=arrow['备注']%>
 				</a>
-			</th>
-			
-			<th width="150px">
-				<a>操作</a>
 			</th>
 
 		</tr>
@@ -170,6 +184,8 @@
 				<% var pageNum = Number(arg.page)-1; var sumNum = Number(arg.sumnum); if(sumNum == '' || sumNum == null || !sumNum){sumNum = key+1}else{ sumNum = key + 1 + pageNum*sumNum} %>
 				<%= sumNum %>
 			</td>
+			<td class="up_de" v="<%=name.id%>"><img src="../../public/admin/images/more1.png" class="up_select" /></td>
+			
 			<td>
 				<%=name.id%>
 			</td>
@@ -207,7 +223,7 @@
 			<td>
 				<%=name.说明%>
 			</td>
-	
+
 			<td>
 				<%=name.类别%>
 			</td>
@@ -226,7 +242,7 @@
 			<td>
 				<%=name.备注%>
 			</td>
-			<td class="up_de" v="<%=name.id%>"><img src="../../public/admin/images/more1.png" class="up_select" /></td>
+
 		</tr>
 		<% })%>
 		<% include ../admin/look_bottom.ejs %>

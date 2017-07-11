@@ -135,10 +135,10 @@ module.exports.lists = function(p, f, pg) {
 	p.numcon += '</div></div><script>new_html="' + new_html(f, '') + '";</script>';
 	f.page = p.numcon;
 	f.exc = p.sql + " order by " + f.arg.ord + p.arr_tb;
-	console.log(f.exc)
+//	console.log(f.exc)
 	//数据库分页查询
 	sql = p.sql + " order by " + f.arg.ord + p.arr_tb + " limit " + p.num + " offset " + p.began;
-	console.log(sql)
+//	console.log(sql)
 	//f._exc =aes.aesEncodeCipher(p.sql+" order by "+f.arg.ord+p.arr_tb,stringFormat.md5(f._GET['_n']));
 	if(f.dbpath == 'pgdb')
 		f.r = pgdb.query(pg, sql).数据;

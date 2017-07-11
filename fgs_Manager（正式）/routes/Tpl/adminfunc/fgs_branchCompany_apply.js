@@ -7,27 +7,29 @@ module.exports.run = function(f, pg, mo) {
 	var p = {};
 	var wh = " 1=1 ";
 	if(f.data != null) {
-		if(f.data.状态 != null && f.data.状态 != '') {
-//			wh += " and 状态 = '" + f.data.状态 + "'";
-			wh = " 状态 LIKE '%"+f.data.状态+"%'";
-		}
 		if(f.data.账号 != null && f.data.账号 != '') {
-//			wh += " and 账号 = '" + f.data.账号 + "'";
-			wh = " 账号 LIKE '%"+f.data.账号+"%'";
+			//			wh += " and 账号 = '" + f.data.账号 + "'";
+			wh = " 账号 LIKE '%" + f.data.账号 + "%'";
 		}
 		if(f.data.名称 != null && f.data.名称 != '') {
-//			wh += " and 名称 = '" + f.data.名称 + "'";
-			wh = " 名称 LIKE '%"+f.data.名称+"%'";
+			//			wh += " and 名称 = '" + f.data.名称 + "'";
+			wh = " 名称 LIKE '%" + f.data.名称 + "%'";
 		}
 		if(f.data.姓名 != null && f.data.姓名 != '') {
-//			wh += " and 姓名  = '" + f.data.姓名 + "'";
-			wh = " 姓名 LIKE '%"+f.data.姓名+"%'";
+			//			wh += " and 姓名  = '" + f.data.姓名 + "'";
+			wh = " 姓名 LIKE '%" + f.data.姓名 + "%'";
 		}
 		if(f.data.编号 != null && f.data.编号 != '') {
-//			wh += " and 编号  = '" + f.data.编号 + "'";
-			wh = " 编号 LIKE '%"+f.data.编号+"%'";
+			//			wh += " and 编号  = '" + f.data.编号 + "'";
+			wh = " 编号 LIKE '%" + f.data.编号 + "%'";
 		}
 
+		if(f.data.状态 != null && f.data.状态 != '') {
+			wh = " 状态 LIKE '%" + f.data.状态 + "%'";
+		}
+		if(f.data.类别 != null && f.data.类别 != '') {
+			wh = " 类别 LIKE '%" + f.data.类别 + "%'";
+		}
 		if(f.data.开始日期 != null && f.data.开始日期 != '') {
 			wh += "and 录入时间 >= '" + f.data.开始日期 + " 00:00:00'";
 		}

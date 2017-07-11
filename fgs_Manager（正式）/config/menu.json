@@ -237,7 +237,7 @@
 				"类别": "平"
 			}, {
 				"id": 6,
-				"名称": "基本日志",
+				"名称": "分公司基本日志",
 				"func": "fgs_log_basic",
 				"网址": "/Tpl/adminfunc/fgs_log_basic.xhtml",
 				"是否头部": "0",
@@ -363,7 +363,7 @@
 				"类别": "平"
 			}, {
 				"id": 12,
-				"名称": "个人账户记录",
+				"名称": "分公司个人账户记录",
 				"func": "fgs_account",
 				"网址": "/Tpl/adminfunc/fgs_account.xhtml",
 				"是否头部": "0",
@@ -467,27 +467,6 @@
 				"菜单": "分公司管理",
 				"类别": "平"
 			}, {
-				"id": 17,
-				"名称": "分公司默认",
-				"func": "fgs_default",
-				"网址": "/Tpl/adminfunc/fgs_default.xhtml",
-				"是否头部": "0",
-				"是否菜单": "1",
-				"按钮内容":[
-					{
-						"字段": "添加分_默认表",
-						"func": "fgs_default_insert"
-					}, {
-						"字段": "修改分_默认表",
-						"func": "fgs_default_update"
-					}, {
-						"字段": "删除分_默认表",
-						"func": "deleteClasses"
-					}
-				],
-				"菜单": "分公司管理",
-				"类别": "平"
-			},{
 				"id": 18,
 				"名称": "分公司并发处理",
 				"func": "fgs_defend_concurrent",

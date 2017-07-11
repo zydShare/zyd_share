@@ -13,14 +13,20 @@ module.exports.run = function(f, pg, mo) {
 		if(f.data.真实名 != null && f.data.真实名 != '') {
 			wh += " and 真实名  = '" + f.data.真实名 + "'";
 		}
-		if(f.data.录入时间 != null && f.data.录入时间 != ''){
-			wh += "and 录入时间 >= '"+f.data.录入时间+"'";
+		if(f.data.录入时间 != null && f.data.录入时间 != '') {
+			wh += "and 录入时间 >= '" + f.data.录入时间 + "'";
 		}
-		
-		
-		
+
+
+		if(f.data.状态 != null && f.data.状态 != '') {
+			wh = " 状态 LIKE '%" + f.data.状态 + "%'";
+		}
+		if(f.data.类别 != null && f.data.类别 != '') {
+			wh = " 类别 LIKE '%" + f.data.类别 + "%'";
+		}
+
 	}
-	p.sql = "select id,名称,股数,单股金额,提成积分,协议,创建数量,全球提成,七大提成,上级提成,每股赠送个数,类别,状态,录入人,录入时间,说明,备注  from 分_分公司设置表  where"+wh;
+	p.sql = "select id,名称,股数,单股金额,提成积分,协议,创建数量,全球提成,七大提成,上级提成,每股赠送个数,类别,状态,录入人,录入时间,说明,备注  from 分_分公司设置表  where" + wh;
 	f = share.lists(p, f, pg);
 	return f;
 }

@@ -67,12 +67,25 @@
 			<div style="float:left;">
 				<div style="float:left;">录入时间：</div>
 				<input style="height: 30px;padding: 4px 2px;height: 14px;line-height: 14px;border: solid 1px #666;" type="text" id="录入时间" name="录入时间" class="ui_timepicker" value="<%= data.录入时间%>" onclick="return showCalendar('录入时间','y-mm-dd');">&nbsp;&nbsp;</div>
+			<br />
+			<div style="float:left;">
+				<div style="float:left;">状态：</div>
+				<input type="text" name="状态" value="<%= data.状态%>" />&nbsp;&nbsp;</div>	
+			<div style="float:left;">
+				<div style="float:left;">类别：</div>
+				<input type="text" name="类别" value="<%= data.类别%>" />&nbsp;&nbsp;</div>	
 			<div style="float:left;">
 				<div style="float:left;">开始日期：</div>
 				<input style="height: 30px;padding: 4px 2px;height: 14px;line-height: 14px;border: solid 1px #666;" type="text" id="开始日期" name="开始日期" class="ui_timepicker" value="<%= data.开始日期%>" onclick="return showCalendar('开始日期','y-mm-dd');">&nbsp;&nbsp;</div>
 			<div style="float:left;">
 				<div style="float:left;">结束日期：</div>
 				<input style="height: 30px;padding: 4px 2px;height: 14px;line-height: 14px;border: solid 1px #666;" type="text" id="结束日期" name="结束日期" class="ui_timepicker" value="<%= data.结束日期%>" onclick="return showCalendar('结束日期','y-mm-dd');">&nbsp;&nbsp;</div>
+			<br />
+			
+			<div style="float:left;">
+				<div style="float:left;">查询：</div>
+				<input type="text" name="查询" value="<%= data.查询%>" />&nbsp;&nbsp;</div>	
+			
 		</div>
 	</div>
 </div>

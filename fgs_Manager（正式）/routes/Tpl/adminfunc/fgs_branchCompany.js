@@ -6,6 +6,7 @@ module.exports.run = function(f, pg, mo) {
 	f._json = this.json();
 	var p = {};
 	var wh = " 1=1 ";
+	console.log(f.data);
 
 	if(f.data != null) {
 		if(f.data.账号 != null && f.data.账号 != '') {
@@ -30,12 +31,22 @@ module.exports.run = function(f, pg, mo) {
 		if(f.data.录入时间 != null && f.data.录入时间 != ''){
 			wh += "and 录入时间 >= '"+f.data.录入时间+"'";
 		}
+		if(f.data.状态 != null && f.data.状态 != ''){
+			wh = " 状态 LIKE '%"+f.data.状态+"%'";
+		}
+		if(f.data.类别 != null && f.data.类别 != ''){
+			wh = " 类别 LIKE '%"+f.data.类别+"%'";
+		}
 		
 		if(f.data.开始日期 != null && f.data.开始日期 != '') {
 			wh += "and 录入时间 >= '" + f.data.开始日期 + " 00:00:00'";
 		}
 		if(f.data.结束日期 != null && f.data.结束日期 != '') {
 			wh += "and 录入时间 <= '" + f.data.结束日期 + " 23:59:59'";
+		}
+		
+		if(f.data.查询 != null && f.data.查询 != ''){
+			wh = " concat(f.data.状态,f.data.类别) LIKE '%"+f.data.状态+"%'";
 		}
 		
 	}

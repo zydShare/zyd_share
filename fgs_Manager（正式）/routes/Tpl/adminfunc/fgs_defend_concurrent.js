@@ -13,12 +13,19 @@ module.exports.run = function(f, pg, mo) {
 		if(f.data.订单id != null && f.data.订单id != '') {
 			wh += " and 订单id = '" + f.data.订单id + "'";
 		}
-		if(f.data.录入时间 != null && f.data.录入时间 != ''){
-			wh += "and 录入时间 >= '"+f.data.录入时间+"'";
+		if(f.data.录入时间 != null && f.data.录入时间 != '') {
+			wh += "and 录入时间 >= '" + f.data.录入时间 + "'";
+		}
+
+		if(f.data.开始日期 != null && f.data.开始日期 != '') {
+			wh += "and 录入时间 >= '" + f.data.开始日期 + " 00:00:00'";
+		}
+		if(f.data.结束日期 != null && f.data.结束日期 != '') {
+			wh += "and 录入时间 <= '" + f.data.结束日期 + " 23:59:59'";
 		}
 
 	}
-	p.sql = "select id,订单id,录入时间 from 分_并发处理表  where"+wh;
+	p.sql = "select id,订单id,录入时间 from 分_并发处理表  where" + wh;
 	f = share.lists(p, f, pg);
 	return f;
 }
