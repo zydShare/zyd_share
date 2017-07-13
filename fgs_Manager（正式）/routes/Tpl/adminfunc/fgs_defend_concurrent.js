@@ -7,21 +7,26 @@ module.exports.run = function(f, pg, mo) {
 	var p = {};
 	var wh = " 1=1 ";
 	if(f.data != null) {
-		if(f.data.id != null && f.data.id != '') {
-			wh += " and id = '" + f.data.id + "'";
-		}
-		if(f.data.订单id != null && f.data.订单id != '') {
-			wh += " and 订单id = '" + f.data.订单id + "'";
-		}
-		if(f.data.录入时间 != null && f.data.录入时间 != '') {
-			wh += "and 录入时间 >= '" + f.data.录入时间 + "'";
-		}
+		//		if(f.data.id != null && f.data.id != '') {
+		//			wh += " and id = '" + f.data.id + "'";
+		//		}
+		//		if(f.data.订单id != null && f.data.订单id != '') {
+		//			wh += " and 订单id = '" + f.data.订单id + "'";
+		//		}
+		//		if(f.data.录入时间 != null && f.data.录入时间 != '') {
+		//			wh += "and 录入时间 >= '" + f.data.录入时间 + "'";
+		//		}
 
 		if(f.data.开始日期 != null && f.data.开始日期 != '') {
 			wh += "and 录入时间 >= '" + f.data.开始日期 + " 00:00:00'";
 		}
 		if(f.data.结束日期 != null && f.data.结束日期 != '') {
 			wh += "and 录入时间 <= '" + f.data.结束日期 + " 23:59:59'";
+		}
+
+		if(f.data.查询 != null && f.data.查询 != '') {
+			wh = "(订单id like'%" + f.data.查询 + "%')" +
+				"or (录入时间 like'%" + f.data.查询 + "%')"
 		}
 
 	}

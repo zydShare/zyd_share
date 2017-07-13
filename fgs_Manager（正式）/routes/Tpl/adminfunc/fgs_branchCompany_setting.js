@@ -7,22 +7,41 @@ module.exports.run = function(f, pg, mo) {
 	var p = {};
 	var wh = " 1=1 ";
 	if(f.data != null) {
-		if(f.data.名称 != null && f.data.名称 != '') {
-			wh += " and 名称 = '" + f.data.名称 + "'";
-		}
-		if(f.data.真实名 != null && f.data.真实名 != '') {
-			wh += " and 真实名  = '" + f.data.真实名 + "'";
-		}
-		if(f.data.录入时间 != null && f.data.录入时间 != '') {
-			wh += "and 录入时间 >= '" + f.data.录入时间 + "'";
-		}
+		//		if(f.data.名称 != null && f.data.名称 != '') {
+		//			wh += " and 名称 = '" + f.data.名称 + "'";
+		//		}
+		//		if(f.data.真实名 != null && f.data.真实名 != '') {
+		//			wh += " and 真实名  = '" + f.data.真实名 + "'";
+		//		}
+		//		if(f.data.录入时间 != null && f.data.录入时间 != '') {
+		//			wh += "and 录入时间 >= '" + f.data.录入时间 + "'";
+		//		}
+		//
+		//
+		//		if(f.data.状态 != null && f.data.状态 != '') {
+		//			wh = " 状态 LIKE '%" + f.data.状态 + "%'";
+		//		}
+		//		if(f.data.类别 != null && f.data.类别 != '') {
+		//			wh = " 类别 LIKE '%" + f.data.类别 + "%'";
+		//		}
 
-
-		if(f.data.状态 != null && f.data.状态 != '') {
-			wh = " 状态 LIKE '%" + f.data.状态 + "%'";
-		}
-		if(f.data.类别 != null && f.data.类别 != '') {
-			wh = " 类别 LIKE '%" + f.data.类别 + "%'";
+		if(f.data.查询 != null && f.data.查询 != '') {
+			wh = "(名称 like'%" + f.data.查询 + "%')" +
+//				"or (股数 like'%" + f.data.查询 + "%')" +
+//				"or (单股金额 like'%" + f.data.查询 + "%')" +
+//				"or (提成积分 like'%" + f.data.查询 + "%')" +
+				"or (协议 like'%" + f.data.查询 + "%')" +
+				"or (创建数量 like'%" + f.data.查询 + "%')" +
+//				"or (全球提成 like'%" + f.data.查询 + "%')" +
+//				"or (七大提成 like'%" + f.data.查询 + "%')" +
+//				"or (上级提成 like'%" + f.data.查询 + "%')" +
+//				"or (每股赠送个数 like'%" + f.data.查询 + "%')" +
+				"or (类别 like'%" + f.data.查询 + "%')" +
+				"or (状态 like'%" + f.data.查询 + "%')" +
+				"or (录入人 like'%" + f.data.查询 + "%')" +
+				"or (录入时间 like'%" + f.data.查询 + "%')" +
+				"or (说明 like'%" + f.data.查询 + "%')" +
+				"or (备注 like'%" + f.data.查询 + "%')"
 		}
 
 	}

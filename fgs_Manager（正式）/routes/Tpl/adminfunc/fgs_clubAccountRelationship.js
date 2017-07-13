@@ -7,24 +7,34 @@ module.exports.run = function(f, pg, mo) {
 	var p = {};
 	var wh = " 1=1 ";
 	if(f.data != null) {
-		if(f.data.俱乐部名称 != null && f.data.俱乐部名称 != '') {
-			wh += " and 俱乐部名称 = '" + f.data.俱乐部名称 + "'";
-		}
-		if(f.data.录入时间 != null && f.data.录入时间 != '') {
-			wh += "and 录入时间 >= '" + f.data.录入时间 + "'";
-		}
-
-		if(f.data.状态 != null && f.data.状态 != '') {
-			wh = " 状态 LIKE '%" + f.data.状态 + "%'";
-		}
-		if(f.data.类别 != null && f.data.类别 != '') {
-			wh = " 类别 LIKE '%" + f.data.类别 + "%'";
-		}
+		//		if(f.data.俱乐部名称 != null && f.data.俱乐部名称 != '') {
+		//			wh += " and 俱乐部名称 = '" + f.data.俱乐部名称 + "'";
+		//		}
+		//		if(f.data.录入时间 != null && f.data.录入时间 != '') {
+		//			wh += "and 录入时间 >= '" + f.data.录入时间 + "'";
+		//		}
+		//
+		//		if(f.data.状态 != null && f.data.状态 != '') {
+		//			wh = " 状态 LIKE '%" + f.data.状态 + "%'";
+		//		}
+		//		if(f.data.类别 != null && f.data.类别 != '') {
+		//			wh = " 类别 LIKE '%" + f.data.类别 + "%'";
+		//		}
 		if(f.data.开始日期 != null && f.data.开始日期 != '') {
 			wh += "and 录入时间 >= '" + f.data.开始日期 + " 00:00:00'";
 		}
 		if(f.data.结束日期 != null && f.data.结束日期 != '') {
 			wh += "and 录入时间 <= '" + f.data.结束日期 + " 23:59:59'";
+		}
+		if(f.data.查询 != null && f.data.查询 != '') {
+			wh = "(俱乐部名称 like'%" + f.data.查询 + "%')" +
+				"or (发放部门 like'%" + f.data.查询 + "%')" +
+				"or (状态 like'%" + f.data.查询 + "%')" +
+				"or (类别 like'%" + f.data.查询 + "%')" +
+				"or (录入人 like'%" + f.data.查询 + "%')" +
+				"or (录入时间 like'%" + f.data.查询 + "%')" +
+				"or (备注 like'%" + f.data.查询 + "%')" 
+//				+ "or (俱乐部id like'%" + f.data.查询 + "%')"
 		}
 
 	}

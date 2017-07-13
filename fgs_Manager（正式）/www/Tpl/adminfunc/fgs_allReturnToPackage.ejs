@@ -43,7 +43,7 @@
 					})
 				})
 			</script>
-			<div style="float:left;">
+			<!--<div style="float:left;">
 				<div style="float:left;">卡号：</div>
 				<input type="text" name="卡号" value="<%= data.卡号%>" />&nbsp;&nbsp;</div>
 			<div style="float:left;">
@@ -64,7 +64,11 @@
 				<input type="text" name="状态" value="<%= data.状态%>" />&nbsp;&nbsp;</div>
 			<div style="float:left;">
 				<div style="float:left;">类别：</div>
-				<input type="text" name="类别" value="<%= data.类别%>" />&nbsp;&nbsp;</div>
+				<input type="text" name="类别" value="<%= data.类别%>" />&nbsp;&nbsp;</div>-->
+
+			<div style="float:left;">
+				<div style="float:left;">查询：</div>
+				<input type="text" name="查询" value="<%= data.查询%>" />&nbsp;&nbsp;</div>
 			<div style="float:left;">
 				<div style="float:left;">开始日期：</div>
 				<input style="height: 30px;padding: 4px 2px;height: 14px;line-height: 14px;border: solid 1px #666;" type="text" id="开始日期" name="开始日期" class="ui_timepicker" value="<%= data.开始日期%>" onclick="return showCalendar('开始日期','y-mm-dd');">&nbsp;&nbsp;</div>
@@ -95,7 +99,7 @@
 					<%=arrow['id']%>
 				</a>
 			</th>
-			
+
 			<th width="100px">
 				<a onclick="ord('套餐名称')">套餐名称
 					<%=arrow['套餐名称']%>
@@ -187,7 +191,6 @@
 				</a>
 			</th>
 
-
 		</tr>
 	</thead>
 	<tbody>
@@ -201,11 +204,11 @@
 				<%= sumNum %>
 			</td>
 			<td class="up_de" v="<%=name.id%>"><img src="../../public/admin/images/more1.png" class="up_select" /></td>
-			
+
 			<td>
 				<%=name.id%>
 			</td>
-			
+
 			<td>
 				<%=name.套餐名称%>
 			</td>
