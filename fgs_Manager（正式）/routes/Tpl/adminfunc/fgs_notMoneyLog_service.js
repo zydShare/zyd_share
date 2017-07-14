@@ -11,7 +11,7 @@ module.exports.run = function(f, pg, mo) {
 		//			wh += " and 卡号 = '" + f.data.卡号 + "'";
 		//		}
 				if(f.data.账号 != null && f.data.账号 != '') {
-					wh += "and 账号 >= '" + f.data.账号 + "'";
+					wh = " 账号 LIKE '%" + f.data.账号 + "%'";
 				}
 		//		if(f.data.录入时间 != null && f.data.录入时间 != '') {
 		//			wh += "and 录入时间 >= '" + f.data.录入时间 + "'";

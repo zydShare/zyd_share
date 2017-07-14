@@ -8,7 +8,7 @@ module.exports.run = function(f, pg, mo) {
 	var wh = " 1=0 ";
 	if(f.data != null) {
 				if(f.data.账号 != null && f.data.账号 != '') {
-					wh += " and 账号 = '" + f.data.账号 + "'";
+					wh = " 账号 LIKE '%" + f.data.账号 + "%'";
 				}
 		//		if(f.data.姓名 != null && f.data.姓名 != '') {
 		//			wh += "and 姓名 >= '" + f.data.姓名 + "'";
