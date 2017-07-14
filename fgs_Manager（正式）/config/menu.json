@@ -152,6 +152,16 @@
 				"菜单": "分公司管理",
 				"类别": "平"
 			}, {
+				"id": 20,
+				"名称": "分公司(客服人员)",
+				"func": "fgs_branchCompany_service",
+				"网址": "/Tpl/adminfunc/fgs_branchCompany_service.xhtml",
+				"是否头部": "0",
+				"是否菜单": "1",
+				"按钮内容": "",
+				"菜单": "分公司管理",
+				"类别": "平"
+			}, {
 				"id": 2,
 				"名称": "分公司设置",
 				"func": "fgs_branchCompany_setting",
@@ -194,6 +204,16 @@
 				"菜单": "分公司管理",
 				"类别": "平"
 			}, {
+				"id": 21,
+				"名称": "分公司成员(客服人员)",
+				"func": "fgs_branchCompany_member_service",
+				"网址": "/Tpl/adminfunc/fgs_branchCompany_member_service.xhtml",
+				"是否头部": "0",
+				"是否菜单": "1",
+				"按钮内容": "",
+				"菜单": "分公司管理",
+				"类别": "平"
+			},{
 				"id": 4,
 				"名称": "分公司申请",
 				"func": "fgs_branchCompany_apply",
@@ -212,6 +232,16 @@
 						"func": "deleteClasses"
 					}
 				],
+				"菜单": "分公司管理",
+				"类别": "平"
+			},{
+				"id": 22,
+				"名称": "分公司申请(客服人员)",
+				"func": "fgs_branchCompany_apply_service",
+				"网址": "/Tpl/adminfunc/fgs_branchCompany_apply_service.xhtml",
+				"是否头部": "0",
+				"是否菜单": "1",
+				"按钮内容": "",
 				"菜单": "分公司管理",
 				"类别": "平"
 			}, {
@@ -236,6 +266,16 @@
 				"菜单": "分公司日志",
 				"类别": "平"
 			}, {
+				"id": 24,
+				"名称": "分公司账户(客服人员)",
+				"func": "fgs_branchCompany_account_service",
+				"网址": "/Tpl/adminfunc/fgs_branchCompany_account_service.xhtml",
+				"是否头部": "0",
+				"是否菜单": "1",
+				"按钮内容": "",
+				"菜单": "分公司日志",
+				"类别": "平"
+			},{
 				"id": 6,
 				"名称": "分公司基本日志",
 				"func": "fgs_log_basic",
@@ -254,6 +294,16 @@
 						"func": "deleteClasses"
 					}
 				],
+				"菜单": "分公司日志",
+				"类别": "平"
+			},{
+				"id": 25,
+				"名称": "分公司基本日志(客服人员)",
+				"func": "fgs_log_basic_service",
+				"网址": "/Tpl/adminfunc/fgs_log_basic_service.xhtml",
+				"是否头部": "0",
+				"是否菜单": "1",
+				"按钮内容": "",
 				"菜单": "分公司日志",
 				"类别": "平"
 			}, {
@@ -319,6 +369,16 @@
 				],
 				"菜单": "分公司日志",
 				"类别": "平"
+			},{
+				"id": 26,
+				"名称": "分公司开卡日志(客服人员)",
+				"func": "fgs_openCardLog_service",
+				"网址": "/Tpl/adminfunc/fgs_openCardLog_service.xhtml",
+				"是否头部": "0",
+				"是否菜单": "1",
+				"按钮内容": "",
+				"菜单": "分公司日志",
+				"类别": "平"
 			}, {
 				"id": 10,
 				"名称": "分公司全返套餐",
@@ -338,6 +398,16 @@
 						"func": "deleteClasses"
 					}
 				],
+				"菜单": "分公司管理",
+				"类别": "平"
+			},{
+				"id": 23,
+				"名称": "分公司全返套餐(客服人员)",
+				"func": "fgs_allReturnToPackage_service",
+				"网址": "/Tpl/adminfunc/fgs_allReturnToPackage_service.xhtml",
+				"是否头部": "0",
+				"是否菜单": "1",
+				"按钮内容": "",
 				"菜单": "分公司管理",
 				"类别": "平"
 			}, {
@@ -362,6 +432,16 @@
 				"菜单": "分公司日志",
 				"类别": "平"
 			}, {
+				"id": 27,
+				"名称": "分公司非钱日志(客服人员)",
+				"func": "fgs_notMoneyLog_service",
+				"网址": "/Tpl/adminfunc/fgs_notMoneyLog_service.xhtml",
+				"是否头部": "0",
+				"是否菜单": "1",
+				"按钮内容": "",
+				"菜单": "分公司日志",
+				"类别": "平"
+			},{
 				"id": 12,
 				"名称": "分公司个人账户记录",
 				"func": "fgs_account",
@@ -380,6 +460,16 @@
 						"func": "deleteClasses"
 					}
 				],
+				"菜单": "分公司日志",
+				"类别": "平"
+			}, {
+				"id": 28,
+				"名称": "分公司个人账户记录(客服)",
+				"func": "fgs_account_service",
+				"网址": "/Tpl/adminfunc/fgs_account_service.xhtml",
+				"是否头部": "0",
+				"是否菜单": "1",
+				"按钮内容": "",
 				"菜单": "分公司日志",
 				"类别": "平"
 			}, {
