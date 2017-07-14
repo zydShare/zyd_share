@@ -43,7 +43,7 @@
 					})
 				})
 			</script>
-			<div style="float:left;">
+			<!--<div style="float:left;">
 				<div style="float:left;">账号：</div>
 				<input type="text" name="账号" value="<%= data.账号%>" />&nbsp;&nbsp;</div>
 			<div style="float:left;">
@@ -58,7 +58,11 @@
 				<input type="text" name="状态" value="<%= data.状态%>" />&nbsp;&nbsp;</div>
 			<div style="float:left;">
 				<div style="float:left;">类别：</div>
-				<input type="text" name="类别" value="<%= data.类别%>" />&nbsp;&nbsp;</div>
+				<input type="text" name="类别" value="<%= data.类别%>" />&nbsp;&nbsp;</div>-->
+
+			<div style="float:left;">
+				<div style="float:left;">查询：</div>
+				<input type="text" name="查询" value="<%= data.查询 %>" />&nbsp;&nbsp;</div>
 
 		</div>
 	</div>
@@ -177,7 +181,7 @@
 				<%= sumNum %>
 			</td>
 			<td class="up_de" v="<%=name.id%>"><img src="../../public/admin/images/more1.png" class="up_select" /></td>
-			
+
 			<td>
 				<%=name.id%>
 			</td>
