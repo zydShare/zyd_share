@@ -22,6 +22,10 @@ exports.index = function(f) {
 	f._m = f.func.split('/')[1]; //路由定向
 	f._n = f.func.split('/')[2];
 	f.dbpath = 'pgdb'; //数据库定向
+	
+	console.log(f.exc);
+//	console.log(f._m);
+//	console.log(f._n);
 
 	//f.session.user_name = '67';
 	//f.session.user_pid = 3;
@@ -98,6 +102,6 @@ exports.index = function(f) {
 	}
 
 	sqlite.close(db);
-//	console.log(f)
+
 	return f;
 }

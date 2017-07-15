@@ -277,20 +277,14 @@ function export_exl() {
 	how_id = howid();
 	if(id){
 		id_con = "&id="+how_id;
-//		console.log(_exc)
-		_exc = _exc.replace(/&#39;/g,"'").replace(/&gt;/g,">").replace(/&lt;/g,"<");
-//		console.log(_exc)
+		_exc = _exc.replace(/&#39;/g,"'").replace(/&gt;/g,">").replace(/&lt;/g,"<").replace(/%/g,"@klaus@");
+		console.log(_exc,"啊啊啊啊")
 		location.href = '/Tpl/admincon/import_excel.xhtml?sql=' + _exc + id_con;
 	}else{
-//		console.log(_exc)		
-		_exc = _exc.replace(/&#39;/g,"'").replace(/&gt;/g,">").replace(/&lt;/g,"<");
-//		console.log(_exc)		
-		location.href = '/Tpl/admincon/import_excel.xhtml?sql=' + _exc;
-		
-	}
-	
-	
-	
+		_exc = _exc.replace(/&#39;/g,"'").replace(/&gt;/g,">").replace(/&lt;/g,"<").replace(/%/g,"@klaus@");
+		console.log(_exc,"啦啦啦啦");				
+		location.href = '/Tpl/admincon/import_excel.xhtml?sql=' + _exc;		
+	}	
 }
 
 //[标签数据表

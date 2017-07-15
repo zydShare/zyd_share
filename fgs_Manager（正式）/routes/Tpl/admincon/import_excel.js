@@ -11,21 +11,19 @@ module.exports.run = function(f, pg, mo) {
 	//重定向
 	f = control.index(f);
 	
-//	console.log(f.arg.sql)
-//	console.log("excel啊啊啊啊啊")
 	
 	if(f.arg.id == undefined){
 		f.arg.sql = f.arg.sql + " limit 10000";
 	}else{
 		var zs = (f.arg.sql).split("order");
-//		console.log(zs[0]);
 		f.arg.sql = zs[0] + "and id in (" + f.arg.id + ")" + "order" + zs[1];
 	}
 	
-//	f.arg.sql = f.arg.sql + " limit 100000 ";//查询数据库语句：select * from 平_会员表 where 昵称 = '定春' limit 100000
+	//将前台传值转化为百分号解决模糊查询中'%'导致的bug；
+	sql1 = f.arg.sql;
+	sql = sql1.toString().replace(/@klaus@/g,'%');
 	
-	
-	sql = f.arg.sql;
+	console.log(sql,'aaa');
 	s = pgdb.query(pg, sql).数据//查询的所有数据，注意要[{},{},{}....]格式
 	var result = import_excel.import(s);//调用接口会传入一个buffer
 	//console.log(result)//打印下来是一串乱码

@@ -147,6 +147,9 @@
 					}, {
 						"字段": "删除分公司",
 						"func": "deleteClasses"
+					}, {
+						"字段": "导出",
+						"func": "fgs_export_permission"
 					}
 				],
 				"菜单": "分公司管理",
@@ -178,6 +181,9 @@
 					}, {
 						"字段": "删除分_分公司设置表",
 						"func": "deleteClasses"
+					}, {
+						"字段": "导出",
+						"func": "fgs_export_permission"
 					}
 				],
 				"菜单": "分公司设置",
@@ -199,6 +205,9 @@
 					}, {
 						"字段": "删除分_分公司成员表",
 						"func": "deleteClasses"
+					}, {
+						"字段": "导出",
+						"func": "fgs_export_permission"
 					}
 				],
 				"菜单": "分公司管理",
@@ -230,6 +239,9 @@
 					}, {
 						"字段": "删除分公司申请",
 						"func": "deleteClasses"
+					}, {
+						"字段": "导出",
+						"func": "fgs_export_permission"
 					}
 				],
 				"菜单": "分公司管理",
@@ -261,6 +273,9 @@
 					}, {
 						"字段": "删除分公司账户",
 						"func": "deleteClasses"
+					}, {
+						"字段": "导出",
+						"func": "fgs_export_permission"
 					}
 				],
 				"菜单": "分公司日志",
@@ -292,6 +307,9 @@
 					}, {
 						"字段": "删除基本日志",
 						"func": "deleteClasses"
+					}, {
+						"字段": "导出",
+						"func": "fgs_export_permission"
 					}
 				],
 				"菜单": "分公司日志",
@@ -323,6 +341,9 @@
 					}, {
 						"字段": "删除分_加盟设置表",
 						"func": "deleteClasses"
+					}, {
+						"字段": "导出",
+						"func": "fgs_export_permission"
 					}
 				],
 				"菜单": "分公司设置",
@@ -344,6 +365,9 @@
 					}, {
 						"字段": "删除分_俱乐部账户关系表",
 						"func": "deleteClasses"
+					}, {
+						"字段": "导出",
+						"func": "fgs_export_permission"
 					}
 				],
 				"菜单": "分公司日志",
@@ -365,6 +389,9 @@
 					}, {
 						"字段": "删除分_开卡日志表",
 						"func": "deleteClasses"
+					}, {
+						"字段": "导出",
+						"func": "fgs_export_permission"
 					}
 				],
 				"菜单": "分公司日志",
@@ -396,6 +423,9 @@
 					}, {
 						"字段": "删除全返套餐",
 						"func": "deleteClasses"
+					}, {
+						"字段": "导出",
+						"func": "fgs_export_permission"
 					}
 				],
 				"菜单": "分公司管理",
@@ -427,6 +457,9 @@
 					}, {
 						"字段": "删除分公司非钱日志",
 						"func": "deleteClasses"
+					}, {
+						"字段": "导出",
+						"func": "fgs_export_permission"
 					}
 				],
 				"菜单": "分公司日志",
@@ -458,6 +491,9 @@
 					}, {
 						"字段": "删除分_账户表",
 						"func": "deleteClasses"
+					}, {
+						"字段": "导出",
+						"func": "fgs_export_permission"
 					}
 				],
 				"菜单": "分公司日志",
@@ -489,6 +525,9 @@
 					}, {
 						"字段": "删除说明",
 						"func": "deleteClasses"
+					}, {
+						"字段": "导出",
+						"func": "fgs_export_permission"
 					}
 				],
 				"菜单": "分公司日志",
@@ -510,6 +549,9 @@
 					}, {
 						"字段": "删除分_省份表",
 						"func": "deleteClasses"
+					}, {
+						"字段": "导出",
+						"func": "fgs_export_permission"
 					}
 				],
 				"菜单": "分公司管理",
@@ -531,6 +573,9 @@
 					}, {
 						"字段": "删除分_市级表",
 						"func": "deleteClasses"
+					}, {
+						"字段": "导出",
+						"func": "fgs_export_permission"
 					}
 				],
 				"菜单": "分公司管理",
@@ -552,6 +597,9 @@
 					}, {
 						"字段": "删除分_区级表",
 						"func": "deleteClasses"
+					}, {
+						"字段": "导出",
+						"func": "fgs_export_permission"
 					}
 				],
 				"菜单": "分公司管理",
@@ -573,6 +621,9 @@
 					}, {
 						"字段": "删除分_并发处理",
 						"func": "deleteClasses"
+					}, {
+						"字段": "导出",
+						"func": "fgs_export_permission"
 					}
 				],
 				"菜单": "分公司日志",
