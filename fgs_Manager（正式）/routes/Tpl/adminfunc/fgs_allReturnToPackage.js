@@ -67,7 +67,7 @@ module.exports.json = function() {
 	var json = {
 		"名称": "分_全返套餐",
 		"模块": "adminfunc",
-		"func": "fgs_clubAccountRelationship",
+		"func": "fgs_allReturnToPackage",
 		"页数": "10",
 		"表名": "分_全返套餐表",
 		"编辑": "hf",

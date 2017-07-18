@@ -58,7 +58,7 @@ module.exports.json = function() {
 	var json = {
 		"名称": "分公司个人账户",
 		"模块": "adminfunc",
-		"func": "fgs_notMoneyLog",
+		"func": "fgs_account",
 		"页数": "10",
 		"表名": "分_账户表",
 		"编辑": "hf",

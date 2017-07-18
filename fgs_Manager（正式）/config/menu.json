@@ -23,6 +23,13 @@
 				"是否菜单": "1",
 				"页面图标": "fa  fa-file-text"
 			}, {
+				"id": 4,
+				"名称": "分公司俱乐部管理",
+				"模块": "admincon",
+				"是否头部": "1",
+				"是否菜单": "1",
+				"页面图标": "fa fa-home"
+			}, {
 				"id": 21,
 				"名称": "系统",
 				"模块": "admincon",
@@ -222,7 +229,7 @@
 				"按钮内容": "",
 				"菜单": "分公司管理",
 				"类别": "平"
-			},{
+			}, {
 				"id": 4,
 				"名称": "分公司申请",
 				"func": "fgs_branchCompany_apply",
@@ -246,7 +253,7 @@
 				],
 				"菜单": "分公司管理",
 				"类别": "平"
-			},{
+			}, {
 				"id": 22,
 				"名称": "分公司申请(客服人员)",
 				"func": "fgs_branchCompany_apply_service",
@@ -290,7 +297,7 @@
 				"按钮内容": "",
 				"菜单": "分公司日志",
 				"类别": "平"
-			},{
+			}, {
 				"id": 6,
 				"名称": "分公司基本日志",
 				"func": "fgs_log_basic",
@@ -314,7 +321,7 @@
 				],
 				"菜单": "分公司日志",
 				"类别": "平"
-			},{
+			}, {
 				"id": 25,
 				"名称": "分公司基本日志(客服人员)",
 				"func": "fgs_log_basic_service",
@@ -396,7 +403,7 @@
 				],
 				"菜单": "分公司日志",
 				"类别": "平"
-			},{
+			}, {
 				"id": 26,
 				"名称": "分公司开卡日志(客服人员)",
 				"func": "fgs_openCardLog_service",
@@ -430,7 +437,7 @@
 				],
 				"菜单": "分公司管理",
 				"类别": "平"
-			},{
+			}, {
 				"id": 23,
 				"名称": "分公司全返套餐(客服人员)",
 				"func": "fgs_allReturnToPackage_service",
@@ -474,14 +481,14 @@
 				"按钮内容": "",
 				"菜单": "分公司日志",
 				"类别": "平"
-			},{
+			}, {
 				"id": 12,
 				"名称": "分公司个人账户记录",
 				"func": "fgs_account",
 				"网址": "/Tpl/adminfunc/fgs_account.xhtml",
 				"是否头部": "0",
 				"是否菜单": "1",
-				"按钮内容":[
+				"按钮内容": [
 					{
 						"字段": "添加分_账户表",
 						"func": "fgs_account_insert"
@@ -563,7 +570,7 @@
 				"网址": "/Tpl/adminfunc/fgs_city.xhtml",
 				"是否头部": "0",
 				"是否菜单": "1",
-				"按钮内容":[
+				"按钮内容": [
 					{
 						"字段": "添加分_市级表",
 						"func": "fgs_city_insert"
@@ -587,7 +594,7 @@
 				"网址": "/Tpl/adminfunc/fgs_district.xhtml",
 				"是否头部": "0",
 				"是否菜单": "1",
-				"按钮内容":[
+				"按钮内容": [
 					{
 						"字段": "添加分_区级表",
 						"func": "fgs_district_insert"
@@ -605,13 +612,13 @@
 				"菜单": "分公司管理",
 				"类别": "平"
 			}, {
-				"id": 18,
+				"id": 17,
 				"名称": "分公司并发处理",
 				"func": "fgs_defend_concurrent",
 				"网址": "/Tpl/adminfunc/fgs_defend_concurrent.xhtml",
 				"是否头部": "0",
 				"是否菜单": "1",
-				"按钮内容":[
+				"按钮内容": [
 					{
 						"字段": "添加分_并发处理",
 						"func": "fgs_defend_concurrent_insert"
@@ -627,6 +634,108 @@
 					}
 				],
 				"菜单": "分公司日志",
+				"类别": "平"
+			}, {
+				"id": 18,
+				"名称": "分公司奖金日志",
+				"func": "fgs_bonus_log",
+				"网址": "/Tpl/adminfunc/fgs_bonus_log.xhtml",
+				"是否头部": "0",
+				"是否菜单": "1",
+				"按钮内容": [
+					{
+						"字段": "添加分_奖金日志",
+						"func": "fgs_bonus_log_insert"
+					}, {
+						"字段": "修改分_奖金日志",
+						"func": "fgs_bonus_log_update"
+					}, {
+						"字段": "删除分_奖金日志",
+						"func": "deleteClasses"
+					}, {
+						"字段": "导出",
+						"func": "fgs_export_permission"
+					}
+				],
+				"菜单": "分公司日志",
+				"类别": "平"
+			}, {
+				"id": 29,
+				"名称": "分公司奖金日志(客服人员)",
+				"func": "fgs_bonus_log_service",
+				"网址": "/Tpl/adminfunc/fgs_bonus_log_service.xhtml",
+				"是否头部": "0",
+				"是否菜单": "1",
+				"按钮内容": "",
+				"菜单": "分公司日志",
+				"类别": "平"
+			}, {
+				"id": 19,
+				"名称": "分公司俱乐部",
+				"func": "fgs_club",
+				"网址": "/Tpl/adminfunc/fgs_club.xhtml",
+				"是否头部": "0",
+				"是否菜单": "1",
+				"按钮内容": [
+					{
+						"字段": "添加分_俱乐部",
+						"func": "fgs_club_insert"
+					}, {
+						"字段": "修改分_俱乐部",
+						"func": "fgs_club_update"
+					}, {
+						"字段": "删除分_俱乐部",
+						"func": "deleteClasses"
+					}, {
+						"字段": "导出",
+						"func": "fgs_export_permission"
+					}
+				],
+				"菜单": "分公司俱乐部管理",
+				"类别": "平"
+			},{
+				"id": 30,
+				"名称": "分公司俱乐部(客服人员)",
+				"func": "fgs_club_service",
+				"网址": "/Tpl/adminfunc/fgs_club_service.xhtml",
+				"是否头部": "0",
+				"是否菜单": "1",
+				"按钮内容": "",
+				"菜单": "分公司俱乐部管理",
+				"类别": "平"
+			}, {
+				"id": 66,
+				"名称": "分公司俱乐部成员",
+				"func": "fgs_club_member",
+				"网址": "/Tpl/adminfunc/fgs_club_member.xhtml",
+				"是否头部": "0",
+				"是否菜单": "1",
+				"按钮内容": [
+					{
+						"字段": "添加分_俱乐部成员",
+						"func": "fgs_club_member_insert"
+					}, {
+						"字段": "修改分_俱乐部成员",
+						"func": "fgs_club_member_update"
+					}, {
+						"字段": "删除分_俱乐部成员",
+						"func": "deleteClasses"
+					}, {
+						"字段": "导出",
+						"func": "fgs_export_permission"
+					}
+				],
+				"菜单": "分公司俱乐部管理",
+				"类别": "平"
+			},{
+				"id": 31,
+				"名称": "分公司俱乐部成员(客服人员)",
+				"func": "fgs_club_member_service",
+				"网址": "/Tpl/adminfunc/fgs_club_member_service.xhtml",
+				"是否头部": "0",
+				"是否菜单": "1",
+				"按钮内容": "",
+				"菜单": "分公司俱乐部管理",
 				"类别": "平"
 			}
 		]
