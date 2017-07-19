@@ -35,7 +35,7 @@ excel.import = function(data) {
 	//conf.rows = [['pi'],["e"]]; 表的数据格式
 	conf.rows = data_arr;
 	var result = nodeExcel.execute(conf);
-//	console.log(result);
+
 	return result;
 }
 

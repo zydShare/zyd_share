@@ -278,11 +278,11 @@ function export_exl() {
 	if(id){
 		id_con = "&id="+how_id;
 		_exc = _exc.replace(/&#39;/g,"'").replace(/&gt;/g,">").replace(/&lt;/g,"<").replace(/%/g,"@klaus@");
-		console.log(_exc,"啊啊啊啊")
+//		console.log(_exc,"啊啊啊啊")
 		location.href = '/Tpl/admincon/import_excel.xhtml?sql=' + _exc + id_con;
 	}else{
 		_exc = _exc.replace(/&#39;/g,"'").replace(/&gt;/g,">").replace(/&lt;/g,"<").replace(/%/g,"@klaus@");
-		console.log(_exc,"啦啦啦啦");				
+//		console.log(_exc,"啦啦啦啦");				
 		location.href = '/Tpl/admincon/import_excel.xhtml?sql=' + _exc;		
 	}	
 }

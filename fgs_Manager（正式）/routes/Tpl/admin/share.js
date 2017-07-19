@@ -3,11 +3,9 @@ var sqlite = require('../../../func/sqlite.js');
 
 module.exports.update = function(p, f, pg){
 	f.r = [];
-	//var sql= '';
 	if(f.arg.id != null && f.arg.id != '' && f.arg.id != 'undefined'){
 	    if(p.sql == null || p.sql == ''){
 	    	 sql="select * from "+p.表名+"	where id = '"+f.arg.id+"'";
-//		  console.log(sql);
 	    }
 	    else{
 		  sql=p.sql;
@@ -139,13 +137,11 @@ module.exports.lists = function(p, f, pg) {
 
 	p.numcon += '</div></div><script>new_html="' + new_html(f, '') + '";</script>';
 	f.page = p.numcon;
-//	console.log(p.sql)
-	p.sql.replace(/@@@zxcvbnm@@@/g,'%');
 	f.exc = p.sql + " order by " + f.arg.ord + p.arr_tb;
-//	console.log(f.exc)
+
 	//数据库分页查询
 	sql = p.sql + " order by " + f.arg.ord + p.arr_tb + " limit " + p.num + " offset " + p.began;
-//	console.log(sql)
+
 	//f._exc =aes.aesEncodeCipher(p.sql+" order by "+f.arg.ord+p.arr_tb,stringFormat.md5(f._GET['_n']));
 	if(f.dbpath == 'pgdb')
 		f.r = pgdb.query(pg, sql).数据;
