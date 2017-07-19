@@ -104,11 +104,11 @@
 </tr>
 <tr id="_t_录入人">
 	<th>录入人</th>
-	<td><input type="text" ReadOnly="true" class="textinput" id="录入人" name="录入人" value="<% if(r.录入人){%><%=r.录入人%><% }else{ %><%=session.user_name%><% }%>" style="width:200px" /></td>
+	<td><input type="text" class="textinput" id="录入人" name="录入人" value="<% if(r.录入人){%><%=r.录入人%><% }else{ %><%=session.user_name%><% }%>" style="width:200px" /></td>
 </tr>
 <tr id="_t_录入时间">
 	<th>录入时间</th>
-	<td><input type="text" ReadOnly="true" class="textinput  " id="录入时间" name="录入时间" value="<% if(r.录入时间){%><%=r.录入时间%><% }else{ %><%=date%><% }%>" style="width:200px" /></td>
+	<td><input type="text" class="textinput  " id="录入时间" name="录入时间" value="<% if(r.录入时间){%><%=r.录入时间%><% }else{ %><%=date%><% }%>" style="width:200px" /></td>
 </tr>
 <tr id="_t_备注">
 	<th>备注</th>
