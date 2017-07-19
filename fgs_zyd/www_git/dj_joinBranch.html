@@ -1,0 +1,82 @@
+<!--
+创建人：马瑞刚
+创建时间：2017年6月28日
+创建内容：加入独家分公司页面搭建及接口对接
+-->
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1.0, user-scalable=no" />
+		<script type="text/javascript" src="js/init.js"></script>
+		<link rel="stylesheet" href="css/common.css" />
+		<link rel="stylesheet" href="css/dj_createBranch.css" />
+		<title>加入独家分公司</title>
+	</head>
+
+	<body class="bodyBg">
+		<div class="topBanner join">
+			<h5>加入类型</h5>
+			<p><span id="type_name">&nbsp;</span><span class="symbol">￥</span><span id="package_money">0.00</span></p>
+		</div>
+		<ul class="infoList">
+			<li>
+				<p class="info_left clearfix">分公司编号：</p>
+				<p class="info_right text_left clearfix">
+					<input type="tel" class="rem_default_style" id="join_bh" maxlength="11" onclick="shuru2(this);" onkeyup="shuru2(this);" value="" placeholder="请输入分公司数字编号" />
+				</p>
+			</li>
+			<li>
+				<p class="info_left clearfix">分公司名称：</p>
+				<p class="info_right text_left clearfix" id="fgs_name"></p>
+			</li>
+			<li>
+				<p class="info_left clearfix">分公司密码：</p>
+				<p class="info_right text_left clearfix">
+					<input type="password" class="rem_default_style" id="fgs_password" maxlength="8" value="" onclick="shuru2(this);" onkeyup="shuru2(this);" placeholder="请输入6至8位数字密码" />
+				</p>
+			</li>
+			<li>
+				<p class="info_left clearfix">服务商手机号：</p>
+				<p class="info_right text_left clearfix">
+					<input type="text" class="rem_default_style" id="fws_tel" value="" maxlength="11" onclick="shuru2(this);" onkeyup="shuru2(this);" placeholder="请输入11位手机号码" />
+				</p>
+			</li>
+			<li>
+				<p class="info_left clearfix">服务商名称：</p>
+				<p class="info_right text_left clearfix" id="fws_name"></p>
+			</li>
+			<li>
+				<p class="info_left clearfix">认购股数：</p>
+				<p class="info_right clearfix">
+					<img class="do dodecre" src="./img/ic_minusnumber.png">
+					<input class="num_input rem_default_style write" type="number" value="1" oninput='if(value.length>5)value=value.slice(0,5)' onkeyup="if(this.value.length==1){this.value=this.value.replace(/[^1-9]/g,'')}else{this.value=this.value.replace(/[^[0-9]*[1-9][0-9]*$]/g,'')}" onafterpaste="if(this.value.length==1){this.value=this.value.replace(/[^1-9]/g,'')}else{this.value=this.value.replace(/[^[0-9]*[1-9][0-9]*$]/g,'')}" onkeydown="if(event.keyCode==13)event.keyCode=9" onKeyPress="if ((event.keyCode<48 || event.keyCode>57)) event.returnValue=false" />
+					<img class="do doincre" src="./img/ic_addnumber.png">
+				</p>
+			</li>
+			<li>
+				<p class="info_left clearfix">金额：</p>
+				<p class="info_right clearfix">
+					<span id="sum">0.00</span>
+				</p>
+			</li>
+		</ul>
+
+		<footer class="fixed-bottom">
+			<button type="button" class="btn-common" id="nextBtn">下一步</button>
+		</footer>
+
+		<span class="tips">
+				<span class="tips-in"></span>
+		</span>
+
+		<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+		<script src="js/jQuery.md5.js" type="text/javascript"></script>
+		<script type="text/javascript" src="js/share.js"></script>
+		<script src="js/common.js" type="text/javascript"></script>
+		<script src="js/dj_joinBranch.js" type="text/javascript"></script>
+		
+	</body>
+
+</html>

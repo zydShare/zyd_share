@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1.0, user-scalable=no" />
+		<title>合伙人平台</title>
+		<script type="text/javascript" src="js/init.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/common.css" />
+		<link rel="stylesheet" href="css/fgs_index_2rd.css" />
+		<style></style>
+	</head>
+
+	<body>
+		<div class="main fixed-top">
+			<div class="city-banner"><img src="img/2_city_banner.png" /></div>
+			<div class="fgs-menu bgc-fff">
+				<ul class="flex-ha-vc" style="padding: 0">
+					<li class="fgs-join flex-v flex-vc flex1">
+						<img src="img/2_join_ic.png" />
+						<p class="col-333">加入分公司</p>
+					</li>
+					<li class="fgs-create flex-v flex-vc flex1">
+						<img src="img/2_create_ic.png" />
+						<p class="col-333">创建分公司</p>
+					</li>
+					<li class="fgs-setReward flex-v flex-vc flex1">
+						<img src="img/2_setting_reward.png" />
+						<p class="col-333">设置奖励分公司</p>
+					</li>
+					<!--<li class="fgs-test flex-v flex-vc flex1">
+						<img src="img/chenggong.png" />
+						<p class="col-333">测试中，别进来</p>
+					</li>-->
+				</ul>
+			</div>
+		</div>
+
+		<div class="list">
+			<ul class="fgs-list">
+				<!--<li class="fgs-items bgc-fff"> <div class="list-top flex-hb-vt"> <div class="id-icon"><img src="img/2_ic_founder.png" /></div> <div class="id-main"> <p class="fgs-name col-333">这是个比较长的分公司名字</p> <p class="fgs-location col-666">新疆维吾尔自治区克孜勒苏柯尔克孜自治州</p> <p class="col-666">编号：<span class="fgs-number col-666">888888</span></p> </div> <div class="id-title"><img src="img/2_tran_founder.png" /></div> </div> <div class="list-bottom flex-hb-vc"> <p class="id-type col-666">市代理分公司</p> <p class="col-666">所占股份：<span class="id-sum col-666">1</span>股</p> </div> </li> <li class="fgs-items bgc-fff"> <div class="list-top flex-hb-vt"> <div class="id-icon"><img src="img/2_ic_partner.png" /></div> <div class="id-main"> <p class="fgs-name col-333">这是个比较长的分公司名字</p> <p class="fgs-location col-666">广东省深圳市</p> <p class="col-666">编号：<span class="fgs-number col-666">888888</span></p> </div> <div class="id-title"><img src="img/2_tran_partner.png" /></div> </div> <div class="list-bottom flex-hb-vc"> <p class="id-type col-666">市代理分公司</p> <p class="col-666">所占股份：<span class="id-sum col-666">1</span>股</p> </div> </li>-->
+
+			</ul>
+			<!--<div class="nomore-tips flex-hc-vc" style="height: 1rem;">
+				<hr style="flex:1;margin: 0 .3rem;" />
+				<p>已无更多数据</p>
+				<hr style="flex:1;margin: 0 .3rem;" />
+			</div>-->
+
+		</div>
+		<span class="tips">
+				<span class="tips-in"></span>
+		</span>
+
+		<!--<script src="js/jquery-3.1.1.min.js"></script>
+		<script type="text/javascript" src="js/share.js"></script>
+		<script type="text/javascript" src="js/common.js"></script>-->
+
+		<script src="js/lib/require.js" data-main="js/main"></script>
+		<script>
+			require(['main'], function() {
+				require(['partner'], function() {
+					console.log("调用成功")
+				})
+			})
+		</script>
+	</body>
+
+</html>

@@ -1,0 +1,191 @@
+<!--
+创建人：马瑞刚
+创建时间：2017年6月28日
+创建内容：独家分公司页面搭建及接口对接
+-->
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1.0, user-scalable=no" />
+		<title>独家分公司</title>
+		<script type="text/javascript" src="js/init.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/common.css" />
+		<link rel="stylesheet" href="css/fgs_index_2rd.css" />
+	</head>
+
+	<body>
+		<div class="main fixed-top">
+			<div class="city-banner"><img src="img/dj_banner.png" /></div>
+			<div class="fgs-menu bgc-fff">
+				<ul class="flex-ha-vc" style="padding: 0 .2rem;">
+					<li class="fgs-join flex-v flex-vc flex1">
+						<img src="img/2_join_ic.png" />
+						<p class="col-333">加入分公司</p>
+					</li>
+					<li class="fgs-create flex-v flex-vc flex1">
+						<img src="img/2_create_ic.png" />
+						<p class="col-333">创建分公司</p>
+					</li>
+					<!--<li class="fgs-setReward flex-v flex-vc flex1">
+						<img src="img/2_setting_reward.png" />
+						<p class="col-333">设置奖励分公司</p>
+					</li>-->
+				</ul>
+			</div>
+		</div>
+
+		<div class="list">
+			<ul class="fgs-list">
+				<!--<li class="fgs-items bgc-fff">
+					<div class="list-top flex-hb-vt">
+						<div class="id-icon"><img src="img/2_ic_founder.png" /></div>
+						<div class="id-main">
+							<p class="fgs-name col-333">这是个比较长的分公司名字</p>
+							<p class="fgs-location col-666">广东省深圳市</p>
+							<p class="col-666">编号：<span class="fgs-number col-666">888888</span></p>
+						</div>
+						<div class="id-title"><img src="img/dj_identity.png" /></div>
+					</div>
+					<div class="list-bottom flex-hb-vc">
+						<p class="id-type col-666">市代理分公司</p>
+						<p class="col-666">所占股份：<span class="id-sum col-666">1</span>股</p>
+					</div>
+				</li>
+				<li class="fgs-items bgc-fff">
+					<div class="list-top flex-hb-vt">
+						<div class="id-icon"><img src="img/2_ic_partner.png" /></div>
+						<div class="id-main">
+							<p class="fgs-name col-333">这是个比较长的分公司名字</p>
+							<p class="fgs-location col-666">广东省深圳市</p>
+							<p class="col-666">编号：<span class="fgs-number col-666">888888</span></p>
+						</div>
+						<div class="id-title"><img src="img/2_tran_partner.png" /></div>
+					</div>
+					<div class="list-bottom flex-hb-vc">
+						<p class="id-type col-666">市代理分公司</p>
+						<p class="col-666">所占股份：<span class="id-sum col-666">1</span>股</p>
+					</div>
+				</li>-->
+			</ul>
+
+		</div>
+		<span class="tips">
+				<span class="tips-in"></span>
+		</span>
+
+		<script src="js/jquery-3.1.1.min.js"></script>
+		<script type="text/javascript" src="js/share.js"></script>
+		<script type="text/javascript" src="js/common.js"></script>
+		<script>
+			//			url参数和全局变量
+			var onlyID = decodeURI(html_name('onlyID'));
+			var conid;
+			var ys = 0;
+			var bottom_height = $(window).height() - $(".fixed-top").height();
+			$(".list").height(bottom_height);
+
+			//			跳转功能页面
+			$('.fgs-join').click(function() {
+				window.location.href = "dj_joinBranch.html?onlyID=" + onlyID;
+			});
+
+			$('.fgs-create').click(function() {
+				window.location.href = "dj_createBranch.html?onlyID=" + onlyID;
+			})
+
+			//			$('.fgs-setReward').click(function() {
+			//				window.location.href = "fgs_setTheReward.html?onlyID=" + onlyID +"&fgsType=shi";
+			//			})
+
+			$(document).ready(function() {
+				var data = {};
+				data.onlyID = onlyID;
+				data.页数 = 0;
+				data = JSON.stringify(data);
+				$.ajax({
+					type: "POST",
+					url: "/ajax.post?func=CZ_fgs_My_DJList",
+					data: 'data=' + data,
+					success: function(p) {
+						console.log(p);
+						if(p.状态 == '成功' && p.分公司条数 !== 0) {
+							$.each(p.分公司列表, function(i, item) {
+								conid = item.编号;
+								$(".fgs-list").append('<li class="fgs-items bgc-fff" onclick="con_detail(\'' + onlyID + '\',\'' + conid + '\',\'' + item.类别 + '\')"> <div class="list-top flex-hb-vt"> <div class="id-icon"><img src="" /></div> <div class="id-main"> <p class="fgs-name col-333">' + item.分公司名称 + '</p> <p class="fgs-location col-666">' + item.省 + item.市 + '</p> <p class="col-666">编号：<span class="fgs-number col-666">' + item.编号 + '</span></p> </div> <div class="id-title"><img src="" /></div> </div> <div class="list-bottom flex-hb-vc"> <p class="id-type col-666">' + item.类型 + ' </p> <p class="col-666">所占股份：<span class="id-sum col-666">' + item.所占股数 + '</span>股</p> </div> </li>');
+								//								console.log(i)
+								if(item.类别 == "发起人") {
+									$(".fgs-items .id-icon img:eq(" + i + ")").attr("src", "img/2_ic_founder.png");
+									$(".fgs-items .id-title img:eq(" + i + ")").attr("src", "img/dj_identity.png");
+								} else if(item.类别 == "股东") {
+									$(".fgs-items .id-icon img:eq(" + i + ")").attr("src", "img/2_ic_partner.png");
+									$(".fgs-items .id-title img:eq(" + i + ")").attr("src", "img/2_tran_partner.png");
+								}
+								if($(".fgs-location:eq(" + i + ")").html().length > 14) {
+									$(".id-main p:nth-child(3):eq(" + i + ")").css("margin-top", ".15rem");
+								}
+							})
+						} else {
+							$(".fgs-list").append('<button class="nomore"><img src="img/2_nomore.png"/></button>');
+						}
+						ys = p.页数;
+					}
+				})
+			})
+			
+			$(".list").unbind("scroll").bind("scroll", function(e) {
+				var scrollTop = $(this).scrollTop();
+				var windowHeight = $(this).height();
+				var scrollHeight = this.scrollHeight;
+				if(scrollTop + windowHeight === scrollHeight) {
+					var r = {};
+					r.onlyID = onlyID;
+//					console.log(ys)
+					r.页数 = ys;
+					r = JSON.stringify(r);
+					console.log(r);
+					$.ajax({
+						url: "/ajax.post?func=CZ_fgs_My_DJList",
+						type: "POST",
+						data: 'data=' + r,
+						success: function(p) {
+							if(p.状态 == '成功') {
+								if(p.分公司条数 != 0) {
+									t = 2;
+									tips("正在加载数据");
+									$.each(p.分公司列表, function(i, item) {
+										conid = item.编号;
+										$(".fgs-list").append('<li class="fgs-items bgc-fff" onclick="con_detail(\'' + onlyID + '\',\'' + conid + '\',\'' + item.类别 + '\')"> <div class="list-top flex-hb-vt"> <div class="id-icon"><img src="" /></div> <div class="id-main"> <p class="fgs-name col-333">' + item.分公司名称 + '</p> <p class="fgs-location col-666">' + item.省 + item.市 + '</p> <p class="col-666">编号：<span class="fgs-number col-666">' + item.编号 + '</span></p> </div> <div class="id-title"><img src="" /></div> </div> <div class="list-bottom flex-hb-vc"> <p class="id-type col-666">' + item.类型 + ' </p> <p class="col-666">所占股份：<span class="id-sum col-666">' + item.所占股数 + '</span>股</p> </div> </li>');
+										//								console.log(i)
+										if(item.类别 == "发起人") {
+											$(".fgs-items .id-icon img:eq(" + i + ")").attr("src", "img/2_ic_founder.png");
+											$(".fgs-items .id-title img:eq(" + i + ")").attr("src", "img/dj_identity.png");
+										} else if(item.类别 == "股东") {
+											$(".fgs-items .id-icon img:eq(" + i + ")").attr("src", "img/2_ic_partner.png");
+											$(".fgs-items .id-title img:eq(" + i + ")").attr("src", "img/2_tran_partner.png");
+										}
+										if($(".fgs-location:eq(" + i + ")").html().length > 14) {
+											$(".id-main p:nth-child(3):eq(" + i + ")").css("margin-top", ".15rem");
+										}
+									})
+								} else if(p.分公司条数 < 10) {
+									t = 2;
+									tips("已无更多数据");
+								}
+								ys = p.页数;
+							}
+						}
+
+					})
+				}
+			})
+
+			function con_detail(a, b, c) {
+				window.location.href = "dj_fengongsi.html?onlyID=" + a + "&conid=" + b + "&status=" + c;
+			}
+		</script>
+	</body>
+
+</html>
+<!--http://127.0.0.1:8988/exclusive_branch.html?onlyID=6032a821-47a9-43c8-b7f8-b5fb889adef0-->

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1.0, user-scalable=no" />
+		<link rel="stylesheet" href="css/currency.css" />
+		<link rel="stylesheet" href="css/common.css" />
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<title>分公司成员</title>
+		<style>
+			.bodyBg {
+				background-color: #EFEFEF;
+				line-height: 1;
+			}
+			
+			.member-list {
+				background: #fff;
+			}
+			
+			.member-list li {
+				height: 3.275rem;
+				width: 100%;
+				border-bottom: 1px solid #f5f6f7;
+				padding: 0 0.75rem;
+			}
+			
+			.member-list li:last-child {
+				border: 0;
+			}
+			
+			.member-list .member-img {
+				width: 1.5rem;
+				height: 100%;
+				float: left;
+				position: relative;
+			}
+			
+			.member-list .member-img img {
+				width: 1.5rem;
+				height: 1.5rem;
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				right: 0;
+				left: 0;
+				margin: auto;
+			}
+			
+			.member-list .member-name {
+				width: 8rem;
+				height: 100%;
+				float: left;
+				line-height: 3.275rem;
+				margin-left: 2rem;
+				font-size: 0.75rem;
+				color: #333;
+				text-align: left;
+			}
+			
+			.member-list .member-status {
+				width: 3rem;
+				height: 100%;
+				float: right;
+				line-height: 3.275rem;
+				font-size: 0.65rem;
+				color: #ff7f29;
+				text-align: right;
+			}
+		</style>
+	</head>
+
+	<body class="bodyBg">
+		<ul class="member-list">
+			<!--<li>
+				<div class="member-img clearfix">
+					<img src="img/ic_.png" />
+				</div>
+				<div class="member-name clearfix">用户名</div>
+				<div class="member-status clearfix">股东</div>
+			</li>-->
+		</ul>
+		<span class="toast">
+				<span class="toast-su">我在测试看看</span>
+		</span>
+		
+		
+		<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/util.js"></script>
+		<script type="text/javascript" src="js/share.js"></script>
+		<script type="text/javascript" src="js/common.js"></script>
+		<script type="text/javascript">
+			//传入唯一ID和分公司编号
+			var onlyID = decodeURI(html_name('onlyID'));
+			var conid = decodeURI(html_name('conid'));
+			var page = 0;
+
+			var data = {};
+			data.分公司编号 = conid;
+			data.onlyID = onlyID;
+			data.页数 = page;
+			data = JSON.stringify(data);
+			$.ajax({
+				type: "post",
+				url: "/ajax.post?func=CZ_fgs_people",
+				data: 'data=' + data,
+				success: function(d) {
+					console.log(d)
+					if(d.状态 == '成功') {
+						if(d.分公司成员条数 != 0) {
+
+							no_more._delete();
+							if(d.分公司成员条数 < 10) {
+								no_more.content = '已无更多数据';
+								no_more.dom = $('.member-list');
+								no_more._add(no_more.dom, no_more.content);
+							} else if(d.分公司成员条数 == 10) {
+								no_more.content = '正在加载数据';
+								no_more.dom = $('.member-list');
+								no_more._add(no_more.dom, no_more.content);
+							}
+
+							d.分公司成员列表.forEach(function(item) {
+								$('.member-list').append('<li><div class="member-img clearfix"><img src="img/ic_.png" /></div>' +
+									'<div class="member-name clearfix">' + item.姓名 + '</div>' +
+									'<div class="member-status clearfix">' + item.类别 + '</div></li>')
+							});
+						} else {
+							no_more._delete();
+
+							no_more.content = '已无更多数据';
+							no_more.dom = $('.member-list');
+							no_more._add(no_more.dom, no_more.content);
+						}
+						page = d.页数;
+					} else {
+						no_more._delete();
+
+						no_more.content = '已无更多数据';
+						no_more.dom = $('.member-list');
+						no_more._add(no_more.dom, no_more.content);
+					}
+				}
+			});
+
+			$(window).scroll(function() {
+				var data = {};
+				data.分公司编号 = conid;
+				data.onlyID = onlyID;
+				data.页数 = page;
+				data = JSON.stringify(data);
+
+				var scrollTop = $(this).scrollTop();
+				var scrollHeight = $(document).height();
+				var windowHeight = $(this).height();
+
+				if(scrollTop + windowHeight == scrollHeight) {
+
+					$.ajax({
+						url: "/ajax.post?func=CZ_fgs_people",
+						type: "POST",
+						data: 'data=' + data,
+						success: function(p) {
+							if(p.状态 == '成功') {
+								no_more._delete();
+
+								if(p.分公司成员条数 !== 0) {
+									if(p.分公司成员条数 == 10) {
+										no_more.content = '正在加载数据';
+										no_more.dom = $('.member-list');
+										no_more._add(no_more.dom, no_more.content);
+									}
+
+									p.分公司成员列表.forEach(function(item) {
+										$('.member-list').append('<li><div class="member-img clearfix"><img src="img/ic_.png" /></div>' +
+											'<div class="member-name clearfix">' + item.姓名 + '</div>' +
+											'<div class="member-status clearfix">' + item.类别 + '</div></li>')
+									});
+
+								} else if(p.分公司成员条数 < 10) {
+
+									no_more.content = '已无更多数据';
+									no_more.dom = $('.member-list');
+									no_more._add(no_more.dom, no_more.content);
+								}
+								page = p.页数;
+							}
+						}
+					})
+				}
+			});
+
+			function skip404() {
+				window.location.href = "404.html";
+			}
+		</script>
+	</body>
+
+</html>
