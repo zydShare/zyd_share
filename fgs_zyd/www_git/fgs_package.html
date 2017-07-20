@@ -87,6 +87,14 @@
 					if(d.状态 == '成功') {
 						no_more._delete();
 						if(d.条数 !== 0) {
+							d.列表.forEach(function(item) {
+								$('.card-list').append('<li><div class="list-time clearfix">' +
+									'<p>' + item.录入时间.substring(0, 10) + '</p>' +
+									'<p>' + item.录入时间.substring(11, 19) + '</p></div>' +
+									'<div class="card clearfix">' + item.套餐名称 + '</div>' +
+									'<div class="card-num clearfix">数量:<span>' + item.数量 + '</span></div></li>');
+							})
+							
 							if(d.条数 < 10) {
 								no_more.content = '已无更多数据';
 								no_more.dom = $('.card-list');
@@ -96,17 +104,8 @@
 								no_more.dom = $('.card-list');
 								no_more._add(no_more.dom, no_more.content);
 							}
-
-							d.列表.forEach(function(item) {
-								$('.card-list').append('<li><div class="list-time clearfix">' +
-									'<p>' + item.录入时间.substring(0, 10) + '</p>' +
-									'<p>' + item.录入时间.substring(11, 19) + '</p></div>' +
-									'<div class="card clearfix">' + item.套餐名称 + '</div>' +
-									'<div class="card-num clearfix">数量:<span>' + item.数量 + '</span></div></li>');
-							})
 						} else {
 							//							$('.card-list').append("<div class='nothing'>无数据</div>");
-							no_more._delete();
 							no_more.content = '暂无数据';
 							no_more.dom = $('.card-list');
 							no_more._add(no_more.dom, no_more.content);
@@ -139,14 +138,8 @@
 						success: function(d) {
 							if(d.状态 == '成功') {
 								no_more._delete();
-
 								if(d.条数 != 0) {
-									if(d.条数 == 10) {
-										no_more.content = '正在加载数据';
-										no_more.dom = $('.card-list');
-										no_more._add(no_more.dom, no_more.content);
-									}
-
+									
 									d.列表.forEach(function(item) {
 										$('.card-list').append('<li><div class="list-time clearfix">' +
 											'<p>' + item.录入时间.substring(0, 10) + '</p>' +
@@ -154,6 +147,11 @@
 											'<div class="card clearfix">' + item.套餐名称 + '</div>' +
 											'<div class="card-num clearfix">数量:<span>' + item.数量 + '</span></div></li>');
 									});
+									if(d.条数 == 10) {
+										no_more.content = '正在加载数据';
+										no_more.dom = $('.card-list');
+										no_more._add(no_more.dom, no_more.content);
+									}
 
 								} else if(d.条数 < 10) {
 									no_more.content = '已无更多数据';

@@ -72,7 +72,7 @@ var no_more = {};
 no_more.content = '';
 no_more.dom = '';
 no_more._add = function(dom, content) {
-	dom.after('<div class="nomore-tips flex-hc-vc" style="height: 2.5rem;"> <hr class="flex1" style="margin: 0 .75rem;" /> <p class="">' + content + '</p> <hr class="flex1" style="margin: 0 .75rem;" /> </div>')
+	dom.append('<div class="nomore-tips flex-hc-vc" style="height: 2.5rem;"> <hr class="flex1" style="margin: 0 .75rem;" /> <p class="">' + content + '</p> <hr class="flex1" style="margin: 0 .75rem;" /> </div>')
 }
 no_more._delete = function() {
 	$(".nomore-tips").remove();
@@ -83,7 +83,7 @@ var no_more_init = {};
 no_more_init.content = '';
 no_more_init.dom = '';
 no_more_init._add = function(dom, content) {
-	dom.after('<div class="nomore-tips flex-hc-vc" style="height: 1rem;"> <hr class="flex1" style="margin: 0 .3rem;" /> <p class="">' + content + '</p> <hr class="flex1" style="margin: 0 .3rem;" /> </div>')
+	dom.append('<div class="nomore-tips flex-hc-vc" style="height: 1rem;"> <hr class="flex1" style="margin: 0 .3rem;" /> <p class="">' + content + '</p> <hr class="flex1" style="margin: 0 .3rem;" /> </div>')
 }
 no_more_init._delete = function() {
 	$(".nomore-tips").remove();

@@ -198,20 +198,16 @@ textarea:-ms-input-placeholder {
 
 
 /*footer*/
-
-footer {
-	width: 100%;
-}
-
 .fixed-bottom {
+	width: 100%;
 	position: fixed;
 	right: 0;
 	left: 0;
 	z-index: 523;
 	bottom: 0;
 	text-align: center;
+	background: #f5f6f7;
 }
-
 .btn-common {
 	border: 0;
 	color: #FFFFFF;
@@ -221,7 +217,7 @@ footer {
 	border-radius: .12rem;
 	outline: none;
 	background-color: #2B9CED;
-	margin: 0.4rem 0;
+	margin: 0 0 0.4rem;
 }
 
 

@@ -64,9 +64,9 @@
 }
 .card-list{
 	margin-top: 0.5rem;
-	background: #fff;
 }
 .card-list li{
+	background: #fff;
 	height: 3rem;
 	width: 100%;
 	border-bottom: 1px solid #f5f6f7;

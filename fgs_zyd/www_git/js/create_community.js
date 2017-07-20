@@ -313,7 +313,7 @@ $(function() {
 //			toast("请输入服务商手机号");
 //			return false;
 			
-			content = '请输入服务商账号';
+			content = '请输入服务商手机号';
 			layObj.tips(pic, content, reload);
 		} else if(fgs_id.length < 3) {
 //			t = 3;

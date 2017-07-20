@@ -138,8 +138,8 @@ $(function() {
 					toast('请输入服务商手机号');
 				}
 				var data = {};
-				data.账号 = $(this).val();
 				data.onlyID = onlyID;
+				data.账号 = $(this).val();
 				data = JSON.stringify(data);
 				$.ajax({
 					url: "/ajax.post?func=CZ_fgs_name",
@@ -203,7 +203,7 @@ $(function() {
 					//					t = 3;
 					//					toast("请输入服务商手机号");
 					//					return false;
-					content = '请输入服务商账号';
+					content = '请输入服务商手机号';
 					layObj.tips(pic, content, reload);
 				} else {
 					var data = {};

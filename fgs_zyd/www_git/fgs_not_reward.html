@@ -14,11 +14,8 @@
 				line-height: 1;
 			}
 			
-			.jl-list {
-				background: #fff;
-			}
-			
 			.jl-list li {
+				background: #fff;
 				height: 3.5rem;
 				width: 100%;
 				border-bottom: 1px solid #f5f6f7;
@@ -124,12 +121,19 @@
 				url: "/ajax.post?func=CZ_fgs_weifenrun",
 				data: 'data=' + data,
 				success: function(d) {
-					console.log(d);
+//					console.log(d);
 					if(d.状态 == '成功') {
-						console.log(d)
+						no_more._delete();
+						
 						if(d.未分润条数 !== 0) {
 
-							no_more._delete();
+							d.未分润列表.forEach(function(item) {
+								$('.jl-list').append('<li><div class="fgs-name clearfix">' +
+									'<p>' + item.类别 + '</p>' +
+									'<p>' + item.录入时间 + '</p></div>' +
+									'<div class="integral-num clearfix"><p>￥<span>' + item.实发积分 + '</span></p><p><span>未分润</span></p></div></li>')
+							})
+							
 							if(d.未分润条数 < 10) {
 								no_more.content = '已无更多数据';
 								no_more.dom = $('.jl-list');
@@ -139,16 +143,7 @@
 								no_more.dom = $('.jl-list');
 								no_more._add(no_more.dom, no_more.content);
 							}
-
-							d.未分润列表.forEach(function(item) {
-								$('.jl-list').append('<li><div class="fgs-name clearfix">' +
-									'<p>' + item.类别 + '</p>' +
-									'<p>' + item.录入时间 + '</p></div>' +
-									'<div class="integral-num clearfix"><p>￥<span>' + item.实发积分 + '</span></p><p><span>未分润</span></p></div></li>')
-							})
 						} else {
-							no_more._delete();
-
 							no_more.content = '已无更多数据';
 							no_more.dom = $('.jl-list');
 							no_more._add(no_more.dom, no_more.content);
@@ -156,7 +151,6 @@
 						page = d.页数;
 					} else {
 						no_more._delete();
-
 						no_more.content = '已无更多数据';
 						no_more.dom = $('.jl-list');
 						no_more._add(no_more.dom, no_more.content);
@@ -185,11 +179,7 @@
 							if(d.状态 == '成功') {
 								no_more._delete();
 								if(d.未分润条数 !== 0) {
-									if(d.未分润条数 == 10) {
-										no_more.content = '正在加载数据';
-										no_more.dom = $('.jl-list');
-										no_more._add(no_more.dom, no_more.content);
-									}
+									
 
 									d.未分润列表.forEach(function(item) {
 										$('.jl-list').append('<li><div class="fgs-name clearfix">' +
@@ -197,6 +187,12 @@
 											'<p>' + item.录入时间 + '</p></div>' +
 											'<div class="integral-num clearfix"><p>￥<span>' + item.实发积分 + '</span></p><p><span>未分润</span></p></div></li>')
 									})
+									
+									if(d.未分润条数 == 10) {
+										no_more.content = '正在加载数据';
+										no_more.dom = $('.jl-list');
+										no_more._add(no_more.dom, no_more.content);
+									}
 								} else if(d.未分润条数 < 10) {
 
 									no_more.content = '已无更多数据';

@@ -35,41 +35,10 @@
 				</ul>
 			</div>
 		</div>
-
 		<div class="list">
 			<ul class="fgs-list">
-				<!--<li class="fgs-items bgc-fff">
-					<div class="list-top flex-hb-vt">
-						<div class="id-icon"><img src="img/2_ic_founder.png" /></div>
-						<div class="id-main">
-							<p class="fgs-name col-333">这是个比较长的分公司名字</p>
-							<p class="fgs-location col-666">广东省深圳市</p>
-							<p class="col-666">编号：<span class="fgs-number col-666">888888</span></p>
-						</div>
-						<div class="id-title"><img src="img/dj_identity.png" /></div>
-					</div>
-					<div class="list-bottom flex-hb-vc">
-						<p class="id-type col-666">市代理分公司</p>
-						<p class="col-666">所占股份：<span class="id-sum col-666">1</span>股</p>
-					</div>
-				</li>
-				<li class="fgs-items bgc-fff">
-					<div class="list-top flex-hb-vt">
-						<div class="id-icon"><img src="img/2_ic_partner.png" /></div>
-						<div class="id-main">
-							<p class="fgs-name col-333">这是个比较长的分公司名字</p>
-							<p class="fgs-location col-666">广东省深圳市</p>
-							<p class="col-666">编号：<span class="fgs-number col-666">888888</span></p>
-						</div>
-						<div class="id-title"><img src="img/2_tran_partner.png" /></div>
-					</div>
-					<div class="list-bottom flex-hb-vc">
-						<p class="id-type col-666">市代理分公司</p>
-						<p class="col-666">所占股份：<span class="id-sum col-666">1</span>股</p>
-					</div>
-				</li>-->
+				<!--<li class="fgs-items bgc-fff"> <div class="list-top flex-hb-vt"> <div class="id-icon"><img src="img/2_ic_founder.png" /></div> <div class="id-main"> <p class="fgs-name col-333">这是个比较长的分公司名字</p> <p class="fgs-location col-666">新疆维吾尔自治区克孜勒苏柯尔克孜自治州</p> <p class="col-666">编号：<span class="fgs-number col-666">888888</span></p> </div> <div class="id-title"><img src="img/2_tran_founder.png" /></div> </div> <div class="list-bottom flex-hb-vc"> <p class="id-type col-666">市代理分公司</p> <p class="col-666">所占股份：<span class="id-sum col-666">1</span>股</p> </div> </li> <li class="fgs-items bgc-fff"> <div class="list-top flex-hb-vt"> <div class="id-icon"><img src="img/2_ic_partner.png" /></div> <div class="id-main"> <p class="fgs-name col-333">这是个比较长的分公司名字</p> <p class="fgs-location col-666">广东省深圳市</p> <p class="col-666">编号：<span class="fgs-number col-666">888888</span></p> </div> <div class="id-title"><img src="img/2_tran_partner.png" /></div> </div> <div class="list-bottom flex-hb-vc"> <p class="id-type col-666">市代理分公司</p> <p class="col-666">所占股份：<span class="id-sum col-666">1</span>股</p> </div> </li>-->
 			</ul>
-
 		</div>
 		<span class="tips">
 				<span class="tips-in"></span>
@@ -84,8 +53,7 @@
 			var conid;
 			var ys = 0;
 			var bottom_height = $(window).height() - $(".fixed-top").height();
-			$(".list").height(bottom_height);
-
+			$(".list").height(Math.floor(bottom_height));
 			//			跳转功能页面
 			$('.fgs-join').click(function() {
 				window.location.href = "dj_joinBranch.html?onlyID=" + onlyID;
@@ -102,7 +70,7 @@
 			$(document).ready(function() {
 				var data = {};
 				data.onlyID = onlyID;
-				data.页数 = 0;
+				data.页数 = ys;
 				data = JSON.stringify(data);
 				$.ajax({
 					type: "POST",
@@ -111,6 +79,8 @@
 					success: function(p) {
 						console.log(p);
 						if(p.状态 == '成功' && p.分公司条数 !== 0) {
+							no_more_init._delete();
+
 							$.each(p.分公司列表, function(i, item) {
 								conid = item.编号;
 								$(".fgs-list").append('<li class="fgs-items bgc-fff" onclick="con_detail(\'' + onlyID + '\',\'' + conid + '\',\'' + item.类别 + '\')"> <div class="list-top flex-hb-vt"> <div class="id-icon"><img src="" /></div> <div class="id-main"> <p class="fgs-name col-333">' + item.分公司名称 + '</p> <p class="fgs-location col-666">' + item.省 + item.市 + '</p> <p class="col-666">编号：<span class="fgs-number col-666">' + item.编号 + '</span></p> </div> <div class="id-title"><img src="" /></div> </div> <div class="list-bottom flex-hb-vc"> <p class="id-type col-666">' + item.类型 + ' </p> <p class="col-666">所占股份：<span class="id-sum col-666">' + item.所占股数 + '</span>股</p> </div> </li>');
@@ -126,6 +96,16 @@
 									$(".id-main p:nth-child(3):eq(" + i + ")").css("margin-top", ".15rem");
 								}
 							})
+
+							if(p.分公司条数 < 10) {
+								no_more_init.content = '已无更多数据';
+								no_more_init.dom = $('.fgs-list');
+								no_more_init._add(no_more_init.dom, no_more_init.content);
+							} else if(p.分公司条数 == 10) {
+								no_more_init.content = '正在加载数据';
+								no_more_init.dom = $('.fgs-list');
+								no_more_init._add(no_more_init.dom, no_more_init.content);
+							}
 						} else {
 							$(".fgs-list").append('<button class="nomore"><img src="img/2_nomore.png"/></button>');
 						}
@@ -133,45 +113,57 @@
 					}
 				})
 			})
-			
+
 			$(".list").unbind("scroll").bind("scroll", function(e) {
 				var scrollTop = $(this).scrollTop();
 				var windowHeight = $(this).height();
 				var scrollHeight = this.scrollHeight;
-				if(scrollTop + windowHeight === scrollHeight) {
+				console.log(scrollTop, windowHeight, scrollHeight);
+				if(scrollTop + windowHeight == scrollHeight) {
+					console.log(ys)
 					var r = {};
 					r.onlyID = onlyID;
-//					console.log(ys)
 					r.页数 = ys;
 					r = JSON.stringify(r);
-					console.log(r);
+					//					console.log(r);
 					$.ajax({
 						url: "/ajax.post?func=CZ_fgs_My_DJList",
 						type: "POST",
 						data: 'data=' + r,
 						success: function(p) {
 							if(p.状态 == '成功') {
+								no_more_init._delete();
 								if(p.分公司条数 != 0) {
-									t = 2;
-									tips("正在加载数据");
+									//									t = 2;
+									//									tips("正在加载数据");
+
 									$.each(p.分公司列表, function(i, item) {
 										conid = item.编号;
 										$(".fgs-list").append('<li class="fgs-items bgc-fff" onclick="con_detail(\'' + onlyID + '\',\'' + conid + '\',\'' + item.类别 + '\')"> <div class="list-top flex-hb-vt"> <div class="id-icon"><img src="" /></div> <div class="id-main"> <p class="fgs-name col-333">' + item.分公司名称 + '</p> <p class="fgs-location col-666">' + item.省 + item.市 + '</p> <p class="col-666">编号：<span class="fgs-number col-666">' + item.编号 + '</span></p> </div> <div class="id-title"><img src="" /></div> </div> <div class="list-bottom flex-hb-vc"> <p class="id-type col-666">' + item.类型 + ' </p> <p class="col-666">所占股份：<span class="id-sum col-666">' + item.所占股数 + '</span>股</p> </div> </li>');
 										//								console.log(i)
-										if(item.类别 == "发起人") {
-											$(".fgs-items .id-icon img:eq(" + i + ")").attr("src", "img/2_ic_founder.png");
-											$(".fgs-items .id-title img:eq(" + i + ")").attr("src", "img/dj_identity.png");
-										} else if(item.类别 == "股东") {
-											$(".fgs-items .id-icon img:eq(" + i + ")").attr("src", "img/2_ic_partner.png");
-											$(".fgs-items .id-title img:eq(" + i + ")").attr("src", "img/2_tran_partner.png");
+										if(p.分公司列表[i].类别 == "发起人") {
+											$(".fgs-items .id-icon img:eq(" + ((i) + (ys) * 10) + ")").attr("src", "img/2_ic_founder.png");
+											$(".fgs-items .id-title img:eq(" + ((i) + (ys) * 10) + ")").attr("src", "img/2_tran_founder.png");
+										} else if(p.分公司列表[i].类别 == "股东") {
+											$(".fgs-items .id-icon img:eq(" + ((i) + (ys) * 10) + ")").attr("src", "img/2_ic_partner.png");
+											$(".fgs-items .id-title img:eq(" + ((i) + (ys) * 10) + ")").attr("src", "img/2_tran_partner.png");
 										}
-										if($(".fgs-location:eq(" + i + ")").html().length > 14) {
-											$(".id-main p:nth-child(3):eq(" + i + ")").css("margin-top", ".15rem");
+										if($(".fgs-location:eq(" + ((i) + (ys) * 10) + ")").html().length > 14) {
+											$(".id-main p:nth-child(3):eq(" + ((i) + (ys) * 10) + ")").css("margin-top", ".15rem");
 										}
 									})
-								} else if(p.分公司条数 < 10) {
-									t = 2;
-									tips("已无更多数据");
+
+									if(p.分公司条数 == 10) {
+										no_more_init.content = '正在加载数据';
+										no_more_init.dom = $('.fgs-list');
+										no_more_init._add(no_more_init.dom, no_more_init.content);
+									}
+								} else if(p.分公司条数 == 0) {
+									//									t = 2;
+									//									tips("已无更多数据");
+									no_more_init.content = '已无更多数据';
+									no_more_init.dom = $('.fgs-list');
+									no_more_init._add(no_more_init.dom, no_more_init.content);
 								}
 								ys = p.页数;
 							}

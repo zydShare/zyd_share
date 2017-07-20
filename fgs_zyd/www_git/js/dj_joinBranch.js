@@ -59,7 +59,7 @@ $(function() {
 		var money = money_st;
 		$('#sum').html((count_st * money_st).toFixed(2));
 
-		$(".doincre").click(function() {
+		$(".doincre").off("click").on("click", function() {
 			var count = $(".write").val();
 			count++;
 			$(".write").val(count);
@@ -84,7 +84,7 @@ $(function() {
 			}
 
 		});
-		$(".dodecre").click(function() {
+		$(".dodecre").off("click").on("click", function() {
 			var count = $(".write").val();
 			count--;
 			$(".write").val(count);
@@ -154,7 +154,7 @@ $(function() {
 	});
 
 	//下一步
-	$("#nextBtn").on("click", function() {
+	$("#nextBtn").off("click").on("click", function() {
 		var fgs_id = $("#join_bh").val();
 		var fgs_name = $("#fgs_name").html();
 		var fgs_pass = $("#fgs_password").val();
@@ -162,23 +162,55 @@ $(function() {
 		var num_input = $('.num_input').val();
 		var total_money = $("#sum").html();
 		var setID = $('#type_name').attr('data_id');
+		var fws_name = $("#fws_name").html();
+		
+		var pic = "ic_type_warning.png";
+		var content = "";
+		var reload = function() {};
+		
 		if(fgs_id == '') {
-			t = 3;
-			tips("请输入分公司数字编号");
-			return false;
+//			t = 3;
+//			tips("请输入分公司数字编号");
+//			return false;
+			
+			content = '请输入分公司数字编号';
+			layObj.tips(pic, content, reload);
+		}else if(fgs_name == "") {
+//			t = 3;
+//			tips("请输入分公司名称");
+//			return false;
+			
+			content = '请输入分公司名称';
+			layObj.tips(pic, content, reload);
 		} else if(fgs_pass == "") {
-			t = 3;
-			tips("请输入分公司密码");
-			return false;
+//			t = 3;
+//			tips("请输入分公司密码");
+//			return false;
+			
+			content = '请输入分公司密码';
+			layObj.tips(pic, content, reload);
 		} else if(fgs_pass.length < 6) {
-			t = 3;
-			tips("请输入6至8位数字密码");
-			return false;
+//			t = 3;
+//			tips("请输入6至8位数字密码");
+//			return false;
+			
+			content = '请输入6至8位数字密码';
+			layObj.tips(pic, content, reload);
 		} else if(fws_phone == "") {
-			t = 3;
-			tips("请输入服务商手机号码");
-			return false;
-		} else {
+//			t = 3;
+//			tips("请输入服务商手机号码");
+//			return false;
+			
+			content = '请输入服务商手机号码';
+			layObj.tips(pic, content, reload);
+		} else if(fws_name == "") {
+//			t = 3;
+//			tips("请输入服务商名称");
+//			return false;
+			
+			content = '请输入服务商名称';
+			layObj.tips(pic, content, reload);
+		}else {
 			var data = {};
 			data.onlyID = onlyID;
 			data.分公司编号 = fgs_id;
@@ -204,8 +236,10 @@ $(function() {
 						var prams = "prepay_id=" + json.prepay_id + "&appid=" + json.appid + "&onlyID=" + json.onlyID + "&sign=" + json.sign;
 						window.location.href = json.收银台 + "?" + prams;
 					} else if(json.状态 != "成功") {
-						t = 3;
-						tips(json.状态);
+//						t = 3;
+//						tips(json.状态);
+						content = json.状态;
+						layObj.tips(pic, content, reload);
 					}
 				}
 			});

@@ -14,11 +14,8 @@
 				line-height: 1;
 			}
 			
-			.member-list {
-				background: #fff;
-			}
-			
 			.member-list li {
+				background: #fff;
 				height: 3.275rem;
 				width: 100%;
 				border-bottom: 1px solid #f5f6f7;
@@ -107,9 +104,15 @@
 				success: function(d) {
 					console.log(d)
 					if(d.状态 == '成功') {
+						no_more._delete();
 						if(d.分公司成员条数 != 0) {
 
-							no_more._delete();
+							d.分公司成员列表.forEach(function(item) {
+								$('.member-list').append('<li><div class="member-img clearfix"><img src="img/ic_.png" /></div>' +
+									'<div class="member-name clearfix">' + item.姓名 + '</div>' +
+									'<div class="member-status clearfix">' + item.类别 + '</div></li>')
+							});
+
 							if(d.分公司成员条数 < 10) {
 								no_more.content = '已无更多数据';
 								no_more.dom = $('.member-list');
@@ -119,15 +122,7 @@
 								no_more.dom = $('.member-list');
 								no_more._add(no_more.dom, no_more.content);
 							}
-
-							d.分公司成员列表.forEach(function(item) {
-								$('.member-list').append('<li><div class="member-img clearfix"><img src="img/ic_.png" /></div>' +
-									'<div class="member-name clearfix">' + item.姓名 + '</div>' +
-									'<div class="member-status clearfix">' + item.类别 + '</div></li>')
-							});
 						} else {
-							no_more._delete();
-
 							no_more.content = '已无更多数据';
 							no_more.dom = $('.member-list');
 							no_more._add(no_more.dom, no_more.content);
@@ -135,7 +130,6 @@
 						page = d.页数;
 					} else {
 						no_more._delete();
-
 						no_more.content = '已无更多数据';
 						no_more.dom = $('.member-list');
 						no_more._add(no_more.dom, no_more.content);
@@ -163,20 +157,19 @@
 						success: function(p) {
 							if(p.状态 == '成功') {
 								no_more._delete();
-
 								if(p.分公司成员条数 !== 0) {
-									if(p.分公司成员条数 == 10) {
-										no_more.content = '正在加载数据';
-										no_more.dom = $('.member-list');
-										no_more._add(no_more.dom, no_more.content);
-									}
 
 									p.分公司成员列表.forEach(function(item) {
 										$('.member-list').append('<li><div class="member-img clearfix"><img src="img/ic_.png" /></div>' +
 											'<div class="member-name clearfix">' + item.姓名 + '</div>' +
 											'<div class="member-status clearfix">' + item.类别 + '</div></li>')
 									});
-
+									
+									if(p.分公司成员条数 == 10) {
+										no_more.content = '正在加载数据';
+										no_more.dom = $('.member-list');
+										no_more._add(no_more.dom, no_more.content);
+									}
 								} else if(p.分公司成员条数 < 10) {
 
 									no_more.content = '已无更多数据';

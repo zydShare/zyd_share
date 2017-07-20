@@ -9,7 +9,6 @@ var layObj = {
 	reload: function() {},
 	F_button: function() {},
 	T_button: function() {},
-	
 
 
 	'tips_new': function(tit, content, btn1_opt) {

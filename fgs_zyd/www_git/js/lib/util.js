@@ -56,67 +56,67 @@
 	resize();
 }(window);
 
-//toast提示框
-var t = 3;
-
-function toast(status) {
-
-	$(".toast").show().addClass('shake');
-	$(".toast .toast-su").html(status);
-	var i = setTimeout(toast, 1000);
-	t--;
-	if(t <= 0) {
-		$(".toast").hide();
-		clearTimeout(i);
-	}
-}
-
-//获取当前页面高度
-//var winHeight = $(window).height();
-//$(window).resize(function() {
-//	var thisHeight = $(this).height();
-//	if(winHeight - thisHeight > 50) {
-//		//窗口发生改变(大),故此时键盘弹出
-//		//当软键盘弹出，在这里面操作
-//		$('footer').css({ 'display': 'none' });
-//	} else {
-//		//窗口发生改变(小),故此时键盘收起
-//		//当软键盘收起，在此处操作
-//		$('footer').css({ 'display': 'block' });
+////toast提示框
+//var t = 3;
+//
+//function toast(status) {
+//
+//	$(".toast").show().addClass('shake');
+//	$(".toast .toast-su").html(status);
+//	var i = setTimeout(toast, 1000);
+//	t--;
+//	if(t <= 0) {
+//		$(".toast").hide();
+//		clearTimeout(i);
 //	}
-//});
-
-/*限制只有中文和字母*/
-function shuru1(a) {
-	a.value = a.value.replace(/[^\a-\z\A-\Z\u4E00-\u9FA5]/g, '')
-
-}
-
-/*限制只有数字*/
-function shuru2(a) {
-	a.value = a.value.replace(/\D/g, '')
-
-}
-
-/*限制只有数字字母*/
-function shuru3(a) {
-	a.value = a.value.replace(/[^\a-\z\A-\Z0-9]/g, '')
-
-}
-
-/*限制只有中文、英文、数字、空格*/
-function shuru4(a) {
-	a.value = a.value.replace(/[^\a-\z\A-\Z0-9\u4E00-\u9FA5\ ]/g, '')
-
-}
-
-/*限制只有中文*/
-function shuru5(a) {
-	a.value = a.value.replace(/[^\u4E00-\u9FA5]/g, '')
-
-}
-
-/*限制只有中文、英文、数字*/
-function shuru6(a) {
-	a.value = a.value.replace(/[^\a-\z\A-\Z0-9\u4E00-\u9FA5]/g, '')
-}
+//}
+//
+////获取当前页面高度
+////var winHeight = $(window).height();
+////$(window).resize(function() {
+////	var thisHeight = $(this).height();
+////	if(winHeight - thisHeight > 50) {
+////		//窗口发生改变(大),故此时键盘弹出
+////		//当软键盘弹出，在这里面操作
+////		$('footer').css({ 'display': 'none' });
+////	} else {
+////		//窗口发生改变(小),故此时键盘收起
+////		//当软键盘收起，在此处操作
+////		$('footer').css({ 'display': 'block' });
+////	}
+////});
+//
+///*限制只有中文和字母*/
+//function shuru1(a) {
+//	a.value = a.value.replace(/[^\a-\z\A-\Z\u4E00-\u9FA5]/g, '')
+//
+//}
+//
+///*限制只有数字*/
+//function shuru2(a) {
+//	a.value = a.value.replace(/\D/g, '')
+//
+//}
+//
+///*限制只有数字字母*/
+//function shuru3(a) {
+//	a.value = a.value.replace(/[^\a-\z\A-\Z0-9]/g, '')
+//
+//}
+//
+///*限制只有中文、英文、数字、空格*/
+//function shuru4(a) {
+//	a.value = a.value.replace(/[^\a-\z\A-\Z0-9\u4E00-\u9FA5\ ]/g, '')
+//
+//}
+//
+///*限制只有中文*/
+//function shuru5(a) {
+//	a.value = a.value.replace(/[^\u4E00-\u9FA5]/g, '')
+//
+//}
+//
+///*限制只有中文、英文、数字*/
+//function shuru6(a) {
+//	a.value = a.value.replace(/[^\a-\z\A-\Z0-9\u4E00-\u9FA5]/g, '')
+//}

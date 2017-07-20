@@ -34,18 +34,7 @@ $(document).ready(function() {
 		data: 'data=' + data,
 		success: function(p) {
 			if(p.状态 == '成功' && p.分公司条数 !== 0) {
-
-
 				no_more_init._delete();
-				if(p.分公司条数 < 10) {
-					no_more_init.content = '已无更多数据';
-					no_more_init.dom = $('.fgs-list');
-					no_more_init._add(no_more_init.dom,no_more_init.content);
-				} else if(p.分公司条数 == 10) {
-					no_more_init.content = '正在加载数据';
-					no_more_init.dom = $('.fgs-list');
-					no_more_init._add(no_more_init.dom,no_more_init.content);
-				}
 
 				$.each(p.分公司列表, function(i) {
 					conid = p.分公司列表[i].编号;
@@ -64,6 +53,16 @@ $(document).ready(function() {
 					}
 
 				})
+				if(p.分公司条数 < 10) {
+					no_more_init.content = '已无更多数据';
+					no_more_init.dom = $('.fgs-list');
+					no_more_init._add(no_more_init.dom, no_more_init.content);
+				} else if(p.分公司条数 == 10) {
+					no_more_init.content = '正在加载数据';
+					no_more_init.dom = $('.fgs-list');
+					no_more_init._add(no_more_init.dom, no_more_init.content);
+				}
+
 			} else {
 
 				$(".fgs-list").append('<button class="nomore"><img src="img/2_nomore.png"/></button>');
@@ -96,12 +95,7 @@ $(".list").unbind("scroll").bind("scroll", function(e) {
 					if(p.分公司条数 != 0) {
 						//						t = 2;
 						//						tips("正在加载数据");
-						if(p.分公司条数 == 10) {
-							no_more_init.content = '正在加载数据';
-							no_more_init.dom = $('.fgs-list');
-							no_more_init._add(no_more_init.dom,no_more_init.content);
-						}
-
+						
 						$.each(p.分公司列表, function(i) {
 
 							conid = p.分公司列表[i].编号;
@@ -119,12 +113,18 @@ $(".list").unbind("scroll").bind("scroll", function(e) {
 								$(".id-main p:nth-child(3):eq(" + ((i) + (ys) * 10) + ")").css("margin-top", ".15rem");
 							}
 						})
+						if(p.分公司条数 == 10) {
+							no_more_init.content = '正在加载数据';
+							no_more_init.dom = $('.fgs-list');
+							no_more_init._add(no_more_init.dom, no_more_init.content);
+						}
+
 					} else if(p.分公司条数 == 0) {
 						//						t = 2;
 						//						tips("已无更多数据");
 						no_more_init.content = '已无更多数据';
 						no_more_init.dom = $('.fgs-list');
-						no_more_init._add(no_more_init.dom,no_more_init.content);
+						no_more_init._add(no_more_init.dom, no_more_init.content);
 					}
 					ys = p.页数;
 				}

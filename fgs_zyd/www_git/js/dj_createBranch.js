@@ -30,7 +30,7 @@ $(function() {
 		var money = money_st;
 		$('#sum').html((count_st * money_st).toFixed(2));
 
-		$(".doincre").click(function() {
+		$(".doincre").off("click").on("click", function() {
 			var count = $(".write").val();
 			count++;
 			$(".write").val(count);
@@ -55,7 +55,7 @@ $(function() {
 			}
 
 		});
-		$(".dodecre").click(function() {
+		$(".dodecre").off("click").on("click", function() {
 			var count = $(".write").val();
 			count--;
 			$(".write").val(count);
@@ -79,7 +79,7 @@ $(function() {
 				$(".write").val(1);
 				$("#sum").html(Number(money_st).toFixed(2));
 			} else {
-				console.log(count_input, money)
+//				console.log(count_input, money)
 				$('#sum').html((count_input * money).toFixed(2));
 			}
 
@@ -125,7 +125,7 @@ $(function() {
 	});
 
 	//下一步
-	$("#nextBtn").on("click", function() {
+	$("#nextBtn").off("click").on("click", function() {
 		var area_info = $('#area').html().replace(/(^\s*)|(\s*$)/g, "").split(" ")
 		var shengfen = area_info[0];
 		var shiji = area_info[1];
@@ -139,45 +139,78 @@ $(function() {
 		var fws_name = $("#fws_name").html();
 		var num_input = $('.num_input').val();
 		var setID = $('#type_name').attr('data_id');
-		console.log(shiid);
-		console.log(shengid);
-		if(shengfen == '请选择省') {
-			t = 3;
-			tips("请选择省份");
-		} else if(shiji == '请选择市' || shiji == undefined || shiji == null) {
-			t = 3;
-			tips("请选择城市");
+		console.log(shengfen);
+		console.log(shiji);
+		var pic = "ic_type_warning.png";
+		var content = "";
+		var reload = function() {};
+		
+		if(shengfen == '请选择分公司区域'|| shengfen == undefined || shengfen == null) {
+//			t = 3;
+//			tips("请选择省份");
+			
+			content = '请选择分公司区域';
+			layObj.tips(pic, content, reload);
+		} else if(shiji == undefined || shiji == null) {
+//			t = 3;
+//			tips("请选择城市");
+			content = '请选择分公司区域';
+			layObj.tips(pic, content, reload);
 		} else if(shengid != shiid) {
-			t = 3;
-			tips("所选择省份和城市必须同步");
+//			t = 3;
+//			tips("所选择省份和城市必须同步");
+			
+			content = '所选择省份和城市必须同步';
+			layObj.tips(pic, content, reload);
 		} else if(fgs_id == '') {
-			t = 3;
-			tips("请输入分公司编号");
-			return false;
+//			t = 3;
+//			tips("请输入分公司编号");
+//			return false;
+			
+			content = '请输入分公司编号';
+			layObj.tips(pic, content, reload);
 		} else if($("#serial_number").val().length < 3) {
-			t = 3;
-			tips("请输入3-6位分公司编号");
-			return false;
+//			t = 3;
+//			tips("请输入3-6位分公司编号");
+//			return false;
+			
+			content = '请输入3-6位分公司编号';
+			layObj.tips(pic, content, reload);
 		} else if(fgs_name == "") {
-			t = 3;
-			tips("请输入分公司名称");
-			return false;
+//			t = 3;
+//			tips("请输入分公司名称");
+//			return false;
+			
+			content = '请输入分公司名称';
+			layObj.tips(pic, content, reload);
 		} else if(fgs_name.length < 2) {
-			t = 3;
-			tips("请输入2-12位分公司名称");
-			return false;
+//			t = 3;
+//			tips("请输入2-12位分公司名称");
+//			return false;
+			
+			content = '请输入2-12位分公司名称';
+			layObj.tips(pic, content, reload);
 		} else if(fgs_pass == "") {
-			t = 3;
-			tips("请输入分公司密码");
-			return false;
+//			t = 3;
+//			tips("请输入分公司密码");
+//			return false;
+			
+			content = '请输入分公司密码';
+			layObj.tips(pic, content, reload);
 		} else if(fgs_pass.length < 6) {
-			t = 3;
-			tips("请输入6-8位分公司密码");
-			return false;
+//			t = 3;
+//			tips("请输入6-8位分公司密码");
+//			return false;
+			
+			content = '请输入6-8位分公司密码';
+			layObj.tips(pic, content, reload);
 		} else if(fws_phone == "") {
-			t = 3;
-			tips("请输入服务商手机号码");
-			return false;
+//			t = 3;
+//			tips("请输入服务商手机号码");
+//			return false;
+			
+			content = '请输入服务商手机号码';
+			layObj.tips(pic, content, reload);
 		} else {
 			var data = {};
 			data.onlyID = onlyID;
@@ -205,10 +238,12 @@ $(function() {
 					//							console.log(json)
 					if(json.状态 == "成功") {
 						var prams = "prepay_id=" + json.prepay_id + "&appid=" + json.appid + "&onlyID=" + json.onlyID + "&sign=" + json.sign;
-//						window.location.href = json.收银台 + "?" + prams;
+						window.location.href = json.收银台 + "?" + prams;
 					} else if(json.状态 != "成功") {
-						t = 3;
-						tips(json.状态);
+//						t = 3;
+//						tips(json.状态);
+						content = json.状态;
+						layObj.tips(pic, content, reload);
 					}
 				}
 			});
@@ -407,7 +442,7 @@ function creatList(obj, list) {
 		temp.data = item.quhao;
 		temp.value = index;
 		temp.num = item.index;
-		console.log(temp.value)
+//		console.log(temp.value)
 		//		console.log(temp.num )
 		list.push(temp);
 
@@ -419,7 +454,7 @@ creatList(city, first);
 
 if(city[selectedIndex[0]].hasOwnProperty('sub')) {
 	creatList(city[selectedIndex[0]].sub, second);
-	console.log(creatList(city[selectedIndex[0]].sub, second))
+//	console.log(creatList(city[selectedIndex[0]].sub, second))
 } else {
 	second = [{ text: '', value: 0 }];
 }
@@ -446,8 +481,8 @@ picker.on('picker.select', function(selectedVal, selectedIndex) {
 	var text5 = first[selectedIndex[0]].value;
 	var text6 = second[selectedIndex[1]].num - 1;
 
-	console.log(text5)
-	console.log(text6)
+//	console.log(text5)
+//	console.log(text6)
 	//	var text3 = third[selectedIndex[2]] ? third[selectedIndex[2]].text : '';
 	nameEl.innerHTML = text1 + ' ' + text2;
 	nameEl.setAttribute('data-shengid', text5);
@@ -512,8 +547,8 @@ picker.on('picker.change', function(index, selectedIndex) {
 });
 
 picker.on('picker.valuechange', function(selectedVal, selectedIndex) {
-	console.log(selectedVal);
-	console.log(selectedIndex);
+//	console.log(selectedVal);
+//	console.log(selectedIndex);
 });
 
 nameEl.addEventListener('click', function() {

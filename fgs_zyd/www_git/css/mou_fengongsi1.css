@@ -279,7 +279,11 @@
 	opacity: 0;
 	height: 1px;
 	border: none;
+	outline: none;
+	text-indent: -9999em; 
+    margin-left: -1000%;
 }
+
 
 .zwl-box label {
 	display: block;

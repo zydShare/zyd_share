@@ -21,6 +21,7 @@
 				position: absolute;
 				top: 0;
 				left: 0;
+				overflow: hidden;
 			}
 			
 			.nav_title {
@@ -30,6 +31,7 @@
 				position: fixed;
 				top: 0;
 				left: 0;
+				z-index: 1111;
 			}
 			
 			.nav_title li {
@@ -54,7 +56,8 @@
 				box-sizing: border-box;
 			}
 			
-			.company_list,.company_list1{
+			.company_list,
+			.company_list1 {
 				width: 7.2rem;
 				height: auto;
 				margin-top: 0.78rem;
@@ -62,7 +65,8 @@
 				-webkit-overflow-scrolling: touch;
 			}
 			
-			.company_list li,.company_list1 li {
+			.company_list li,
+			.company_list1 li {
 				background: #fff;
 				width: 100%;
 				height: 1.5rem;
@@ -72,23 +76,27 @@
 				margin-bottom: 0.1rem;
 			}
 			
-			.company_list li:first-child,.company_list1 li:first-child {
+			.company_list li:first-child,
+			.company_list1 li:first-child {
 				margin-top: .3rem;
 			}
 			
-			.company_list .company_name,.company_list1 .company_name {
+			.company_list .company_name,
+			.company_list1 .company_name {
 				font-size: 0.32rem;
 				color: #333;
 				font-weight: normal;
 				padding: 0.31rem 0 0.4rem;
 			}
 			
-			.company_list .company_id,.company_list1 .company_id{
+			.company_list .company_id,
+			.company_list1 .company_id {
 				font-size: 0.28rem;
 				color: #666;
 			}
 			
-			.company_list .adorn,.company_list1 .adorn {
+			.company_list .adorn,
+			.company_list1 .adorn {
 				width: 0.78rem;
 				height: 0.06rem;
 				background: #f5f6f7;
@@ -99,11 +107,13 @@
 				margin: auto;
 			}
 			
-			.company_list .adorn:first-child,.company_list1 .adorn:first-child{
+			.company_list .adorn:first-child,
+			.company_list1 .adorn:first-child {
 				left: -1.24rem;
 			}
 			
-			.company_list .adorn:last-child,.company_list1 .adorn:last-child {
+			.company_list .adorn:last-child,
+			.company_list1 .adorn:last-child {
 				right: -1.24rem;
 			}
 			
@@ -168,7 +178,7 @@
 			var conid = decodeURI(html_name('conid'));
 			var ys_1 = 0;
 			var ys_2 = 0;
-			
+
 			var bottom_height = $(window).height() - $(".nav_title").height();
 			$(".company_list").height(bottom_height);
 			$(".company_list1").height(bottom_height);
@@ -178,7 +188,7 @@
 				$(this).find("div").addClass("show");
 				$('.company_list').empty();
 				$('.company_list1').empty();
-				if($(this).index() === 0 ) {
+				if($(this).index() === 0) {
 					$(".company_list").show();
 					$(".company_list1").hide();
 					var data = {};
@@ -193,10 +203,21 @@
 						success: function(d) {
 							console.log(d);
 							if(d.状态 == '成功' && d.附属分公司条数 !== 0) {
+								no_more_init._delete();
 								$.each(d.附属市分公司, function(i, item) {
 									$(".company_list").append('<li><h4 class="company_name">' + item.名称 + '</h4><p class="company_id"><span style="position: relative;"><span class="adorn"></span> 编号：<span id="company_number">' + item.编号 + '</span><span class="adorn"></span></span></p></li>')
 								})
-							} else { 
+
+								if(d.附属分公司条数 < 10) {
+									no_more_init.content = '已无更多数据';
+									no_more_init.dom = $('.company_list');
+									no_more_init._add(no_more_init.dom, no_more_init.content);
+								} else if(d.附属分公司条数 == 10) {
+									no_more_init.content = '正在加载数据';
+									no_more_init.dom = $('.company_list');
+									no_more_init._add(no_more_init.dom, no_more_init.content);
+								}
+							} else {
 								$(".company_list").append('<button class="nomore"><img src="img/2_no_data.png"/></button>');
 							}
 							ys_1 = d.页数;
@@ -220,15 +241,26 @@
 								success: function(p) {
 									console.log(p.页数);
 									if(p.状态 == '成功') {
+										no_more_init._delete();
+
 										if(p.附属分公司条数 != 0) {
-											t = 2;
-											tips("正在加载数据");
+											//											t = 2;
+											//											tips("正在加载数据");
 											$.each(p.附属市分公司, function(i, item) {
 												$(".company_list").append('<li><h4 class="company_name">' + item.名称 + '</h4><p class="company_id"><span style="position: relative;"><span class="adorn"></span> 编号：<span id="company_number">' + item.编号 + '</span><span class="adorn"></span></span></p></li>')
 											})
+
+											if(p.分公司条数 == 10) {
+												no_more_init.content = '正在加载数据';
+												no_more_init.dom = $('.company_list');
+												no_more_init._add(no_more_init.dom, no_more_init.content);
+											}
 										} else if(p.附属分公司条数 < 10) {
-											t = 2;
-											tips("已无更多数据");
+											//											t = 2;
+											//											tips("已无更多数据");
+											no_more_init.content = '已无更多数据';
+											no_more_init.dom = $('.company_list');
+											no_more_init._add(no_more_init.dom, no_more_init.content);
 										}
 										ys_1 = p.页数;
 									}
@@ -240,7 +272,7 @@
 				} else if($(this).index() === 1) {
 					$(".company_list").hide();
 					$(".company_list1").show();
-					
+
 					var d = {};
 					d.onlyID = onlyID;
 					d.分公司编号 = conid;
@@ -253,16 +285,27 @@
 						success: function(d) {
 							console.log(d);
 							if(d.状态 == '成功' && d.附属社区分公司条数 !== 0) {
+								no_more_init._delete();
 								$.each(d.附属社区分公司, function(i, item) {
 									$(".company_list1").append('<li><h4 class="company_name">' + item.名称 + '</h4><p class="company_id"><span style="position: relative;"><span class="adorn"></span> 编号：<span id="company_number">' + item.编号 + '</span><span class="adorn"></span></span></p></li>')
 								})
+
+								if(d.附属社区分公司条数 < 10) {
+									no_more_init.content = '已无更多数据';
+									no_more_init.dom = $('.company_list1');
+									no_more_init._add(no_more_init.dom, no_more_init.content);
+								} else if(d.附属社区分公司条数 == 10) {
+									no_more_init.content = '正在加载数据';
+									no_more_init.dom = $('.company_list1');
+									no_more_init._add(no_more_init.dom, no_more_init.content);
+								}
 							} else {
 								$(".company_list1").append('<button class="nomore"><img src="img/2_no_data.png"/></button>');
 							}
 							ys_2 = d.页数;
 						}
 					});
-					
+
 					$(".company_list1").unbind("scroll").bind("scroll", function(e) {
 						var scrollTop = $(this).scrollTop();
 						var windowHeight = $(this).height();
@@ -279,17 +322,28 @@
 								type: "POST",
 								data: 'data=' + r,
 								success: function(p) {
-//									console.log(p.页数)
+									//									console.log(p.页数)
 									if(p.状态 == '成功') {
+										no_more_init._delete();
+
 										if(p.附属社区分公司条数 != 0) {
-											t = 2;
-											tips("正在加载数据");
+											//											t = 2;
+											//											tips("正在加载数据");
 											$.each(p.附属社区分公司, function(i, item) {
 												$(".company_list1").append('<li><h4 class="company_name">' + item.名称 + '</h4><p class="company_id"><span style="position: relative;"><span class="adorn"></span> 编号：<span id="company_number">' + item.编号 + '</span><span class="adorn"></span></span></p></li>')
 											})
+
+											if(p.分公司条数 == 10) {
+												no_more_init.content = '正在加载数据';
+												no_more_init.dom = $('.company_list1');
+												no_more_init._add(no_more_init.dom, no_more_init.content);
+											}
 										} else if(p.附属社区分公司条数 < 10) {
-											t = 2;
-											tips("已无更多数据");
+											//											t = 2;
+											//											tips("已无更多数据");
+											no_more_init.content = '已无更多数据';
+											no_more_init.dom = $('.company_list1');
+											no_more_init._add(no_more_init.dom, no_more_init.content);
 										}
 										ys_2 = p.页数;
 									}
@@ -302,7 +356,6 @@
 			})
 
 			$(".nav_title li:eq(0)").trigger("click");
-
 		</script>
 	</body>
 

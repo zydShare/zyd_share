@@ -14,11 +14,9 @@
 				line-height: 1;
 			}
 			
-			.fh-list {
-				background: #fff;
-			}
 			
 			.fh-list li {
+				background: #fff;
 				height: 3.275rem;
 				width: 100%;
 				border-bottom: 1px solid #f5f6f7;
@@ -103,9 +101,16 @@
 				success: function(d) {
 					console.log(d);
 					if(d.状态 == '成功') {
+						no_more._delete();
 						if(d.条数 !== 0) {
+							d.列表.forEach(function(item) {
 
-							no_more._delete();
+								$('.fh-list').append('<li><div class="fgs-name clearfix">' +
+									'<p><span>' + item.说明 + '</span></p>' +
+									'<p>' + item.录入时间 + '</p></div>' +
+									'<div class="integral-num clearfix">积分:<span>' + (Number(item.积分)).toFixed(2) + '</span></div></li>');
+							})
+							
 							if(d.条数 < 10) {
 								no_more.content = '已无更多数据';
 								no_more.dom = $('.fh-list');
@@ -115,17 +120,7 @@
 								no_more.dom = $('.fh-list');
 								no_more._add(no_more.dom, no_more.content);
 							}
-
-							d.列表.forEach(function(item) {
-
-								$('.fh-list').append('<li><div class="fgs-name clearfix">' +
-									'<p><span>' + item.说明 + '</span></p>' +
-									'<p>' + item.录入时间 + '</p></div>' +
-									'<div class="integral-num clearfix">积分:<span>' + (Number(item.积分)).toFixed(2) + '</span></div></li>');
-							})
 						} else {
-							no_more._delete();
-
 							no_more.content = '已无更多数据';
 							no_more.dom = $('.fh-list');
 							no_more._add(no_more.dom, no_more.content);
@@ -133,7 +128,6 @@
 						page = d.页数;
 					} else {
 						no_more._delete();
-
 						no_more.content = '已无更多数据';
 						no_more.dom = $('.fh-list');
 						no_more._add(no_more.dom, no_more.content);
@@ -163,21 +157,20 @@
 							if(d.状态 == '成功') {
 								no_more._delete();
 								if(d.条数 !== 0) {
-									if(d.条数 == 10) {
-										no_more.content = '正在加载数据';
-										no_more.dom = $('.fh-list');
-										no_more._add(no_more.dom, no_more.content);
-									}
-
 									d.列表.forEach(function(item) {
 										$('.fh-list').append('<li><div class="fgs-name clearfix">' +
 											'<p>说明:<span>' + item.说明 + '</span></p>' +
 											'<p>' + item.录入时间 + '</p></div>' +
 											'<div class="integral-num clearfix">积分:<span>' + (Number(item.积分)).toFixed(2) + '</span></div></li>');
 									});
+									
+									if(d.条数 == 10) {
+										no_more.content = '正在加载数据';
+										no_more.dom = $('.fh-list');
+										no_more._add(no_more.dom, no_more.content);
+									}
 
 								} else if(d.条数 == 0) {
-
 									no_more.content = '已无更多数据';
 									no_more.dom = $('.fh-list');
 									no_more._add(no_more.dom, no_more.content);

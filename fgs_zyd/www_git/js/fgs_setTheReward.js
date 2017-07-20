@@ -153,7 +153,7 @@ $(function() {
 				url: "/ajax.post?func=CZ_fgs_shequ_default",
 				data: 'data=' + data,
 				success: function(d) {
-//					console.log(d);
+					console.log(d);
 					if(d.状态 == '成功' && d.条数 !== 0) {
 						$('.haveDate').show();
 						$('.defaultInfo .default').attr('dataName', d.默认分公司名称);

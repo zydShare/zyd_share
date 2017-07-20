@@ -19,21 +19,21 @@
 	border-radius: .15rem;
 }
 
-.layui-layer-diy[type=page].w55 {
-	width: 5.5rem;
+.layui-layer-diy[type=page].w56 {
+	width: 5.6rem;
 	border-radius: .15rem;
 }
 
 
 .layui-layer-diy .layui-layer-title {
-	height: .6rem;
+    height: .6rem;
     line-height: .6rem;
     font-size: 0.34rem;
-    background: #ffffff;
-    color: #333;
+    background: #2B9CED;
+    color: #fff;
     border: none;
     text-align: center;
-    padding: .2rem 0;
+    padding: 0;
     border-top-left-radius: .15rem;
     border-top-right-radius: .15rem;
 }
@@ -60,8 +60,8 @@
 .layui-layer-diy .layui-layer-content .msg-img {	
 	padding-top: .3rem;
     margin-left: .4rem;
-    position: absolute;
-    float: left;
+    /*position: absolute;
+    float: left;*/
 }
 .layui-layer-diy .layui-layer-content .msg-img img{
 	width:.9rem;
@@ -70,15 +70,16 @@
 
 .layui-layer-diy .layui-layer-content .msg {
 	text-align: center;
-    padding: 0 .35rem;
-    padding-top: .5rem;
+    width:2.4rem;
+	padding-top: .25rem;
+	line-height: 1.5;
 
 }
 
 .layui-layer-diy .layui-layer-content .msg span{
 	font-size: .27rem;
     color: #333;
-    line-height: 1.5;
+    /*line-height: 1.5;*/
 }
 
   

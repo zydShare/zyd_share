@@ -37,17 +37,27 @@ var layObj = {
 		layer.open({
 			type: 1,
 			title: '提示',
-			content: '<div class="lay-main" ><div class="msg-img" ><img src="img/' + pic + '" /></div><div class="msg"><span>' + content + '</span></div></div>',
+			content: '<div class="lay-main flex-hb-vc" ><div class="msg-img" ><img src="img/' + pic + '" /></div><div class="msg"><span>' + content + '</span></div><div class="msg-img msg-stub" style="visibility: hidden;"><img /></div></div>',
 			btn: ['确定'],
 			offset: ['25%'],
-			skin: 'layui-layer-diy w51', //样式类名
+			skin: 'layui-layer-diy w56', //样式类名
 			closeBtn: 0, //不显示关闭按钮
 			anim: 0,
 			isOutAnim: false,
 			btn1: function(index, layero) {
 				layer.close(index);
 				btn1_opt();
-			}
+			},
+			success: function(layer, oindex) {
+				var _text = $(".msg span").html().length;
+				if(_text >= 9) {
+					$(".lay-main").removeClass('flex-hb-vc').addClass('flex-hl-vc');
+					$(".msg").css('width', '3.6rem');
+					$(".msg-stub").hide();
+				}
+//				console.log(_text);
+			},
+
 		});
 	},
 	//
@@ -121,29 +131,12 @@ var layObj = {
 			isOutAnim: false,
 			scrollbar: false,
 			btn1: function(layero, index) {
-				//启用滚动条
-				$(document.body).css({
-					"overflow-x": "auto",
-					"overflow-y": "auto"
-				});
-
 				btn1_opt(layero, index);
 			},
 			btn2: function(index, layero) {
-				//启用滚动条
-				$(document.body).css({
-					"overflow-x": "auto",
-					"overflow-y": "auto"
-				});
 				layer.close(index);
 			},
 			success: function(layero, index) {
-				//禁止滚动条
-				
-				$(document.body).css({
-					"overflow-x": "hidden",
-					"overflow-y": "hidden"
-				});
 				success(layero, index)
 			}
 
