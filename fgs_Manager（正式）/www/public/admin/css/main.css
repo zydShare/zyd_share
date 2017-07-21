@@ -64,7 +64,8 @@ cursor: pointer;
 }
 
 #contentRight{
-    padding-left: 250px;
+    /*padding-left: 250px;*/
+   margin-left: 0;
     width: 100%;
     height: -moz-calc(100vh - 75px);
     height: -webkit-calc(100vh - 75px);
