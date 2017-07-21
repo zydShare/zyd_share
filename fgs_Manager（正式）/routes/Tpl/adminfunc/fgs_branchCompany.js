@@ -46,33 +46,33 @@ module.exports.run = function(f, pg, mo) {
 
 		if(f.data.查询 != null && f.data.查询 != '') {
 			wh = "(账号 like '%" + f.data.查询 + "%')" +
-				"or (姓名 like '%" + f.data.查询 + "%')" +
-				"or (名称 like '%" + f.data.查询 + "%')" +
-				"or (地址 like '%" + f.data.查询 + "%')" +
-				"or (排序 like '%" + f.data.查询 + "%')" +
-				//				"or (股数 like '%" + f.data.查询 + "%')" +
-				"or (层1分公司名称 like '%" + f.data.查询 + "%')" +
-				"or (层1分公司id like '%" + f.data.查询 + "%')" +
-				"or (层2分公司名称 like '%" + f.data.查询 + "%')" +
-				"or (层2分公司id like '%" + f.data.查询 + "%')" +
-				"or (层3分公司名称 like '%" + f.data.查询 + "%')" +
-				"or (层3分公司id like '%" + f.data.查询 + "%')" +
-				"or (编号 like '%" + f.data.查询 + "%')" +
-				"or (定时时间 like '%" + f.data.查询 + "%')" +
-				"or (省 like '%" + f.data.查询 + "%')" +
-				"or (市 like '%" + f.data.查询 + "%')" +
-				"or (区 like '%" + f.data.查询 + "%')" +
-				"or (分公司密码 like '%" + f.data.查询 + "%')" +
-				//				"or (总账户 like '%" + f.data.查询 + "%')" +
-				//				"or (分红账户 like '%" + f.data.查询 + "%')" +
-				//				"or (回流账户 like '%" + f.data.查询 + "%')" +
-				"or (分公司设置id like '%" + f.data.查询 + "%')" +
-				"or (状态 like '%" + f.data.查询 + "%')" +
-				"or (类别 like '%" + f.data.查询 + "%')" +
-				"or (录入人 like '%" + f.data.查询 + "%')" +
-				"or (录入时间 like '%" + f.data.查询 + "%')" +
-				"or (备注 like '%" + f.data.查询 + "%')" +
-				"or (类型切换 like '%" + f.data.查询 + "%')" +
+//				"or (姓名 like '%" + f.data.查询 + "%')" +
+//				"or (名称 like '%" + f.data.查询 + "%')" +
+//				"or (地址 like '%" + f.data.查询 + "%')" +
+//				"or (排序 like '%" + f.data.查询 + "%')" +
+//				//				"or (股数 like '%" + f.data.查询 + "%')" +
+//				"or (层1分公司名称 like '%" + f.data.查询 + "%')" +
+//				"or (层1分公司id like '%" + f.data.查询 + "%')" +
+//				"or (层2分公司名称 like '%" + f.data.查询 + "%')" +
+//				"or (层2分公司id like '%" + f.data.查询 + "%')" +
+//				"or (层3分公司名称 like '%" + f.data.查询 + "%')" +
+//				"or (层3分公司id like '%" + f.data.查询 + "%')" +
+//				"or (编号 like '%" + f.data.查询 + "%')" +
+//				"or (定时时间 like '%" + f.data.查询 + "%')" +
+//				"or (省 like '%" + f.data.查询 + "%')" +
+//				"or (市 like '%" + f.data.查询 + "%')" +
+//				"or (区 like '%" + f.data.查询 + "%')" +
+//				"or (分公司密码 like '%" + f.data.查询 + "%')" +
+//				//				"or (总账户 like '%" + f.data.查询 + "%')" +
+//				//				"or (分红账户 like '%" + f.data.查询 + "%')" +
+//				//				"or (回流账户 like '%" + f.data.查询 + "%')" +
+//				"or (分公司设置id like '%" + f.data.查询 + "%')" +
+//				"or (状态 like '%" + f.data.查询 + "%')" +
+//				"or (类别 like '%" + f.data.查询 + "%')" +
+//				"or (录入人 like '%" + f.data.查询 + "%')" +
+//				"or (录入时间 like '%" + f.data.查询 + "%')" +
+//				"or (备注 like '%" + f.data.查询 + "%')" +
+//				"or (类型切换 like '%" + f.data.查询 + "%')" +
 				"or (切换时间 like '%" + f.data.查询 + "%')";
 		}
 

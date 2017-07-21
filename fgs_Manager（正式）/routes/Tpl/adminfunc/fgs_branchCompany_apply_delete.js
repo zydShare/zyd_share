@@ -15,7 +15,7 @@ module.exports.run = function(f, pg, mo) {
 function deleteClasses(f, pg, mo) {
 	sql = "delete from 分_分公司申请表  where id in (" + f.arg.id + ") ";
 	s = pgdb.query(pg, sql);
-
+	
 	f._isRander = '提交成功';
 	return f;
 }

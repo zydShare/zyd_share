@@ -1,5 +1,4 @@
-﻿
-function seach_html(_seach_url, html) {
+﻿function seach_html(_seach_url, html) {
 	var arr_a = html.split('?');
 	arr_b = arr_a[1].split('&');
 	html_con = '';
@@ -275,16 +274,16 @@ function authority() {
 
 function export_exl() {
 	how_id = howid();
-	if(id){
-		id_con = "&id="+how_id;
-		_exc = _exc.replace(/&#39;/g,"'").replace(/&gt;/g,">").replace(/&lt;/g,"<").replace(/%/g,"@klaus@");
-//		console.log(_exc,"啊啊啊啊")
+	if(id) {
+		id_con = "&id=" + how_id;
+		_exc = _exc.replace(/&#39;/g, "'").replace(/&gt;/g, ">").replace(/&lt;/g, "<").replace(/%/g, "@klaus@");
+		console.log(_exc, "啊啊啊啊")
 		location.href = '/Tpl/admincon/import_excel.xhtml?sql=' + _exc + id_con;
-	}else{
-		_exc = _exc.replace(/&#39;/g,"'").replace(/&gt;/g,">").replace(/&lt;/g,"<").replace(/%/g,"@klaus@");
-//		console.log(_exc,"啦啦啦啦");				
-		location.href = '/Tpl/admincon/import_excel.xhtml?sql=' + _exc;		
-	}	
+	} else {
+		_exc = _exc.replace(/&#39;/g, "'").replace(/&gt;/g, ">").replace(/&lt;/g, "<").replace(/%/g, "@klaus@");
+		console.log(_exc, "啦啦啦啦");
+		location.href = '/Tpl/admincon/import_excel.xhtml?sql=' + _exc;
+	}
 }
 
 //[标签数据表
@@ -372,28 +371,27 @@ function jq_bottom(type, html, name, pass, mo) {
 	id_con = "";
 
 	if(type == 1) {
-		if(idinput_num == ''){
+		if(idinput_num == '') {
 
 			id = $(".idinput[checked=true]:last").val();
-//			console.log(id);
-			
-		}else{
+			//			console.log(id);
+
+		} else {
 
 			id = idinput_num;
-//			console.log(id);			
-			
+			//			console.log(id);			
+
 		}
 
 		id_con = "id=" + id + "&how_id=" + how_id;
-//		console.log(id_con);			
-		
+		//		console.log(id_con);			
+
 		html_con = "&_b_name=" + name + "&_b_pa=" + pass + "&_b_f=" + mo;
-		
-//		console.log(html_con);			
-		
+
+		//		console.log(html_con);			
+
 		jq_href(html + html_con + "&" + id_con);
-				
-		
+
 	} else if(type == 2) {
 		if(id)
 			id_con = "&id=" + how_id;
@@ -625,25 +623,25 @@ $(document).ready(function() {
 	//[下拉按扭
 
 	$(".up_select").click(function() {
-			//console.log(333);
+		//console.log(333);
 
-			$(".select_button").remove();
-			content = $("#select_button").html();
-			$(this).parent().append('<div class="select_button">' + content + '</div>');
-			select_button();
-			var xiaheight = $(this).parent().css("height");
-			var xiaH = parseInt(xiaheight) + 17 + "px";
-			var xiawidth = $(this).parent().css("width");
-			var selHeight = $(".select_button").css("height");
-			var selWidth = $(".select_button").css("width");
-			var cawidth = parseInt(xiawidth) - parseInt(selWidth) + "px";
-			$(".select_button").css("top", xiaH);
-			$(".select_button").css("left", cawidth);
-			if($("#select_button").text().trim() == "" || $("#select_button").text().trim() == null || $("#select_button").text().trim() == undefined) {
-				$(".select_button").css("border", "none");
-			}
-		})
-		//]下拉按扭
+		$(".select_button").remove();
+		content = $("#select_button").html();
+		$(this).parent().append('<div class="select_button">' + content + '</div>');
+		select_button();
+		var xiaheight = $(this).parent().css("height");
+		var xiaH = parseInt(xiaheight) + 17 + "px";
+		var xiawidth = $(this).parent().css("width");
+		var selHeight = $(".select_button").css("height");
+		var selWidth = $(".select_button").css("width");
+		var cawidth = parseInt(xiawidth) - parseInt(selWidth) + "px";
+		$(".select_button").css("top", xiaH);
+		$(".select_button").css("left", cawidth);
+		if($("#select_button").text().trim() == "" || $("#select_button").text().trim() == null || $("#select_button").text().trim() == undefined) {
+			$(".select_button").css("border", "none");
+		}
+	})
+	//]下拉按扭
 })
 
 //[下拉按扭
@@ -652,7 +650,7 @@ function select_button() {
 		v = $(this).attr("v");
 
 		v = JSON.parse(v);
-		id = $(this).parent().parent().attr('v');		
+		id = $(this).parent().parent().attr('v');
 		if(v[0] == 1) {
 			id_con = "id=" + id + "&how_id=";
 			html_con = "&_b_name=" + v[2] + "&_b_pa=" + v[3] + "&_b_f=" + v[4];
@@ -682,6 +680,20 @@ function select_button() {
 		} else if(v[0] == 4) {
 			//删除提示
 			if(confirm('确定要删除吗！')) {
+				id_con = "&id=" + id;
+				$.ajax({
+					url: v[1] + '&_name=' + v[2] + id_con + "&_b_pa=" + v[3],
+					success: function(r) {
+						alert(r);
+						if(r == '提交成功') {
+							relo('')
+						}
+					}
+				})
+			}
+		} else if(v[0] == 5) {
+			//重置密码提示
+			if(confirm('确认重置密码吗？')) {
 				id_con = "&id=" + id;
 				$.ajax({
 					url: v[1] + '&_name=' + v[2] + id_con + "&_b_pa=" + v[3],
@@ -845,7 +857,7 @@ function jq_file_funcs(name, path) {
 }
 
 //新窗口打开
-function href(a){
+function href(a) {
 	window.open(a);
 }
 
@@ -861,7 +873,7 @@ function jq_file_funcd(name, path) {
 			if(data.状态 == '成功') {
 				$('.img_insert').before(
 					'<div class="img_file" name="box" style="display: inline-block;position: relative;top: 12px;margin:2px 2px">' +
-					'<img class="img_uploading" onclick="href(\''+data.url+'\')" src="' + data.url + '" style="display: inline-block;width: 100px;height: 80px;"/>' +
+					'<img class="img_uploading" onclick="href(\'' + data.url + '\')" src="' + data.url + '" style="display: inline-block;width: 100px;height: 80px;"/>' +
 					'<img class="delete_pic" src="../../public/admin/images/img_shanchu.png" style="position: absolute;display:none;width:20px;top: -6px;left: -4px;"  />' +
 					'<input value="' + data.url + '" name="' + name + '" type="hidden" />' +
 					'</div>'
@@ -970,14 +982,13 @@ function shuru5(a) {
 	a.value = a.value.replace(/[^\u4E00-\u9FA5]/g, '')
 }
 
-
 //页面刷新
 function _reset() {
 	history.go(0)
 }
 
-$(document).ready(function(){
+$(document).ready(function() {
 	var td_width = $("#checkList").children("thead").children().children().length;
-	$("[colspan=15]").attr("colspan",td_width);
-//	console.log($("#checkList").find("tbody>td").attr("colspan"));
+	$("[colspan=15]").attr("colspan", td_width);
+	//	console.log($("#checkList").find("tbody>td").attr("colspan"));
 })
