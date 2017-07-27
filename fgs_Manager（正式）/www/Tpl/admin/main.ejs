@@ -49,12 +49,11 @@
 
 		<div class="contentLeft">
 			<div id="contentLeft">
-				<!--<div class="zhankai">
-						<i class="glyphicon glyphicon-chevron-down zkqb leftNavIcon zk"></i>
+				<div class="zhankai">
+						<!--<i class="glyphicon glyphicon-chevron-down zkqb leftNavIcon zk"></i>-->
 
 						<i class="glyphicon glyphicon-chevron-up zkqb leftNavIcon ss"></i>
-
-					</div>-->
+					</div>
 
 				<ul id="leftNavigation">
 					<!--<li>
@@ -167,13 +166,20 @@
 				})
 
 				//      点击头部的符号全部展开或收缩
-				$(".zk").click(function() {
-					$(".sub-menu").slideDown("slow");
+//				$(".zk").click(function() {
+//					$(".sub-menu").slideDown("slow");
+//				})
+//
+//				$(".ss").click(function() {
+//					$(".sub-menu").slideUp("slow");
+//				})
+				$(".zhankai").click(function() {
+					if(!$(".sub-menu").is(":animated")) {
+						$(this).find('.zkqb').toggleClass("toggle");
+						$(".sub-menu").slideToggle("slow");
+					}
 				})
 
-				$(".ss").click(function() {
-					$(".sub-menu").slideUp("slow");
-				})
 
 				function nav(s) {
 					s = encodeURIComponent(encodeURIComponent(s));

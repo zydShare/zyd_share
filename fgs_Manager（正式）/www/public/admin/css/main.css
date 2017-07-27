@@ -29,7 +29,7 @@ a,a:active,a:hover,a:link{text-decoration: none;}
 .zhankai{
 	position:fixed;
 	top:75px;
-	left:140px;
+	left:200px;
 	height:22px;
 }
 .zkqb{
@@ -39,6 +39,22 @@ a,a:active,a:hover,a:link{text-decoration: none;}
     padding-top: 7px;
     padding-bottom: 6px;
     display: block;
+    transition: all 0.3s ease;
+		-moz-transition: all 0.3s ease;
+		-webkit-transition: all 0.3s ease;
+		-o-transition: all 0.3s ease;
+}
+.zkqb.toggle{
+	transform: rotate(180deg);
+	-ms-transform:rotate(180deg); 	
+	-moz-transform:rotate(180deg);
+	-webkit-transform:rotate(180deg);
+	-o-transform:rotate(180deg);
+	transform-origin:center center;
+	-ms-transform-origin:center center;
+	-moz-transform-origin:center center;
+	-webkit-transform-origin:center center;
+	-o-transform-origin:center center;
 }
 #leftNavigation li .zhudaohang {
   font-size: 14px;
