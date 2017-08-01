@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1.0, user-scalable=no" />
+		<link rel="stylesheet" href="css/currency.css" />
+		<link rel="stylesheet" href="css/common.css" />
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<title>未分润奖励</title>
+		<style>
+			.bodyBg {
+				background-color: #EFEFEF;
+				line-height: 1;
+			}
+			
+			.jl-list li {
+				background: #fff;
+				height: 3.5rem;
+				width: 100%;
+				border-bottom: 1px solid #f5f6f7;
+				padding: 0 0.75rem;
+			}
+			
+			.jl-list li:last-child {
+				border: 0;
+			}
+			
+			.jl-list li div:first-child {
+				height: 100%;
+				width: 60%;
+				float: left;
+			}
+			
+			.jl-list li div:last-child {
+				height: 100%;
+				width: 40%;
+				float: left;
+			}
+			
+			.jl-list li .fgs-name p:first-child {
+				margin-top: 1rem;
+				font-size: 0.75rem;
+				color: #333;
+			}
+			
+			.jl-list li .fgs-name p:last-child {
+				margin-top: 0.55rem;
+				font-size: 0.6rem;
+				color: #999;
+			}
+			
+			.jl-list li .fgs-name p:first-child span {
+				margin-left: 0.45rem;
+			}
+			
+			.jl-list li .integral-num {
+				text-align: right;
+				color: #FF6D63;
+			}
+			
+			.jl-list li .integral-num p:first-child {
+				margin-top: 1rem;
+				font-size: 0.75rem;
+				color: #F8483B;
+			}
+			/*.jl-list li .integral-num span{
+				margin-left:0.4rem;
+			}*/
+			
+			.jl-list li .integral-num p:last-child {
+				margin-top: 0.5rem;
+				font-size: 0.5rem;
+			}
+			
+			.jl-list li .integral-num p:last-child span {
+				color: #fff;
+				padding: 0.15rem 0.3rem;
+				background: #2B9CED;
+				border-radius: 5px;
+				margin-right: 0.925rem;
+			}
+		</style>
+	</head>
+
+	<body class="bodyBg">
+		<ul class="jl-list">
+			<!--<li>
+				<div class="fgs-name clearfix">
+					<p>消费套餐-分公司红利1</p>
+					<p>2016-11-1400:00:00</p>
+				</div>
+				<div class="integral-num clearfix">
+					<p>￥<span>100000.00</span></p>
+					<p><span>未分润</span></p>
+				</div>
+			</li>-->
+		</ul>
+		<span class="toast">
+				<span class="toast-su">我在测试看看</span>
+		</span>
+
+		<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/util.js"></script>
+		<script type="text/javascript" src="js/share.js"></script>
+		<script type="text/javascript" src="js/common.js"></script>
+		<script type="text/javascript">
+			//传入唯一ID和分公司编号
+			var onlyID = decodeURI(html_name('onlyID'));
+			var conid = decodeURI(html_name('conid'));
+			var page = 0;
+
+			var data = {};
+			data.分公司编号 = conid;
+			data.onlyID = onlyID;
+			data.页数 = page;
+			data = JSON.stringify(data);
+			$.ajax({
+				type: "post",
+				url: "/ajax.post?func=CZ_fgs_weifenrun",
+				data: 'data=' + data,
+				success: function(d) {
+//					console.log(d);
+					if(d.状态 == '成功') {
+						no_more._delete();
+						
+						if(d.未分润条数 !== 0) {
+
+							d.未分润列表.forEach(function(item) {
+								$('.jl-list').append('<li><div class="fgs-name clearfix">' +
+									'<p>' + item.类别 + '</p>' +
+									'<p>' + item.录入时间 + '</p></div>' +
+									'<div class="integral-num clearfix"><p>￥<span>' + item.实发积分 + '</span></p><p><span>未分润</span></p></div></li>')
+							})
+							
+							if(d.未分润条数 < 10) {
+								no_more.content = '已无更多数据';
+								no_more.dom = $('.jl-list');
+								no_more._add(no_more.dom, no_more.content);
+							} else if(d.未分润条数 == 10) {
+								no_more.content = '正在加载数据';
+								no_more.dom = $('.jl-list');
+								no_more._add(no_more.dom, no_more.content);
+							}
+						} else {
+							no_more.content = '已无更多数据';
+							no_more.dom = $('.jl-list');
+							no_more._add(no_more.dom, no_more.content);
+						}
+						page = d.页数;
+					} else {
+						no_more._delete();
+						no_more.content = '已无更多数据';
+						no_more.dom = $('.jl-list');
+						no_more._add(no_more.dom, no_more.content);
+					}
+				}
+			});
+
+			$(window).scroll(function() {
+				var r = {};
+				r.分公司编号 = conid;
+				r.onlyID = onlyID;
+				r.页数 = page;
+				r = JSON.stringify(r);
+
+				var scrollTop = $(this).scrollTop();
+				var scrollHeight = $(document).height();
+				var windowHeight = $(this).height();
+
+				if(scrollTop + windowHeight == scrollHeight) {
+
+					$.ajax({
+						url: "/ajax.post?func=CZ_fgs_weifenrun",
+						type: "POST",
+						data: 'data=' + r,
+						success: function(d) {
+							if(d.状态 == '成功') {
+								no_more._delete();
+								if(d.未分润条数 !== 0) {
+									
+
+									d.未分润列表.forEach(function(item) {
+										$('.jl-list').append('<li><div class="fgs-name clearfix">' +
+											'<p>' + item.类别 + '</p>' +
+											'<p>' + item.录入时间 + '</p></div>' +
+											'<div class="integral-num clearfix"><p>￥<span>' + item.实发积分 + '</span></p><p><span>未分润</span></p></div></li>')
+									})
+									
+									if(d.未分润条数 == 10) {
+										no_more.content = '正在加载数据';
+										no_more.dom = $('.jl-list');
+										no_more._add(no_more.dom, no_more.content);
+									}
+								} else if(d.未分润条数 < 10) {
+
+									no_more.content = '已无更多数据';
+									no_more.dom = $('.jl-list');
+									no_more._add(no_more.dom, no_more.content);
+								}
+								page = d.页数;
+							}
+						}
+					})
+				}
+			})
+		</script>
+	</body>
+
+</html>

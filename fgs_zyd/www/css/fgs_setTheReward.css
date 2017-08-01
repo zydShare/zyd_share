@@ -1,0 +1,213 @@
+/*创建人：马瑞刚
+创建时间：2017年6月19日
+创建内容：设置奖励分公司页面搭建与接口对接*/
+
+.bodyBg {
+	background-color: #EFEFEF;
+	line-height: 1;
+}
+
+.scrollDiv {
+	height: 8rem;
+	width: 7.2rem;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	-webkit-overflow-scrolling: touch;
+}
+
+/*滚动条控制*/
+::-webkit-scrollbar {
+	width: 0.05rem;  
+    height: 0;  
+}
+::-webkit-scrollbar-track {
+	background-color: transparent;
+}
+::-webkit-scrollbar-thumb {
+	background-color: #999;
+	border-radius: 0.05rem;  
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+}
+::-webkit-scrollbar-thumb:hover {
+	background-color: #999;
+}
+::-webkit-scrollbar-thumb:active {
+	background-color: #999;
+}
+
+.topTitle {
+	height: 0.6rem;
+	line-height: 0.6rem;
+	width: 7.2rem;
+	padding: 0 0.3rem;
+	font-size: .24rem;
+	color: #333;
+	background: #fff;
+	box-sizing: border-box;
+	margin-top: 0.2rem;
+}
+
+.defaultInfo {
+    width: 7.2rem;
+    margin-top: 0.1rem;
+    box-sizing: border-box;
+	margin-bottom: 0;
+}
+.defaultInfo .default {
+	height: 1.9rem;
+	width: 7.2rem;
+	padding: 0 .3rem;
+	box-sizing: border-box;
+	background: #fff;
+}
+
+.defaultInfo li>div {
+	float: left;
+}
+
+.defaultInfo .defaultImg {
+	width: 0.56rem;
+	height: 1.9rem;
+	margin-right: 0.3rem;
+}
+
+.defaultInfo .defaultImg img {
+	width: 100%;
+	height: 0.64rem;
+}
+
+.defaultInfo .fgsInfo {
+	width: 5.38rem;
+	height: 1.9rem;
+}
+
+.defaultInfo .fgsInfo .fgs_name {
+	font-size: 0.3rem;
+	color: #333;
+	margin-top: 0.46rem;
+}
+
+.defaultInfo .fgsInfo .fgsNumber {
+	font-size: 0.3rem;
+	color: #333;
+	margin-top: 0.4rem;
+}
+
+.defaultInfo .fgsInfo .fgsNumber .fgs_id {
+	color: #2B9CED;
+	margin-left: 0.34rem;
+}
+
+.defaultInfo .selectImg {
+	width: 0.36rem;
+	height: 1.9rem;
+	position: relative;
+}
+
+.defaultInfo .selectImg img {
+	width: 0.36rem;
+	height: 0.36rem;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+}
+
+.defaultInfo .set {
+	height: 2.4rem;
+	width: 7.2rem;
+	padding: 0 .3rem;
+	box-sizing: border-box;
+	background: #fff;
+	margin-top: 0.2rem;
+}
+
+.defaultInfo .set .line {
+	height: 1px;
+	width: 7.2rem;
+	background: #EFEFEF;
+	transform: translateX(-0.3rem);
+	-ms-transform: translateX(-0.3rem);
+	-moz-transform: translateX(-0.3rem);
+	-webkit-transform: translateX(-0.3rem);
+	-o-transform: translateX(-0.3rem);
+}
+
+.defaultInfo .set .defaultImg {
+	height: 1.6rem;
+}
+
+.defaultInfo .set .fgsInfo {
+	height: 1.6rem;
+}
+
+.defaultInfo .set .selectImg {
+	height: 1.6rem;
+}
+
+.defaultInfo .set .setbox {
+	height: 0.8rem;
+	width: 6.6rem;
+}
+
+.defaultInfo .set .setbox .setImg {
+	height: 0.8rem;
+	width: 0.36rem;
+	float: left;
+	margin-right: 0.5rem;
+	position: relative;
+}
+
+.defaultInfo .set .setbox .setImg img {
+	height: 0.36rem;
+	width: 0.36rem;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+}
+
+.defaultInfo .set .setbox .setText {
+	height: 0.8rem;
+	line-height: 0.8rem;
+	width: 5.74rem;
+	float: left;
+	font-size: 0.3rem;
+	color: #333;
+}
+
+.warmPrompt {
+	width: 7.2rem;
+	padding: 0 0.3rem 0.2rem;
+	box-sizing: border-box;
+}
+
+.warmPrompt h5 {
+	font-size: 0.26rem;
+	color: #333;
+	font-weight: 500;
+	margin: 0.2rem 0;
+}
+
+.warmPrompt .tsText {
+	font-size: 0.24rem;
+	color: #666;
+	line-height: 0.34rem;
+}
+
+.noData {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	display: none;
+}
+
+.noData img {
+	width: 3.5rem;
+	height: 4.29rem;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 2.8rem;
+	margin: auto;
+}

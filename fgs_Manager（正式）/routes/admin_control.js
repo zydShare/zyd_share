@@ -48,7 +48,7 @@ exports.index = function(f) {
 	if(power.length == 0) f._xhtml = 'Tpl/admin/login';
 	else {
 		f._权限 = JSON.parse(power[0].权限);
-//		console.log(f._权限);
+		console.log(f._权限);
 		for(var key in f._权限) {
 			if(f._权限[key]['字段'] == f._n) { //列表页
 				if(f._权限[key]['查看'] == '1') {

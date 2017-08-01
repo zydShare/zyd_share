@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1.0, user-scalable=no"/>
+		<link rel="stylesheet" href="css/currency.css" />
+		<link rel="stylesheet" href="css/common.css" />
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<title>我的赠送明细</title>
+		<style>
+			.bodyBg{
+				background-color: #EFEFEF;
+				line-height: 1;
+			}
+			.fh-list li{
+				background: #fff;
+				height: 4.025rem;
+				width: 100%;
+				border-bottom: 1px solid #f5f6f7;
+				padding: 0 0.75rem;
+			}
+			.fh-list li:last-child{
+				border: 0;
+			}
+			.fh-list li .fgs-name{
+				height: 100%;
+				width: 9.85rem;
+				float: left;
+			}
+			.fh-list li .integral-num{
+				line-height: 4.025rem;
+				font-size: 0.75rem;
+				text-align: right;
+				color: #333;
+				white-space:nowrap;
+				height: 100%;
+				width: 6.65rem;
+				float: left;
+			}
+			.fh-list li .fgs-name .state{
+				margin-top:0.95rem;
+				height: 1.4rem;
+			}
+			.fh-list li .fgs-name .state span{
+				display: block;
+				float: left;
+			}
+			.fh-list li .fgs-name .state span:first-child{
+				width: 20%;
+				height: 100%;
+				font-size: 0.75rem;
+				color: #333;
+			}
+			.fh-list li .fgs-name .state span:last-child{
+				width: 80%;
+				height: 100%;
+				font-size: 0.65rem;
+				color: #999;
+				line-height: 1.2;
+			}
+			.fh-list li .fgs-name p:last-child{
+				margin-top:0.3rem;
+				font-size: 0.6rem;
+				color: #999;
+			}
+			.fh-list li .integral-num span{
+				margin-left:0.4rem;
+				color: #ff7f29;
+				white-space:nowrap;
+			}
+		</style>
+	</head>
+	<body class="bodyBg">
+		<ul class="fh-list">
+			<!--<li>
+				<div class="fgs-name clearfix">
+					<p class="state"><span class="clearfix">分公司账户分公司账户分公司账户</span></p>
+					<p>2016-11-1400:00:00</span></p>
+				</div>
+				<div class="integral-num clearfix">积分:<span>100200.00</span></div>
+			</li>-->
+		</ul>
+		
+		<span class="toast">
+			<span class="toast-su">我在测试看看</span>
+		</span>
+		
+		<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/util.js"></script>
+		<script type="text/javascript" src="js/share.js"></script>
+		<script type="text/javascript" src="js/common.js"></script>
+		<script type="text/javascript">
+			//传入唯一ID和分公司编号
+			var onlyID = decodeURI(html_name('onlyID'));
+			var conid = decodeURI(html_name('conid'));
+			var page = 0;
+
+			var data = {};
+			data.onlyID = onlyID;
+			data.分公司编号 = conid;
+			data.页数 = page;
+			data = JSON.stringify(data);
+			$.ajax({
+				type: "POST",
+				url: "/ajax.post?func=CZ_fgs_my_gains",
+				data: 'data=' + data,
+				success: function(a) {
+					console.log(a);
+					if(a.状态 == "成功") {
+						no_more._delete();
+						
+						if(a.条数 !== 0) {
+							a.列表.forEach(function(i) {
+								$('.fh-list').append('<li><div class="fgs-name clearfix">' +
+									'<p class="state"><span class="clearfix">' + i.说明 + '</span></p>' +
+									'<p>' + i.录入时间 + '</p></div>' +
+									'<div class="integral-num clearfix">积分:<span>' + (Number(i.积分)).toFixed(2) + '</span></div></li>')
+							});
+							
+							if(a.条数 < 10) {
+								no_more.content = '已无更多数据';
+								no_more.dom = $('.fh-list');
+								no_more._add(no_more.dom, no_more.content);
+							} else if(a.条数 == 10) {
+								no_more.content = '正在加载数据';
+								no_more.dom = $('.fh-list');
+								no_more._add(no_more.dom, no_more.content);
+							}
+
+						} else {
+							no_more.content = '已无更多数据';
+							no_more.dom = $('.fh-list');
+							no_more._add(no_more.dom, no_more.content);
+						}
+						page = a.页数;
+					} else {
+						no_more._delete();
+
+						no_more.content = '已无更多数据';
+						no_more.dom = $('.fh-list');
+						no_more._add(no_more.dom, no_more.content);
+					}
+				}
+			});
+
+			$(window).scroll(function() {
+				var r = {};
+				r.分公司编号 = conid;
+				r.onlyID = onlyID;
+				r.页数 = page;
+				r = JSON.stringify(r);
+
+				var scrollTop = $(this).scrollTop();
+				var scrollHeight = $(document).height();
+				var windowHeight = $(this).height();
+
+				if(scrollTop + windowHeight == scrollHeight) {
+
+					$.ajax({
+						url: "/ajax.post?func=CZ_fgs_my_gains",
+						type: "POST",
+						data: 'data=' + r,
+						success: function(d) {
+							if(d.状态 == '成功') {
+								no_more._delete();
+
+								if(d.条数 !== 0) {
+
+									d.列表.forEach(function(i) {
+										$('.fh-list').append('<li><div class="fgs-name clearfix">' +
+											'<p class="state"><span class="clearfix">说明:</span><span class="clearfix">' + i.说明 + '</span></p>' +
+											'<p>' + i.录入时间 + '</p></div>' +
+											'<div class="integral-num clearfix">积分:<span>' + (Number(i.积分)).toFixed(2) + '</span></div></li>')
+									});
+									
+									if(d.条数 == 10) {
+										no_more.content = '正在加载数据';
+										no_more.dom = $('.fh-list');
+										no_more._add(no_more.dom, no_more.content);
+									}
+
+								} else if(d.条数 == 0) {
+									no_more.content = '已无更多数据';
+									no_more.dom = $('.fh-list');
+									no_more._add(no_more.dom, no_more.content);
+								}
+								page = d.页数;
+							}
+						}
+					})
+				}
+			});
+		</script>
+	</body>
+</html>
+

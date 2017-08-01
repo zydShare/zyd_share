@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1.0, user-scalable=no" />
+		<title>合伙人平台</title>
+		<script type="text/javascript" src="js/util.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/common.css" />
+		<link rel="stylesheet" href="css/fgs_index.css" />
+		<style>
+
+		</style>
+	</head>
+
+	<body>
+		<div class="fixed-top">
+
+			<div class="top flex-hl-vc border-b" id="top-he">
+				<img src="img/ic_addcompany.png" />
+				<p>加入市代理公司</p>
+				<img class="arrow-right" src="img/arrow-right.png" />
+
+			</div>
+			<div class="top flex-hl-vc" id="top-bo">
+				<img src="img/ic_selectcompany.png" />
+				<p>创建市代理公司</p>
+				<img class="arrow-right" src="img/arrow-right.png" />
+
+			</div>
+			<p class="shidl flex-hl-vc">我的市代理分公司</p>
+
+			<!--<div class="top bigger m-t-06r flex-hl-vc" id="top-bo">
+				<img class="bigger-img" src="img/ic_.png" />
+				<p class="bigger-tit">我的市代理分公司</p>
+				<img class="arrow-bottom" src="img/jiantou-.png" />
+			</div>-->
+
+		</div>
+
+		<div class="hezi">
+			<!--<div class="bottom "> <div class="bot-left "><img src="img/chuang--shi-ren.png"/></div> <div class="bot-right "> <ul> <li class="li-one"><strong>乌鲁木齐木齐市代理公司</strong></li> <li class="li-two"><hr style="width: 1.5rem; height: 1px;background:#333;float: left;margin-right:.3rem;"><p style="float:left;font-size: .925rem;">我是</p>创始人</li> <li class="li-three"><p>所占股份:<span style="margin-left:.45rem ;">x</span>股</p><p style="margin-left:.6rem ;">编号:<span>888999</span></p></li> <li class="li-four"><p>广东省深圳市</p><p style="margin-left:.9rem ;">市代理分公司</p></li> </ul> </div> </div>-->
+		</div>
+		<span class="toast">
+				<span class="toast-su"></span>
+		</span>
+		<!--'<div class="bottom"> <div class="bot-left"><img src="img/chuang--shi-ren.png"/></div> <div class="bot-right"> <ul id="con_info"> <li class="li-one"><strong>'+p.分公司名称+'</strong></li> <li class="li-two"><hr style="width: 1.5rem; height: 1px;background:#333;float: left;margin-right:.3rem;"><p style="float:left;font-size: .925rem;">我是</p>'+p.类别+'</li> <li class="li-three"><p>所占股份:<span style="margin-left:.45rem ;">'+p.所占股数+'</span>股</p><p style="margin-left:.6rem ;">编号:<span>'+p.编号+'</span></p></li> <li class="li-four"><p>'+p.省+p.市+'</p><p style="margin-left:.9rem ;">'+p.类型+'</p></li> </ul> </div> </div>'-->
+
+	</body>
+	<script src="js/jquery-3.1.1.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript" src="js/share.js"></script>
+	<script>
+		var dom_height;
+		var bottom_height;
+		
+		var onlyID = decodeURI(html_name('onlyID'));
+		var ys = 0;
+		var data = {};
+		var conid;
+		data.onlyID = onlyID;
+		data.页数 = ys;
+		data = JSON.stringify(data);
+		$('#top-he').click(function() {
+			window.location.href = "join_city.html?onlyID=" + onlyID;
+		});
+
+		$('#top-bo').click(function() {
+			window.location.href = "create_city.html?onlyID=" + onlyID;;
+		})
+
+		$.ajax({
+			type: "POST",
+			url: "/ajax.post?func=CZ_fgs_my_shijifgslist",
+			data: 'data=' + data,
+			success: function(p) {
+				if(p.状态 == '成功') {
+					//					console.log(p)
+					if(p.分公司条数 !== 0) {
+						$.each(p.分公司列表, function(i) {
+							conid = p.分公司列表[i].编号;
+							var bb = p.分公司列表[i].省;
+							//							console.log(bb.length)
+							var cc = p.分公司列表[i].市;
+							//							console.log(cc.length)
+							if(bb == cc) {
+								$(".hezi").append('<div class="bottom flex-hl-vc" onclick="con_detail(\'' + onlyID + '\',\'' + conid + '\',\'' + p.分公司列表[i].类别 + '\')"><div class="bot-left"><div class="ee"><img src="img/chuang--shi-ren.png"/><p>' +
+									p.分公司列表[i].类型 + '</p></div></div><div class="bot-right"><ul><li class="li-one"><strong>' +
+									p.分公司列表[i].分公司名称 + '</strong></li><li class="li-two flex-hl-vc"><hr class="index-hr"><p class="li_tp">我是</p>' +
+									p.分公司列表[i].类别 + '</li><li class="li-three"><p>所占股份:&nbsp;<span>' +
+									p.分公司列表[i].所占股数 + '</span>股</p><p>编号:&nbsp;<span>' +
+									p.分公司列表[i].编号 + '</span></p></li><li class="li-four dd"><p>' + p.分公司列表[i].省 + '</p></li></ul></div></div>');
+							} else {
+								$(".hezi").append('<div class="bottom flex-hl-vc" onclick="con_detail(\'' + onlyID + '\',\'' + conid + '\',\'' + p.分公司列表[i].类别 + '\')"><div class="bot-left"><div class="ee"><img src="img/chuang--shi-ren.png"/><p>' +
+									p.分公司列表[i].类型 + '</p></div></div><div class="bot-right"><ul><li class="li-one"><strong>' +
+									p.分公司列表[i].分公司名称 + '</strong></li><li class="li-two flex-hl-vc"><hr class="index-hr"><p class="li_tp">我是</p>' +
+									p.分公司列表[i].类别 + '</li><li class="li-three"><p>所占股份:&nbsp;<span>' +
+									p.分公司列表[i].所占股数 + '</span>股</p><p>编号:&nbsp;<span>' +
+									p.分公司列表[i].编号 + '</span></p></li><li class="li-four dd"><p>' + p.分公司列表[i].省 + p.分公司列表[i].市 + '</p></li></ul></div></div>');
+							}
+
+						});
+
+						height_match();
+
+					} else {
+						$(".hezi").append('<button class="nothin">无数据</button>')
+					}
+				} else {
+					$(".hezi").append('<button class="nothin">无数据</button>')
+				}
+			}
+		});
+
+		$(".hezi").scroll(function() {
+
+			var scrollTop = $(this).scrollTop();
+			var scrollHeight = dom_height;
+			var windowHeight = $(this).height();
+
+			console.log(scrollTop);
+			console.log(scrollHeight);
+			console.log(windowHeight);
+
+			if(scrollTop + windowHeight == scrollHeight) {
+				ys += 1;
+				var r = {};
+				r.onlyID = onlyID;
+				r.页数 = ys;
+				r = JSON.stringify(r);
+				$.ajax({
+					url: "/ajax.post?func=CZ_fgs_my_shijifgslist",
+					type: "POST",
+					data: 'data=' + r,
+					success: function(d) {
+						if(d.状态 == '成功') {
+							if(d.分公司列表 !== '') {
+								t = 2;
+								toast("正在加载数据");
+
+								$(".bottom:last-child").css("margin-bottom", "0");
+
+								$.each(d.分公司列表, function(i) {
+									conid = d.分公司列表[i].编号;
+									var bb = d.分公司列表[i].省;
+									//									console.log(bb.length)
+									var cc = d.分公司列表[i].市;
+									//									console.log(cc.length)
+									if(bb == cc) {
+										$(".hezi").append('<div class="bottom flex-hl-vc" onclick="con_detail(\'' + onlyID + '\',\'' + conid + '\',\'' + d.分公司列表[i].类别 + '\')"><div class="bot-left"><div class="ee"><img src="img/chuang--shi-ren.png"/><p>' +
+											d.分公司列表[i].类型 + '</p></div></div><div class="bot-right"><ul><li class="li-one"><strong>' +
+											d.分公司列表[i].分公司名称 + '</strong></li><li class="li-two flex-hl-vc"><hr class="index-hr"><p class="li_tp">我是</p>' +
+											d.分公司列表[i].类别 + '</li><li class="li-three"><p>所占股份:&nbsp;<span>' +
+											d.分公司列表[i].所占股数 + '</span>股</p><p>编号:&nbsp;<span>' +
+											d.分公司列表[i].编号 + '</span></p></li><li class="li-four dd"><p>' + d.分公司列表[i].省 + '</p></li></ul></div></div>');
+									} else {
+										$(".hezi").append('<div class="bottom flex-hl-vc" onclick="con_detail(\'' + onlyID + '\',\'' + conid + '\',\'' + d.分公司列表[i].类别 + '\')"><div class="bot-left"><div class="ee"><img src="img/chuang--shi-ren.png"/><p>' +
+											d.分公司列表[i].类型 + '</p></div></div><div class="bot-right"><ul><li class="li-one"><strong>' +
+											d.分公司列表[i].分公司名称 + '</strong></li><li class="li-two flex-hl-vc"><hr class="index-hr"><p class="li_tp">我是</p>' +
+											d.分公司列表[i].类别 + '</li><li class="li-three"><p>所占股份:&nbsp;<span>' +
+											d.分公司列表[i].所占股数 + '</span>股</p><p>编号:&nbsp;<span>' +
+											d.分公司列表[i].编号 + '</span></p></li><li class="li-four dd"><p>' + d.分公司列表[i].省 + d.分公司列表[i].市 + '</p></li></ul></div></div>');
+									}
+								});
+
+								height_match();
+
+							} else if(d.分公司条数 < 10) {
+								t = 2;
+								toast("已无更多数据");
+							}
+							ys = d.页数;
+						}
+					}
+				})
+			}
+		});
+
+		function height_match() {
+//			if($(window).height()<640) {
+//				var bottom_height = $(window).height() - $(".fixed-top").height();
+//				var bottom_one = ((bottom_height) / 20 - 14) / 3;
+//				$(".top").css("height","3rem");
+//				$(".hezi").css("margin-top","10.05rem")
+//				$(".bottom").css("margin-top", bottom_one + "rem");
+//				$(".bottom:last-child").css("margin-bottom", bottom_one + "rem");
+//				dom_height = $(document).height() - $(".fixed-top").height();
+//				$(".hezi").height(bottom_height);
+//			}else{
+			
+				$(".bottom:first-child").css("margin-top", 0 + "rem");	
+				
+				dom_height = $(document).height() - $(".fixed-top").height();
+				console.log($(document).height() )
+				
+				bottom_height = $(window).height() - $(".fixed-top").height();
+				console.log($(window).height() )
+				
+//				console.log(bottom_height)
+				$(".hezi").height(bottom_height);
+//			}
+
+		}
+
+		function con_detail(a, b, type) {
+			if(type == "创始人") {
+				window.location.href = "mou_fengongsi1.html?onlyID=" + a + "&conid=" + b;
+			} else {
+				window.location.href = "mou_fengongsi.html?onlyID=" + a + "&conid=" + b;
+			}
+		}
+
+		var a = $(".li-one").text().length;
+		if(a > 11) {
+			$(".li-one").css("font-size", ".65rem")
+		}
+	</script>
+
+</html>

@@ -1,0 +1,10 @@
+$(function(){
+	$(".agree").on("click",function(){
+		$(".rejectReson").css("display","none");
+		$(".rejectReson1").css("display","block");
+		$(".resonBotton").css("display","none");
+	});
+	$(".disagree").on("click",function(){
+		window.location.href="publicPage.html";
+	});
+});

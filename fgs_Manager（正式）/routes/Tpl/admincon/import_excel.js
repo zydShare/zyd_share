@@ -13,7 +13,7 @@ module.exports.run = function(f, pg, mo) {
 	
 	
 	if(f.arg.id == undefined){
-		f.arg.sql = f.arg.sql + " limit 10000";
+		f.arg.sql = f.arg.sql + " limit 60000";
 	}else{
 		var zs = (f.arg.sql).split("order");
 		f.arg.sql = zs[0] + "and id in (" + f.arg.id + ")" + "order" + zs[1];

@@ -1,7 +1,7 @@
 {	"main":{
 		"servername":"hygo-supply",
 		"servername说明":"*必须修改项。这个是平台名称，mongodb日志会根据这个变量来创建日志集合的名称",
-		"httpPort":8080,
+		"httpPort":8988,
 		"httpPort说明":"这个是http请求端口号",
 		"httpsPort":0,
 		"httpsPort说明":"这个是https请求端口号",
