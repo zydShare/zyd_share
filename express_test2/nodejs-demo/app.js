@@ -27,42 +27,83 @@ app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, 'views')));
 
 app.use('/', index);
 app.use('/users', users);
 
 // catch 404 and forward to error handler
-app.use(function(req, res, next) {
-  var err = new Error('Not Found');
-  err.status = 404;
-  next(err);
-});
+//app.use(function(req, res, next) {
+//var err = new Error('Not Found');
+//err.status = 404;
+//next(err);
+//});
 
 // error handler
-app.use(function(err, req, res, next) {
-  // set locals, only providing error in development
-  res.locals.message = err.message;
-  res.locals.error = req.app.get('env') === 'development' ? err : {};
+//app.use(function(err, req, res, next) {
+//// set locals, only providing error in development
+//res.locals.message = err.message;
+//res.locals.error = req.app.get('env') === 'development' ? err : {};
+//
+//// render the error page
+//res.status(err.status || 500);
+//res.render('error');
+//});
 
-  // render the error page
-  res.status(err.status || 500);
-  res.render('error');
+
+app.post('/ajax.post*',function(req,res){
+	console.log("111")
+	var body = '';
+	req.on('data',function(chunk){
+		console.log("444")
+		body += chunk;
+	}).on('end',function(){
+		try{
+			console.log("555")
+			console.log('-----------------接收参数-----------------');
+			console.log(req.url+body);
+			console.log('-----------------接收参数-----------------');
+			var path = url.parse(req.url,true).query;
+			body = querystring.parse(body);
+			if(path.func != undefined){
+				body.func = path.func;
+			}else if(body.func == undefined){
+				res.send('{"code":"-45","msg":" not find func "}').end();
+				return;
+			}
+			body.session = req.session;
+			body.path = req.path;
+			body.arg = url.parse(req.url, true).query;
+			body.startTime = new Date().getTime();
+			body.date = moment().format('YYYY-MM-DD HH:mm:ss');
+			body.ip = req.ip;
+			body.uuid = uuid.v4();
+			var ajax = require('./ajax/ajax.js');
+			var bool = ajax.searchfile(body.func);
+			if(bool){
+				ajax.index(req,res,body);
+			}else{
+				res.send('{"code":"-4","msg":" not find func "}').end();
+			}
+
+		}catch(e){
+			console.log(e);
+			res.send('{"code":"-1","msg":"body error"}').end();
+		}
+	});
+
 });
-
-
-
 
 var mysql  = require('mysql');  //调用MySQL模块
 
 //创建一个connection
 var connection = mysql.createConnection({     
-  host     : '192.168.0.103',       //主机
-  user     : 'postgres',               //MySQL认证用户名
-  password : 'qqpt123',        //MySQL认证用户密码
-  port: '5432',                   //端口号
+host     : 'localhost',       //主机
+user     : 'root',               //MySQL认证用户名
+password : '123456',        //MySQL认证用户密码
+port: '3306',                   //端口号
 });
- 
+   
 //创建一个connection
 connection.connect(function(err){
     if(err){        
@@ -82,12 +123,12 @@ connection.query('SELECT 1 + 1 AS solution', function(err, rows, fields) {
 });  
 
 //关闭connection
-connection.end(function(err){
-    if(err){        
-        return;
-    }
-      console.log('[connection end] succeed!');
-});
+//connection.end(function(err){
+//  if(err){        
+//      return;
+//  }
+//    console.log('[connection end] succeed!');
+//});
 
 
 
@@ -96,7 +137,7 @@ connection.end(function(err){
 
 
 
-
+app.listen(1314);
 
 
 

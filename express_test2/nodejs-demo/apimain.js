@@ -89,26 +89,26 @@ if(config.get('app').redis.使用 == '是'){
 
 var server = http.createServer(app);
 
-server.listen(config.get('app').main.httpPort, function() {
-	console.log("HTTP SERVER 启动成功! 监听端口:"+ config.get('app').main.httpPort);
-});
+//server.listen(config.get('app').main.httpPort, function() {
+//	console.log("HTTP SERVER 启动成功! 监听端口:"+ config.get('app').main.httpPort);
+//});
 
 
-if(config.get('app').main.httpsPort != 0 || config.get('app').main.httpsPort != '0'){
-
-	//https证书配置
-	var options = {
-		key : fs.readFileSync('./config/https.key'),
-		cert :fs.readFileSync('./config/https.pem')
-	}
-
-	//https监听启动
-	https.createServer(options, app).listen(config.get('app').main.httpsPort, function () {
-	    console.log('Https server  启动成功! 监听端口:' + config.get('app').main.httpsPort);
-	});
-
-
-}
+//if(config.get('app').main.httpsPort != 0 || config.get('app').main.httpsPort != '0'){
+//
+//	//https证书配置
+//	var options = {
+//		key : fs.readFileSync('./config/https.key'),
+//		cert :fs.readFileSync('./config/https.pem')
+//	}
+//
+//	//https监听启动
+//	https.createServer(options, app).listen(config.get('app').main.httpsPort, function () {
+//	    console.log('Https server  启动成功! 监听端口:' + config.get('app').main.httpsPort);
+//	});
+//
+//
+//}
 
 
 app.use(express.static('www'));
@@ -118,7 +118,9 @@ app.post('/api.post',function(req,res){
 
 	var body = '';
 	req.on('data', function(chunk){
+//		console.log("lll")
 		body += chunk;
+//		console.log(body);
 	});
 
 	req.on('end', function(){
