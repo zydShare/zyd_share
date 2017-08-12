@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1.0, user-scalable=no" />
+		<title>加入市代理分公司</title>
+
+		<script type="text/javascript" src="js/util.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/common.css" />
+		<link rel="stylesheet" href="css/fgs_last.css" />
+		<style>
+
+		</style>
+	</head>
+
+	<body>
+		<div class="container-box">
+			<form action="">
+				<div class="inputs  clearfix">
+					<p>分公司编号:</p><input class='input_1 clearfix' type="tel" onclick="shuru2(this);" onkeyup="shuru2(this);" maxlength="11" id="bianhao" placeholder='请输入分公司编号' />
+				</div>
+				<div class="inputs">
+					<p>分公司名称:</p><input class='input_1 weilie' type="text" size="21" disabled="disabled" id="fgs_name" />
+				</div>
+				<div class="inputs select-type">
+					<p>分公司类型:</p>
+					<select id="f-company-name">
+						<option value="请选择">请选择</option>
+					</select>
+				</div>
+				<div class="inputs">
+					<p>分公司密码:</p><input class='input_1' type="password" maxlength="8" id="mima" onclick="shuru2(this);" onkeyup="shuru2(this);" placeholder='请输入6-8位数字密码' />
+				</div>
+
+				<div class="inputs">
+					<p>服务商账号:</p>
+					<input class='input_1' style="width: 9rem;" type="tel" maxlength="11" onclick="shuru2(this);" onkeyup="shuru2(this);" id="f_phone" placeholder='请输入11位服务商账号' />
+				</div>
+				<div class="inputs">
+					<p>服务商姓名:</p><input class='input_1 weilie' disabled="disabled" type="text" id="f_name" />
+				</div>
+				<div class="inputs">
+					<p>认购股份:</p>
+					<div class='num clearfix'>
+						<img src="img/ic_minusnumber.png" class='jian' alt="jiantou" id="minus" />
+						<input class='kuang' value="1" id="kuangq" disabled="disabled"></input>
+						<img src="img/ic_addnumber.png" class='jia' alt="jiantou" id="add" />
+					</div>
+				</div>
+				<div class="inputs">
+					<p>金额:</p><span class="in-span">0.00</span>
+				</div>
+			</form>
+		</div>
+		<footer>
+			<button class="button1">下一步</button>
+		</footer>
+
+		<!--<div class="xieyi"><img src="img/wei--xuanzhong.png" />请阅读并同意<span>《分公司合作协议》</span>已进行下一步操作</div>-->
+		<span class="toast">
+				<span class="toast-su"></span>
+		</span>
+	</body>
+
+	<!--<script src="js/jquery-3.1.1.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/jQuery.md5.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript" src="js/share.js"></script>
+	<script type="text/javascript" src="js/common.js"></script>-->
+	<script src="js/lib/require.js" data-main="js/main"></script>
+	<script>
+		require(['main'], function() {
+			require(['join_city'], function() {
+				console.log("调用成功")
+			})
+		})
+	</script>
+
+</html>

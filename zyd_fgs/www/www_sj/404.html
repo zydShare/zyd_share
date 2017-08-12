@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1.0, user-scalable=no"/>
+		<link rel="stylesheet" href="css/common.css" />
+		<title></title>
+		<style>
+			.bodyBg{
+				background-color: #EFEFEF;
+				line-height: 1;
+			}
+			.content{
+				position: absolute;
+				top: 30%;
+				left: 0;
+				right: 0;
+				margin: auto;
+				text-align: center;
+			}
+			.content .tit_img{
+				width: 10.425rem;
+				height: 7.275rem;
+			}
+			.content .noData{
+				font-size: 1.2rem;
+				color: #cbc9c9;
+				margin-top: 1.1rem;
+			}
+		</style>
+	</head>
+	<body class="bodyBg">
+		<div class="content">
+			<div><img class="tit_img"src="img/no_data.png"/></div>
+			<p class="noData">无数据</p>
+		</div>
+	</body>
+	<script src="js/share.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		var title = decodeURI(html_name('tit'));
+		document.title = title;
+	</script>
+</html>

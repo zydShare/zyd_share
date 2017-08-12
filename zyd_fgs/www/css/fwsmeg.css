@@ -1,0 +1,90 @@
+        body{
+            background-color: #f5f6f7;
+        }
+
+        .fwsMeg{
+            background-color: white;
+            font-size: 0.8rem;
+            /*height: 3rem;
+            line-height: 3rem;*/
+            padding: 0.5rem;
+        }
+
+        input{
+            outline: none;
+            border: none;  
+            height: 96%;
+        }
+
+        .container{
+            margin-top: 0.6rem;
+            padding: 0;
+        }
+
+        .rowBorder{
+            border-bottom: 0.1rem solid #efefef;
+        }
+        .autoMargin{
+            height: 2.25rem;
+            line-height: 2.25rem;
+            margin: 0 0.75rem;
+        }
+
+        .helpBusiness{
+            margin: 0.5rem 0;
+            background-color: white;
+            font-size: 0.8rem;
+        }
+        .explain{
+            padding: 0.5rem;
+            color: #929292;
+        }
+        .fwsMob{
+            color: #929292;
+        }
+        .fwsName{
+            color: #929292;
+        }
+
+        .btnNxtCon{
+            position:fixed;
+            bottom:0;
+            height: 2rem;
+            line-height: 2rem;
+            width: 100%;
+            text-align: center;
+            display:block;
+            background-color: #2a9ded;
+            color: #eaf6fe;
+        }
+
+        .toast{
+            width: 18rem;
+            height: 2rem;
+            line-height: 2rem;
+            display: inline-block;
+            position: fixed;
+            font-size: .65rem;
+            left: 0;
+            bottom:5rem;
+            z-index: 111111;
+            text-align: center;
+            display: none;
+            }
+            
+        .toast .toast-su {
+            height: 2rem;
+            line-height: 2rem;
+            display: inline-block;
+            margin: 0 auto;
+            background-color: #666;
+            border: 0.05rem solid #dfdfdf;
+            border-radius: .25rem;
+            -moz-border-radius: .25rem;
+            -webkit-border-radius: .25rem;
+            -moz-border-radius: .25rem;
+            font-size: .6rem;
+            color: #fff;
+            padding-left: .5rem;
+            padding-right: .5rem;
+        }

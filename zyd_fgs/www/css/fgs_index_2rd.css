@@ -1,0 +1,125 @@
+			body {
+				overflow: hidden;
+			}
+			
+			.fixed-top {
+				position: fixed;
+				width: 100%;
+				background: #f5f6f7;
+				z-index: 1314;
+				top: 0;
+				height: 3.60rem;
+				
+			}
+			
+			.list {
+				overflow-y: scroll;
+				-webkit-overflow-scrolling: touch;
+				position:absolute;
+				z-index:1;
+				width: 100%;
+				margin-top: 3.6rem;
+			}
+			
+			.city-banner img {
+				height: 1.98rem;
+				width: 100%
+			}
+			
+			.fgs-menu {
+				border-bottom: 1px solid #E0E0E0;
+			}
+			
+			.fgs-menu ul {
+				height: 1.59rem;
+			}
+			
+			.fgs-menu ul li img {
+				width: .56rem;
+				height: .42rem;
+			}
+			
+			.fgs-menu ul li p {
+				margin-top: .18rem;
+				font-size: .26rem;
+			}
+			.fgs-items:first-child{
+				margin-top: .3rem;
+			}
+			.fgs-items {
+				height: 2.8rem;
+				width: 100%;
+				margin-top: .2rem;
+			}
+			
+			.list-top {
+				height: 2.21rem;
+			}
+			
+			.list-bottom {
+				height: .59rem;
+			}
+			
+			.id-icon {
+				padding: .3rem;
+			}
+			
+			.id-icon img {
+				width: .84rem;
+				height: .84rem;
+			}
+			
+			.id-title img {
+				width: 1.76rem;
+				height: 1.38rem;
+			}
+			
+			.id-main {
+				width: 3.85rem;
+			}
+			
+			.id-main p {
+				line-height: 1.2;
+			}
+			
+			.id-main p:nth-child(1) {
+				margin-top: .30rem;
+				font-size: .32rem;
+			}
+			
+			.id-main p:nth-child(2) {
+				margin-top: .25rem;
+				font-size: .24rem;
+			}
+			
+			.id-main p:nth-child(3) {
+				margin-top: .35rem;
+				font-size: .26rem;
+			}
+			
+			.list-bottom {
+				border-top: 1px solid #E0E0E0;
+			}
+			
+			.list-bottom p {
+				font-size: .24rem;
+			}
+			
+			.list-bottom p:first-child {
+				padding-left: .3rem;
+			}
+			
+			.list-bottom p:last-child {
+				padding-right: .3rem;
+			}
+			.nomore img{				
+				width:3.5rem;
+				height: 4.3rem;
+				position: absolute;
+				top:45%;
+				left:50%;
+				transform: translate(-50%,-45%);
+				-webkit-transform: translate(-50%,-45%);
+				-ms-transform: translate(-50%,-45%);
+				-moz-transform: translate(-50%,-45%);
+			}
